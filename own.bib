@@ -1,0 +1,131 @@
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
+
+
+%% Created for Paolo Giosué Giarrusso at 2012-03-16 15:57:56 +0100 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+
+
+@inproceedings{ErdwegGR12,
+	Author = {Sebastian Erdweg and Paolo G. Giarrusso and Tillmann Rendel},
+	Booktitle = LDTA,
+	Date-Added = {2012-03-16 15:57:32 +0100},
+	Date-Modified = {2012-03-16 15:57:32 +0100},
+	Note = {to appear},
+	Pdf = {http://www.informatik.uni-marburg.de/~seba/publications/languagecomposition.pdf},
+	Title = {Language Composition Untangled},
+	Year = {2012}}
+
+@inproceedings{KPO:VaMoS11,
+	Abstract = {
+The C preprocessor is commonly used to implement
+variability. Given a feature selection, code fragments
+can be excluded from compilation with \#ifdef and similar
+directives. However, the token-based nature of the C preprocessor
+makes variability implementation difficult and errorprone.
+Additionally, variability mechanisms are intertwined
+with macro definitions, macro expansion, and file inclusion.
+To determine whether a code fragment is compiled, the entire
+file must be preprocessed. We present a partial preprocessor
+that preprocesses file inclusion and macro expansion, but
+retains variability information for further analysis.We describe
+the mechanisms of the partial preprocessor, provide a full
+implementation, and present some initial experimental results.
+The partial preprocessor is part of a larger endeavor in
+the TypeChef project to check variability implementations
+(syntactic correctness, type correctness) in C projects such as
+the Linux kernel.			
+},
+	Address = ACMAddr,
+	Author = {Christian K{\"a}stner and Paolo G. Giarrusso and Klaus Ostermann},
+	Booktitle = {Proceedings of the Fifth International Workshop on Variability Modelling of Software-intensive Systems (VaMoS)},
+	Isbn = {978-1-4503-0570-9},
+	Location = {Namur, Belgium},
+	Month = jan,
+	Note = {Acceptance rate: 55\,\% (21/38)},
+	Pages = {137--140},
+	Publisher = ACM,
+	Title = {Partial Preprocessing {C} Code for Variability Analysis},
+	Url = {http://www.informatik.uni-marburg.de/~kaestner/vamos11.pdf},
+	Year = 2011,
+	Bdsk-Url-1 = {http://www.informatik.uni-marburg.de/~kaestner/vamos11.pdf}}
+
+@inproceedings{OGKR:ECOOP11,
+	Abstract = {
+What is modularity? Which kind of modularity should developers strive for?
+Despite decades of research on modularity, these basic questions have
+no definite answer. We submit that the common understanding of
+modularity, and in particular its notion of information hiding, is 
+deeply rooted in classical logic.
+We analyze how classical modularity, based on classical logic, fails to 
+address the needs of developers of large software systems, and
+encourage researchers to explore alternative visions of
+modularity, based on nonclassical logics, and henceforth called
+nonclassical
+modularity.	
+	},
+	Author = {Klaus Ostermann and Paolo G. Giarrusso and Christian K{\"a}stner and Tillmann Rendel},
+	Booktitle = {Proceedings of the 25th European Conference on Object-Oriented Programming (ECOOP)},
+	Ereader = {http://www.informatik.uni-marburg.de/~kaestner/ecoop11_ereader.pdf},
+	Note = {Acceptance rate: 24\,\%; accepted for publication},
+	Publisher = Springer,
+	Selected = 1,
+	Title = {Revisiting Information Hiding: Reflections on Classical and Nonclassical Modularity},
+	Url = {http://www.informatik.uni-marburg.de/~kaestner/ecoop11.pdf},
+	Year = 2011,
+	Bdsk-Url-1 = {http://www.informatik.uni-marburg.de/~kaestner/ecoop11.pdf}}
+
+@inproceedings{SRKGAK:SPLC11,
+	Abstract = {
+A software product line (SPL) is a family of related software products, from which users can derive a product that fulfills their needs.
+Often, users expect a product to have specific non-functional properties, for example, to not exceed a footprint limit or to respond in a given time frame. Unfortunately, it is usually not feasible to generate and measure non-functional properties for each possible product of an SPL in isolation, because an SPL can contain millions of products. Hence, we propose an approach to \emph{estimate} each product's non-functional properties in advance, based on the product's configuration. To this end, we approximate non-functional properties \emph{per features} and per feature interaction. We generate and measure a small set of products and approximated non-functional properties by comparing the measurements. Our approach is implementation independent and language independent. We present three different approaches with different trade-offs regarding accuracy and required number of measurements. With nine case studies, we demonstrate that our approach can predict non-functional properties with an accuracy of 2\%.	
+	},
+	Address = IEEEAddr,
+	Author = {Norbert Siegmund and Marko Rosenm{\"u}ller and Christian K{\"a}stner and Paolo G. Giarrusso and Sven Apel and Sergiy Kolesnikov},
+	Booktitle = {Proceedings of the 15th International Software Product Line Conference (SPLC)},
+	Location = {Munich},
+	Month = aug,
+	Note = {to appear; submitted 27 Feb 2010, accepted 21 Apr 2011},
+	Publisher = IEEE,
+	Title = {Scalable Prediction of Non-functional Properties in Software Product Lines},
+	Url = {http://www.informatik.uni-marburg.de/~kaestner/SPLC11_nfp.pdf},
+	Year = 2011,
+	Bdsk-Url-1 = {http://www.informatik.uni-marburg.de/~kaestner/SPLC11_nfp.pdf}}
+
+@inproceedings{KGREOB:OOPSLA11,
+	Abstract = {
+In many projects, lexical preprocessors are used to manage
+different variants of the project (using conditional compilation)
+and to define compile-time code transformations (using
+macros). Unfortunately, while being a simply way to implement
+variability, conditional compilation and lexical macros
+hinder automatic analysis, even though such analysis would
+be urgently needed to combat variability-induced complexity.
+To analyze code with its variability, we need to parse
+it without preprocessing it. However, current parsing solutions
+use heuristics, support only a subset of the language, or
+suffer from exponential explosion. As part of the TypeChef
+project, we contribute a novel variability-aware parser that
+can parse unpreprocessed code without heuristics in practicable
+time. Beyond the obvious task of detecting syntax errors,
+our parser paves the road for further analysis, such as
+variability-aware type checking. We implement variabilityaware
+parsers for Java and GNU C and demonstrate practicability
+by parsing the product line MobileMedia and the
+entire X86 architecture of the Linux kernel with 6065 variable
+features.
+	},
+	Address = ACMAddr,
+	Author = {Christian K{\"a}stner and Paolo G. Giarrusso and Tillmann Rendel and Sebastian Erdweg and Klaus Ostermann and Thorsten Berger},
+	Booktitle = {Proceedings of the 26th Annual ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA)},
+	Location = {Portland, OR},
+	Month = oct,
+	Note = {Acceptance rate: 37\,\% (61/166); submitted 8 Apr 2011, accepted 13 Jun 2011},
+	Pdf = {http://www.informatik.uni-marburg.de/~kaestner/oopsla11_typechef_submitted.pdf},
+	Publisher = ACM,
+	Selected = 1,
+	Title = {Variability-Aware Parsing in the Presence of Lexical Macros and Conditional Compilation},
+	Year = 2011}
