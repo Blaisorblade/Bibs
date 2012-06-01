@@ -29,4 +29,4 @@ interface; I need to figure out a smart way to do that.
 [1]: https://github.com/apenwarr/git-subtree
 [Creation]: http://psionides.eu/2010/02/04/sharing-code-between-projects-with-git-subtree/
 [2]: http://www.ashday.com/blogs/russell-keppner/git-subtree-easier-way-import-repository-dev-cloud
-[3]: http://www.ashday.com/blogs/russell-keppner/git-subtree-easier-way-import-repository-dev-cloud
+[3]: http://h2ik.co/2011/03/having-fun-with-git-subtree/
