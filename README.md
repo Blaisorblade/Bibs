@@ -8,15 +8,15 @@ To get started follow these instructions (but if you don't have write access to
 this repo, you should replace the GIT address with one you can access):
 
 ```bash
-git remote add bibs git@github.com:Blaisorblade/Bibs.git
-git fetch bibs
-git subtree add --squash -P Bibs -m $YOUR_COMMIT_MESSAGE bibs/master
+$ git remote add bibs git@github.com:Blaisorblade/Bibs.git
+$ git fetch bibs
+$ git subtree add --squash -P Bibs -m $YOUR_COMMIT_MESSAGE bibs/master
 ```
 
 To fetch updates:
 
 ```bash
-git subtree merge --squash -P Bibs bibs/master
+$ git subtree merge --squash -P Bibs bibs/master
 ```
 
 [1]: https://github.com/apenwarr/git-subtree
