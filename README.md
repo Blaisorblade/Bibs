@@ -16,6 +16,7 @@ $ git subtree add --squash -P Bibs -m $YOUR_COMMIT_MESSAGE bibs/master
 To fetch updates:
 
 ```bash
+$ git fetch bibs
 $ git subtree merge --squash -P Bibs bibs/master
 ```
 
