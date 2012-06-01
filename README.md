@@ -20,6 +20,12 @@ $ git fetch bibs
 $ git subtree merge --squash -P Bibs bibs/master
 ```
 
+Pushing updates from the project is slightly more complex. The basic idea is
+presented again in the first guide I linked---one needs to combine `git subtree
+split` to a branch and `git push`. However, one needs also to merge remote
+updates to this branch, which can be slightly annoying with the current
+interface; I need to figure out a smart way to do that.
+
 [1]: https://github.com/apenwarr/git-subtree
 [Creation]: http://psionides.eu/2010/02/04/sharing-code-between-projects-with-git-subtree/
 [2]: http://www.ashday.com/blogs/russell-keppner/git-subtree-easier-way-import-repository-dev-cloud
