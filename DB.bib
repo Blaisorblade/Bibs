@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2012-06-01 00:25:40 +0200 
+%% Created for Paolo Giosué Giarrusso at 2012-06-15 00:44:17 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -204,6 +204,55 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@incollection{Grust97QueryEvalCROQUE,
+	Abstract = {With the substantial change of declarative query languages from plain SQL to the so-called ``object SQLs'', in particular OQL, there has surprisingly been not much change in the way problems of query representation and optimization for such languages are tackled. We identify some of the difficulties pure algebraic approaches experience when facing object models and the operations defined for them. Calculus-style formalisms suite this challenge better, but are said not to be efficiently implementable in the database context.},
+	Affiliation = {University of Konstanz Database Research Group P.O. Box D188 D-78457 Konstanz Germany P.O. Box D188 D-78457 Konstanz Germany},
+	Author = {Grust, Torsten and Kr{\"o}ger, Joachim and Gluche, Dieter and Heuer, Andreas and Scholl, Marc},
+	Booktitle = {Advances in Databases},
+	Date-Added = {2012-06-15 00:43:22 +0200},
+	Date-Modified = {2012-06-15 00:44:15 +0200},
+	Editor = {Small, Carol and Douglas, Paul and Johnson, Roger and King, Peter and Martin, Nigel},
+	Isbn = {978-3-540-63263-4},
+	Keyword = {Computer Science},
+	Note = {10.1007/3-540-63263-8_6},
+	Pages = {84-100},
+	Publisher = {Springer Berlin / Heidelberg},
+	Series = {Lecture Notes in Computer Science},
+	Title = {Query evaluation in CROQUE},
+	Url = {http://dx.doi.org/10.1007/3-540-63263-8_6},
+	Volume = {1271},
+	Year = {1997},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/3-540-63263-8_6}}
+
+@article{Grust99How,
+	Abstract = {Compilers and optimizers for declarative query languages use some form of intermediate language to represent user-level queries. The advent of compositional query languages for orthogonal type systems (e.g., OQL) calls for internal query representations beyond extensions of relational algebra. This work adopts a view of query processing which is greatly influenced by ideas from the functional programming domain. A uniform formal framework is presented which covers all query translation phases, including user-level query language compilation, query optimization, and execution plan generation. We pursue the type-based design---based on initial algebras---of a core functional language which is then developed into an intermediate representation that fits the needs of advanced query processing. Based on the principle of structural recursion we extend the language by monad comprehensions (which provide us with a calculus-style sublanguage that proves to be useful during the optimization of nested queries) and combinators (abstractions of the query operators implemented by the underlying target query engine). Due to its functional nature, the language is susceptible to program transformation techniques that were developed by the functional programming as well as the functional data model communities. We show how database query processing can substantially benefit from these techniques.},
+	Author = {Grust, Torsten and Scholl, Marc H.},
+	Date-Added = {2012-06-15 00:35:41 +0200},
+	Date-Modified = {2012-06-15 00:35:56 +0200},
+	Issn = {0925-9902},
+	Issue = {2},
+	Journal = {Journal of Intelligent Information Systems},
+	Keyword = {Computer Science},
+	Note = {10.1023/A:1008705026446},
+	Pages = {191-218},
+	Publisher = {Springer Netherlands},
+	Title = {How to Comprehend Queries Functionally},
+	Url = {http://dx.doi.org/10.1023/A:1008705026446},
+	Volume = {12},
+	Year = {1999},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1023/A:1008705026446}}
+
+@inproceedings{Grust96Monoid,
+	Annote = {Superseded by Grust96Translating},
+	Author = {Grust, T. and Scholl, M.H.},
+	Booktitle = {Workshop on Performance Enhancement in Object Bases, Schloss Dagstuhl},
+	Date-Added = {2012-06-15 00:27:47 +0200},
+	Date-Modified = {2012-06-15 00:34:39 +0200},
+	Doi = {10.1.1.36.4925, 10.1.1.36.4481(abstract)},
+	Organization = {Citeseer},
+	Title = {Monoid Comprehensions as a Target for the Translation of OQL},
+	Year = {1996}}
 
 @inproceedings{Abiteboul98,
 	Abstract = {Semistructured data is not strictly typed like relational or object-oriented data and may be irregular or incomplete. It often arises in practice, e.g., when heterogeneous data sources are integrated or data is taken from the World Wide Web.  Views over semistructured data can be used to filter the data and to restructure (or provide structure to) it.  To achieve fast query response time, these views are often materialized.  This paper studies incremental maintenance techniques for materialized views over semistructured data.  We use the graph-based data model OEM and the query language Lorel, developed at Stanford, as the framework for our work. We propose a new algorithm that produces a set of queries that compute the changes to the view based upon a change to the source.  We develop an analytic cost model and compare the cost of executing our incremental maintenance algorithm to that of recomputing the view.  We show that for nearly all types of database updates, it is more efficient to apply our incremental maintenance algorithm to the view than to recompute the view from the database, even when there are thousands of such updates.},
@@ -543,7 +592,7 @@ Furthermore, they support deletions by extending non-idempotent monoids to group
 	Series = {SIGMOD '84},
 	Title = {Making Smalltalk a database system},
 	Year = {1984},
-	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RArQAAAAAArQAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMfUs/FIKwAAAczQDB9NYWtpbmcgU21hbGx0YWxrIGEgIzFGMDgxQTQucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8IGkyvkzvgAAAAAAAAAAAAMABQAACSAAAAAAAAAAAAAAAAAAAAAPRGF0YWJhc2UgcGFwZXJzAAAQAAgAAMfUl9EAAAARAAgAAMr5Ja4AAAABACABzNAMAcTi1wAzQJMAMyx1AC6nngAITLoACEytAACS8wACAI1NYWNpbnRvc2ggSEQ6VXNlcnM6cGdpYXJydXNzbzpEb2N1bWVudHM6UmVzZWFyY2g6UGFwZXJzOlByb2dyYW1taW5nIExhbmd1YWdlczpRdWVyeSBsYW5ndWFnZXM6RGF0YWJhc2UgcGFwZXJzOk1ha2luZyBTbWFsbHRhbGsgYSAjMUYwODFBNC5wZGYAAA4AbgA2AE0AYQBrAGkAbgBnACAAUwBtAGEAbABsAHQAYQBsAGsAIABhACAAZABhAHQAYQBiAGEAcwBlACAAcwB5AHMAdABlAG0AIAAtACAAcAAzADEANgAtAGMAbwBwAGUAbABhAG4AZAAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAl1VzZXJzL3BnaWFycnVzc28vRG9jdW1lbnRzL1Jlc2VhcmNoL1BhcGVycy9Qcm9ncmFtbWluZyBMYW5ndWFnZXMvUXVlcnkgbGFuZ3VhZ2VzL0RhdGFiYXNlIHBhcGVycy9NYWtpbmcgU21hbGx0YWxrIGEgZGF0YWJhc2Ugc3lzdGVtIC0gcDMxNi1jb3BlbGFuZC5wZGYAABMAAS8AABUAAgAR//8AAIAF0hwdHh9YJGNsYXNzZXNaJGNsYXNzbmFtZaMfICFdTlNNdXRhYmxlRGF0YVZOU0RhdGFYTlNPYmplY3RfEHwuLi8uLi8uLi9QYXBlcnMvUHJvZ3JhbW1pbmcgTGFuZ3VhZ2VzL1F1ZXJ5IGxhbmd1YWdlcy9EYXRhYmFzZSBwYXBlcnMvTWFraW5nIFNtYWxsdGFsayBhIGRhdGFiYXNlIHN5c3RlbSAtIHAzMTYtY29wZWxhbmQucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgA1gDWgNfA2gDcwN3A4UDjAOVBBQEGQQcBCkELgAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAARA},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RArQAAAAAArQAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMv5vldIKwAAABDFSB9NYWtpbmcgU21hbGx0YWxrIGEgZCMxMTIxMEUucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAESEOyvkzvgAAAAAAAAAAAAEABQAACSAAAAAAAAAAAAAAAAAAAAAPRGF0YWJhc2UgcGFwZXJzAAAQAAgAAMv5ojcAAAARAAgAAMr5Ja4AAAABACAAEMVIABDFRwAQxSMAEMTvAA+WjgANM+0ADEwgAAxMGAACAI1NYWNpbnRvc2ggSEQ6VXNlcnM6cGdpYXJydXNzbzpEb2N1bWVudHM6UmVzZWFyY2g6UGFwZXJzOlByb2dyYW1taW5nIExhbmd1YWdlczpRdWVyeSBsYW5ndWFnZXM6RGF0YWJhc2UgcGFwZXJzOk1ha2luZyBTbWFsbHRhbGsgYSBkIzExMjEwRS5wZGYAAA4AbgA2AE0AYQBrAGkAbgBnACAAUwBtAGEAbABsAHQAYQBsAGsAIABhACAAZABhAHQAYQBiAGEAcwBlACAAcwB5AHMAdABlAG0AIAAtACAAcAAzADEANgAtAGMAbwBwAGUAbABhAG4AZAAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAl1VzZXJzL3BnaWFycnVzc28vRG9jdW1lbnRzL1Jlc2VhcmNoL1BhcGVycy9Qcm9ncmFtbWluZyBMYW5ndWFnZXMvUXVlcnkgbGFuZ3VhZ2VzL0RhdGFiYXNlIHBhcGVycy9NYWtpbmcgU21hbGx0YWxrIGEgZGF0YWJhc2Ugc3lzdGVtIC0gcDMxNi1jb3BlbGFuZC5wZGYAABMAAS8AABUAAgAR//8AAIAF0hwdHh9YJGNsYXNzZXNaJGNsYXNzbmFtZaMfICFdTlNNdXRhYmxlRGF0YVZOU0RhdGFYTlNPYmplY3RfEHYuLi9QYXBlcnMvUHJvZ3JhbW1pbmcgTGFuZ3VhZ2VzL1F1ZXJ5IGxhbmd1YWdlcy9EYXRhYmFzZSBwYXBlcnMvTWFraW5nIFNtYWxsdGFsayBhIGRhdGFiYXNlIHN5c3RlbSAtIHAzMTYtY29wZWxhbmQucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgA1gDWgNfA2gDcwN3A4UDjAOVBA4EEwQWBCMEKAAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAAQ6},
 	Bdsk-Url-1 = {http://doi.acm.org/10.1145/602259.602300}}
 
 @inproceedings{Henglein10a,
