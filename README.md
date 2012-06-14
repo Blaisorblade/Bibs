@@ -20,11 +20,24 @@ $ git fetch bibs
 $ git subtree merge --squash -P Bibs bibs/master
 ```
 
-Pushing updates from the project is slightly more complex. The basic idea is
-presented again in the [first guide][Creation] I linked---one needs to combine `git subtree
-split` to a branch and `git push`. However, one needs also to merge remote
-updates to this branch, which can be slightly annoying with the current
-interface; I need to figure out a smart way to do that.
+To split and push updates, first fetch updates, and then run:
+
+```bash
+$ git subtree split -P Bibs -b bibs-backport
+$ git push bibs bibs-backport:master
+```
+
+One important thing is that, unlike I thought, one does not need to pull the
+`bibs-backport` branch from `bibs/master`.
+
+To show that, assume that some commits are on `bibs/master` and have been merged
+on HEAD but are not on `bibs-backport`: `git subtree` will then extract those
+commits and regenerate the same commits, which can then be pushed.
+
+If you instead split updates before fetching existing ones, you get spurious
+commits like
+`https://github.com/Blaisorblade/Bibs/commit/b6c1121db5e0b06a13ad60dd36721dd46491949b`,
+but integrity is still preserved.
 
 [1]: https://github.com/apenwarr/git-subtree
 [Creation]: http://psionides.eu/2010/02/04/sharing-code-between-projects-with-git-subtree/
