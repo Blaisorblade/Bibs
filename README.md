@@ -20,6 +20,12 @@ $ git fetch bibs
 $ git subtree merge --squash -P Bibs bibs/master
 ```
 
+or the shorter variant (found with `git subtree`'s manual):
+
+```
+$ git subtree pull --squash -P Bibs bibs
+```
+
 To split and push updates, first fetch updates, and then run:
 
 ```bash
