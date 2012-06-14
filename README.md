@@ -15,16 +15,27 @@ $ git subtree add --squash -P Bibs -m $YOUR_COMMIT_MESSAGE bibs/master
 
 To fetch updates:
 
+```
+$ git subtree pull --squash -P Bibs bibs
+```
+
+To split and push updates, first fetch updates, and then run:
+
+```bash
+git subtree push -P Bibs bibs master
+```
+
+# Alternatives
+These alternatives are the procedure I originally [read on the Internet][Creation].
+
+To fetch updates:
+
 ```bash
 $ git fetch bibs
 $ git subtree merge --squash -P Bibs bibs/master
 ```
 
-or the shorter variant (found with `git subtree`'s manual):
-
-```
-$ git subtree pull --squash -P Bibs bibs
-```
+I found the shorter variant through `git subtree`'s manual.
 
 To split and push updates, first fetch updates, and then run:
 
@@ -33,18 +44,14 @@ $ git subtree split -P Bibs -b bibs-backport
 $ git push bibs bibs-backport:master
 ```
 
-or the simpler version (found via the manual and experimentation):
+I found the shorter variant through `git subtree`'s manual and experimentation.
+The obvious variant failed; it was:
 
-```bash
-git subtree push -P Bibs bibs master
-```
-
-and not:
 ```bash
 git subtree push -d -P Bibs bibs bibs-backport:master
 ```
 
-which fails.
+# Discussion
 One important thing is that, unlike I thought, one does not need to pull the
 `bibs-backport` branch from `bibs/master`.
 
