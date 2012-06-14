@@ -33,6 +33,18 @@ $ git subtree split -P Bibs -b bibs-backport
 $ git push bibs bibs-backport:master
 ```
 
+or the simpler version (found via the manual and experimentation):
+
+```bash
+git subtree push -P Bibs bibs master
+```
+
+and not:
+```bash
+git subtree push -d -P Bibs bibs bibs-backport:master
+```
+
+which fails.
 One important thing is that, unlike I thought, one does not need to pull the
 `bibs-backport` branch from `bibs/master`.
 
