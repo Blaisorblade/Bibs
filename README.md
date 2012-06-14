@@ -35,11 +35,10 @@ on HEAD but are not on `bibs-backport`: `git subtree` will then extract those
 commits and regenerate the same commits, which can then be pushed.
 
 If you instead split updates before fetching existing ones, you get spurious
-commits like
-`https://github.com/Blaisorblade/Bibs/commit/b6c1121db5e0b06a13ad60dd36721dd46491949b`,
-but integrity is still preserved.
+commits like [Blaisorblade/Bibs@b6c1121d][4], but integrity is still preserved.
 
 [1]: https://github.com/apenwarr/git-subtree
 [Creation]: http://psionides.eu/2010/02/04/sharing-code-between-projects-with-git-subtree/
 [2]: http://www.ashday.com/blogs/russell-keppner/git-subtree-easier-way-import-repository-dev-cloud
 [3]: http://h2ik.co/2011/03/having-fun-with-git-subtree/
+[4]: https://github.com/Blaisorblade/Bibs/commit/b6c1121db5e0b06a13ad60dd36721dd46491949b
