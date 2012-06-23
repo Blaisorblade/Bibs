@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2012-04-20 17:28:07 +0200 
+%% Created for Paolo Giosué Giarrusso at 2012-06-23 14:14:58 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -222,6 +222,64 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@article{Blelloch90,
+	Abstract = {This paper introduces techniques for compiling the nested parallelism of collection-oriented languages onto existing parallel hardware. Programmers of parallel machines encounter nested parallelism whenever they write a routine that performs parallel operations, and then want to call that routine itself in parallel. This occurs naturally in many applications. Most parallel systems, however, do not permit the expression of nested parallelism. This forces the programmer to exploit only one level of parallelism or to implement nested parallelism themselves. Both of these alternatives tend to produce code that is harder to maintain and less modular than code described at a higher level with nested parallel constructs. Not permitting the expression of nested parallelism is analogous to not permitting nested loops in serial languages. This paper describes issues and techniques for taking high-level descriptions of parallelism in the form of operations on nested collections and automatically translating them into flat, single-level parallelism. A compiler that translates a subset of a collection-oriented language,Paralation Lisp, into the instruction set of a flat virtual machine is presented. The instructions of the virtual machine are simple instructions on vectors of atomic values, and can be implemented on a broad class of target architectures, including vector machines, single-instruction parallel machines, and multiple-instruction parallel machines. We have implemented the instructions on the Connection Machine computer (CM-2), a massively parallel, single-instruction computer. As an illustration of the compiler techniques, the paper presents a quicksort example. The example has been tested on the CM-2. The speed of the compiled sort is only a factor of 3 slower than that of the fastest CM-2 sort.},
+	Author = {Guy E. Blelloch and Gary W. Sabot},
+	Date-Added = {2012-06-23 14:14:27 +0200},
+	Date-Modified = {2012-06-23 14:14:27 +0200},
+	Doi = {10.1016/0743-7315(90)90087-6},
+	Issn = {0743-7315},
+	Journal = {Journal of Parallel and Distributed Computing},
+	Number = {2},
+	Pages = {119 - 134},
+	Title = {Compiling collection-oriented languages onto massively parallel computers},
+	Url = {http://www.sciencedirect.com/science/article/pii/0743731590900876},
+	Volume = {8},
+	Year = {1990},
+	Bdsk-Url-1 = {http://www.sciencedirect.com/science/article/pii/0743731590900876},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1016/0743-7315(90)90087-6}}
+
+@article{Blelloch96,
+	Acmid = {227246},
+	Address = {New York, NY, USA},
+	Author = {Blelloch, Guy E.},
+	Date-Added = {2012-06-22 07:08:26 +0200},
+	Date-Modified = {2012-06-22 07:08:28 +0200},
+	Doi = {10.1145/227234.227246},
+	Issn = {0001-0782},
+	Issue_Date = {March 1996},
+	Journal = {Commun. ACM},
+	Month = mar,
+	Number = {3},
+	Numpages = {13},
+	Pages = {85--97},
+	Publisher = {ACM},
+	Title = {Programming parallel algorithms},
+	Url = {http://doi.acm.org/10.1145/227234.227246},
+	Volume = {39},
+	Year = {1996},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/227234.227246},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/227234.227246}}
+
+@incollection{Keller96FlatteningNesl,
+	Affiliation = {Technische Universit{\"a}t Berlin Forschungsgruppe Softwaretechnik (FR5-6) Franklinstr. 28/29 D-10587 Berlin Franklinstr. 28/29 D-10587 Berlin},
+	Author = {Keller, Gabriele and Simons, Martin},
+	Booktitle = {Concurrency and Parallelism, Programming, Networking, and Security},
+	Date-Added = {2012-06-22 06:56:59 +0200},
+	Date-Modified = {2012-06-22 06:57:16 +0200},
+	Editor = {Jaffar, Joxan and Yap, Roland},
+	Isbn = {978-3-540-62031-0},
+	Keyword = {Computer Science},
+	Note = {10.1007/BFb0027796},
+	Pages = {234-243},
+	Publisher = {Springer Berlin / Heidelberg},
+	Series = {Lecture Notes in Computer Science},
+	Title = {A calculational approach to flattening nested data parallelism in functional languages},
+	Url = {http://dx.doi.org/10.1007/BFb0027796},
+	Volume = {1179},
+	Year = {1996},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/BFb0027796}}
 
 @inproceedings{Odersky01coloredLocal,
 	Author = {Martin Odersky and Matthias Zenger and Christoph Zenger},
