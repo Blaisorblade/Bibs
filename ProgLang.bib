@@ -223,6 +223,27 @@
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
 
+@incollection{Chakravarty01Nepal,
+	Abstract = {This paper discusses an extension of Haskell by support for nested data-parallel programming in the style of the special-purpose language Nesl . The extension consists of a parallel array type, array comprehensions, and primitive parallel array operations. This extension brings a hitherto unsupported style of parallel programming to Haskell. Moreover, nested data parallelism should receive wider attention when available in a standardised language like Haskell.},
+	Affiliation = {University of New South Wales Australia},
+	Author = {Chakravarty, Manuel and Keller, Gabriele and Lechtchinsky, Roman and Pfannenstiel, Wolf},
+	Booktitle = {Euro-Par 2001 Parallel Processing},
+	Date-Added = {2012-06-23 14:19:28 +0200},
+	Date-Modified = {2012-06-23 14:20:04 +0200},
+	Editor = {Sakellariou, Rizos and Gurd, John and Freeman, Len and Keane, John},
+	Isbn = {978-3-540-42495-6},
+	Keyword = {Computer Science},
+	Keywords = {nested data parallelism, Haskell},
+	Note = {10.1007/3-540-44681-8_76},
+	Pages = {524-534},
+	Publisher = {Springer Berlin / Heidelberg},
+	Series = {Lecture Notes in Computer Science},
+	Title = {Nepal --- Nested Data Parallelism in Haskell},
+	Url = {http://dx.doi.org/10.1007/3-540-44681-8_76},
+	Volume = {2150},
+	Year = {2001},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/3-540-44681-8_76}}
+
 @article{Blelloch90,
 	Abstract = {This paper introduces techniques for compiling the nested parallelism of collection-oriented languages onto existing parallel hardware. Programmers of parallel machines encounter nested parallelism whenever they write a routine that performs parallel operations, and then want to call that routine itself in parallel. This occurs naturally in many applications. Most parallel systems, however, do not permit the expression of nested parallelism. This forces the programmer to exploit only one level of parallelism or to implement nested parallelism themselves. Both of these alternatives tend to produce code that is harder to maintain and less modular than code described at a higher level with nested parallel constructs. Not permitting the expression of nested parallelism is analogous to not permitting nested loops in serial languages. This paper describes issues and techniques for taking high-level descriptions of parallelism in the form of operations on nested collections and automatically translating them into flat, single-level parallelism. A compiler that translates a subset of a collection-oriented language,Paralation Lisp, into the instruction set of a flat virtual machine is presented. The instructions of the virtual machine are simple instructions on vectors of atomic values, and can be implemented on a broad class of target architectures, including vector machines, single-instruction parallel machines, and multiple-instruction parallel machines. We have implemented the instructions on the Connection Machine computer (CM-2), a massively parallel, single-instruction computer. As an illustration of the compiler techniques, the paper presents a quicksort example. The example has been tested on the CM-2. The speed of the compiled sort is only a factor of 3 slower than that of the fastest CM-2 sort.},
 	Author = {Guy E. Blelloch and Gary W. Sabot},
