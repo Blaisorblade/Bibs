@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2012-06-29 17:26:04 +0200 
+%% Created for Paolo Giosué Giarrusso at 2012-07-09 17:24:11 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -194,6 +194,8 @@
 
 @string{visple = {Proc.\ SPLC Workshop on Visualization in Software Product Line Engineering (ViSPLE)}}
 
+@string{vldb = {Proc.\ Int'l Conf.\ Very Large Data Bases}}
+
 @string{wcre = {Proc.\ Working Conf.\ Reverse Engineering (WCRE)}}
 
 @string{wgp = {Proc.\ SIGPLAN Workshop on Generic Programming}}
@@ -204,6 +206,58 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@inproceedings{Stonebraker07,
+	Acmid = {1325981},
+	Author = {Stonebraker, Michael and Madden, Samuel and Abadi, Daniel J. and Harizopoulos, Stavros and Hachem, Nabil and Helland, Pat},
+	Booktitle = VLDB,
+	Date-Added = {2012-07-09 15:14:02 +0200},
+	Date-Modified = {2012-07-09 17:22:53 +0200},
+	Location = {Vienna, Austria},
+	Noisbn = {978-1-59593-649-3},
+	Nourl = {http://dl.acm.org/citation.cfm?id=1325851.1325981},
+	Numpages = {11},
+	Pages = {1150--1160},
+	Publisher = {VLDB Endowment},
+	Series = {VLDB '07},
+	Title = {The end of an architectural era: (it's time for a complete rewrite)},
+	Year = {2007},
+	Bdsk-Url-1 = {http://dl.acm.org/citation.cfm?id=1325851.1325981}}
+
+@article{Fegaras99,
+	Abstract = {Object-oriented databases (OODBs) provide powerful data abstractions and modeling facilities but they usually lack a suitable framework for query processing and optimization. Even though there is an increasing number of recent proposals on OODB query optimization, only few of them are actually focused on query optimization in the presence of object identity and destructive updates, features often supported by most realistic OODB languages. This paper presents a formal framework for optimizing object-oriented queries in the presence of side effects. These queries may contain object updates at any place and in any form. We present a language extension to the monoid comprehension calculus to express these object-oriented features and we give a formal meaning to these extensions. Our method is based on denotational semantics, which is often used to give a formal meaning to imperative programming languages. The semantics of our language extensions is expressed in terms of our monoid calculus, without the need of any fundamental change to our basic framework. Our method not only maintains referential transparency, which allows us to do meaningful query optimization, but it is also practical for optimizing OODB queries since it allows the same optimization techniques applied to regular queries to be used with minimal changes for OODB queries with updates.},
+	Author = {Fegaras, Leonidas},
+	Date-Added = {2012-07-09 12:07:42 +0200},
+	Date-Modified = {2012-07-09 12:07:43 +0200},
+	Issn = {0925-9902},
+	Issue = {2},
+	Journal = {Journal of Intelligent Information Systems},
+	Keyword = {Computer Science},
+	Note = {10.1023/A:1008757010516},
+	Pages = {219-242},
+	Publisher = {Springer Netherlands},
+	Title = {Optimizing Queries with Object Updates},
+	Url = {http://dx.doi.org/10.1023/A:1008757010516},
+	Volume = {12},
+	Year = {1999},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1023/A:1008757010516}}
+
+@article{Litwin92,
+	Abstract = {Object-oriented database systems (OODBs) have created a demand for relationally complete, extensible, and declarative object-oriented query languages. Until now, the runtime performance of such languages was far behind that of procedural OO interfaces. One reason is the internal use of a relational engine with magnetic disk resident databases. The authors address the processing of the declarative OO language WS-OSQL, provided by the fully operational prototype OODB called WS-IRIS. A WS-IRIS database is main memory (MM) resident. The system architecture, data structures, and optimization techniques are designed accordingly. WS-OSQL queries are compiled into an OO extension of Datalog called ObjectLog, providing for objects, typing, overloading, and foreign predicates for extensibility. Cost-based optimizations in WS-IRIS using ObjectLog are presented. Performance tests show that WS-IRIS is about as fast as current OODBs with procedural interfaces only and is much faster than known relationally complete systems. These results would not be possible for a traditional disk-based implementation. However, MM residency of a database appears to be only a necessary condition for better performance. An efficient optimization is of crucial importance as well},
+	Author = {Litwin, W. and Risch, T.},
+	Date-Added = {2012-07-09 12:07:23 +0200},
+	Date-Modified = {2012-07-09 12:07:40 +0200},
+	Doi = {10.1109/69.180603},
+	Issn = {1041-4347},
+	Journal = {Knowledge and Data Engineering, IEEE Transactions on},
+	Keywords = {ObjectLog;WS-IRIS database;WS-OSQL;data structures;declarative object-oriented language;foreign predicates;magnetic disk resident databases;main memory resident;object-oriented database;object-oriented query languages;optimization techniques;overloading;relational engine;system architecture;typed Datalog;typing;object-oriented databases;object-oriented languages;query languages;query processing;relational databases;},
+	Month = {dec},
+	Number = {6},
+	Pages = {517 -528},
+	Title = {Main memory orientated optimization of OO queries using typed Datalog with foreign predicates},
+	Volume = {4},
+	Year = {1992},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1109/69.180603}}
 
 @book{Garcia-Molina08dscb,
 	Address = {Upper Saddle River, NJ, USA},
@@ -306,16 +360,16 @@
 	Author = {Grust, Torsten and Kr{\"o}ger, Joachim and Gluche, Dieter and Heuer, Andreas and Scholl, Marc},
 	Booktitle = {Advances in Databases},
 	Date-Added = {2012-06-15 00:43:22 +0200},
-	Date-Modified = {2012-06-18 00:51:24 +0200},
-	Editor = {Small, Carol and Douglas, Paul and Johnson, Roger and King, Peter and Martin, Nigel},
-	Isbn = {978-3-540-63263-4},
+	Date-Modified = {2012-07-09 15:22:39 +0200},
 	Keyword = {Computer Science},
-	Note = {10.1007/3-540-63263-8_6},
+	Noeditor = {Small, Carol and Douglas, Paul and Johnson, Roger and King, Peter and Martin, Nigel},
+	Noisbn = {978-3-540-63263-4},
+	Nonote = {10.1007/3-540-63263-8\_6},
+	Nourl = {http://dx.doi.org/10.1007/3-540-63263-8_6},
 	Pages = {84-100},
 	Publisher = {Springer Berlin / Heidelberg},
 	Series = {Lecture Notes in Computer Science},
-	Title = {Query evaluation in CROQUE - Calculus and Algebra Coincide},
-	Url = {http://dx.doi.org/10.1007/3-540-63263-8_6},
+	Title = {Query evaluation in {CROQUE} --- Calculus and Algebra Coincide},
 	Volume = {1271},
 	Year = {1997},
 	Bdsk-Url-1 = {http://dx.doi.org/10.1007/3-540-63263-8_6}}
@@ -324,16 +378,16 @@
 	Abstract = {Compilers and optimizers for declarative query languages use some form of intermediate language to represent user-level queries. The advent of compositional query languages for orthogonal type systems (e.g., OQL) calls for internal query representations beyond extensions of relational algebra. This work adopts a view of query processing which is greatly influenced by ideas from the functional programming domain. A uniform formal framework is presented which covers all query translation phases, including user-level query language compilation, query optimization, and execution plan generation. We pursue the type-based design---based on initial algebras---of a core functional language which is then developed into an intermediate representation that fits the needs of advanced query processing. Based on the principle of structural recursion we extend the language by monad comprehensions (which provide us with a calculus-style sublanguage that proves to be useful during the optimization of nested queries) and combinators (abstractions of the query operators implemented by the underlying target query engine). Due to its functional nature, the language is susceptible to program transformation techniques that were developed by the functional programming as well as the functional data model communities. We show how database query processing can substantially benefit from these techniques.},
 	Author = {Grust, Torsten and Scholl, Marc H.},
 	Date-Added = {2012-06-15 00:35:41 +0200},
-	Date-Modified = {2012-06-15 00:35:56 +0200},
-	Issn = {0925-9902},
+	Date-Modified = {2012-07-09 15:24:22 +0200},
 	Issue = {2},
 	Journal = {Journal of Intelligent Information Systems},
 	Keyword = {Computer Science},
-	Note = {10.1023/A:1008705026446},
+	Noissn = {0925-9902},
+	Nonote = {10.1023/A:1008705026446},
+	Nourl = {http://dx.doi.org/10.1023/A:1008705026446},
 	Pages = {191-218},
 	Publisher = {Springer Netherlands},
 	Title = {How to Comprehend Queries Functionally},
-	Url = {http://dx.doi.org/10.1023/A:1008705026446},
 	Volume = {12},
 	Year = {1999},
 	Bdsk-Url-1 = {http://dx.doi.org/10.1023/A:1008705026446}}
