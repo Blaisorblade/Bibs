@@ -209,6 +209,49 @@
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
 
+@inproceedings{Ackermann12,
+	Abstract = {Cluster computing systems today impose a trade-off
+                 between generality, performance and productivity. Hadoop
+                 and Dryad force programmers to write low level programs
+                 that are tedious to compose but easy to optimize. Systems
+                 like Dryad/LINQ and Spark allow concise modeling of user
+                 programs but do not apply relational optimizations. Pig
+                 and Hive restrict the language to achieve relational
+                 optimizations, making complex programs hard to express
+                 without user extensions. However, these extensions are
+                 cumbersome to write and disallow program optimizations.
+                 We present a distributed batch data processing framework
+                 called Jet. Jet uses deep language embedding in Scala,
+                 multi-stage programming and explicit side effect tracking
+                 to analyze the structure of user programs. The analysis
+                 is used to apply projection insertion, which eliminates
+                 unused data, as well as code motion and operation fusion
+                 to highly optimize the performance critical path of the
+                 program. The language embedding and a high-level
+                 interface allow Jet programs to be both expressive,
+                 resembling regular Scala code, and optimized. Its modular
+                 design allows users to extend Jet with modules that
+                 produce good performing code. Through a modular code
+                 generation scheme, Jet can generate programs for both
+                 Spark and Hadoop. Compared with na{\"\i}ve implementations we
+                 achieve 143\% speedups on Spark and 126\% on Hadoop.},
+	Affiliation = {EPFL},
+	Author = {Ackermann, Stefan and Jovanovic, Vojin and Rompf, Tiark and Odersky, Martin},
+	Booktitle = {International {W}orkshop on {E}nd-to-end {M}anagement of {B}ig {D}ata ({B}ig{D}ata 2012)},
+	Date-Added = {2013-01-23 18:13:59 +0000},
+	Date-Modified = {2013-01-23 18:14:00 +0000},
+	Details = {http://infoscience.epfl.ch/record/181673},
+	Documenturl = {http://infoscience.epfl.ch/record/181673/files/paper.pdf},
+	Keywords = {Domain-specific Languages, Multi-stage Programming, MapReduce, Operation Fusion, Projection Insertion},
+	Oai-Id = {oai:infoscience.epfl.ch:181673},
+	Oai-Set = {conf},
+	Review = {REVIEWED},
+	Status = {PUBLISHED},
+	Submitter = {185682},
+	Title = {Jet: {A}n {E}mbedded {DSL} for {H}igh {P}erformance {B}ig {D}ata {P}rocessing},
+	Unit = {LAMP},
+	Year = 2012}
+
 @inproceedings{Wong93,
 	Acmid = {153853},
 	Address = {New York, NY, USA},
@@ -699,26 +742,6 @@ Furthermore, they support deletions by extending non-idempotent monoids to group
 	Title = {Two for the price of one: a model for parallel and incremental computation},
 	Year = {2011},
 	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2048066.2048101}}
-
-@inproceedings{Demetrescu11,
-	Acmid = {2048100},
-	Author = {Demetrescu, Camil and Finocchi, Irene and Ribichini, Andrea},
-	Booktitle = oopsla,
-	Date-Added = {2011-12-09 15:26:41 +0100},
-	Date-Modified = {2011-12-09 15:26:54 +0100},
-	Keywords = {constraint solving, data structure repair, dataflow programming, imperative programming, incremental computation, observer design pattern, reactive programming},
-	Noaddress = {New York, NY, USA},
-	Nodoi = {http://doi.acm.org/10.1145/2048066.2048100},
-	Noisbn = {978-1-4503-0940-0},
-	Nolocation = {Portland, Oregon, USA},
-	Noseries = {OOPSLA '11},
-	Nourl = {http://doi.acm.org/10.1145/2048066.2048100},
-	Numpages = {20},
-	Pages = {407--426},
-	Publisher = acm,
-	Title = {Reactive imperative programming with dataflow constraints},
-	Year = {2011},
-	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2048066.2048100}}
 
 @inproceedings{Ramalingam93,
 	Acmid = {158710},
