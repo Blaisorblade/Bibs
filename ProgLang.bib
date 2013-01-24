@@ -178,7 +178,10 @@
 
 @string{springer = {Springer-Verlag}}
 
+@string{springerbase = {Springer}}
+
 @string{springeraddr = {Berlin/Heidelberg}}
+@string{springeraddr = {}}
 
 @string{springeraddrbhn = {Berlin/Heidelberg/New York}}
 
@@ -279,13 +282,13 @@
 
 @inproceedings{Rompf13,
 	Acmid = {2429128},
-	Address = {New York, NY, USA},
 	Author = {Rompf, Tiark and Sujeeth, Arvind K. and Amin, Nada and Brown, Kevin J. and Jovanovic, Vojin and Lee, HyoukJoong and Jonnalagedda, Manohar and Olukotun, Kunle and Odersky, Martin},
-	Booktitle = {Proceedings of the 40th annual ACM SIGPLAN-SIGACT symposium on Principles of programming languages},
+	Booktitle = popl,
 	Date-Added = {2013-01-23 16:49:06 +0000},
 	Date-Modified = {2013-01-23 17:49:05 +0000},
 	Keywords = {code generation, data structures, extensible compilers, staging},
 	Location = {Rome, Italy},
+	Noaddress = newyork,
 	Nodoi = {10.1145/2429069.2429128},
 	Noisbn = {978-1-4503-1832-7},
 	Nourl = {http://doi.acm.org/10.1145/2429069.2429128},
@@ -595,7 +598,7 @@
 @inproceedings{Yu08,
 	Acmid = {1855742},
 	Author = {Yu, Yuan and Isard, Michael and Fetterly, Dennis and Budiu, Mihai and Erlingsson, \'{U}lfar and Gunda, Pradeep Kumar and Currey, Jon},
-	Booktitle = {Proceedings of the 8th USENIX conference on Operating systems design and implementation},
+	Booktitle = {Proc. Conf. Operating systems design and implementation},
 	Date-Added = {2012-07-09 15:17:25 +0200},
 	Date-Modified = {2012-07-09 15:21:47 +0200},
 	Location = {San Diego, California},
@@ -1090,12 +1093,12 @@
 	Date-Added = {2012-03-28 15:11:14 +0200},
 	Date-Modified = {2012-06-23 14:28:22 +0200},
 	Doi = {10.4204/EPTCS.66.5},
-	Editor = {Danvy, Olivier and Shan, Chung-chieh},
 	Keywords = {DSEL; optimization; multi-stage programming},
+	Noeditor = {Danvy, Olivier and Shan, Chung-chieh},
 	Nonote = {Leave the DOI in place here, because this paper is actually hard to find!},
 	Pages = {93-117},
 	Publisher = {Open Publishing Association},
-	Series = {Electronic Proceedings in Theoretical Computer Science},
+	Series = {EPTCS},
 	Title = {Building-Blocks for Performance Oriented {DSLs}},
 	Volume = {66},
 	Year = {2011},
@@ -1124,6 +1127,7 @@
 
 @incollection{Hajiyev06CodeQuest,
 	Abstract = {Source code querying tools allow programmers to explore relations between different parts of the code base. This paper describes such a tool, named codeQuest. It combines two previous proposals, namely the use of logic programming and database systems. As the query language we use safe Datalog , which was originally introduced in the theory of databases. That provides just the right level of expressiveness; in particular recursion is indispensable for source code queries. Safe Datalog is like Prolog, but all queries are guaranteed to terminate, and there is no need for extra-logical annotations. Our implementation of Datalog maps queries to a relational database system. We are thus able to capitalise on the query optimiser provided by such a system. For recursive queries we implement our own optimisations in the translation from Datalog to SQL. Experiments confirm that this strategy yields an efficient, scalable code querying system.},
+	Address = springeraddr,
 	Affiliation = {Programming Tools Group, Oxford University Computing Laboratory, Wolfson Building, Parks Road, Oxford, OX1 3QD UK},
 	Author = {Hajiyev, Elnar and Verbaere, Mathieu and de Moor, Oege},
 	Booktitle = ecoop,
@@ -1136,8 +1140,8 @@
 	Nonote = {10.1007/11785477\_2},
 	Nourl = {http://dx.doi.org/10.1007/11785477_2},
 	Pages = {2-27},
-	Publisher = {Springer Berlin / Heidelberg},
-	Series = {Lecture Notes in Computer Science},
+	Publisher = springerbase,
+	Series = lncs,
 	Title = {\emph{CodeQuest}: Scalable Source Code Queries with {Datalog}},
 	Volume = {4067},
 	Year = {2006},
