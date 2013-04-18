@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2013-01-01 18:04:02 +0100 
+%% Created for Paolo Giosué Giarrusso at 2013-04-18 18:39:19 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -164,10 +164,9 @@
 
 @string{springer = {Springer-Verlag}}
 
-@string{springerbase = {Springer}}
-
-@string{springeraddr = {Berlin/Heidelberg}}
 @string{springeraddr = {}}
+
+@string{springeraddr-not = {Berlin/Heidelberg}}
 
 @string{springeraddrbhn = {Berlin/Heidelberg/New York}}
 
@@ -178,6 +177,8 @@
 @string{springeraddrnl = {Dordrecht}}
 
 @string{springeraddrny = {New York}}
+
+@string{springerbase = {Springer}}
 
 @string{springernl = {Springer Netherlands}}
 
@@ -211,6 +212,55 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@inproceedings{Giorgidze13,
+	Acmid = {2429379},
+	Address = {New York, NY, USA},
+	Author = {Giorgidze, George and Grust, Torsten and Ulrich, Alexander and Weijers, Jeroen},
+	Booktitle = {Proceedings of the 2013 workshop on Data driven functional programming},
+	Date-Added = {2013-02-15 14:02:54 +0000},
+	Date-Modified = {2013-02-15 14:02:55 +0000},
+	Doi = {10.1145/2429376.2429379},
+	Isbn = {978-1-4503-1871-6},
+	Keywords = {algebraic data type, database, programming language},
+	Location = {Rome, Italy},
+	Numpages = {6},
+	Pages = {5--10},
+	Publisher = {ACM},
+	Series = {DDFP '13},
+	Title = {Algebraic data types for language-integrated queries},
+	Url = {http://doi.acm.org/10.1145/2429376.2429379},
+	Year = {2013},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2429376.2429379},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/2429376.2429379}}
+
+@inproceedings{Acar13,
+	Acmid = {2429382},
+	Address = {New York, NY, USA},
+	Annote = {They claim a 500-fold speedup between a pure MapReduce program and their incremental version. The pure program maintains the result by iterating over the input line by line, starting from an empty input, and doing the full computation (with cost O(n) and significant overhead) at each round. Hence, the overall runtime is quadratic - 12.5 hours on the benchmark input. Their incremental ML implementation takes 1.7 minutes.
+
+Doing the same computation only on the full data takes 31 seconds with Hadoop, 21 with their ML implementation, on a single node.
+
+They report that Hadoop is a batch system with significant overhead. Still, for fairness, instead of single-node Hadoop, they should compare against the non-incremental version of the same code, which would be faster and a more apple-to-apple comparison.},
+	Author = {Acar, Umut A. and Chen, Yan},
+	Booktitle = {Proceedings of the 2013 workshop on Data driven functional programming},
+	Date-Added = {2013-02-15 14:00:03 +0000},
+	Date-Modified = {2013-02-15 15:31:05 +0000},
+	Doi = {10.1145/2429376.2429382},
+	Isbn = {978-1-4503-1871-6},
+	Keywords = {incremental mapreduce, self-adjusting computation},
+	Location = {Rome, Italy},
+	Numpages = {4},
+	Pages = {15--18},
+	Publisher = {ACM},
+	Rating = {2},
+	Read = {1},
+	Series = {DDFP '13},
+	Title = {Streaming big data with self-adjusting computation},
+	Url = {http://doi.acm.org/10.1145/2429376.2429382},
+	Year = {2013},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2429376.2429382},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/2429376.2429382}}
 
 @inproceedings{Ackermann12,
 	Abstract = {Cluster computing systems today impose a trade-off
@@ -395,11 +445,11 @@
 	Date-Modified = {2012-07-09 17:22:53 +0200},
 	Location = {Vienna, Austria},
 	Noisbn = {978-1-59593-649-3},
+	Noseries = {VLDB '07},
 	Nourl = {http://dl.acm.org/citation.cfm?id=1325851.1325981},
 	Numpages = {11},
 	Pages = {1150--1160},
 	Publisher = {VLDB Endowment},
-	Noseries = {VLDB '07},
 	Title = {The end of an architectural era: (it's time for a complete rewrite)},
 	Year = {2007},
 	Bdsk-Url-1 = {http://dl.acm.org/citation.cfm?id=1325851.1325981}}
@@ -904,7 +954,7 @@ Furthermore, they support deletions by extending non-idempotent monoids to group
 	Series = {SIGMOD '84},
 	Title = {Making Smalltalk a database system},
 	Year = {1984},
-	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RElpOUy5vYmplY3RzViRjbGFzc1dOUy5rZXlzog8QgASABoAHohMUgAKAA1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgMGRpXTlMuZGF0YU8RArwAAAAAArwAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMzFUThIKwAAAAkC8h9NYWtpbmcgU21hbGx0YWxrIGEgZGEjOTAyRkMucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQL8yvkzvgAAAAAAAAAAAAEABQAACSAAAAAAAAAAAAAAAAAAAAAPRGF0YWJhc2UgcGFwZXJzAAAQAAgAAMzFQygAAAARAAgAAMr5Ja4AAAABACAACQLyAAkC6wAJANoACP/qAAhJQAAFFQwABCBEAACT4AACAJVNYWNpbnRvc2ggSEQ6VXNlcnM6AHBnaWFycnVzc286AERvY3VtZW50czoAUmVzZWFyY2g6AFBhcGVyczoAUHJvZ3JhbW1pbmcgTGFuZ3VhZ2VzOgBRdWVyeSBsYW5ndWFnZXM6AERhdGFiYXNlIHBhcGVyczoATWFraW5nIFNtYWxsdGFsayBhIGRhIzkwMkZDLnBkZgAADgBuADYATQBhAGsAaQBuAGcAIABTAG0AYQBsAGwAdABhAGwAawAgAGEAIABkAGEAdABhAGIAYQBzAGUAIABzAHkAcwB0AGUAbQAgAC0AIABwADMAMQA2AC0AYwBvAHAAZQBsAGEAbgBkAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgCXVXNlcnMvcGdpYXJydXNzby9Eb2N1bWVudHMvUmVzZWFyY2gvUGFwZXJzL1Byb2dyYW1taW5nIExhbmd1YWdlcy9RdWVyeSBsYW5ndWFnZXMvRGF0YWJhc2UgcGFwZXJzL01ha2luZyBTbWFsbHRhbGsgYSBkYXRhYmFzZSBzeXN0ZW0gLSBwMzE2LWNvcGVsYW5kLnBkZgAAEwABLwAAFQACABH//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8Qdi4uL1BhcGVycy9Qcm9ncmFtbWluZyBMYW5ndWFnZXMvUXVlcnkgbGFuZ3VhZ2VzL0RhdGFiYXNlIHBhcGVycy9NYWtpbmcgU21hbGx0YWxrIGEgZGF0YWJhc2Ugc3lzdGVtIC0gcDMxNi1jb3BlbGFuZC5wZGbSHB0kJaIlIVxOU0RpY3Rpb25hcnkSAAGGoF8QD05TS2V5ZWRBcmNoaXZlcgAIABEAFgAfACgAMgA1ADoAPABFAEsAUgBdAGQAbABvAHEAcwB1AHgAegB8AIYAkwCYAKADYANiA2cDcAN7A38DjQOUA50EFgQbBB4EKwQwAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAABEI=},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8Qdi4uL1BhcGVycy9Qcm9ncmFtbWluZyBMYW5ndWFnZXMvUXVlcnkgbGFuZ3VhZ2VzL0RhdGFiYXNlIHBhcGVycy9NYWtpbmcgU21hbGx0YWxrIGEgZGF0YWJhc2Ugc3lzdGVtIC0gcDMxNi1jb3BlbGFuZC5wZGbSFwsYGVdOUy5kYXRhTxECvAAAAAACvAACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAzMVROEgrAAAACQLyH01ha2luZyBTbWFsbHRhbGsgYSBkYSM5MDJGQy5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAvzK+TO+AAAAAAAAAAAAAQAFAAAJIAAAAAAAAAAAAAAAAAAAAA9EYXRhYmFzZSBwYXBlcnMAABAACAAAzMVDKAAAABEACAAAyvklrgAAAAEAIAAJAvIACQLrAAkA2gAI/+oACElAAAUVDAAEIEQAAJPgAAIAlU1hY2ludG9zaCBIRDpVc2VyczoAcGdpYXJydXNzbzoARG9jdW1lbnRzOgBSZXNlYXJjaDoAUGFwZXJzOgBQcm9ncmFtbWluZyBMYW5ndWFnZXM6AFF1ZXJ5IGxhbmd1YWdlczoARGF0YWJhc2UgcGFwZXJzOgBNYWtpbmcgU21hbGx0YWxrIGEgZGEjOTAyRkMucGRmAAAOAG4ANgBNAGEAawBpAG4AZwAgAFMAbQBhAGwAbAB0AGEAbABrACAAYQAgAGQAYQB0AGEAYgBhAHMAZQAgAHMAeQBzAHQAZQBtACAALQAgAHAAMwAxADYALQBjAG8AcABlAGwAYQBuAGQALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAJdVc2Vycy9wZ2lhcnJ1c3NvL0RvY3VtZW50cy9SZXNlYXJjaC9QYXBlcnMvUHJvZ3JhbW1pbmcgTGFuZ3VhZ2VzL1F1ZXJ5IGxhbmd1YWdlcy9EYXRhYmFzZSBwYXBlcnMvTWFraW5nIFNtYWxsdGFsayBhIGRhdGFiYXNlIHN5c3RlbSAtIHAzMTYtY29wZWxhbmQucGRmAAATAAEvAAAVAAIAEf//AACABtIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNdTlNNdXRhYmxlRGF0YaMdHyBWTlNEYXRhWE5TT2JqZWN00hscIiNcTlNEaWN0aW9uYXJ5oiIgXxAPTlNLZXllZEFyY2hpdmVy0SYnVHJvb3SAAQAIABEAGgAjAC0AMgA3AEAARgBNAFUAYABnAGoAbABuAHEAcwB1AHcAhACOAQcBDAEUA9QD1gPbA+YD7wP9BAEECAQRBBYEIwQmBDgEOwRAAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAABEI=},
 	Bdsk-Url-1 = {http://doi.acm.org/10.1145/602259.602300}}
 
 @inproceedings{Henglein10a,
@@ -968,7 +1018,7 @@ Furthermore, they support deletions by extending non-idempotent monoids to group
 		<key>group name</key>
 		<string>Database</string>
 		<key>keys</key>
-		<string>Fegaras00,Copeland84,Henglein09,Lee98,Henglein08,Henglein10,Henglein10a,Bertino89</string>
+		<string>Fegaras00,Henglein10,Lee98,Henglein09,Henglein10a,Henglein08,Copeland84,Bertino89</string>
 	</dict>
 </array>
 </plist>
