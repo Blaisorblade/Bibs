@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2013-05-30 11:06:16 +0200 
+%% Created for Paolo Giosué Giarrusso at 2013-05-31 18:07:07 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -227,6 +227,216 @@
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
 
+@article{Acar09EAS,
+	Abstract = {Recent work on adaptive functional programming (AFP) developed techniques for writing programs that can respond to modifications to their data by performing change propagation. To achieve this, executions of programs are represented with dynamic dependence graphs (DDGs) that record data dependences and control dependences in a way that a change-propagation algorithm can update the computation as if the program were from scratch, by re-executing only the parts of the computation affected by the changes. Since change-propagation only re-executes parts of the computation, it can respond to certain incremental modifications asymptotically faster than recomputing from scratch, potentially offering significant speedups. Such asymptotic speedups, however, are rare: for many computations and modifications, change propagation is no faster than recomputing from scratch.
+
+In this article, we realize a duality between dynamic dependence graphs and memoization, and combine them to give a change-propagation algorithm that can dramatically increase computation reuse. The key idea is to use DDGs to identify and re-execute the parts of the computation that are affected by modifications, while using memoization to identify the parts of the computation that remain unaffected by the changes. We refer to this approach as self-adjusting computation. Since DDGs are imperative, but (traditional) memoization requires purely functional computation, reusing computation correctly via memoization becomes a challenge. We overcome this challenge with a technique for remembering and reusing not just the results of function calls (as in conventional memoization), but their executions represented with DDGs. We show that the proposed approach is realistic by describing a library for self-adjusting computation, presenting efficient algorithms for realizing the library, and describing and evaluating an implementation. Our experimental evaluation with a variety of applications, ranging from simple list primitives to more sophisticated computational geometry algorithms, shows that the approach is effective in practice: compared to recomputing from-scratch; self-adjusting programs respond to small modifications to their data orders of magnitude faster.},
+	Acmid = {1596530},
+	Address = {New York, NY, USA},
+	Articleno = {3},
+	Author = {Acar, Umut A. and Blelloch, Guy E. and Blume, Matthias and Harper, Robert and Tangwongsan, Kanat},
+	Date-Added = {2013-05-31 15:54:36 +0000},
+	Date-Modified = {2013-05-31 15:55:28 +0000},
+	Doi = {10.1145/1596527.1596530},
+	Issn = {0164-0925},
+	Issue_Date = {October 2009},
+	Journal = toplas,
+	Keywords = {Computational geometry, dynamic algorithms, dynamic dependence graphs, memoization, performance, self-adjusting computation},
+	Month = nov,
+	Number = {1},
+	Numpages = {53},
+	Pages = {3:1--3:53},
+	Publisher = {ACM},
+	Title = {An experimental analysis of self-adjusting computation},
+	Url = {http://doi.acm.org/10.1145/1596527.1596530},
+	Volume = {32},
+	Year = {2009},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1596527.1596530},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/1596527.1596530}}
+
+@inproceedings{Acar10TDT,
+	Abstract = {Self-adjusting computation provides an evaluation model where computations can respond automatically to modifications to their data by using a mechanism for propagating modifications through the computation. Current approaches to self-adjusting computation guarantee correctness by recording dependencies in a trace at the granularity of individual memory operations. Tracing at the granularity of memory operations, however, has some limitations: it can be asymptotically inefficient (\eg, compared to optimal solutions) because it cannot take advantage of problem-specific structure, it requires keeping a large computation trace (often proportional to the runtime of the program on the current input), and it introduces moderately large constant factors in practice.
+
+In this paper, we extend dependence-tracing to work at the granularity of the query and update operations of arbitrary (abstract) data types, instead of just reads and writes on memory cells. This can significantly reduce the number of dependencies that need to be kept in the trace and followed during an update. We define an interface for supporting a traceable version of a data type, which reports the earliest query that depends on (is changed by) revising operations back in time, and implement several such structures, including priority queues, queues, dictionaries, and counters. We develop a semantics for tracing, extend an existing self-adjusting language, ΔML, and its implementation to support traceable data types, and present an experimental evaluation by considering a number of benchmarks. Our experiments show dramatic improvements on space and time, sometimes by as much as two orders of magnitude.},
+	Acmid = {1806650},
+	Address = {New York, NY, USA},
+	Author = {Acar, Umut A. and Blelloch, Guy and Ley-Wild, Ruy and Tangwongsan, Kanat and Turkoglu, Duru},
+	Booktitle = {Proceedings of the 2010 ACM SIGPLAN conference on Programming language design and implementation},
+	Date-Added = {2013-05-31 15:46:14 +0000},
+	Date-Modified = {2013-05-31 15:52:21 +0000},
+	Doi = {10.1145/1806596.1806650},
+	Isbn = {978-1-4503-0019-3},
+	Keywords = {self-adjusting computation, traceable data types},
+	Location = {Toronto, Ontario, Canada},
+	Numpages = {14},
+	Pages = {483--496},
+	Publisher = {ACM},
+	Series = {PLDI '10},
+	Title = {Traceable data types for self-adjusting computation},
+	Url = {http://doi.acm.org/10.1145/1806596.1806650},
+	Year = {2010},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1806596.1806650},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/1806596.1806650}}
+
+@incollection{Acar07,
+	Abstract = {This paper presents a semantics of self-adjusting computation and proves that the semantics is correct and consistent. The semantics integrates change propagation with the classic idea of memoization to enable reuse of computations under mutation to memory. During evaluation, reuse of a computation via memoization triggers a change propagation that adjusts the reused computation to reflect the mutated memory. Since the semantics combines memoization and change-propagation, it involves both non-determinism and mutation. Our consistency theorem states that the non-determinism is not harmful: any two evaluations of the same program starting at the same state yield the same result. Our correctness theorem states that mutation is not harmful: self-adjusting programs are consistent with purely functional programming. We formalized the semantics and its meta-theory in the LF logical framework and machine-checked the proofs in Twelf.},
+	Author = {Acar, UmutA. and Blume, Matthias and Donham, Jacob},
+	Booktitle = {Programming Languages and Systems},
+	Date-Added = {2013-05-31 15:36:47 +0000},
+	Date-Modified = {2013-05-31 16:06:45 +0000},
+	Doi = {10.1007/978-3-540-71316-6_31},
+	Editor = {Nicola, Rocco},
+	Isbn = {978-3-540-71314-2},
+	Keywords = {self-adjusting computation},
+	Pages = {458-474},
+	Publisher = {Springer Berlin Heidelberg},
+	Series = {Lecture Notes in Computer Science},
+	Title = {A Consistent Semantics of Self-adjusting Computation},
+	Url = {http://dx.doi.org/10.1007/978-3-540-71316-6_31},
+	Volume = {4421},
+	Year = {2007},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/978-3-540-71316-6_31}}
+
+@inproceedings{Acar06experim,
+	Abstract = {Dependence graphs and memoization can be used to efficiently update the output of a program as the input changes dynamically. Recent work has studied techniques for combining these approaches to effectively dynamize a wide range of applications. Toward this end various theoretical results were given. In this paper we describe the implementation of a library based on these ideas, and present experimental results on the efficiency of this library on a variety of applications. The results of the experiments indicate that the approach is effective in practice, often requiring orders of magnitude less time than recomputing the output from scratch. We believe this is the first experimental evidence that incremental computation of any type is effective in practice for a reasonably broad set of applications.},
+	Acmid = {1133993},
+	Address = {New York, NY, USA},
+	Author = {Acar, Umut A. and Blelloch, Guy E. and Blume, Matthias and Tangwongsan, Kanat},
+	Booktitle = {Proceedings of the 2006 ACM SIGPLAN conference on Programming language design and implementation},
+	Date-Added = {2013-05-31 13:43:14 +0000},
+	Date-Modified = {2013-05-31 15:57:35 +0000},
+	Doi = {10.1145/1133981.1133993},
+	Isbn = {1-59593-320-4},
+	Keywords = {computational geometry, dynamic algorithms, dynamic dependence graphs, memorization, performance, self-adjusting computation},
+	Location = {Ottawa, Ontario, Canada},
+	Numpages = {12},
+	Pages = {96--107},
+	Publisher = {ACM},
+	Series = {PLDI '06},
+	Title = {An experimental analysis of self-adjusting computation},
+	Url = {http://doi.acm.org/10.1145/1133981.1133993},
+	Year = {2006},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1133981.1133993},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/1133981.1133993}}
+
+@article{Acar06Lib,
+	Abstract = {We present a Standard ML library for writing programs that automatically adjust to changes to their data. The library combines modifiable references and memoization to achieve efficient updates. We describe an implementation of the library and apply it to the problem of maintaining the convex hull of a dynamically changing set of points. Our experiments show that the overhead of the library is small, and that self-adjusting programs can adjust to small changes three-orders of magnitude faster than recomputing from scratch. The implementation relies on invariants that could be enforced by a modal type system. We show, using an existing language, abstract interfaces for modifiable references and for memoization that ensure the same safety properties without the use of modal types. The interface for memoization, however, does not scale well, suggesting a language-based approach to be preferable after all. },
+	Author = {Umut Acar and Guy Blelloch and Matthias Blume and Robert Harper and Kanat Tangwongsan},
+	Date-Added = {2013-05-31 13:41:06 +0000},
+	Date-Modified = {2013-05-31 15:57:52 +0000},
+	Doi = {10.1016/j.entcs.2005.11.043},
+	Issn = {1571-0661},
+	Journal = {Electronic Notes in Theoretical Computer Science},
+	Keywords = {quickhull; self-adjusting computation},
+	Note = {<ce:title>Proceedings of the ACM-SIGPLAN Workshop on \{ML\} (ML 2005)</ce:title> <xocs:full-name>ACM-SIGPLAN Workshop on \{ML\} 2005</xocs:full-name>},
+	Number = {2},
+	Pages = {127 - 154},
+	Title = {A Library for Self-Adjusting Computation},
+	Url = {http://www.sciencedirect.com/science/article/pii/S1571066106001290},
+	Volume = {148},
+	Year = {2006},
+	Bdsk-Url-1 = {http://www.sciencedirect.com/science/article/pii/S1571066106001290},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1016/j.entcs.2005.11.043}}
+
+@inproceedings{Acar09,
+	Abstract = {Many applications need to respond to incremental modifications to data. Being incremental, such modification often require incremental modifications to the output, making it possible to respond to them asymptotically faster than recomputing from scratch. In many cases, taking advantage of incrementality therefore dramatically improves performance, especially as the input size increases. As a frame of reference, note that in parallel computing speedups are bounded by the number of processors, often a (small) constant.
+
+Designing and developing applications that respond to incremental modifications, however, is challenging: it often involves developing highly specific, complex algorithms. Self-adjusting computation offers a linguistic approach to this problem. In self-adjusting computation, programs respond automatically and efficiently to modifications to their data by tracking the dynamic data dependences of the computation and incrementally updating their output as needed. In this invited talk, I present an overview of self-adjusting computation and briefly discuss the progress in developing the approach and present some recent advances.},
+	Acmid = {1480946},
+	Address = {New York, NY, USA},
+	Author = {Acar, Umut A.},
+	Booktitle = {Proceedings of the 2009 ACM SIGPLAN workshop on Partial evaluation and program manipulation},
+	Date-Added = {2013-05-31 13:17:25 +0000},
+	Date-Modified = {2013-05-31 15:52:41 +0000},
+	Doi = {10.1145/1480945.1480946},
+	Isbn = {978-1-60558-327-3},
+	Keywords = {asymptotic complexity, change propagation, compilers, continuations, dependence graphs, incremental modification, language design, performance, self-adjusting computation},
+	Location = {Savannah, GA, USA},
+	Numpages = {6},
+	Pages = {1--6},
+	Publisher = {ACM},
+	Read = {1},
+	Series = {PEPM '09},
+	Title = {Self-adjusting computation: (an overview)},
+	Url = {http://doi.acm.org/10.1145/1480945.1480946},
+	Year = {2009},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1480945.1480946},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/1480945.1480946}}
+
+@inproceedings{Acar08,
+	Abstract = {Self-adjusting computation enables writing programs that can automatically and efficiently respond to changes to their data (e.g., inputs). The idea behind the approach is to store all data that can change over time in modifiable references and to let computations construct traces that can drive change propagation. After changes have occurred, change propagation updates the result of the computation by re-evaluating only those expressions that depend on the changed data. Previous approaches to self-adjusting computation require that modifiable references be written at most once during execution---this makes the model applicable only in a purely functional setting.
+
+In this paper, we present techniques for imperative self-adjusting computation where modifiable references can be written multiple times. We define a language SAIL (Self-Adjusting Imperative Language) and prove consistency, i.e., that change propagation and from-scratch execution are observationally equivalent. Since SAIL programs are imperative, they can create cyclic data structures. To prove equivalence in the presence of cycles in the store, we formulate and use an untyped, step-indexed logical relation, where step indices are used to ensure well-foundedness. We show that SAIL accepts an asymptotically efficient implementation by presenting algorithms and data structures for its implementation. When the number of operations (reads and writes) per modifiable is bounded by a constant, we show that change propagation becomes as efficient as in the non-imperative case. The general case incurs a slowdown that is logarithmic in the maximum number of such operations. We describe a prototype implementation of SAIL as a Standard ML library},
+	Acmid = {1328476},
+	Address = {New York, NY, USA},
+	Author = {Acar, Umut A. and Ahmed, Amal and Blume, Matthias},
+	Booktitle = {Proceedings of the 35th annual ACM SIGPLAN-SIGACT symposium on Principles of programming languages},
+	Date-Added = {2013-05-31 13:16:36 +0000},
+	Date-Modified = {2013-05-31 15:58:26 +0000},
+	Doi = {10.1145/1328438.1328476},
+	Isbn = {978-1-59593-689-9},
+	Keywords = {change propagation, imperative programming, incremental computation, memoization, mutable state, self-adjusting computation, step-indexed logical relations},
+	Location = {San Francisco, California, USA},
+	Numpages = {14},
+	Pages = {309--322},
+	Publisher = {ACM},
+	Series = {POPL '08},
+	Title = {Imperative self-adjusting computation},
+	Url = {http://doi.acm.org/10.1145/1328438.1328476},
+	Year = {2008},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1328438.1328476},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/1328438.1328476}}
+
+@inproceedings{Ley-Wild09,
+	Abstract = {Self-adjusting computation is an evaluation model in which programs can respond efficiently to small changes to their input data by using a change-propagation mechanism that updates computation by re-building only the parts affected by changes. Previous work has proposed language techniques for self-adjusting computation and showed the approach to be effective in a number of application areas. However, due to the complex semantics of change propagation and the indirect nature of previously proposed language techniques, it remains difficult to reason about the efficiency of self-adjusting programs and change propagation.
+
+In this paper, we propose a cost semantics for self-adjusting computation that enables reasoning about its effectiveness. As our source language, we consider a direct-style λ-calculus with first-class mutable references and develop a notion of trace distance for source programs. To facilitate asymptotic analysis, we propose techniques for composing and generalizing concrete distances via trace contexts (traces with holes). We then show how to translate the source language into a self-adjusting target language such that the translation (1) preserves the extensional semantics of the source programs and the cost of from-scratch runs, and (2) ensures that change propagation between two evaluations takes time bounded by their relative distance. We consider several examples and analyze their effectiveness by considering upper and lower bounds.},
+	Acmid = {1480907},
+	Address = {New York, NY, USA},
+	Author = {Ley-Wild, Ruy and Acar, Umut A. and Fluet, Matthew},
+	Booktitle = {Proceedings of the 36th annual ACM SIGPLAN-SIGACT symposium on Principles of programming languages},
+	Date-Added = {2013-05-31 13:14:56 +0000},
+	Date-Modified = {2013-05-31 15:56:21 +0000},
+	Doi = {10.1145/1480881.1480907},
+	Isbn = {978-1-60558-379-2},
+	Keywords = {self-adjusting computation},
+	Location = {Savannah, GA, USA},
+	Numpages = {14},
+	Pages = {186--199},
+	Publisher = {ACM},
+	Series = {POPL '09},
+	Title = {A cost semantics for self-adjusting computation},
+	Url = {http://doi.acm.org/10.1145/1480881.1480907},
+	Year = {2009},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1480881.1480907},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/1480881.1480907}}
+
+@inproceedings{Ley-Wild08,
+	Abstract = {Self-adjusting programs respond automatically and efficiently to input changes by tracking the dynamic data dependences of the computation and incrementally updating the output as needed. In order to identify data dependences, previously proposed approaches require the user to make use of a set of monadic primitives. Rewriting an ordinary program into a self-adjusting program with these primitives, however, can be difficult and error-prone due to various monadic and proper-usage restrictions, some of which cannot be enforced statically. Previous work therefore suggests that self-adjusting computation would benefit from direct language and compiler support.
+
+In this paper, we propose a language-based technique for writing and compiling self-adjusting programs from ordinary programs. To compile self-adjusting programs, we use a continuation-passing style (cps) transformation to automatically infer a conservative approximation of the dynamic data dependences. To prevent the inferred, approximate dependences from degrading the performance of change propagation, we generate memoized versions of cps functions that can reuse previous work even when they are invoked with different continuations. The approach offers a natural programming style that requires minimal changes to existing code, while statically enforcing the invariants required by self-adjusting computation.
+
+We validate the feasibility of our proposal by extending Standard ML and by integrating the transformation into MLton, a whole-program optimizing compiler for Standard ML. Our experiments indicate that the proposed compilation technique can produce self-adjusting programs whose performance is consistent with the asymptotic bounds and experimental results obtained via manual rewriting (up to a constant factor).},
+	Acmid = {1411249},
+	Address = {New York, NY, USA},
+	Author = {Ley-Wild, Ruy and Fluet, Matthew and Acar, Umut A.},
+	Booktitle = {Proceedings of the 13th ACM SIGPLAN international conference on Functional programming},
+	Date-Added = {2013-05-31 13:04:48 +0000},
+	Date-Modified = {2013-05-31 16:01:44 +0000},
+	Doi = {10.1145/1411204.1411249},
+	Isbn = {978-1-59593-919-7},
+	Keywords = {continuation-passing style, memoization, self-adjusting computation},
+	Location = {Victoria, BC, Canada},
+	Numpages = {14},
+	Pages = {321--334},
+	Publisher = {ACM},
+	Series = {ICFP '08},
+	Title = {Compiling self-adjusting programs with continuations},
+	Url = {http://doi.acm.org/10.1145/1411204.1411249},
+	Year = {2008},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1411204.1411249},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/1411204.1411249}}
+
 @inproceedings{Sansom95,
 	Acmid = {199531},
 	Address = {New York, NY, USA},
@@ -248,14 +458,16 @@
 	Bdsk-Url-2 = {http://dx.doi.org/10.1145/199448.199531}}
 
 @inproceedings{Field90,
+	Abstract = {An incremental algorithm is one that takes advantage of the fact that the function it computes is to be evaluated repeatedly on inputs that differ only slightly from one another, avoiding unnecessary duplication of common computations. We define here a new notion of incrementality for reduction in the untyped λ-calculus and describe an incremental reduction algorithm, Λinc. We show that Λinc has the desirable property of performing non-overlapping reductions on related terms, yet is simple enough to allow a practical implementation. The algorithm is based on a novel λ-reduction strategy that may prove useful in a non-incremental setting as well. Incremental λ-reduction can be used to advantage in any setting where an algorithm is specified in a functional or applicative manner.},
 	Acmid = {91679},
 	Address = {New York, NY, USA},
 	Author = {Field, John and Teitelbaum, Tim},
 	Booktitle = {Proceedings of the 1990 ACM conference on LISP and functional programming},
 	Date-Added = {2013-05-30 08:55:17 +0000},
-	Date-Modified = {2013-05-30 08:55:18 +0000},
+	Date-Modified = {2013-05-31 16:00:00 +0000},
 	Doi = {10.1145/91556.91679},
 	Isbn = {0-89791-368-X},
+	Keywords = {self-adjusting computation},
 	Location = {Nice, France},
 	Numpages = {16},
 	Pages = {307--322},
@@ -268,11 +480,14 @@
 	Bdsk-Url-2 = {http://dx.doi.org/10.1145/91556.91679}}
 
 @inproceedings{Burckhardt11,
+	Abstract = {Parallel or incremental versions of an algorithm can significantly outperform their counterparts, but are often difficult to develop. Programming models that provide appropriate abstractions to decompose data and tasks can simplify parallelization. We show in this work that the same abstractions can enable both parallel and incremental execution. We present a novel algorithm for parallel self-adjusting computation. This algorithm extends a deterministic parallel programming model (concurrent revisions) with support for recording and repeating computations. On record, we construct a dynamic dependence graph of the parallel computation. On repeat, we reexecute only parts whose dependencies have changed.
+
+We implement and evaluate our idea by studying five example programs, including a realistic multi-pass CSS layout algorithm. We describe programming techniques that proved particularly useful to improve the performance of self-adjustment in practice. Our final results show significant speedups on all examples (up to 37x on an 8-core machine). These speedups are well beyond what can be achieved by parallelization alone, while requiring a comparable effort by the programmer.},
 	Acmid = {2048101},
 	Author = {Burckhardt, Sebastian and Leijen, Daan and Sadowski, Caitlin and Yi, Jaeheon and Ball, Thomas},
 	Booktitle = oopsla,
 	Date-Added = {2013-05-29 00:10:21 +0000},
-	Date-Modified = {2013-05-29 00:10:21 +0000},
+	Date-Modified = {2013-05-31 15:59:01 +0000},
 	Keywords = {incremental memoization, parallel programming, self-adjusting computation},
 	Noaddress = {New York, NY, USA},
 	Nodoi = {http://doi.acm.org/10.1145/2048066.2048101},
@@ -288,11 +503,12 @@
 	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2048066.2048101}}
 
 @inproceedings{Hammer11,
+	Abstract = {Self-adjusting computation offers a language-based approach to writing programs that automatically respond to dynamically changing data. Recent work made significant progress in developing sound semantics and associated implementations of self-adjusting computation for high-level, functional languages. These techniques, however, do not address issues that arise for low-level languages, i.e., stack-based imperative languages that lack strong type systems and automatic memory management. In this paper, we describe techniques for self-adjusting computation which are suitable for low-level languages. Necessarily, we take a different approach than previous work: instead of starting with a high-level language with additional primitives to support self-adjusting computation, we start with a low-level intermediate language, whose semantics is given by a stack-based abstract machine. We prove that this semantics is sound: it always updates computations in a way that is consistent with full reevaluation. We give a compiler and runtime system for the intermediate language used by our abstract machine. We present an empirical evaluation that shows that our approach is efficient in practice, and performs favorably compared to prior proposals.},
 	Acmid = {2048124},
 	Author = {Hammer, Matthew A. and Neis, Georg and Chen, Yan and Acar, Umut A.},
 	Booktitle = oopsla,
 	Date-Added = {2013-05-29 00:09:57 +0000},
-	Date-Modified = {2013-05-29 00:09:57 +0000},
+	Date-Modified = {2013-05-31 16:01:20 +0000},
 	Keywords = {self-adjusting computation},
 	Noaddress = {New York, NY, USA},
 	Noisbn = {978-1-4503-0940-0},
@@ -307,11 +523,14 @@
 	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2048066.2048124}}
 
 @inproceedings{Chen11,
+	Abstract = {Computational problems that involve dynamic data, such as physics simulations and program development environments, have been an important subject of study in programming languages. Building on this work, recent advances in self-adjusting computation have developed techniques that enable programs to respond automatically and efficiently to dynamic changes in their inputs. Self-adjusting programs have been shown to be efficient for a reasonably broad range of problems but the approach still requires an explicit programming style, where the programmer must use specific monadic types and primitives to identify, create and operate on data that can change over time.
+
+We describe techniques for automatically translating purely functional programs into self-adjusting programs. In this implicit approach, the programmer need only annotate the (top-level) input types of the programs to be translated. Type inference finds all other types, and a type-directed translation rewrites the source program into an explicitly self-adjusting target program. The type system is related to information-flow type systems and enjoys decidable type inference via constraint solving. We prove that the translation outputs well-typed self-adjusting programs and preserves the source program's input-output behavior, guaranteeing that translated programs respond correctly to all changes to their data. Using a cost semantics, we also prove that the translation preserves the asymptotic complexity of the source program.},
 	Acmid = {2034792},
 	Author = {Chen, Yan and Dunfield, Joshua and Hammer, Matthew A. and Acar, Umut A.},
 	Booktitle = ICFP,
 	Date-Added = {2013-05-28 22:25:49 +0000},
-	Date-Modified = {2013-05-28 22:26:19 +0000},
+	Date-Modified = {2013-05-31 15:59:22 +0000},
 	Keywords = {self-adjusting computation},
 	Location = {Tokyo, Japan},
 	Noaddress = acmaddr,
@@ -370,12 +589,17 @@
 	Bdsk-Url-2 = {http://dx.doi.org/10.1145/2384616.2384675}}
 
 @inproceedings{ChenDunfieldAcar12,
+	Abstract = {Application data often changes slowly or incrementally over time. Since incremental changes to input often result in only small changes in output, it is often feasible to respond to such changes asymptotically more efficiently than by re-running the whole computation. Traditionally, realizing such asymptotic efficiency improvements requires designing problem-specific algorithms known as dynamic or incremental algorithms, which are often significantly more complicated than conventional algorithms to design, analyze, implement, and use. A long-standing open problem is to develop techniques that automatically transform conventional programs so that they correctly and efficiently respond to incremental changes.
+
+In this paper, we describe a significant step towards solving the problem of automatic incrementalization: a programming language and a compiler that can, given a few type annotations describing what can change over time, compile a conventional program that assumes its data to be static (unchanging over time) to an incremental program. Based on recent advances in self-adjusting computation, including a theoretical proposal for translating purely functional programs to self-adjusting programs, we develop techniques for translating conventional Standard ML programs to self-adjusting programs. By extending the Standard ML language, we design a fully featured programming language with higher-order features, a module system, and a powerful type system, and implement a compiler for this language. The resulting programming language, LML, enables translating conventional programs decorated with simple type annotations into incremental programs that can respond to changes in their data correctly and efficiently.
+
+We evaluate the effectiveness of our approach by considering a range of benchmarks involving lists, vectors, and matrices, as well as a ray tracer. For these benchmarks, our compiler incrementalizes existing code with only trivial amounts of annotation. The resulting programs are often asymptotically more efficient, leading to orders of magnitude speedups in practice.},
 	Acmid = {2254100},
 	Address = {New York, NY, USA},
 	Author = {Chen, Yan and Dunfield, Joshua and Acar, Umut A.},
 	Booktitle = {Proceedings of the 33rd ACM SIGPLAN conference on Programming Language Design and Implementation},
 	Date-Added = {2013-04-18 16:33:55 +0000},
-	Date-Modified = {2013-05-13 09:18:43 +0000},
+	Date-Modified = {2013-05-31 15:59:40 +0000},
 	Doi = {10.1145/2254064.2254100},
 	Isbn = {978-1-4503-1205-9},
 	Keywords = {compiler optimization, incrementalization, performance, self-adjusting computation, type annotations; Incremental computation; adaptive computation},
@@ -471,16 +695,17 @@
 	Bdsk-Url-2 = {http://dx.doi.org/10.1145/504282.504294}}
 
 @article{Acar06,
+	Abstract = {We present techniques for incremental computing by introducing adaptive functional programming. As an adaptive program executes, the underlying system represents the data and control dependences in the execution in the form of a dynamic dependence graph. When the input to the program changes, a change propagation algorithm updates the output and the dynamic dependence graph by propagating changes through the graph and re-executing code where necessary. Adaptive programs adapt their output to any change in the input, small or large.We show that adaptivity techniques are practical by giving an efficient implementation as a small ML library. The library consists of three operations for making a program adaptive, plus two operations for making changes to the input and adapting the output to these changes. We give a general bound on the time it takes to adapt the output, and based on this, show that an adaptive Quicksort adapts its output in logarithmic time when its input is extended by one key.To show the safety and correctness of the mechanism we give a formal definition of AFL, a call-by-value functional language extended with adaptivity primitives. The modal type system of AFL enforces correct usage of the adaptivity mechanism, which can only be checked at run time in the ML library. Based on the AFL dynamic semantics, we formalize thechange-propagation algorithm and prove its correctness.},
 	Acmid = {1186634},
 	Address = {New York, NY, USA},
 	Author = {Acar, Umut A. and Blelloch, Guy E. and Harper, Robert},
 	Date-Added = {2013-02-15 14:04:59 +0000},
-	Date-Modified = {2013-02-15 14:04:59 +0000},
+	Date-Modified = {2013-05-31 15:57:21 +0000},
 	Doi = {10.1145/1186632.1186634},
 	Issn = {0164-0925},
 	Issue_Date = {November 2006},
 	Journal = {ACM Trans. Program. Lang. Syst.},
-	Keywords = {Incremental computation, adaptive computation, dynamic algorithms},
+	Keywords = {Incremental computation, adaptive computation, dynamic algorithms; self-adjusting computation},
 	Month = nov,
 	Number = {6},
 	Numpages = {45},
@@ -494,15 +719,16 @@
 	Bdsk-Url-2 = {http://dx.doi.org/10.1145/1186632.1186634}}
 
 @inproceedings{Acar02,
+	Abstract = {An adaptive computation maintains the relationship between its input and output as the input changes. Although various techniques for adaptive computing have been proposed, they remain limited in their scope of applicability. We propose a general mechanism for adaptive computing that enables one to make any purely-functional program adaptive.We show that the mechanism is practical by giving an efficient implementation as a small ML library. The library consists of three operations for making a program adaptive, plus two operations for making changes to the input and adapting the output to these changes. We give a general bound on the time it takes to adapt the output, and based on this, show that an adaptive Quicksort adapts its output in logarithmic time when its input is extended by one key.To show the safety and correctness of the mechanism we give a formal definition of AFL, a call-by-value functional language extended with adaptivity primitives. The modal type system of AFL enforces correct usage of the adaptivity mechanism, which can only be checked at run time in the ML library. Based on the AFL dynamic semantics, we formalize the change-propagation algorithm and prove its correctness.},
 	Acmid = {503296},
 	Address = {New York, NY, USA},
 	Author = {Acar, Umut A. and Blelloch, Guy E. and Harper, Robert},
 	Booktitle = {Proceedings of the 29th ACM SIGPLAN-SIGACT symposium on Principles of programming languages},
 	Date-Added = {2013-02-15 14:02:01 +0000},
-	Date-Modified = {2013-05-13 09:18:23 +0000},
+	Date-Modified = {2013-05-31 15:56:55 +0000},
 	Doi = {10.1145/503272.503296},
 	Isbn = {1-58113-450-9},
-	Keywords = {adaptive computation; Incremental computation},
+	Keywords = {adaptive computation; Incremental computation; self-adjusting computation},
 	Location = {Portland, Oregon},
 	Numpages = {13},
 	Pages = {247--259},
@@ -538,10 +764,10 @@
 @inproceedings{Perera05,
 	Acmid = {1094871},
 	Address = {New York, NY, USA},
-	Author = {Perera, Roly and Foster, Jeff and Koch, Gy\"{o}rgy},
+	Author = {Perera, Roly and Foster, Jeff and Koch, Gy{\"o}rgy},
 	Booktitle = {Companion to the 20th annual ACM SIGPLAN conference on Object-oriented programming, systems, languages, and applications},
 	Date-Added = {2013-01-28 16:08:30 +0000},
-	Date-Modified = {2013-01-28 16:08:31 +0000},
+	Date-Modified = {2013-05-31 15:50:37 +0000},
 	Doi = {10.1145/1094855.1094871},
 	Isbn = {1-59593-193-7},
 	Keywords = {adaptive functions, delta-driven execution, incremental computation, lazy memoization, relational programming},
