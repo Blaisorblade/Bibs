@@ -76,7 +76,7 @@
 
 @string{icdcs = {Proc.\ Int'l Conf.\ Distributed Computing Systems (ICDCS)}}
 
-@string{icfp = {Proc.\ Int'l Conf.\ Functional Programming}}
+@string{icfp = {ICFP}}
 
 @string{icmt = {Proc.\ Int'l Conf.\ Theory and Practice of Model Transformations (ICMT)}}
 
@@ -430,19 +430,19 @@
 @article{Liu00,
 	Abstract = {Incremental computation takes advantage of repeated computations on inputs that differ slightly from one another, computing each output efficiently by exploiting the previous output. This paper gives an overview of a general and systematic approach to incrementalization: given a program f and an operation ⊕, the approach yields an incremental program that computes f(x ⊕ y) efficiently by using the result of f(x), the intermediate results of f(x), and auxiliary information of f(x) that can be inexpensively maintained.
 Since every non-trivial computation proceeds by iteration or recursion, the approach can be used for achieving efficient computation by computing each iteration incrementally using an appropriate incremental program. This approach has applications in interactive systems, optimizing compilers, transformational programming, and many other areas, where problems were previously solved in less general and systematic ways. This paper also describes the design and implementation of CACHET, a prototype system for incrementalization.},
-	Author = {Liu, YanhongA.},
+	Author = {Liu, Yanhong A.},
 	Date-Added = {2013-06-04 21:38:00 +0000},
 	Date-Modified = {2013-06-04 21:38:12 +0000},
-	Doi = {10.1023/A:1026547031739},
-	Issn = {1388-3690},
 	Journal = {Higher-Order and Symbolic Computation},
 	Keywords = {caching; incremental computation; incremental programs; incrementalization; program analysis; program optimization; program transformation; programming environments},
 	Language = {English},
+	Nodoi = {10.1023/A:1026547031739},
+	Noissn = {1388-3690},
+	Nourl = {http://dx.doi.org/10.1023/A%3A1026547031739},
 	Number = {4},
 	Pages = {289-313},
 	Publisher = {Kluwer Academic Publishers},
 	Title = {Efficiency by Incrementalization: An Introduction},
-	Url = {http://dx.doi.org/10.1023/A%3A1026547031739},
 	Volume = {13},
 	Year = {2000},
 	Bdsk-Url-1 = {http://dx.doi.org/10.1023/A%3A1026547031739},
@@ -1045,21 +1045,22 @@ We evaluate the effectiveness of our approach by considering a range of benchmar
 @inproceedings{Acar02,
 	Abstract = {An adaptive computation maintains the relationship between its input and output as the input changes. Although various techniques for adaptive computing have been proposed, they remain limited in their scope of applicability. We propose a general mechanism for adaptive computing that enables one to make any purely-functional program adaptive.We show that the mechanism is practical by giving an efficient implementation as a small ML library. The library consists of three operations for making a program adaptive, plus two operations for making changes to the input and adapting the output to these changes. We give a general bound on the time it takes to adapt the output, and based on this, show that an adaptive Quicksort adapts its output in logarithmic time when its input is extended by one key.To show the safety and correctness of the mechanism we give a formal definition of AFL, a call-by-value functional language extended with adaptivity primitives. The modal type system of AFL enforces correct usage of the adaptivity mechanism, which can only be checked at run time in the ML library. Based on the AFL dynamic semantics, we formalize the change-propagation algorithm and prove its correctness.},
 	Acmid = {503296},
-	Address = {New York, NY, USA},
 	Author = {Acar, Umut A. and Blelloch, Guy E. and Harper, Robert},
-	Booktitle = {Proceedings of the 29th ACM SIGPLAN-SIGACT symposium on Principles of programming languages},
+	Booktitle = popl,
 	Date-Added = {2013-02-15 14:02:01 +0000},
 	Date-Modified = {2013-05-31 15:56:55 +0000},
-	Doi = {10.1145/503272.503296},
-	Isbn = {1-58113-450-9},
 	Keywords = {adaptive computation; Incremental computation; self-adjusting computation},
 	Location = {Portland, Oregon},
+	Noaddress = {New York, NY, USA},
+	Nobooktitle = {Proceedings of the 29th ACM SIGPLAN-SIGACT symposium on Principles of programming languages},
+	Nodoi = {10.1145/503272.503296},
+	Noisbn = {1-58113-450-9},
+	Noseries = {POPL '02},
+	Nourl = {http://doi.acm.org/10.1145/503272.503296},
 	Numpages = {13},
 	Pages = {247--259},
 	Publisher = {ACM},
-	Series = {POPL '02},
 	Title = {Adaptive functional programming},
-	Url = {http://doi.acm.org/10.1145/503272.503296},
 	Year = {2002},
 	Bdsk-Url-1 = {http://doi.acm.org/10.1145/503272.503296},
 	Bdsk-Url-2 = {http://dx.doi.org/10.1145/503272.503296}}
