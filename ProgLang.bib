@@ -10,7 +10,7 @@
 
 @string{acm = {ACM}}
 
-@string{acmaddr = {New York}}
+@string{acmaddr = {}}
 
 @string{acp4is = {Proc.\ AOSD Workshop on Aspects, Components, and Patterns for Infrastructure Software (ACP4IS)}}
 
@@ -73,6 +73,8 @@
 @string{giaddr = {Bonn}}
 
 @string{gpce = {GPCE}}
+
+@string{hosc = {Higher-Order and Symbolic Computation}}
 
 @string{icdcs = {Proc.\ Int'l Conf.\ Distributed Computing Systems (ICDCS)}}
 
@@ -144,7 +146,7 @@
 
 @string{patech = {Department of Informatics and Mathematics, University of Passau}}
 
-@string{pepm = {Proc.\ Workshop on Partial Evaluation and Semantics-Based Program Manipulation}}
+@string{pepm = {PEPM}}
 
 @string{pldi = {PLDI}}
 
@@ -206,7 +208,7 @@
 
 @string{tools = {Proc.\ Int'l Conf.\ Objects, Models, Components, Patterns (TOOLS EUROPE)}}
 
-@string{toplas = {ACM Trans. Program. Lang. Syst. (TOPLAS)}}
+@string{toplas = {TOPLAS}}
 
 @string{tosem = {ACM Trans. Softw. Eng. Methodol. (TOSEM)}}
 
@@ -341,14 +343,14 @@
 
 @article{Paige82FDC,
 	Acmid = {357177},
-	Address = {New York, NY, USA},
+	Address = acmaddr,
 	Author = {Paige, Robert and Koenig, Shaye},
 	Date-Added = {2013-06-20 16:24:35 +0000},
 	Date-Modified = {2013-06-20 16:24:35 +0000},
-	Doi = {10.1145/357172.357177},
-	Issn = {0164-0925},
+	noDoi = {10.1145/357172.357177},
+	noIssn = {0164-0925},
 	Issue_Date = {July 1982},
-	Journal = {ACM Trans. Program. Lang. Syst.},
+	Journal = toplas,
 	Keywords = {incremental computation},
 	Month = jul,
 	Number = {3},
@@ -356,7 +358,7 @@
 	Pages = {402--454},
 	Publisher = {ACM},
 	Title = {Finite Differencing of Computable Expressions},
-	Url = {http://doi.acm.org/10.1145/357172.357177},
+	noUrl = {http://doi.acm.org/10.1145/357172.357177},
 	Volume = {4},
 	Year = {1982},
 	Bdsk-Url-1 = {http://doi.acm.org/10.1145/357172.357177},
@@ -517,7 +519,7 @@ Since every non-trivial computation proceeds by iteration or recursion, the appr
 	Author = {Liu, Yanhong A.},
 	Date-Added = {2013-06-04 21:38:00 +0000},
 	Date-Modified = {2013-06-04 21:38:12 +0000},
-	Journal = {Higher-Order and Symbolic Computation},
+	Journal = hosc,
 	Keywords = {caching; incremental computation; incremental programs; incrementalization; program analysis; program optimization; program transformation; programming environments},
 	Language = {English},
 	Nodoi = {10.1023/A:1026547031739},
@@ -581,7 +583,7 @@ Since every non-trivial computation proceeds by iteration or recursion, the appr
 	Doi = {10.1145/291889.291895},
 	Issn = {0164-0925},
 	Issue_Date = {May 1998},
-	Journal = {ACM Trans. Program. Lang. Syst.},
+	Journal = toplas,
 	Keywords = {caching, dependence analysis, incremental computation, incremental programs, intermediate results, memoization, optimization, program efficiency improvement, program transformation, static analysis},
 	Month = may,
 	Number = {3},
@@ -617,20 +619,20 @@ Since every non-trivial computation proceeds by iteration or recursion, the appr
 
 @inproceedings{Sundaresh91,
 	Acmid = {99587},
-	Address = {New York, NY, USA},
+	Address = acmaddr,
 	Author = {Sundaresh, R. S. and Hudak, Paul},
-	Booktitle = {Proceedings of the 18th ACM SIGPLAN-SIGACT symposium on Principles of programming languages},
+	Booktitle = popl,
 	Date-Added = {2013-06-04 03:21:53 +0000},
 	Date-Modified = {2013-06-04 03:21:56 +0000},
-	Doi = {10.1145/99583.99587},
-	Isbn = {0-89791-419-8},
+	noDoi = {10.1145/99583.99587},
+	noIsbn = {0-89791-419-8},
 	Location = {Orlando, Florida, USA},
 	Numpages = {13},
 	Pages = {1--13},
 	Publisher = {ACM},
-	Series = {POPL '91},
+	noSeries = {POPL '91},
 	Title = {A theory of incremental computation and its application},
-	Url = {http://doi.acm.org/10.1145/99583.99587},
+	noUrl = {http://doi.acm.org/10.1145/99583.99587},
 	Year = {1991},
 	Bdsk-Url-1 = {http://doi.acm.org/10.1145/99583.99587},
 	Bdsk-Url-2 = {http://dx.doi.org/10.1145/99583.99587}}
@@ -640,13 +642,13 @@ Since every non-trivial computation proceeds by iteration or recursion, the appr
 
 In this article, we realize a duality between dynamic dependence graphs and memoization, and combine them to give a change-propagation algorithm that can dramatically increase computation reuse. The key idea is to use DDGs to identify and re-execute the parts of the computation that are affected by modifications, while using memoization to identify the parts of the computation that remain unaffected by the changes. We refer to this approach as self-adjusting computation. Since DDGs are imperative, but (traditional) memoization requires purely functional computation, reusing computation correctly via memoization becomes a challenge. We overcome this challenge with a technique for remembering and reusing not just the results of function calls (as in conventional memoization), but their executions represented with DDGs. We show that the proposed approach is realistic by describing a library for self-adjusting computation, presenting efficient algorithms for realizing the library, and describing and evaluating an implementation. Our experimental evaluation with a variety of applications, ranging from simple list primitives to more sophisticated computational geometry algorithms, shows that the approach is effective in practice: compared to recomputing from-scratch; self-adjusting programs respond to small modifications to their data orders of magnitude faster.},
 	Acmid = {1596530},
-	Address = {New York, NY, USA},
+	Address = acmaddr,
 	Articleno = {3},
 	Author = {Acar, Umut A. and Blelloch, Guy E. and Blume, Matthias and Harper, Robert and Tangwongsan, Kanat},
 	Date-Added = {2013-05-31 15:54:36 +0000},
 	Date-Modified = {2013-06-09 15:30:39 +0000},
-	Doi = {10.1145/1596527.1596530},
-	Issn = {0164-0925},
+	noDoi = {10.1145/1596527.1596530},
+	NoIssn = {0164-0925},
 	Issue_Date = {October 2009},
 	Journal = toplas,
 	Keywords = {Computational geometry, dynamic algorithms, dynamic dependence graphs, memoization, performance, self-adjusting computation; incremental computation},
@@ -656,7 +658,7 @@ In this article, we realize a duality between dynamic dependence graphs and memo
 	Pages = {3:1--3:53},
 	Publisher = {ACM},
 	Title = {An experimental analysis of self-adjusting computation},
-	Url = {http://doi.acm.org/10.1145/1596527.1596530},
+	noUrl = {http://doi.acm.org/10.1145/1596527.1596530},
 	Volume = {32},
 	Year = {2009},
 	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1596527.1596530},
@@ -751,22 +753,22 @@ In this paper, we extend dependence-tracing to work at the granularity of the qu
 
 Designing and developing applications that respond to incremental modifications, however, is challenging: it often involves developing highly specific, complex algorithms. Self-adjusting computation offers a linguistic approach to this problem. In self-adjusting computation, programs respond automatically and efficiently to modifications to their data by tracking the dynamic data dependences of the computation and incrementally updating their output as needed. In this invited talk, I present an overview of self-adjusting computation and briefly discuss the progress in developing the approach and present some recent advances.},
 	Acmid = {1480946},
-	Address = {New York, NY, USA},
+	Address = acmaddr,
 	Author = {Acar, Umut A.},
-	Booktitle = {Proceedings of the 2009 ACM SIGPLAN workshop on Partial evaluation and program manipulation},
+	Booktitle = pepm,
 	Date-Added = {2013-05-31 13:17:25 +0000},
 	Date-Modified = {2013-06-09 15:30:39 +0000},
-	Doi = {10.1145/1480945.1480946},
-	Isbn = {978-1-60558-327-3},
+	noDoi = {10.1145/1480945.1480946},
+	noIsbn = {978-1-60558-327-3},
 	Keywords = {asymptotic complexity, change propagation, compilers, continuations, dependence graphs, incremental modification, language design, performance, self-adjusting computation; incremental computation},
 	Location = {Savannah, GA, USA},
 	Numpages = {6},
 	Pages = {1--6},
 	Publisher = {ACM},
 	Read = {1},
-	Series = {PEPM '09},
+	noSeries = {PEPM '09},
 	Title = {Self-adjusting computation: (an overview)},
-	Url = {http://doi.acm.org/10.1145/1480945.1480946},
+	noUrl = {http://doi.acm.org/10.1145/1480945.1480946},
 	Year = {2009},
 	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1480945.1480946},
 	Bdsk-Url-2 = {http://dx.doi.org/10.1145/1480945.1480946}}
@@ -925,7 +927,7 @@ We implement and evaluate our idea by studying five example programs, including 
 	Numpages = {20},
 	Pages = {753--772},
 	Publisher = acm,
-	Series = {OOPSLA '11},
+	noSeries = {OOPSLA '11},
 	Title = {Self-adjusting stack machines},
 	Year = {2011},
 	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2048066.2048124}}
@@ -1105,14 +1107,14 @@ We evaluate the effectiveness of our approach by considering a range of benchmar
 @article{Acar06,
 	Abstract = {We present techniques for incremental computing by introducing adaptive functional programming. As an adaptive program executes, the underlying system represents the data and control dependences in the execution in the form of a dynamic dependence graph. When the input to the program changes, a change propagation algorithm updates the output and the dynamic dependence graph by propagating changes through the graph and re-executing code where necessary. Adaptive programs adapt their output to any change in the input, small or large.We show that adaptivity techniques are practical by giving an efficient implementation as a small ML library. The library consists of three operations for making a program adaptive, plus two operations for making changes to the input and adapting the output to these changes. We give a general bound on the time it takes to adapt the output, and based on this, show that an adaptive Quicksort adapts its output in logarithmic time when its input is extended by one key.To show the safety and correctness of the mechanism we give a formal definition of AFL, a call-by-value functional language extended with adaptivity primitives. The modal type system of AFL enforces correct usage of the adaptivity mechanism, which can only be checked at run time in the ML library. Based on the AFL dynamic semantics, we formalize thechange-propagation algorithm and prove its correctness.},
 	Acmid = {1186634},
-	Address = {New York, NY, USA},
+	Address = acmaddr,
 	Author = {Acar, Umut A. and Blelloch, Guy E. and Harper, Robert},
 	Date-Added = {2013-02-15 14:04:59 +0000},
 	Date-Modified = {2013-05-31 15:57:21 +0000},
-	Doi = {10.1145/1186632.1186634},
-	Issn = {0164-0925},
+	noDoi = {10.1145/1186632.1186634},
+	noIssn = {0164-0925},
 	Issue_Date = {November 2006},
-	Journal = {ACM Trans. Program. Lang. Syst.},
+	Journal = toplas,
 	Keywords = {Incremental computation, adaptive computation, dynamic algorithms; self-adjusting computation},
 	Month = nov,
 	Number = {6},
@@ -1120,7 +1122,7 @@ We evaluate the effectiveness of our approach by considering a range of benchmar
 	Pages = {990--1034},
 	Publisher = {ACM},
 	Title = {Adaptive functional programming},
-	Url = {http://doi.acm.org/10.1145/1186632.1186634},
+	noUrl = {http://doi.acm.org/10.1145/1186632.1186634},
 	Volume = {28},
 	Year = {2006},
 	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1186632.1186634},
