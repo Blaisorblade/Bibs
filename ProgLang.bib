@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2013-06-27 21:17:19 +0200 
+%% Created for Paolo Giosué Giarrusso at 2013-06-30 09:00:45 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -230,6 +230,25 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@article{LiuSkalka11staged,
+	Annote = {Staging is a powerful language construct that allows a program at one stage of evaluation to manipulate and specialize a program to be executed at a later stage. We propose a new staged language calculus, 〈ML〉, which extends the programmability of staged languages in two directions. First, 〈ML〉 supports dynamic type specialization: types can be dynamically constructed, abstracted, and passed as arguments, while preserving decidable typechecking via a System F≤-style semantics combined with a restricted form of λ ω -style runtime type construction. With dynamic type specialization the data structure layout of a program can be optimized via staging. Second, 〈ML〉 works in a context where different stages of computation are executed in different process spaces, a property we term staged process separation. Programs at different stages can directly communicate program data in 〈ML〉 via a built-in serialization discipline. The language 〈ML〉 is endowed with a metatheory including type preservation, type safety, and decidability as demonstrated constructively by a sound type checking algorithm. While our language design is general, we are particularly interested in future applications of staging in resource-constrained and embedded systems: these systems have limited space for code and data, as well as limited CPU time, and specializing code for the particular deployment at hand can improve efficiency in all of these dimensions. The combination of dynamic type specialization and staging across processes greatly increases the utility of staged programming in these domains. We illustrate this via wireless sensor network programming examples.},
+	Author = {Liu, Yu David and Skalka, Christian and Smith, Scott F.},
+	Date-Added = {2013-06-30 06:59:47 +0000},
+	Date-Modified = {2013-06-30 07:00:45 +0000},
+	Doi = {10.1007/s10990-012-9089-0},
+	Issn = {1388-3690},
+	Journal = {Higher-Order and Symbolic Computation},
+	Keywords = {Programming languages; Access control; Wireless sensor networks; Type safety; Program specialization},
+	Language = {English},
+	Number = {4},
+	Pages = {341-385},
+	Publisher = {Springer US},
+	Title = {Type-specialized staged programming with process separation},
+	Url = {http://dx.doi.org/10.1007/s10990-012-9089-0},
+	Volume = {24},
+	Year = {2011},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/s10990-012-9089-0}}
 
 @inproceedings{Salvaneschi13reactive,
 	Abstract = {Reactive applications are difficult to implement. Traditional solutions based on event systems and the Observer pattern have a number of inconveniences, but programmers bear them in return for the benefits of OO design. On the other hand, reactive approaches based on automatic updates of dependencies - like functional reactive programming and dataflow languages - provide undoubted advantages but do not fit well with mutable objects. In this paper, we provide a research roadmap to overcome the limitations of the current approaches and to support reactive applications in the OO setting. To establish a solid background for our investigation, we propose a conceptual framework to model the design space of reactive applications and we study the flaws of the existing solutions. Then we highlight how reactive languages have the potential to address those issues and we formulate our research plan.},
