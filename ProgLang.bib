@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2013-07-13 14:46:25 +0200 
+%% Created for Paolo Giosué Giarrusso at 2013-08-03 18:24:37 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -230,6 +230,41 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@inproceedings{Brown11,
+	Abstract = {Computing systems are becoming increasingly parallel and heterogeneous, and therefore new applications must be capable of exploiting parallelism in order to continue achieving high performance. However, targeting these emerging devices often requires using multiple disparate programming models and making decisions that can limit forward scalability. In previous work we proposed the use of domain-specific languages (DSLs) to provide high-level abstractions that enable transformations to high performance parallel code without degrading programmer productivity. In this paper we present a new end-to-end system for building, compiling, and executing DSL applications on parallel heterogeneous hardware, the Delite Compiler Framework and Runtime. The framework lifts embedded DSL applications to an intermediate representation (IR), performs generic, parallel, and domain-specific optimizations, and generates an execution graph that targets multiple heterogeneous hardware devices. Finally we present results comparing the performance of several machine learning applications written in OptiML, a DSL for machine learning that utilizes Delite, to C++ and MATLAB implementations. We find that the implicitly parallel OptiML applications achieve single-threaded performance comparable to C++ and outperform explicitly parallel MATLAB in nearly all cases.},
+	Author = {Brown, K.J. and Sujeeth, A.K. and Hyouk Joong Lee and Rompf, T. and Chafi, H. and Odersky, M. and Olukotun, K.},
+	Booktitle = {Parallel Architectures and Compilation Techniques (PACT), 2011 International Conference on},
+	Date-Added = {2013-08-03 15:57:23 +0000},
+	Date-Modified = {2013-08-03 15:57:24 +0000},
+	Doi = {10.1109/PACT.2011.15},
+	Issn = {1089-795X},
+	Keywords = {C++ language;learning (artificial intelligence);parallel processing;program compilers;C++ language;Delite compiler framework;Matlab;OptiML;domain-specific language;execution graph;heterogeneous parallel framework;high performance parallel code;high-level abstraction;machine learning application;parallelism;programmer productivity;runtime application;single-threaded performance;DSL;Hardware;Optimization;Parallel processing;Performance evaluation;Programming;Runtime;computer languages;multicore processing;parallel programming},
+	Pages = {89-100},
+	Title = {A Heterogeneous Parallel Framework for Domain-Specific Languages},
+	Year = {2011},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1109/PACT.2011.15}}
+
+@inproceedings{Odersky05,
+	Acmid = {1094815},
+	Address = {New York, NY, USA},
+	Author = {Odersky, Martin and Zenger, Matthias},
+	Booktitle = oopsla,
+	Date-Added = {2013-08-03 15:46:57 +0000},
+	Date-Modified = {2013-08-03 15:47:12 +0000},
+	Doi = {10.1145/1094811.1094815},
+	Isbn = {1-59593-031-0},
+	Keywords = {Scala, abstract types, classes, components, mixins},
+	Location = {San Diego, CA, USA},
+	Numpages = {17},
+	Pages = {41--57},
+	Publisher = {ACM},
+	Series = {OOPSLA '05},
+	Title = {Scalable component abstractions},
+	Url = {http://doi.acm.org/10.1145/1094811.1094815},
+	Year = {2005},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1094811.1094815},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/1094811.1094815}}
 
 @article{Guttag78,
 	Abstract = {There have been many recent proposals for embedding abstract data types in programming languages. In order to reason about programs using abstract data types, it is desirable to specify their properties at an abstract level, independent of any particular implementation. This paper presents an algebraic technique for such specifications, develops some of the formal properties of the technique, and shows that these provide useful guidelines for the construction of adequate specifications.},
