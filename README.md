@@ -52,9 +52,12 @@ remove unrelated changes from commits without problems.
 
 ## Warning
 
-Git subtree was broken in Git 1.8.3.3 and 1.8.3.4, and only [fixed in release 1.8.4][Regression].
-Avoid using push or split with a broken `git subtree`: otherwise, spurious '-n' will be added to extracted commit
-messages. Rewinding history in the bibs repo, and running `git fetch bibs` in the parent repo will undo the averse effects; repeating the operation with a fixed `git subtree` will not run again in the problem.
+* Git subtree was broken in Git 1.8.3.3 and 1.8.3.4, and only [fixed in release 1.8.4][Regression].
+  Avoid using push or split with a broken `git subtree`: otherwise, spurious '-n' will be added to extracted commit
+  messages. Rewinding history in the bibs repo, and running `git fetch bibs` in the parent repo will undo the averse effects; repeating the operation with a fixed `git subtree` will not run again in the problem.
+
+* Avoid having branches in the bibliography repositories. It seems that git
+  subtree might pick some branch other than master.
 
 [Regression]: http://stackoverflow.com/a/17891139/53974
 [Subtree]: https://github.com/apenwarr/git-subtree
