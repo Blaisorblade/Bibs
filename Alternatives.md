@@ -1,5 +1,5 @@
 # How I created this repo
-I integrate them in other repositories where I need them using [git subtree][1].
+I integrate them in other repositories where I need them using [git subtree][Subtree].
 I created this repo following [this link][Creation], and I integrate it in other
 repos using [these instructions][2]. [This][3] is also relevant.
 
@@ -40,7 +40,7 @@ commits and regenerate the same commits, which can then be pushed.
 If you instead split updates before fetching existing ones, you get spurious
 commits like [Blaisorblade/Bibs@b6c1121d][4], but integrity is still preserved.
 
-[1]: https://github.com/apenwarr/git-subtree
+[Subtree]: https://github.com/apenwarr/git-subtree
 [Creation]: http://psionides.eu/2010/02/04/sharing-code-between-projects-with-git-subtree/
 [2]: http://www.ashday.com/blogs/russell-keppner/git-subtree-easier-way-import-repository-dev-cloud
 [3]: http://h2ik.co/2011/03/having-fun-with-git-subtree/
