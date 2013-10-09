@@ -17,11 +17,13 @@ Your paper coauthors can work with you without learning any of this.
 1. Fork this repo, unless you have write access to it.
 2. Let $remote be a Git URL for your fork (for instance, `remote=git@github.com:Blaisorblade/Bibs.git`).
 3. Run the following bash commands, replacing `$remote` as above.
-```bash
-$ git remote add bibs $remote
-$ git fetch bibs
-$ git subtree add --squash -P Bibs bibs/master
-```
+
+    ```bash
+    $ git remote add bibs $remote
+    $ git fetch bibs
+    $ git subtree add --squash -P Bibs bibs/master
+    ```
+
 4. Your editor will be invoked, like for `git commit`. Enter a commit message
    describing the merge operation, for instance:
 
