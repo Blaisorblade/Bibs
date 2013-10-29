@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2013-10-24 05:01:21 +0200 
+%% Created for Paolo Giosué Giarrusso at 2013-10-29 03:45:13 +0100 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -232,6 +232,28 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@inproceedings{Sujeeth13Forge,
+	Abstract = {Domain-specific languages provide a promising path to automatically compile high-level code to parallel, heterogeneous, and distributed hardware. However, in practice high performance DSLs still require considerable software expertise to develop and force users into tool-chains that hinder prototyping and debugging. To address these problems, we present Forge, a new meta DSL for declaratively specifying high performance embedded DSLs. Forge provides DSL authors with high-level abstractions (e.g., data structures, parallel patterns, effects) for specifying their DSL in a way that permits high performance. From this high-level specification, Forge automatically generates both a na{\"\i}ve Scala library implementation of the DSL and a high performance version using the Delite DSL framework. Users of a Forge-generated DSL can prototype their application using the library version, and then switch to the Delite version to run on multicore CPUs, GPUs, and clusters without changing the application code. Forge-generated Delite DSLs perform within 2x of hand-optimized C++ and up to 40x better than Spark, an alternative high-level distributed programming environment. Compared to a manually implemented Delite DSL, Forge provides a factor of 3-6x reduction in lines of code and does not sacrifice any performance. Furthermore, Forge specifications can be generated from existing Scala libraries, are easy to maintain, shield DSL developers from changes in the Delite framework, and enable DSLs to be retargeted to other frameworks transparently.},
+	Acmid = {2517220},
+	Address = {New York, NY, USA},
+	Author = {Sujeeth, Arvind K. and Gibbons, Austin and Brown, Kevin J. and Lee, HyoukJoong and Rompf, Tiark and Odersky, Martin and Olukotun, Kunle},
+	Booktitle = {Proceedings of the 12th international conference on Generative programming: concepts \&\#38; experiences},
+	Date-Added = {2013-10-29 02:44:59 +0000},
+	Date-Modified = {2013-10-29 02:45:12 +0000},
+	Doi = {10.1145/2517208.2517220},
+	Isbn = {978-1-4503-2373-4},
+	Keywords = {code generation, domain-specific languages, multi-stage programming, parallel programming},
+	Location = {Indianapolis, Indiana, USA},
+	Numpages = {10},
+	Pages = {145--154},
+	Publisher = {ACM},
+	Series = {GPCE '13},
+	Title = {Forge: generating a high performance DSL implementation from a declarative specification},
+	Url = {http://doi.acm.org/10.1145/2517208.2517220},
+	Year = {2013},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2517208.2517220},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/2517208.2517220}}
 
 @inproceedings{Abel13,
 	Abstract = {Inductive datatypes provide mechanisms to define finite data such as finite lists and trees via constructors and allow programmers to analyze and manipulate finite data via pattern matching. In this paper, we develop a dual approach for working with infinite data structures such as streams. Infinite data inhabits coinductive datatypes which denote greatest fixpoints. Unlike finite data which is defined by constructors we define infinite data by observations. Dual to pattern matching, a tool for analyzing finite data, we develop the concept of copattern matching, which allows us to synthesize infinite data. This leads to a symmetric language design where pattern matching on finite and infinite data can be mixed.
