@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2013-11-04 19:05:38 +0100 
+%% Created for Paolo Giosué Giarrusso at 2013-11-19 20:17:44 +0100 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -232,6 +232,101 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@article{Harper93,
+	Abstract = {The Edinburgh Logical Framework (LF) provides a means to define (or present) logics. It is based on a general treatment of syntax, rules, and proofs by means of a typed &lgr;-calculus with dependent types. Syntax is treated in a style similar to, but more general than, Martin-L{\"o}f's system of arities. The treatment of rules and proofs focuses on his notion of a judgment. Logics are represented in LF via a new principle, the judgments as types principle, whereby each judgment is identified with the type of its proofs. This allows for a smooth treatment of discharge and variable occurence conditions and leads to a uniform treatment of rules and proofs whereby rules are viewed as proofs of higher-order judgments and proof checking is reduced to type checking. The practical benefit of our treatment of formal systems is that logic-independent tools, such as proof editors and proof checkers, can be constructed.},
+	Acmid = {138060},
+	Address = {New York, NY, USA},
+	Annote = {This paper describes the Edinburgh Logical Framework, LF for short, which is the first part of the foundation of Twelf; this paper includes no logic programming elements.
+
+LF includes a minimal dependent lambda-calculus, where types and values can abstract on values. Nothing can abstract on types; but everything of interest can be represented as values, including types of the embedded logic. By accepting these restrictions, various problems 
+
+When needed, such one can abstract over such values to construct types, exactly like in a universe construction --- for instance obj : holtype -> Type in the encoding of higher-order logic. However, universe constructions need be used even in some cases which would usually be handled via polymorphism (again for higher-order logic, see HOAS abstraction and application for the embedded logic).
+
+Moreover, it includes an approach for embedding logics which includes:
+
+- Sorts of the metatheory of the logic (term, formula, individual, etc.) are represented as types in LF.
+- Judgements of the represented theory are represented as types, while proofs are terms inhabiting those types, and proof rules are constructors of those terms. Proof checking reduces to type-checking.
+- Martin-L{\"o}f's hypothetical and schematic/general judgements are encoded as types of functions producing judgements and taking, respectively, judgements or individuals.
+- Binding is handled through higher-order abstract syntax (not cited by name in the paper, but used in all examples and emphasized as important). This way, the handling of binding is rather easy (as usual with HOAS).
+- Derived rules can be proven easily, while proving admissibility is much harder.
+- A definition of adequacy for encodings as a biijection which is compositional, that is commutes with substitution.
+
+Many of these ideas are reflected in formalizations present in Harper's "Practical Foundations of Programming Languages".
+
+According to the authors, the encoding is similar to AUTOMATH but separates better object and meta-level.
+
+The writing style is precise but overall rather academic.},
+	Author = {Harper, Robert and Honsell, Furio and Plotkin, Gordon},
+	Date-Added = {2013-11-19 18:59:05 +0000},
+	Date-Modified = {2013-11-19 19:17:39 +0000},
+	Doi = {10.1145/138027.138060},
+	Issn = {0004-5411},
+	Issue_Date = {Jan. 1993},
+	Journal = {J. ACM},
+	Keywords = {formal systems, interactive theorem proving, proof checking, typed lambda calculus},
+	Month = jan,
+	Number = {1},
+	Numpages = {42},
+	Pages = {143--184},
+	Publisher = {ACM},
+	Rating = {4},
+	Read = {1},
+	Title = {A Framework for Defining Logics},
+	Url = {http://doi.acm.org/10.1145/138027.138060},
+	Volume = {40},
+	Year = {1993},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/138027.138060},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/138027.138060}}
+
+@inproceedings{Nerella13,
+	Abstract = {Object oriented programming languages raised the level of abstraction by supporting the explicit first class query constructs in the programming codes. The query constructs can be optimized by leveraging the techniques of query optimization from the domain of databases. The existing optimization approaches such as JQL, however, incur high run time overhead as optimizations are performed only at run time. Therefore, in this paper, we propose an approach that performs the query optimization at compile time utilizing the metadata annotations in the source code. The proposed approach first collects the data from the sample execution of the program and extracts the essential metadata for the string valued attributes. Then, the annotations consisting of the metadata values associated with string attributes are generated in the source code and the histograms are built using those annotations. The selectivity estimates of the predicates and the joins in the query are computed from the histograms. Next, the query plan is generated at compile time through the maximum selectivity heuristic. The query plan is modified at run time in cases of significant updates to the string data. The approach also incorporates the cache heuristics that determine whether to cache the query result or not. The cached query results are incrementally maintained up-to-date. Our experimental results demonstrate that our approach has reduced the run time of the program more than the earlier approaches such as JQL.},
+	Author = {Nerella, Venkata Krishna Suhas and Madria, Sanjay K. and Weigert, Thomas},
+	Booktitle = {Computer Software and Applications Conference (COMPSAC), 2013 IEEE 37th Annual},
+	Date-Added = {2013-11-19 14:53:53 +0000},
+	Date-Modified = {2013-11-19 14:53:55 +0000},
+	Doi = {10.1109/COMPSAC.2013.56},
+	Keywords = {Benchmark testing;Histograms;Java;Maintenance engineering;Optimization;Query processing;Time-frequency analysis;Annotations;Compile time;Query Plan;Selectivity;string data},
+	Pages = {313-318},
+	Title = {Optimization of Object Queries on Collections Using Annotations for the String Valued Attributes},
+	Year = {2013},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1109/COMPSAC.2013.56}}
+
+@inproceedings{Aspinall96,
+	Abstract = {The need for subtyping in type-systems with dependent types has been realized for some years. But it is hard to prove that systems combining the two features have fundamental properties such as subject reduction. Here we investigate a subtyping extension of the system λP, which is an abstract version of the type system of the Edinburgh Logical Framework LF. By using an equivalent formulation, we establish some important properties of the new system λP⩽, including subject reduction. Our analysis culminates in a complete and terminating algorithm which establishes the decidability of type-checking},
+	Author = {Aspinall, D. and Compagnoni, A.},
+	Booktitle = {Logic in Computer Science, 1996. LICS '96. Proceedings., Eleventh Annual IEEE Symposium on},
+	Date-Added = {2013-11-19 14:52:44 +0000},
+	Date-Modified = {2013-11-19 14:52:47 +0000},
+	Doi = {10.1109/LICS.1996.561307},
+	Issn = {1043-6871},
+	Keywords = {decidability;programming theory;type theory;Edinburgh Logical Framework;decidability;dependent types;subject reduction;subtyping;terminating algorithm;type-checking;type-systems;Algorithm design and analysis;Application software;Computer languages;Computer science;Encoding;Laboratories;Logic programming},
+	Pages = {86-97},
+	Title = {Subtyping dependent types},
+	Year = {1996},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1109/LICS.1996.561307}}
+
+@inproceedings{Parr11,
+	Abstract = {Despite the power of Parser Expression Grammars (PEGs) and GLR, parsing is not a solved problem. Adding nondeterminism (parser speculation) to traditional LL and LR parsers can lead to unexpected parse-time behavior and introduces practical issues with error handling, single-step debugging, and side-effecting embedded grammar actions. This paper introduces the LL(*) parsing strategy and an associated grammar analysis algorithm that constructs LL(*) parsing decisions from ANTLR grammars. At parse-time, decisions gracefully throttle up from conventional fixed k>=1 lookahead to arbitrary lookahead and, finally, fail over to backtracking depending on the complexity of the parsing decision and the input symbols. LL(*) parsing strength reaches into the context-sensitive languages, in some cases beyond what GLR and PEGs can express. By statically removing as much speculation as possible, LL(*) provides the expressivity of PEGs while retaining LL's good error handling and unrestricted grammar actions. Widespread use of ANTLR (over 70,000 downloads/year) shows that it is effective for a wide variety of applications.},
+	Acmid = {1993548},
+	Address = {New York, NY, USA},
+	Author = {Parr, Terence and Fisher, Kathleen},
+	Booktitle = {Proceedings of the 32Nd ACM SIGPLAN Conference on Programming Language Design and Implementation},
+	Date-Added = {2013-11-19 11:40:05 +0000},
+	Date-Modified = {2013-11-19 11:40:21 +0000},
+	Doi = {10.1145/1993498.1993548},
+	Isbn = {978-1-4503-0663-8},
+	Keywords = {augmented transition networks, backtracking, context-sensitive parsing, deterministic finite automata, glr, memoization, nondeterministic parsing, peg, semantic predicates, subset construction, syntactic predicates},
+	Location = {San Jose, California, USA},
+	Numpages = {12},
+	Pages = {425--436},
+	Publisher = {ACM},
+	Series = {PLDI '11},
+	Title = {LL(*): The Foundation of the ANTLR Parser Generator},
+	Url = {http://doi.acm.org/10.1145/1993498.1993548},
+	Year = {2011},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1993498.1993548},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/1993498.1993548}}
 
 @inproceedings{Eisenberg12,
 	Acmid = {2364522},
