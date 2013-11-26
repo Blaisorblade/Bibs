@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2013-11-19 20:17:44 +0100 
+%% Created for Paolo Giosué Giarrusso at 2013-11-23 05:52:22 +0100 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -232,6 +232,39 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@inproceedings{Breazu-Tannen91logical,
+	Abstract = {We study issues that arise in programming with primitive recursion over non-free datatypes such as lists, bags and sets. Programs written in this style can lack a meaning in the sense that their outputs may be sensitive to the choice of input expression. We are, thus, naturally lead to a set-theoretic denotational semantics with partial functions. We set up a logic for reasoning about the definedness of terms and a deterministic and terminating evaluator. The logic is shown to be sound in the model, and its recursion free fragment is shown to be complete for proving definedness of recursion free programs. The logic is then shown to be as strong as the evaluator, and this implies that the evaluator is compatible with the provable equivalence between different set (or bag, or list) expression . Oftentimes,the same non-free datatype may have different presentations, and it is not clear a priori whether programming and reasoning with the two presentations are equivalent. We formulate these questions, precisely, in the context of alternative presentations of the list, bag, and set datatypes and study some aspects of these questions. In particular, we establish back-and-forth translations between the two presentations, from which it follows that they are equally expressive, and prove results relating proofs of program properties, in the two presentations.},
+	Acmid = {758814},
+	Address = {London, UK, UK},
+	Annote = {This paper discusses denotational, operational and equational semantics for sets, bags and lists, both in cons-nil representation [let's call it insert representation, following Grust] and in empty-singleton-union representation [let's call it union representation, again following Grust]. Among other results, they show that these representations are interconvertible.
+Given an algebra (i.e. fold) in union representation, one can build one in insert representation easily:
+cons head tail = union (singleton head) tail
+nil = empty
+Given an algebra (i.e. fold) in insert representation, one can build one in union representation using the functional representation of difference lists, that is, by encoding lists as their prepend function of type [t] -> [t]
+empty = id
+singleton el = (tail -> cons el tail) = cons el
+union x y = (tail -> (x . y) tail) = x . y.
+
+nil is only used to reify difference lists to standard ones.
+
+Meta-notes:
+Grust cites this paper in his PhD thesis to show that it is hard to convert from insert queries (that is, folds) into union queries. The reason is that the translation they present is higher-order.},
+	Author = {Breazu-Tannen, Val and Subrahmanyam, Ramesh},
+	Booktitle = {Proceedings of the 18th International Colloquium on Automata, Languages and Programming},
+	Date-Added = {2013-11-23 02:32:24 +0000},
+	Date-Modified = {2013-11-23 02:43:46 +0000},
+	Isbn = {3-540-54233-7},
+	Numpages = {16},
+	Pages = {60--75},
+	Publisher = {Springer-Verlag},
+	Series = {ICALP '91},
+	Title = {Logical and Computational Aspects of Programming with Sets/Bags/Lists},
+	Url = {http://link.springer.com/chapter/10.1007/3-540-54233-7_125},
+	Year = {1991},
+	Bdsk-Url-1 = {http://dl.acm.org/citation.cfm?id=646245.758814},
+	Bdsk-Url-2 = {http://dl.acm.org/citation.cfm?id=111713.111718},
+	Bdsk-Url-3 = {http://link.springer.com/chapter/10.1007/3-540-54233-7_125}}
 
 @article{Harper93,
 	Abstract = {The Edinburgh Logical Framework (LF) provides a means to define (or present) logics. It is based on a general treatment of syntax, rules, and proofs by means of a typed &lgr;-calculus with dependent types. Syntax is treated in a style similar to, but more general than, Martin-L{\"o}f's system of arities. The treatment of rules and proofs focuses on his notion of a judgment. Logics are represented in LF via a new principle, the judgments as types principle, whereby each judgment is identified with the type of its proofs. This allows for a smooth treatment of discharge and variable occurence conditions and leads to a uniform treatment of rules and proofs whereby rules are viewed as proofs of higher-order judgments and proof checking is reduced to type checking. The practical benefit of our treatment of formal systems is that logic-independent tools, such as proof editors and proof checkers, can be constructed.},
