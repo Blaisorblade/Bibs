@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2014-02-10 00:56:52 +0100 
+%% Created for Paolo Giosué Giarrusso at 2014-03-06 11:28:19 +0100 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -232,6 +232,84 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@inproceedings{Ahmed09sri,
+	Abstract = {Mitchell's notion of representation independence is a particularly useful application of Reynolds' relational parametricity -- two different implementations of an abstract data type can be shown contextually equivalent so long as there exists a relation between their type representations that is preserved by their operations. There have been a number of methods proposed for proving representation independence in various pure extensions of System F (where data abstraction is achieved through existential typing), as well as in Algol- or Java-like languages (where data abstraction is achieved through the use of local mutable state). However, none of these approaches addresses the interaction of existential type abstraction and local state. In particular, none allows one to prove representation independence results for generative ADTs -- i.e. ADTs that both maintain some local state and define abstract types whose internal representations are dependent on that local state.
+
+In this paper, we present a syntactic, logical-relations-based method for proving representation independence of generative ADTs in a language supporting polymorphic types, existential types, general recursive types, and unrestricted ML-style mutable references. We demonstrate the effectiveness of our method by using it to prove several interesting contextual equivalences that involve a close interaction between existential typing and local state, as well as some well-known equivalences from the literature (such as Pitts and Stark's "awkward" example) that have caused trouble for previous logical-relations-based methods.
+
+The success of our method relies on two key technical innovations. First, in order to handle generative ADTs, we develop a possible-worlds model in which relational interpretations of types are allowed to grow over time in a manner that is tightly coupled with changes to some local state. Second, we employ a step-indexed stratification of possible worlds, which facilitates a simplified account of mutable references of higher type.},
+	Acmid = {1480925},
+	Address = {New York, NY, USA},
+	Author = {Ahmed, Amal and Dreyer, Derek and Rossberg, Andreas},
+	Booktitle = {Proceedings of the 36th Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+	Date-Added = {2014-03-04 21:38:25 +0000},
+	Date-Modified = {2014-03-04 21:38:50 +0000},
+	Doi = {10.1145/1480881.1480925},
+	Isbn = {978-1-60558-379-2},
+	Keywords = {abstract data types, existential types, local state, representation independence, step-indexed logical relations},
+	Location = {Savannah, GA, USA},
+	Numpages = {14},
+	Pages = {340--353},
+	Publisher = {ACM},
+	Series = {POPL '09},
+	Title = {State-dependent Representation Independence},
+	Url = {http://doi.acm.org/10.1145/1480881.1480925},
+	Year = {2009},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1480881.1480925},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/1480881.1480925}}
+
+@article{Appel01,
+	Abstract = {The proofs of "traditional" proof carrying code (PCC) are type-specialized in the sense that they require axioms about a specific type system. In contrast, the proofs of foundational PCC explicitly define all required types and explicitly prove all the required properties of those types assuming only a fixed foundation of mathematics such as higher-order logic. Foundational PCC is both more flexible and more secure than type-specialized PCC.For foundational PCC we need semantic models of type systems on von Neumann machines. Previous models have been either too weak (lacking general recursive types and first-class function-pointers), too complex (requiring machine-checkable proofs of large bodies of computability theory), or not obviously applicable to von Neumann machines. Our new model is strong, simple, and works either in λ-calculus or on Pentiums.},
+	Acmid = {504712},
+	Address = {New York, NY, USA},
+	Annote = {This paper "Proposes the ``step-indexed'' logical-relations model, now an essential tool in scaling parametricity to real languages".
+I've read Sec. 1 and 2, with a safety proof for omega and Y, and I've been mind-blown.},
+	Author = {Appel, Andrew W. and McAllester, David},
+	Date-Added = {2014-03-04 14:00:56 +0000},
+	Date-Modified = {2014-03-04 14:02:35 +0000},
+	Doi = {10.1145/504709.504712},
+	Issn = {0164-0925},
+	Issue_Date = {September 2001},
+	Journal = {ACM Trans. Program. Lang. Syst.},
+	Month = sep,
+	Number = {5},
+	Numpages = {27},
+	Pages = {657--683},
+	Publisher = {ACM},
+	Rating = {5},
+	Title = {An Indexed Model of Recursive Types for Foundational Proof-carrying Code},
+	Url = {http://doi.acm.org/10.1145/504709.504712},
+	Volume = {23},
+	Year = {2001},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/504709.504712},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/504709.504712}}
+
+@inproceedings{Dunfield13,
+	Abstract = {Bidirectional typechecking, in which terms either synthesize a type or are checked against a known type, has become popular for its scalability (unlike Damas-Milner type inference, bidirectional typing remains decidable even for very expressive type systems), its error reporting, and its relative ease of implementation. Following design principles from proof theory, bidirectional typing can be applied to many type constructs. The principles underlying a bidirectional approach to polymorphism, however, are less obvious. We give a declarative, bidirectional account of higher-rank polymorphism, grounded in proof theory; this calculus enjoys many properties such as eta-reduction and predictability of annotations. We give an algorithm for implementing the declarative system; our algorithm is remarkably simple and well-behaved, despite being both sound and complete.},
+	Acmid = {2500582},
+	Address = {New York, NY, USA},
+	Annote = {> "Following design principles from proof theory, bidirectional typing can be applied to many type constructs."
+
+Related to our "DSL design" paper?},
+	Author = {Dunfield, Joshua and Krishnaswami, Neelakantan R.},
+	Booktitle = {Proceedings of the 18th ACM SIGPLAN International Conference on Functional Programming},
+	Date-Added = {2014-02-11 14:38:41 +0000},
+	Date-Modified = {2014-02-11 16:16:53 +0000},
+	Doi = {10.1145/2500365.2500582},
+	Isbn = {978-1-4503-2326-0},
+	Keywords = {bidirectional typechecking, higher-rank polymorphism},
+	Location = {Boston, Massachusetts, USA},
+	Numpages = {14},
+	Pages = {429--442},
+	Publisher = {ACM},
+	Rating = {4},
+	Series = {ICFP '13},
+	Title = {Complete and Easy Bidirectional Typechecking for Higher-rank Polymorphism},
+	Url = {http://doi.acm.org/10.1145/2500365.2500582},
+	Year = {2013},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2500365.2500582},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/2500365.2500582}}
 
 @article{Peyton-Jones98,
 	Abstract = {Many compilers do some of their work by means of correctness-preserving, and hopefully performance-improving, program transformations. The Glasgow Haskell Compiler (GHC) takes this idea of ``compilation by transformation'' as its war-cry, trying to express as much as possible of the compilation process in the form of program transformations.
