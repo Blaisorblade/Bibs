@@ -1,0 +1,106 @@
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
+
+
+%% Created for Paolo Giosué Giarrusso at 2014-03-06 13:40:27 +0100 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+
+
+@inproceedings{Wurthinger13,
+	Abstract = {Building high-performance virtual machines is a complex and expensive undertaking; many popular languages still have low-performance implementations. We describe a new approach to virtual machine (VM) construction that amortizes much of the effort in initial construction by allowing new languages to be implemented with modest additional effort. The approach relies on abstract syntax tree (AST) interpretation where a node can rewrite itself to a more specialized or more general node, together with an optimizing compiler that exploits the structure of the interpreter. The compiler uses speculative assumptions and deoptimization in order to produce efficient machine code. Our initial experience suggests that high performance is attainable while preserving a modular and layered architecture, and that new high-performance language implementations can be obtained by writing little more than a stylized interpreter.},
+	Acmid = {2509581},
+	Address = {New York, NY, USA},
+	Annote = {Ideas:
+Couldn't they build this system on top of Project Lancet? They need control over optimizations applied to the language interpreter, apply specific ones often...
+
+Understanding questions:
+* Fig. 7 -> Fig. 8: why does the sum = 0 node evolve from IWrite to DWrite? Does it evolve on the next method invocation, because the frame variable has become a Double? Where is this explained?
+* What's the relation with PyPy? What's the novelty of the Truffle approach?},
+	Author = {W\"{u}rthinger, Thomas and Wimmer, Christian and W\"{o}\ss, Andreas and Stadler, Lukas and Duboscq, Gilles and Humer, Christian and Richards, Gregor and Simon, Doug and Wolczko, Mario},
+	Booktitle = {Proceedings of the 2013 ACM International Symposium on New Ideas, New Paradigms, and Reflections on Programming \&\#38; Software},
+	Date-Added = {2014-03-06 10:28:17 +0000},
+	Date-Modified = {2014-03-06 12:40:00 +0000},
+	Doi = {10.1145/2509578.2509581},
+	Isbn = {978-1-4503-2472-4},
+	Keywords = {dynamic languages, java, javascript, language implementation, optimization, virtual machine},
+	Location = {Indianapolis, Indiana, USA},
+	Numpages = {18},
+	Pages = {187--204},
+	Publisher = {ACM},
+	Series = {Onward! '13},
+	Title = {One VM to Rule Them All},
+	Url = {http://doi.acm.org/10.1145/2509578.2509581},
+	Year = {2013},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2509578.2509581},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/2509578.2509581}}
+
+@article{McKenney:2010:WGM:1842733.1842749,
+	Abstract = {The advent of multi-core and multi-threaded processor architectures highlights the need to address the well-known shortcomings of the ubiquitous lock-based synchronization mechanisms. To this end, transactional memory has been viewed by many as a promising alternative to locking. This paper therefore presents a constructive critique of locking and transactional memory: their strengths, weaknesses, and opportunities for improvement.},
+	Acmid = {1842749},
+	Address = {New York, NY, USA},
+	Author = {McKenney, Paul E. and Michael, Maged M. and Triplett, Josh and Walpole, Jonathan},
+	Date-Added = {2014-03-06 10:27:26 +0000},
+	Date-Modified = {2014-03-06 10:27:34 +0000},
+	Doi = {10.1145/1842733.1842749},
+	Issn = {0163-5980},
+	Issue_Date = {July 2010},
+	Journal = {SIGOPS Oper. Syst. Rev.},
+	Month = aug,
+	Number = {3},
+	Numpages = {9},
+	Pages = {93--101},
+	Publisher = {ACM},
+	Title = {Why the Grass May Not Be Greener on the Other Side: A Comparison of Locking vs. Transactional Memory},
+	Url = {http://doi.acm.org/10.1145/1842733.1842749},
+	Volume = {44},
+	Year = {2010},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1842733.1842749},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/1842733.1842749}}
+
+@article{Cascaval:2008:STM:1400214.1400228,
+	Abstract = {The promise of STM may likely be undermined by its overheads and workload applicabilities.},
+	Acmid = {1400228},
+	Address = {New York, NY, USA},
+	Author = {Cascaval, Calin and Blundell, Colin and Michael, Maged and Cain, Harold W. and Wu, Peng and Chiras, Stefanie and Chatterjee, Siddhartha},
+	Date-Added = {2014-03-06 10:27:08 +0000},
+	Date-Modified = {2014-03-06 10:27:13 +0000},
+	Doi = {10.1145/1400214.1400228},
+	Issn = {0001-0782},
+	Issue_Date = {November 2008},
+	Journal = {Commun. ACM},
+	Month = nov,
+	Number = {11},
+	Numpages = {7},
+	Pages = {40--46},
+	Publisher = {ACM},
+	Title = {Software Transactional Memory: Why is It Only a Research Toy?},
+	Url = {http://doi.acm.org/10.1145/1400214.1400228},
+	Volume = {51},
+	Year = {2008},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1400214.1400228},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/1400214.1400228}}
+
+@inproceedings{Abadi:2008:STM:1328438.1328449,
+	Abstract = {Software Transactional Memory (STM) is an attractive basis for the development of language features for concurrent programming. However, the semantics of these features can be delicate and problematic. In this paper we explore the tradeoffs between semantic simplicity, the viability of efficient implementation strategies, and the flexibilityof language constructs. Specifically, we develop semantics and type systems for the constructs of the Automatic Mutual Exclusion (AME) programming model; our results apply also to other constructs, such as atomic blocks. With this semantics as a point of reference, we study several implementation strategies. We model STM systems that use in-place update, optimistic concurrency, lazy conflict detection, and roll-back. These strategies are correct only under non-trivial assumptions that we identify and analyze. One important source of errors is that some efficient implementations create dangerous 'zombie' computations where a transaction keeps running after experiencing a conflict; the assumptions confine the effects of these computations.},
+	Acmid = {1328449},
+	Address = {New York, NY, USA},
+	Author = {Abadi, Mart\'{\i}n and Birrell, Andrew and Harris, Tim and Isard, Michael},
+	Booktitle = {Proceedings of the 35th Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+	Date-Added = {2014-03-06 10:26:49 +0000},
+	Date-Modified = {2014-03-06 10:26:59 +0000},
+	Doi = {10.1145/1328438.1328449},
+	Isbn = {978-1-59593-689-9},
+	Keywords = {STM, operational semantics, transactional memory},
+	Location = {San Francisco, California, USA},
+	Numpages = {12},
+	Pages = {63--74},
+	Publisher = {ACM},
+	Series = {POPL '08},
+	Title = {Semantics of Transactional Memory and Automatic Mutual Exclusion},
+	Url = {http://doi.acm.org/10.1145/1328438.1328449},
+	Year = {2008},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1328438.1328449},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/1328438.1328449}}
