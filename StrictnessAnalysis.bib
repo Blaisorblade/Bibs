@@ -2,12 +2,28 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2014-02-10 00:56:51 +0100 
+%% Created for Paolo Giosué Giarrusso at 2014-02-12 01:24:43 +0100 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{Burn86,
+	Author = {Geoffrey L. Burn and Chris Hankin and Samson Abramsky},
+	Date-Added = {2014-02-12 00:24:38 +0000},
+	Date-Modified = {2014-02-12 00:24:41 +0000},
+	Doi = {http://dx.doi.org/10.1016/0167-6423(86)90010-9},
+	Issn = {0167-6423},
+	Journal = {Science of Computer Programming},
+	Number = {0},
+	Pages = {249 - 278},
+	Title = {Strictness analysis for higher-order functions},
+	Url = {http://www.sciencedirect.com/science/article/pii/0167642386900109},
+	Volume = {7},
+	Year = {1986},
+	Bdsk-Url-1 = {http://www.sciencedirect.com/science/article/pii/0167642386900109},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1016/0167-6423(86)90010-9}}
 
 @inproceedings{Wadler87PSA,
 	Abstract = {Contexts have been proposed as a means of performing strictness analysis on non-flat domains. Roughly speaking, a context describes how much a sub-expression will be evaluated by the surrounding program. This paper shows how contexts can be represented using the notion of projection from domain theory. This is clearer than the previous explanation of contexts in terms of continuations. In addition, this paper describes finite domains of contexts over the non-flat list domain. This means that recursive context equations can be solved using standard fixpoint techniques, instead of the algebraic manipulation previously used.},
@@ -90,7 +106,8 @@ But see for instance Peyton-Jones98 (Sec. 7.2), who traces it back to yet other 
 	Bdsk-Url-2 = {http://dx.doi.org/10.1145/2535838.2535887}}
 
 @incollection{Chang13,
-	Abstract = {Lazy functional programming has many benefits that strict functional languages can simulate via lazy data constructors. In recognition, ML, Scheme, and other strict functional languages have supported lazy stream programming with delay and force for several decades. Unfortunately, the manual insertion of delay and force can be tedious and error-prone.We present a semantics-based refactoring that helps strict programmers manage manual lazy programming. The refactoring uses a static analysis to identify where additional delays and forces might be needed to achieve the desired simplification and performance benefits, once the programmer has added the initial lazy data constructors. The paper presents a correctness argument for the underlying transformations and some preliminary experiences with a prototype tool implementation.},
+	Abstract = {Lazy functional programming has many benefits that strict functional languages can simulate via lazy data constructors. In recognition, ML, Scheme, and other strict functional languages have supported lazy stream programming with delay and force for several decades. Unfortunately, the manual insertion of delay and force can be tedious and error-prone.
+We present a semantics-based refactoring that helps strict programmers manage manual lazy programming. The refactoring uses a static analysis to identify where additional delays and forces might be needed to achieve the desired simplification and performance benefits, once the programmer has added the initial lazy data constructors. The paper presents a correctness argument for the underlying transformations and some preliminary experiences with a prototype tool implementation.},
 	Author = {Chang, Stephen},
 	Booktitle = {Programming Languages and Systems},
 	Date-Added = {2014-02-09 20:15:16 +0000},
@@ -299,7 +316,8 @@ Still, the conference is a track within the "1995 Asian Computing Science Confer
 	Bdsk-Url-1 = {http://dx.doi.org/10.1007/3-540-60688-2_38}}
 
 @inproceedings{Abramsky91,
-	Abstract = {This paper defines the categorical notions of relators and transformations and shows that these concepts enable us to give a semantics for polymorphic, higher order functional programs. We demonstrate the pertinence of this semantics to the analysis of polymorphic programs by proving that strictness analysis is a polymorphic invariant.},
+	Abstract = {This paper defines the categorical notions of relators and transformations and shows that these concepts enable us to give a semantics for polymorphic, higher order functional programs. We demonstrate the pertinence of this semantics to the analysis of polymorphic programs by proving that strictness analysis is a polymorphic invariant.
+},
 	Acmid = {99593},
 	Address = {New York, NY, USA},
 	Author = {Abramsky, Samson and Jensen, Thomas P.},
@@ -354,7 +372,9 @@ Still, the conference is a track within the "1995 Asian Computing Science Confer
 	Bdsk-Url-1 = {http://dx.doi.org/10.1007/3-540-57264-3_42}}
 
 @inproceedings{Kuo89,
-	Abstract = {In this work we develop a new framework for strictness analysis. We provide a new definition of strictness based on operational semantics which directly addresses the primary aspect of the strictness analysis problem: non-termination of evaluation. Our definition excludes other irrelevant details such as the type system of the language, and imposes minimal constraints on semantic equality of expressions.We provide a new syntactic representation for strictness properties of programs and a new computational technique for strictness analysis. The syntactic representation takes the form of a simple type language for expressing strictness properties and is much simpler than representations used in previous work. The computational technique is based on well-understood type inference techniques and improves on previous work as it does not require fixpoint iteration.Our framework is parameterized with respect to the language of strictness properties and type inference techniques. As improvements in computational methods become available, both the language and type inference technique can be naturally extended to more complex and accurate strictness analysis.},
+	Abstract = {In this work we develop a new framework for strictness analysis. We provide a new definition of strictness based on operational semantics which directly addresses the primary aspect of the strictness analysis problem: non-termination of evaluation. Our definition excludes other irrelevant details such as the type system of the language, and imposes minimal constraints on semantic equality of expressions.
+We provide a new syntactic representation for strictness properties of programs and a new computational technique for strictness analysis. The syntactic representation takes the form of a simple type language for expressing strictness properties and is much simpler than representations used in previous work. The computational technique is based on well-understood type inference techniques and improves on previous work as it does not require fixpoint iteration.
+Our framework is parameterized with respect to the language of strictness properties and type inference techniques. As improvements in computational methods become available, both the language and type inference technique can be naturally extended to more complex and accurate strictness analysis.},
 	Acmid = {99390},
 	Address = {New York, NY, USA},
 	Annote = {Main result here: this approach is simpler (and faster?) than abstract interpretation.
