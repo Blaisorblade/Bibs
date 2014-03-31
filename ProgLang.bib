@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2014-03-13 18:34:16 +0100 
+%% Created for Paolo Giosué Giarrusso at 2014-03-30 13:18:28 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -261,6 +261,96 @@ Sec. 4.1: promoted kinds? (Doesn't work so easily).},
 	Year = {2009},
 	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1596550.1596585},
 	Bdsk-Url-2 = {http://dx.doi.org/10.1145/1596550.1596585}}
+
+@inproceedings{Jay11TSP,
+	Acmid = {2034808},
+	Address = {New York, NY, USA},
+	Annote = {They don't distinguish T and Expr T:
+> A consequence of the type of B is that our notion of quotation is type-preserving: if a program has type T , then its representation has type T , too. This shows that different quotations may have different types. An alternative would be to follow Rendel, Ostermann, and Hofer and introduce a new type Expr T of program representations so that terms cannot be confused with their representations; we leave this for future work.
+
+Moreover, all their interpreters would also work for terms which haven't been quoted.
+
+So I think this "future work" is impossible --- but they say otherwise in conclusions:
+> A more interesting challenge is whether the results in this paper can be applied to a strongly normalising calculus. After all, if the basic calculus is strongly normalising, why shouldn't the interpretations be so too? To put it another way, can the Y operator be replaced by something that is strongly normalising?
+
+[Their self-interpreters seem to work without Y --- but they use let rec, which is desugared to Y.]
+
+> Is there a self-interpreter that is adequate, in the sense of Rendel, Ostermann, and Hofer? This seems plausible, at the price of making everything somewhat more obscure. Is there a self-interpreter for a language with decidable type-checking? This is a harder question, since it is not clear how to factorise the application of a term to a type.
+
+==
+
+Moreover, can one write interesting self-interpreters? Well, at least by now they can show a self-optimizer apparently, so things aren't so bad maybe.
+
+Can we also discuss why they don't fall prey to G{\"o}del's incompleteness theorem/Tarski undefinability theorem? (But they don't have decidable typechecking, nor is theirs a total language?)
+(It's also not like they can type everything, say E --- their system is funny there. Also, they don't support explicit type annotations in the source language.).
+
+See also:
+7.5 Adequacy
+A weakness of our approach is that the type system does not distinguish terms from their quotations. [...] In the meantime, observe that there is not much scope for confusion, as there is a simple test for being a quotation [...]
+
+> The approach of Rendel, Ostermann, and Hofer can be characterised as follows. A function at one level of the type hierarchy can be tagged to become a data structure at the next level. This requires a countable sequence of levels
+
+> The other notable difference is that both applications of terms to types, and type abstractions, are explicit in their work but implicit here. This saves us from having to factorise type applications, but at the cost of type inference being undecidable.
+
+> They presented a self-recogniser (not strong), and left open the problems of writing an equality checker and a self-enactor.},
+	Author = {Jay, Barry and Palsberg, Jens},
+	Booktitle = {Proceedings of the 16th ACM SIGPLAN International Conference on Functional Programming},
+	Date-Added = {2014-03-22 16:36:20 +0000},
+	Date-Modified = {2014-03-30 11:18:26 +0000},
+	Doi = {10.1145/2034773.2034808},
+	Isbn = {978-1-4503-0865-6},
+	Keywords = {pattern matching, self-interpretation},
+	Location = {Tokyo, Japan},
+	Numpages = {12},
+	Pages = {247--258},
+	Publisher = {ACM},
+	Series = {ICFP '11},
+	Title = {Typed Self-interpretation by Pattern Matching},
+	Url = {http://doi.acm.org/10.1145/2034773.2034808},
+	Year = {2011},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2034773.2034808},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/2034773.2034808}}
+
+@article{Nanevski08,
+	Abstract = { ABSTRACT We consider the problem of reconciling a dependently typed functional language with imperative features such as mutable higher-order state, pointer aliasing, and nontermination. We propose Hoare type theory (HTT), which incorporates Hoare-style specifications into types, making it possible to statically track and enforce correct use of side effects.The main feature of HTT is the Hoare type {P}x:A{Q} specifying computations with precondition P and postcondition Q that return a result of type A. Hoare types can be nested, combined with other types, and abstracted, leading to a smooth integration with higher-order functions and type polymorphism.We further show that in the presence of type polymorphism, it becomes possible to interpret the Hoare types in the ``small footprint'' manner, as advocated by separation logic, whereby specifications tightly describe the state required by the computation.We establish that HTT is sound and compositional, in the sense that separate verifications of individual program components suffice to ensure the correctness of the composite program. },
+	Author = {Nanevski, Aleksandar and Morrisett, Greg and Birkedal, Lars},
+	Date-Added = {2014-03-16 23:51:29 +0000},
+	Date-Modified = {2014-03-16 23:52:01 +0000},
+	Doi = {10.1017/S0956796808006953},
+	Issn = {1469-7653},
+	Issue = {Special Double Issue 5-6},
+	Journal = {Journal of Functional Programming},
+	Month = {9},
+	Numpages = {47},
+	Pages = {865--911},
+	Title = {Hoare type theory, polymorphism and separation},
+	Url = {http://journals.cambridge.org/article_S0956796808006953},
+	Volume = {18},
+	Year = {2008},
+	Bdsk-Url-1 = {http://journals.cambridge.org/article_S0956796808006953},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1017/S0956796808006953}}
+
+@inproceedings{Nanevski:2006:PSH,
+	Abstract = {In previous work, we proposed a Hoare Type Theory (HTT) which combines effectful higher-order functions, dependent types and Hoare Logic specifications into a unified framework. However, the framework did not support polymorphism, and ailed to provide a modular treatment of state in specifications. In this paper, we address these shortcomings by showing that the addition of polymorphism alone is sufficient for capturing modular state specifications in the style of Separation Logic. Furthermore, we argue that polymorphism is an essential ingredient of the extension, as the treatment of higher-order functions requires operations not encodable via the spatial connectives of Separation Logic.},
+	Acmid = {1159812},
+	Address = {New York, NY, USA},
+	Author = {Nanevski, Aleksandar and Morrisett, Greg and Birkedal, Lars},
+	Booktitle = {Proceedings of the Eleventh ACM SIGPLAN International Conference on Functional Programming},
+	Date-Added = {2014-03-16 12:51:31 +0000},
+	Date-Modified = {2014-03-16 12:51:47 +0000},
+	Doi = {10.1145/1159803.1159812},
+	Isbn = {1-59593-309-3},
+	Keywords = {hoare logic, separation logic, type theory},
+	Location = {Portland, Oregon, USA},
+	Numpages = {12},
+	Pages = {62--73},
+	Publisher = {ACM},
+	Series = {ICFP '06},
+	Title = {Polymorphism and Separation in Hoare Type Theory},
+	Url = {http://doi.acm.org/10.1145/1159803.1159812},
+	Year = {2006},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1159803.1159812},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/1159803.1159812}}
 
 @inproceedings{Ahmed09sri,
 	Abstract = {Mitchell's notion of representation independence is a particularly useful application of Reynolds' relational parametricity -- two different implementations of an abstract data type can be shown contextually equivalent so long as there exists a relation between their type representations that is preserved by their operations. There have been a number of methods proposed for proving representation independence in various pure extensions of System F (where data abstraction is achieved through existential typing), as well as in Algol- or Java-like languages (where data abstraction is achieved through the use of local mutable state). However, none of these approaches addresses the interaction of existential type abstraction and local state. In particular, none allows one to prove representation independence results for generative ADTs -- i.e. ADTs that both maintain some local state and define abstract types whose internal representations are dependent on that local state.

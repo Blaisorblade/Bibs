@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2014-03-27 16:27:48 +0100 
+%% Created for Paolo Giosué Giarrusso at 2014-03-30 13:16:08 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -214,6 +214,39 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@techreport{Koch13IQE,
+	Abstract = {This article approaches the incremental view maintenance problem from an algebraic perspective. The algebraic structure of a ring of databases is constructed and extended to form a powerful aggregate query calculus. The query calculus inherits the key properties of rings, such as distributivity and the existence of an additive inverse. As a consequence, the calculus has a normal form of polynomials and is closed under a universal difference operator. This difference operator allows to express the so-called delta queries of the incremental view maintenance literature, but also deltas to the deltas (second deltas), deltas to second deltas (third deltas), and so on. The k-th delta of a query of polynomial degree k is purely a function of the update, not of the database. This gives rise to a multi-layered incremental view maintenance scheme in which a view is maintained using a hierarchy of auxiliary materialized views of k-th deltas. What is gained by this hierarchy is that the work required to keep all views fresh given an update is extremely simple.  <p/> The method allows to eliminate expensive query operators such as joins and aggregate sums entirely from programs that perform incremental view maintenance. The main result is that, for non-nested queries, each individual aggregate value can be incrementally maintained using a constant amount of work. This is not possible for nonincremental evaluation and provides a complexity separation between the incremental and nonincremental query evaluation problems.  <p/> As a byproduct, we obtain a query language that is significant in its own right. It is an algebraic language in which queries, like in relational calculus, are built up from base objects (generalized relations) using an extremely small set of connectives -- addition, multiplication, and aggregation. It is based on a family of algebraic structures developed in this article -- called avalanche (semi)rings -- which algebraizes range-restriction. Thus these structures guarantee finite query results in the presence of inequalities, without making use of an explicit selection operation. The entire language behaves like a polynomial ring of relations and thus makes algebraic manipulation very easy. As a simple algebraic language of interesting expressive power -- relational algebra with SQL-style aggregation and unlimited nesting -- it is a natural internal representation language for query processors and compilers.},
+	Annote = {Revised version of PODS 2010 paper},
+	Author = {Koch, Christoph},
+	Date-Added = {2014-03-30 11:13:54 +0000},
+	Date-Modified = {2014-03-30 11:16:06 +0000},
+	Institution = {EPFL},
+	Keywords = {incremental view maintenance; compilers},
+	Local-Url = {http://infoscience.epfl.ch/record/183766/files/main.pdf},
+	Number = {EPFL-REPORT-183766},
+	Title = {Incremental Query Evaluation in a Ring of Databases},
+	Url = {http://infoscience.epfl.ch/record/183766},
+	Year = {2013},
+	Bdsk-Url-1 = {http://infoscience.epfl.ch/record/183766}}
+
+@article{Koch14,
+	Author = {Koch, Christoph and Ahmad, Yanif and Kennedy, Oliver and Nikolic, Milos and N{\"o}tzli, Andres and Lupei, Daniel and Shaikhha, Amir},
+	Date-Added = {2014-03-30 11:13:05 +0000},
+	Date-Modified = {2014-03-30 11:13:05 +0000},
+	Doi = {10.1007/s00778-013-0348-4},
+	Issn = {1066-8888},
+	Journal = {The VLDB Journal},
+	Keywords = {Database queries; Materialized views; Incremental view maintenance; Compilation},
+	Language = {English},
+	Number = {2},
+	Pages = {253-278},
+	Publisher = {Springer Berlin Heidelberg},
+	Title = {DBToaster: higher-order delta processing for dynamic, frequently fresh views},
+	Url = {http://dx.doi.org/10.1007/s00778-013-0348-4},
+	Volume = {23},
+	Year = {2014},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/s00778-013-0348-4}}
 
 @inproceedings{Blakeley:1986:EUM,
 	Abstract = {Query processing can be sped up by keeping frequently accessed users' views materialized. However, the need to access base relations in response to queries can be avoided only if the materialized view is adequately maintained. We propose a method in which all database updates to base relations are first filtered to remove from consideration those that cannot possibly affect the view. The conditions given for the detection of updates of this type, called irrelevant updates, are necessary and sufficient and are independent of the database state. For the remaining database updates, a differential algorithm can be applied to re-evaluate the view expression. The algorithm proposed exploits the knowledge provided by both the view definition expression and the database update operations.},

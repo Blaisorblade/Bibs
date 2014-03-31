@@ -2,12 +2,36 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2014-03-06 13:40:27 +0100 
+%% Created for Paolo Giosué Giarrusso at 2014-03-16 13:53:46 +0100 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@inproceedings{Newton:2007:RMS,
+	Abstract = {The development of high-level programming environments is essential if wireless sensor networks are to be accessible to non-experts. In this paper, we present the Regiment system, which consists of a high-level language for spatiotemporal macroprogramming, along with a compiler that translates global programs into node-level code. In Regiment, the programmer views the network as a set of spatially-distributed data streams. The programmer can manipulate sets of these streams that may be defined by topological or geographic relationships between nodes. Regiment provides a rich set of primitives for processing data on individual streams, manipulating regions, performing aggregation over a region, and triggering new computation within the network.
+
+In this paper, we describe the design and implementation of the Regiment language and compiler. We describe the deglobalization process that compiles a network-wide representation of the program into a node-level, event-driven program. Deglobalization maps region operations onto associated spanning trees that establish region membership and permit efficient in-network aggregation. We evaluate Regiment in the context of a complex distributed application involving rapid detection of spatially-distributed events, such as wildfires or chemical plumes. Our results show that Regiment makes it possible to develop complex sensor network applications at a global level.},
+	Acmid = {1236422},
+	Address = {New York, NY, USA},
+	Author = {Newton, Ryan and Morrisett, Greg and Welsh, Matt},
+	Booktitle = {Proceedings of the 6th International Conference on Information Processing in Sensor Networks},
+	Date-Added = {2014-03-16 12:53:33 +0000},
+	Date-Modified = {2014-03-16 12:53:45 +0000},
+	Doi = {10.1145/1236360.1236422},
+	Isbn = {978-1-59593-638-7},
+	Keywords = {functional macroprogramming, sensor networks},
+	Location = {Cambridge, Massachusetts, USA},
+	Numpages = {10},
+	Pages = {489--498},
+	Publisher = {ACM},
+	Series = {IPSN '07},
+	Title = {The Regiment Macroprogramming System},
+	Url = {http://doi.acm.org/10.1145/1236360.1236422},
+	Year = {2007},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1236360.1236422},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/1236360.1236422}}
 
 @inproceedings{Wurthinger13,
 	Abstract = {Building high-performance virtual machines is a complex and expensive undertaking; many popular languages still have low-performance implementations. We describe a new approach to virtual machine (VM) construction that amortizes much of the effort in initial construction by allowing new languages to be implemented with modest additional effort. The approach relies on abstract syntax tree (AST) interpretation where a node can rewrite itself to a more specialized or more general node, together with an optimizing compiler that exploits the structure of the interpreter. The compiler uses speculative assumptions and deoptimization in order to produce efficient machine code. Our initial experience suggests that high performance is attainable while preserving a modular and layered architecture, and that new high-performance language implementations can be obtained by writing little more than a stylized interpreter.},
