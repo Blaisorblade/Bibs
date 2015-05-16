@@ -30,19 +30,19 @@ Your paper coauthors can work with you without learning any of this.
    Integrate bibliographies from github.com/Blaisorblade/Bibs
 
 ## Pulling changes
-To fetch updates from the bibliography repo to the paper repo, run
-`pull-updates.sh` or:
+To fetch updates from the bibliography repo to the paper repo, run *from the
+repository root*:
 
-```
-$ git subtree pull --squash -P Bibs bibs
+```bash
+./Bibs/pull-updates.sh
 ```
 
 ## Pushing changes
-To split and push updates, first fetch updates as above, and then run
-`push-updates.sh` or:
+To split and push updates, first pull updates as above, then run *from the
+repository root*:
 
 ```bash
-git subtree push -P Bibs bibs master
+./Bibs/push-updates.sh
 ```
 
 Caveat: If you care about commit messages in your bibliography repo, you need to
