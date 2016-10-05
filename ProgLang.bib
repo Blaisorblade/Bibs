@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2016-03-24 11:12:29 +0100 
+%% Created for Paolo Giosué Giarrusso at 2016-10-05 15:39:47 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -232,6 +232,30 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@incollection{Firsov2016purely,
+	Abstract = {Many applications have to maintain evolving data sources as well as views on these sources. If sources change, the corresponding views have to be adapted. Complete recomputation of views is typically too expensive. An alternative is to convert source changes into view changes and apply these to the views. This is the key idea of incremental computing. In this paper, we use Haskell to develop an incremental computing framework. We illustrate the concepts behind this framework by implementing several example computations on sequences. Our framework allows the user to implement incremental computations using arbitrary monad families that encapsulate mutable state. This makes it possible to use highly efficient algorithms for core computations.},
+	Author = {Firsov, Denis and Jeltsch, Wolfgang},
+	Booktitle = {Programming {{Languages}}},
+	Copyright = {\textcopyright{}2016 Springer International Publishing Switzerland},
+	Date-Added = {2016-10-05 13:39:46 +0000},
+	Date-Modified = {2016-10-05 13:39:46 +0000},
+	Doi = {10.1007/978-3-319-45279-1_5},
+	Editor = {Castor, Fernando and Liu, Yu David},
+	File = {Firsov_Jeltsch - 2016 - Purely Functional Incremental Computing.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/KNRAJ55X/Firsov_Jeltsch - 2016 - Purely Functional Incremental Computing.pdf:application/pdf;Snapshot:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/63WJJCHZ/978-3-319-45279-1_5.html:text/html},
+	Isbn = {978-3-319-45278-4 978-3-319-45279-1},
+	Keywords = {Logics and Meanings of Programs,Mathematical Logic and Formal Languages,Programming Languages; Compilers; Interpreters,Programming Techniques,Software Engineering},
+	Language = {en},
+	Month = sep,
+	Number = {9889},
+	Pages = {62--77},
+	Publisher = {{Springer International Publishing}},
+	Series = {Lecture Notes in Computer Science},
+	Timestamp = {2016-10-05T13:36:04Z},
+	Title = {Purely {{Functional Incremental Computing}}},
+	Urldate = {2016-10-05},
+	Year = {2016},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/978-3-319-45279-1_5}}
 
 @inproceedings{Lempsink2009typesafe,
 	Abstract = {The UNIX diff program finds the difference between two text files using a classic algorithm for determining the longest common subsequence; however, when working with structured input (e.g. program code), we often want to find the difference between tree-like data (e.g. the abstract syntax tree). In a functional programming language such as Haskell, we can represent this data with a family of (mutually recursive) datatypes. In this paper, we describe a functional, datatype-generic implementation of diff (and the associated program patch). Our approach requires advanced type system features to preserve type safety; therefore, we present the code in Agda, a dependently-typed language well-suited to datatype-generic programming. In order to establish the usefulness of our work, we show that its efficiency can be improved with memoization and that it can also be defined in Haskell.},
