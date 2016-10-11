@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2016-03-01 11:02:38 +0100 
+%% Created for Paolo Giosué Giarrusso at 2016-10-11 22:45:06 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -232,6 +232,26 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@article{Dargaye2010verified,
+	Abstract = {Function uncurrying is an important optimization for the efficient execution of functional programming languages. This optimization replaces curried functions by uncurried, multiple-argument functions, while preserving the ability to evaluate partial applications. First-order uncurrying (where curried functions are optimized only in the static scopes of their definitions) is well understood and implemented by many compilers, but its extension to higher-order functions (where uncurrying can also be performed on parameters and results of higher-order functions) is challenging. This article develops a generic framework that expresses higher-order uncurrying optimizations as type-directed insertion of coercions, and prove its correctness. The proof uses step-indexed logical relations and was entirely mechanized using the Coq proof assistant.},
+	Author = {Dargaye, Zaynah and Leroy, Xavier},
+	Date-Added = {2016-10-11 20:45:04 +0000},
+	Date-Modified = {2016-10-11 20:45:04 +0000},
+	Doi = {10.1007/s10990-010-9050-z},
+	File = {Dargaye_Leroy - 2010 - A verified framework for higher-order uncurrying optimizations.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/6ECEX4PR/Dargaye_Leroy - 2010 - A verified framework for higher-order uncurrying optimizations.pdf:application/pdf;Snapshot:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/HBGVB6MH/s10990-010-9050-z.html:text/html},
+	Issn = {1388-3690, 1573-0557},
+	Journal = {Higher-Order and Symbolic Computation},
+	Language = {en},
+	Month = jan,
+	Number = {3},
+	Pages = {199--231},
+	Timestamp = {2016-10-11T19:59:00Z},
+	Title = {A Verified Framework for Higher-Order Uncurrying Optimizations},
+	Urldate = {2016-10-11},
+	Volume = {22},
+	Year = {2010},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/s10990-010-9050-z}}
 
 @inproceedings{Marlow2004making,
 	Abstract = {Higher-order languages that encourage currying are implemented using one of two basic evaluation models: push/enter or eval/apply. Implementors use their intuition and qualitative judgements to choose one model or the other.Our goal in this paper is to provide, for the first time, a more substantial basis for this choice, based on our qualitative and quantitative experience of implementing both models in a state-of-the-art compiler for Haskell.Our conclusion is simple, and contradicts our initial intuition: compiled implementations should use eval/apply.},
