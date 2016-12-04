@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2016-10-05 15:39:47 +0200 
+%% Created for Paolo Giosué Giarrusso at 2016-12-04 12:01:13 +0100 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -256,6 +256,27 @@
 	Urldate = {2016-10-05},
 	Year = {2016},
 	Bdsk-Url-1 = {http://dx.doi.org/10.1007/978-3-319-45279-1_5}}
+
+@inproceedings{Rompf2015functional,
+	Abstract = {We present the design and implementation of a SQL query processor that outperforms existing database systems and is written in just about 500 lines of Scala code -- a convincing case study that high-level functional programming can handily beat C for systems-level programming where the last drop of performance matters. The key enabler is a shift in perspective towards generative programming. The core of the query engine is an interpreter for relational algebra operations, written in Scala. Using the open-source LMS Framework (Lightweight Modular Staging), we turn this interpreter into a query compiler with very low effort. To do so, we capitalize on an old and widely known result from partial evaluation known as Futamura projections, which state that a program that can specialize an interpreter to any given input program is equivalent to a compiler. In this pearl, we discuss LMS programming patterns such as mixed-stage data structures (e.g. data records with static schema and dynamic field components) and techniques to generate low-level C code, including specialized data structures and data loading primitives.},
+	Address = {New York, NY, USA},
+	Author = {Rompf, Tiark and Amin, Nada},
+	Booktitle = {Proceedings of the 20th {{ACM SIGPLAN International Conference}} on {{Functional Programming}}},
+	Date-Added = {2016-11-28 16:40:01 +0000},
+	Date-Modified = {2016-11-28 16:40:01 +0000},
+	Doi = {10.1145/2784731.2784760},
+	File = {Rompf_Amin - 2015 - Functional Pearl - A SQL to C Compiler in 500 Lines of Code.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/3CNA5SET/Rompf_Amin - 2015 - Functional Pearl - A SQL to C Compiler in 500 Lines of Code.pdf:application/pdf},
+	Isbn = {978-1-4503-3669-7},
+	Keywords = {Futamura projections,generative programming,Query Compilation,sql,staging},
+	Pages = {2--9},
+	Publisher = {{ACM}},
+	Series = {ICFP 2015},
+	Shorttitle = {Functional {{Pearl}}},
+	Timestamp = {2015-09-09T10:42:51Z},
+	Title = {Functional {{Pearl}}: {{A SQL}} to {{C Compiler}} in 500 {{Lines}} of {{Code}}},
+	Urldate = {2015-09-09},
+	Year = {2015},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1145/2784731.2784760}}
 
 @inproceedings{Lempsink2009typesafe,
 	Abstract = {The UNIX diff program finds the difference between two text files using a classic algorithm for determining the longest common subsequence; however, when working with structured input (e.g. program code), we often want to find the difference between tree-like data (e.g. the abstract syntax tree). In a functional programming language such as Haskell, we can represent this data with a family of (mutually recursive) datatypes. In this paper, we describe a functional, datatype-generic implementation of diff (and the associated program patch). Our approach requires advanced type system features to preserve type safety; therefore, we present the code in Agda, a dependently-typed language well-suited to datatype-generic programming. In order to establish the usefulness of our work, we show that its efficiency can be improved with memoization and that it can also be defined in Haskell.},
@@ -3526,19 +3547,20 @@ We evaluate the effectiveness of our approach by considering a range of benchmar
 	Year = {2012}}
 
 @inproceedings{Gabriel2012structure,
- author = {Gabriel, Richard P.},
- title = {The Structure of a Programming Language Revolution},
- booktitle = {Proceedings of the ACM International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software},
- series = {Onward! 2012},
- year = {2012},
- isbn = {978-1-4503-1562-3},
- location = {Tucson, Arizona, USA},
- pages = {195--214},
- numpages = {20},
- url = {http://doi.acm.org/10.1145/2384592.2384611},
- doi = {10.1145/2384592.2384611},
- acmid = {2384611},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {engineering, incommensurability, paradigms, science},
-}
+	Acmid = {2384611},
+	Address = {New York, NY, USA},
+	Author = {Gabriel, Richard P.},
+	Booktitle = {Proceedings of the ACM International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software},
+	Doi = {10.1145/2384592.2384611},
+	Isbn = {978-1-4503-1562-3},
+	Keywords = {engineering, incommensurability, paradigms, science},
+	Location = {Tucson, Arizona, USA},
+	Numpages = {20},
+	Pages = {195--214},
+	Publisher = {ACM},
+	Series = {Onward! 2012},
+	Title = {The Structure of a Programming Language Revolution},
+	Url = {http://doi.acm.org/10.1145/2384592.2384611},
+	Year = {2012},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2384592.2384611},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/2384592.2384611}}
