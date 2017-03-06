@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2017-02-02 16:54:44 +0100 
+%% Created for Paolo Giosué Giarrusso at 2017-03-05 09:32:33 +0100 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -232,6 +232,80 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@inproceedings{Altenkirch1999monadic,
+	Abstract = {We present a definition of untyped $\lambda$-terms using a heterogeneous datatype, i.e. an inductively defined operator. This operator can be extended to a Kleisli triple, which is a concise way to verify the substitution laws for $\lambda$-calculus. We also observe that repetitions in the definition of the monad as well as in the proofs can be avoided by using well-founded recursion and induction instead of structural induction. We extend the construction to the simply typed $\lambda$-calculus using dependent types, and show that this is an instance of a generalization of Kleisli triples. The proofs for the untyped case have been checked using the LEGO system.},
+	Author = {Altenkirch, Thorsten and Reus, Bernhard},
+	Booktitle = {Computer {{Science Logic}}},
+	Copyright = {\textcopyright{}1999 Springer-Verlag Berlin Heidelberg},
+	Date-Added = {2017-03-05 08:32:32 +0000},
+	Date-Modified = {2017-03-05 08:32:32 +0000},
+	Doi = {10.1007/3-540-48168-0_32},
+	Editor = {Flum, J{\"o}rg and Rodriguez-Artalejo, Mario},
+	File = {Altenkirch_Reus - 1999 - Monadic Presentations of Lambda Terms Using Generalized Inductive Types.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/RXCQQMPK/Altenkirch_Reus - 1999 - Monadic Presentations of Lambda Terms Using Generalized Inductive Types.pdf:application/pdf;Snapshot:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/6SPV7TX9/3-540-48168-0_32.html:text/html},
+	Isbn = {978-3-540-66536-6 978-3-540-48168-3},
+	Keywords = {Artificial Intelligence (incl. Robotics),category theory,inductive types,Logics and Meanings of Programs,Mathematical Logic and Formal Languages,Mathematical Logic and Foundations,Theory of Computation,type theory,λ-Calculus},
+	Language = {en},
+	Month = sep,
+	Pages = {453--468},
+	Publisher = {{Springer Berlin Heidelberg}},
+	Series = {Lecture Notes in Computer Science},
+	Timestamp = {2017-03-05T07:05:49Z},
+	Title = {Monadic {{Presentations}} of {{Lambda Terms Using Generalized Inductive Types}}},
+	Urldate = {2017-03-05},
+	Year = {1999},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/3-540-48168-0_32}}
+
+@inproceedings{Owens2016functional,
+	Abstract = {When doing an interactive proof about a piece of software, it is important that the underlying programming language's semantics does not make the proof unnecessarily difficult or unwieldy. Both small-step and big-step semantics are commonly used, and the latter is typically given by an inductively defined relation. In this paper, we consider an alternative: using a recursive function akin{\"\i}\textthreequarters\textquestiondown{}to an interpreter for the language. The advantages include a better induction theorem, less duplication, accessibility to ordinary functional programmers, and the ease of doing symbolic simulation in proofs via rewriting. We believe that this style of semantics is well suited for compiler verification, including proofs of divergence preservation. We do not claim the invention of this style of semantics: our contribution here is to clarify its value, and to explain how it supports several language features that might appear to require a relational or small-step approach. We illustrate the technique on a simple imperative language with C-like for-loops and a break statement, and compare it to a variety of other approaches. We also provide ML and lambda-calculus based examples to illustrate its generality.},
+	Address = {New York, NY, USA},
+	Author = {Owens, Scott and Myreen, Magnus O. and Kumar, Ramana and Tan, Yong Kiam},
+	Booktitle = {Proceedings of the 25th {{European Symposium}} on {{Programming Languages}} and {{Systems}} - {{Volume}} 9632},
+	Date-Added = {2017-03-05 06:26:10 +0000},
+	Date-Modified = {2017-03-05 06:26:10 +0000},
+	Doi = {10.1007/978-3-662-49498-1_23},
+	File = {Owens et al - 2016 - Functional Big-Step Semantics.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/FMCDCGVB/Owens et al - 2016 - Functional Big-Step Semantics.pdf:application/pdf},
+	Isbn = {978-3-662-49497-4},
+	Pages = {589--615},
+	Publisher = {{Springer-Verlag New York, Inc.}},
+	Timestamp = {2017-02-28T21:24:41Z},
+	Title = {Functional {{Big}}-{{Step Semantics}}},
+	Urldate = {2017-02-28},
+	Year = {2016},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/978-3-662-49498-1_23}}
+
+@inproceedings{McBride2010outrageous,
+	Abstract = {Tagless interpreters for well-typed terms in some object language are a standard example of the power and benefit of precise indexing in types, whether with dependent types, or generalized algebraic datatypes. The key is to reflect object language types as indices (however they may be constituted) for the term datatype in the host language, so that host type coincidence ensures object type coincidence. Whilst this technique is widespread for simply typed object languages, dependent types have proved a tougher nut with nontrivial computation in type equality. In their type-safe representations, Danielsson [2006] and Chapman [2009] succeed in capturing the equality rules, but at the cost of representing equality derivations explicitly within terms. This article constructs a type-safe representation for a dependently typed object language, dubbed KIPLING, whose computational type equality just appropriates that of its host, Agda. The KIPLING interpreter example is not merely de rigeur - it is key to the construction. At the heart of the technique is that key component of generic programming, the universe.},
+	Address = {New York, NY, USA},
+	Author = {McBride, Conor},
+	Booktitle = {Proceedings of the 6th {{ACM SIGPLAN Workshop}} on {{Generic Programming}}},
+	Date-Added = {2017-03-05 05:50:46 +0000},
+	Date-Modified = {2017-03-05 05:50:46 +0000},
+	Doi = {10.1145/1863495.1863497},
+	File = {McBride - 2010 - Outrageous but Meaningful Coincidences - Dependent Type-safe Syntax and Evaluation.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/J5I5KU9E/McBride - 2010 - Outrageous but Meaningful Coincidences - Dependent Type-safe Syntax and Evaluation.pdf:application/pdf},
+	Isbn = {978-1-4503-0251-7},
+	Keywords = {dependent types,generic programming},
+	Pages = {1--12},
+	Publisher = {{ACM}},
+	Series = {WGP '10},
+	Shorttitle = {Outrageous but {{Meaningful Coincidences}}},
+	Timestamp = {2016-02-29T23:17:09Z},
+	Title = {Outrageous but {{Meaningful Coincidences}}: {{Dependent Type}}-Safe {{Syntax}} and {{Evaluation}}},
+	Urldate = {2014-08-08},
+	Year = {2010},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1145/1863495.1863497}}
+
+@inproceedings{Augustsson1999exercise,
+	Abstract = {The result type of an interpreter written in a typed language is normally a tagged union. By using depent types, we can be more precise about the type of values that the intepreter returns. There is no need for tagging these values with their type, something which opens the door to more efficient interpreters.},
+	Author = {Augustsson, Lennart and Carlsson, Magnus},
+	Booktitle = {In {{Workshop}} on {{Dependent Types}} in {{Programming}}, {{Gothenburg}}},
+	Date-Added = {2017-03-05 05:49:14 +0000},
+	Date-Modified = {2017-03-05 05:49:14 +0000},
+	File = {Augustsson_Carlsson - 1999 - An exercise in dependent types - A well-typed interpreter.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/78VRS7N7/Augustsson_Carlsson - 1999 - An exercise in dependent types - A well-typed interpreter.pdf:application/pdf;Citeseer - Snapshot:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/4CEEK5VJ/summary.html:text/html},
+	Shorttitle = {An Exercise in Dependent Types},
+	Timestamp = {2017-01-18T14:13:48Z},
+	Title = {An Exercise in Dependent Types: {{A}} Well-Typed Interpreter},
+	Year = {1999}}
 
 @inproceedings{Kiselyov2017stream,
 	Abstract = {Stream processing is mainstream (again): Widely-used stream libraries are now available for virtually all modern OO and functional languages, from Java to C\# to Scala to OCaml to Haskell. Yet expressivity and performance are still lacking. For instance, the popular, well-optimized Java 8 streams do not support the zip operator and are still an order of magnitude slower than hand-written loops.   We present the first approach that represents the full generality of stream processing and eliminates overheads, via the use of staging. It is based on an unusually rich semantic model of stream interaction. We support any combination of zipping, nesting (or flat-mapping), sub-ranging, filtering, mapping\textemdash{}of finite or infinite streams. Our model captures idiosyncrasies that a programmer uses in optimizing stream pipelines, such as rate differences and the choice of a ``for'' vs. ``while'' loops. Our approach delivers hand-written\textendash{}like code, but automatically. It explicitly avoids the reliance on black-box optimizers and sufficiently-smart compilers, offering highest, guaranteed and portable performance.   Our approach relies on high-level concepts that are then readily mapped into an implementation. Accordingly, we have two distinct implementations: an OCaml stream library, staged via MetaOCaml, and a Scala library for the JVM, staged via LMS. In both cases, we derive libraries richer and simultaneously many tens of times faster than past work. We greatly exceed in performance the standard stream libraries available in Java, Scala and OCaml, including the well-optimized Java 8 streams.},

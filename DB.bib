@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2015-04-14 14:03:58 +0200 
+%% Created for Paolo Giosué Giarrusso at 2017-03-05 09:32:01 +0100 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -214,6 +214,62 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@article{Koch2014incremental,
+	Abstract = {In the context of incremental view maintenance (IVM), delta query derivation is an essential technique for speeding up the processing of large, dynamic datasets. The goal is to generate delta queries that, given a small change in the input, can update the materialized view more efficiently than via recomputation. In this work we propose the first solution for the efficient incrementalization of positive nested relational calculus (NRC+) on bags (with integer multiplicities). More precisely, we model the cost of NRC+ operators and classify queries as efficiently incrementalizable if their delta has a strictly lower cost than full re-evaluation. Then, we identify IncNRC+; a large fragment of NRC+ that is efficiently incrementalizable and we provide a semantics-preserving translation that takes any NRC+ query to a collection of IncNRC+ queries. Furthermore, we prove that incremental maintenance for NRC+ is within the complexity class NC0 and we showcase how recursive IVM, a technique that has provided significant speedups over traditional IVM in the case of flat queries [25], can also be applied to IncNRC+.},
+	Archiveprefix = {arXiv},
+	Author = {Koch, Christoph and Lupei, Daniel and Tannen, Val},
+	Date-Added = {2017-03-05 08:31:07 +0000},
+	Date-Modified = {2017-03-05 08:31:07 +0000},
+	Eprint = {1412.4320},
+	Eprinttype = {arxiv},
+	File = {Koch et al - 2014 - Incremental View Maintenance For Collection Programming.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/7228TF5T/Koch et al - 2014 - Incremental View Maintenance For Collection Programming.pdf:application/pdf;arXiv.org Snapshot:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/PBEFC3H6/1412.html:text/html},
+	Journal = {arXiv:1412.4320 [cs]},
+	Keywords = {Computer Science - Databases},
+	Month = dec,
+	Primaryclass = {cs},
+	Timestamp = {2016-10-12T12:13:11Z},
+	Title = {Incremental {{View Maintenance For Collection Programming}}},
+	Urldate = {2016-10-12},
+	Year = {2014}}
+
+@inproceedings{Koch2016incremental,
+	Abstract = {In the context of incremental view maintenance (IVM), delta query derivation is an essential technique for speeding up the processing of large, dynamic datasets. The goal is to generate delta queries that, given a small change in the input, can update the materialized view more efficiently than via recomputation. In this work we propose the first solution for the efficient incrementalization of positive nested relational calculus (NRC+) on bags (with integer multiplicities). More precisely, we model the cost of NRC+ operators and classify queries as efficiently incrementalizable if their delta has a strictly lower cost than full re-evaluation. Then, we identify NRC+, a large fragment of NRC+ that is efficiently incrementalizable and we provide a semantics-preserving translation that takes any NRC+ query to a collection of IncNRC+ queries. Furthermore, we prove that incremental maintenance for NRC+ is within the complexity class NC0 and we showcase how recursive IVM, a technique that has provided significant speedups over traditional IVM in the case of flat queries [25], can also be applied to IncNRC+.},
+	Address = {New York, NY, USA},
+	Author = {Koch, Christoph and Lupei, Daniel and Tannen, Val},
+	Booktitle = {Proceedings of the 35th {{ACM SIGMOD}}-{{SIGACT}}-{{SIGAI Symposium}} on {{Principles}} of {{Database Systems}}},
+	Date-Added = {2017-03-05 08:31:07 +0000},
+	Date-Modified = {2017-03-05 08:31:07 +0000},
+	Doi = {10.1145/2902251.2902286},
+	File = {Koch et al - 2016 - Incremental View Maintenance For Collection Programming.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/7R9T3699/Koch et al - 2016 - Incremental View Maintenance For Collection Programming.pdf:application/pdf},
+	Isbn = {978-1-4503-4191-2},
+	Keywords = {collection programming,higher-order delta derivation,incremental computation,Incremental view maintenance,nested relational algebra,nested relational calculus,recursive ivm,shredding transformation},
+	Pages = {75--90},
+	Publisher = {{ACM}},
+	Series = {PODS '16},
+	Timestamp = {2016-10-12T12:12:24Z},
+	Title = {Incremental {{View Maintenance For Collection Programming}}},
+	Urldate = {2016-10-12},
+	Year = {2016},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1145/2902251.2902286}}
+
+@article{Lupei2014incremental,
+	Abstract = {Incremental view maintenance is an essential tool for speeding up the processing of large, locally changing workloads. Its fundamental challenge is to ensure that changes are propagated from input to output more efficiently than via recomputation. We formalize this requirement for positive nested relational algebra (NRA+) on bags and we propose a transformation deriving deltas for any expression in the language. The main difficulty in maintaining nested queries lies in the inability to express within NRA+ the efficient updating of inner bags, i.e., without completely replacing the tuples that contain them. To address this problem, we first show how to efficiently incrementalize IncNRA+, a large fragment of NRA+ whose deltas never generate inner bag updates. We then provide a semantics-preserving transformation that takes any nested query into a collection of IncNRA+ queries. This constitutes the first static solution for the efficient incremental processing of languages with nested collections. Furthermore, we show that the state-of-the-art technique of recursive IVM, originally developed for positive relational algebra with aggregation, also extends to nested queries. Finally, we generalize our static approach for the efficient incrementalization of NRA+ to a family of simply-typed lambda calculi, given that its primitives are themselves efficiently incrementalizable.},
+	Archiveprefix = {arXiv},
+	Author = {Lupei, Daniel and Koch, Christoph and Tannen, Val},
+	Date-Added = {2017-03-05 08:31:07 +0000},
+	Date-Modified = {2017-03-05 08:31:07 +0000},
+	Eprint = {1412.4320},
+	Eprinttype = {arxiv},
+	File = {Lupei et al - 2014 - Incremental View Maintenance for Nested-Relational Databases.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/F9BUNHPP/Lupei et al - 2014 - Incremental View Maintenance for Nested-Relational Databases.pdf:application/pdf;arXiv.org Snapshot:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/FJMHM53K/1412.html:text/html},
+	Journal = {arXiv:1412.4320 [cs]},
+	Keywords = {_tablet,Computer Science - Databases},
+	Month = dec,
+	Primaryclass = {cs},
+	Timestamp = {2016-02-29T23:17:09Z},
+	Title = {Incremental {{View Maintenance}} for {{Nested}}-{{Relational Databases}}},
+	Urldate = {2014-12-20},
+	Year = {2014}}
 
 @techreport{Koch13IQE,
 	Abstract = {This article approaches the incremental view maintenance problem from an algebraic perspective. The algebraic structure of a ring of databases is constructed and extended to form a powerful aggregate query calculus. The query calculus inherits the key properties of rings, such as distributivity and the existence of an additive inverse. As a consequence, the calculus has a normal form of polynomials and is closed under a universal difference operator. This difference operator allows to express the so-called delta queries of the incremental view maintenance literature, but also deltas to the deltas (second deltas), deltas to second deltas (third deltas), and so on. The k-th delta of a query of polynomial degree k is purely a function of the update, not of the database. This gives rise to a multi-layered incremental view maintenance scheme in which a view is maintained using a hierarchy of auxiliary materialized views of k-th deltas. What is gained by this hierarchy is that the work required to keep all views fresh given an update is extremely simple.  <p/> The method allows to eliminate expensive query operators such as joins and aggregate sums entirely from programs that perform incremental view maintenance. The main result is that, for non-nested queries, each individual aggregate value can be incrementally maintained using a constant amount of work. This is not possible for nonincremental evaluation and provides a complexity separation between the incremental and nonincremental query evaluation problems.  <p/> As a byproduct, we obtain a query language that is significant in its own right. It is an algebraic language in which queries, like in relational calculus, are built up from base objects (generalized relations) using an extremely small set of connectives -- addition, multiplication, and aggregation. It is based on a family of algebraic structures developed in this article -- called avalanche (semi)rings -- which algebraizes range-restriction. Thus these structures guarantee finite query results in the presence of inequalities, without making use of an explicit selection operation. The entire language behaves like a polynomial ring of relations and thus makes algebraic manipulation very easy. As a simple algebraic language of interesting expressive power -- relational algebra with SQL-style aggregation and unlimited nesting -- it is a natural internal representation language for query processors and compilers.},
@@ -988,7 +1044,7 @@ Furthermore, they support deletions by extending non-idempotent monoids to group
 	Series = {SIGMOD '84},
 	Title = {Making Smalltalk a database system},
 	Year = {1984},
-	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8Qhy4uLy4uLy4uLy4uL0Ryb3Bib3gvUGFwZXJzL1Byb2dyYW1taW5nIExhbmd1YWdlcy9RdWVyeSBsYW5ndWFnZXMvRGF0YWJhc2UgcGFwZXJzL01ha2luZyBTbWFsbHRhbGsgYSBkYXRhYmFzZSBzeXN0ZW0gLSBwMzE2LWNvcGVsYW5kLnBkZtIXCxgZV05TLmRhdGFPEQKgAAAAAAKgAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADQXF2HSCsAAAAhzCofTWFraW5nIFNtYWxsdGFsayBhIGQjMjFDQzM0LnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACHMNMr5M74AAAAAAAAAAAAEAAYAAAkgAAAAAAAAAAAAAAAAAAAAD0RhdGFiYXNlIHBhcGVycwAAEAAIAADQXEFnAAAAEQAIAADK+SWuAAAAAQAcACHMKgAhzCIAIcPZACHCkAAhrHEAFUOqAAKT1QACAIlNYWNpbnRvc2ggSEQ6VXNlcnM6AHBnaWFycnVzc286AERyb3Bib3g6AFBhcGVyczoAUHJvZ3JhbW1pbmcgTGFuZ3VhZ2VzOgBRdWVyeSBsYW5ndWFnZXM6AERhdGFiYXNlIHBhcGVyczoATWFraW5nIFNtYWxsdGFsayBhIGQjMjFDQzM0LnBkZgAADgBuADYATQBhAGsAaQBuAGcAIABTAG0AYQBsAGwAdABhAGwAawAgAGEAIABkAGEAdABhAGIAYQBzAGUAIABzAHkAcwB0AGUAbQAgAC0AIABwADMAMQA2AC0AYwBvAHAAZQBsAGEAbgBkAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgCMVXNlcnMvcGdpYXJydXNzby9Ecm9wYm94L1BhcGVycy9Qcm9ncmFtbWluZyBMYW5ndWFnZXMvUXVlcnkgbGFuZ3VhZ2VzL0RhdGFiYXNlIHBhcGVycy9NYWtpbmcgU21hbGx0YWxrIGEgZGF0YWJhc2Ugc3lzdGVtIC0gcDMxNi1jb3BlbGFuZC5wZGYAEwABLwAAFQACABH//wAAgAbSGxwdHlokY2xhc3NuYW1lWCRjbGFzc2VzXU5TTXV0YWJsZURhdGGjHR8gVk5TRGF0YVhOU09iamVjdNIbHCIjXE5TRGljdGlvbmFyeaIiIF8QD05TS2V5ZWRBcmNoaXZlctEmJ1Ryb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AIQAjgEYAR0BJQPJA8sD0APbA+QD8gP2A/0EBgQLBBgEGwQtBDAENQAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAAQ3},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8Qhy4uLy4uLy4uLy4uL0Ryb3Bib3gvUGFwZXJzL1Byb2dyYW1taW5nIExhbmd1YWdlcy9RdWVyeSBsYW5ndWFnZXMvRGF0YWJhc2UgcGFwZXJzL01ha2luZyBTbWFsbHRhbGsgYSBkYXRhYmFzZSBzeXN0ZW0gLSBwMzE2LWNvcGVsYW5kLnBkZtIXCxgZV05TLmRhdGFPEQKgAAAAAAKgAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADOl7nTSCsAAAAWLTofTWFraW5nIFNtYWxsdGFsayBhIGQjMTYyRDQ0LnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYtRMr5M74AAAAAAAAAAAAEAAYAAAkgAAAAAAAAAAAAAAAAAAAAD0RhdGFiYXNlIHBhcGVycwAAEAAIAADOl6vDAAAAEQAIAADK+SWuAAAAAQAcABYtOgAWLTIAFieIABYmewAWIfsADZefAAJkjgACAIlNYWNpbnRvc2ggSEQ6VXNlcnM6AHBnaWFycnVzc286AERyb3Bib3g6AFBhcGVyczoAUHJvZ3JhbW1pbmcgTGFuZ3VhZ2VzOgBRdWVyeSBsYW5ndWFnZXM6AERhdGFiYXNlIHBhcGVyczoATWFraW5nIFNtYWxsdGFsayBhIGQjMTYyRDQ0LnBkZgAADgBuADYATQBhAGsAaQBuAGcAIABTAG0AYQBsAGwAdABhAGwAawAgAGEAIABkAGEAdABhAGIAYQBzAGUAIABzAHkAcwB0AGUAbQAgAC0AIABwADMAMQA2AC0AYwBvAHAAZQBsAGEAbgBkAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgCMVXNlcnMvcGdpYXJydXNzby9Ecm9wYm94L1BhcGVycy9Qcm9ncmFtbWluZyBMYW5ndWFnZXMvUXVlcnkgbGFuZ3VhZ2VzL0RhdGFiYXNlIHBhcGVycy9NYWtpbmcgU21hbGx0YWxrIGEgZGF0YWJhc2Ugc3lzdGVtIC0gcDMxNi1jb3BlbGFuZC5wZGYAEwABLwAAFQACABH//wAAgAbSGxwdHlokY2xhc3NuYW1lWCRjbGFzc2VzXU5TTXV0YWJsZURhdGGjHR8gVk5TRGF0YVhOU09iamVjdNIbHCIjXE5TRGljdGlvbmFyeaIiIF8QD05TS2V5ZWRBcmNoaXZlctEmJ1Ryb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AIQAjgEYAR0BJQPJA8sD0APbA+QD8gP2A/0EBgQLBBgEGwQtBDAENQAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAAQ3},
 	Bdsk-Url-1 = {http://doi.acm.org/10.1145/602259.602300}}
 
 @inproceedings{Henglein10a,
