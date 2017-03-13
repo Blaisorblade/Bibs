@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2017-03-13 16:52:02 +0100 
+%% Created for Paolo Giosué Giarrusso at 2017-03-13 18:29:21 +0100 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -388,6 +388,53 @@
 	Year = {2017},
 	Bdsk-Url-1 = {http://doi.acm.org/10.1145/3009837.3009866},
 	Bdsk-Url-2 = {http://dx.doi.org/10.1145/3009837.3009866}}
+
+@inproceedings{Cicek2016type,
+	Abstract = {Incremental computation aims to speed up re-runs of a program after its inputs have been modified slightly. It works by recording a trace of the program's first run and propagating changes through the trace in incremental runs, trying to re-use as much of the original trace as possible. The recent work CostIt is a type and effect system to establish the time complexity of incremental runs of a program, as a function of input changes. However, CostIt is limited in two ways. First, it prohibits input changes that influence control flow. This makes it impossible to type programs that, for instance, branch on inputs that may change. Second, the soundness of CostIt is proved relative to an abstract cost semantics, but it is unclear how the semantics can be realized.   In this paper, we address both these limitations. We present DuCostIt, a re-design of CostIt, that combines reasoning about costs of change propagation and costs of from-scratch evaluation. The latter lifts the restriction on control flow changes. To obtain the type system, we refine Flow Caml, a type system for information flow analysis, with cost effects. Additionally, we inherit from CostIt index refinements to track data structure sizes and a co-monadic type. Using a combination of binary and unary step-indexed logical relations, we prove DuCostIt's cost analysis sound relative to not only an abstract cost semantics, but also a concrete semantics, which is obtained by translation to an ML-like language.},
+	Address = {New York, NY, USA},
+	Author = {{\c C}i{\c c}ek, Ezgi and Paraskevopoulou, Zoe and Garg, Deepak},
+	Booktitle = {Proceedings of the 21st {{ACM SIGPLAN International Conference}} on {{Functional Programming}}},
+	Date-Added = {2017-03-13 17:29:21 +0000},
+	Date-Modified = {2017-03-13 17:29:21 +0000},
+	Doi = {10.1145/2951913.2951950},
+	File = {{\c C}i{\c c}ek et al - 2016 - A Type Theory for Incremental Computational Complexity with Control Flow Changes.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/BUQH5SBT/{\c C}i{\c c}ek et al - 2016 - A Type Theory for Incremental Computational Complexity with Control Flow Changes.pdf:application/pdf},
+	Isbn = {978-1-4503-4219-3},
+	Keywords = {complexity analysis,incremental computation,type and effect systems},
+	Pages = {132--145},
+	Publisher = {{ACM}},
+	Series = {ICFP 2016},
+	Timestamp = {2017-02-07T18:31:46Z},
+	Title = {A {{Type Theory}} for {{Incremental Computational Complexity}} with {{Control Flow Changes}}},
+	Urldate = {2017-02-07},
+	Year = {2016},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1145/2951913.2951950}}
+
+@inproceedings{pitts2010step,
+	Author = {Pitts, Andrew M},
+	Booktitle = {Dagstuhl Seminar Proceedings},
+	Organization = {Schloss Dagstuhl-Leibniz-Zentrum f\"ur Informatik},
+	Title = {Step-indexed biorthogonality: a tutorial example},
+	Year = {2010}}
+
+@article{Dargaye2010verified,
+	Abstract = {Function uncurrying is an important optimization for the efficient execution of functional programming languages. This optimization replaces curried functions by uncurried, multiple-argument functions, while preserving the ability to evaluate partial applications. First-order uncurrying (where curried functions are optimized only in the static scopes of their definitions) is well understood and implemented by many compilers, but its extension to higher-order functions (where uncurrying can also be performed on parameters and results of higher-order functions) is challenging. This article develops a generic framework that expresses higher-order uncurrying optimizations as type-directed insertion of coercions, and prove its correctness. The proof uses step-indexed logical relations and was entirely mechanized using the Coq proof assistant.},
+	Author = {Dargaye, Zaynah and Leroy, Xavier},
+	Date-Added = {2016-10-11 20:45:04 +0000},
+	Date-Modified = {2016-10-11 20:45:04 +0000},
+	Doi = {10.1007/s10990-010-9050-z},
+	File = {Dargaye_Leroy - 2010 - A verified framework for higher-order uncurrying optimizations.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/6ECEX4PR/Dargaye_Leroy - 2010 - A verified framework for higher-order uncurrying optimizations.pdf:application/pdf;Snapshot:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/HBGVB6MH/s10990-010-9050-z.html:text/html},
+	Issn = {1388-3690, 1573-0557},
+	Journal = {Higher-Order and Symbolic Computation},
+	Language = {en},
+	Month = jan,
+	Number = {3},
+	Pages = {199--231},
+	Timestamp = {2016-10-11T19:59:00Z},
+	Title = {A Verified Framework for Higher-Order Uncurrying Optimizations},
+	Urldate = {2016-10-11},
+	Volume = {22},
+	Year = {2010},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/s10990-010-9050-z}}
 
 @incollection{Firsov2016purely,
 	Abstract = {Many applications have to maintain evolving data sources as well as views on these sources. If sources change, the corresponding views have to be adapted. Complete recomputation of views is typically too expensive. An alternative is to convert source changes into view changes and apply these to the views. This is the key idea of incremental computing. In this paper, we use Haskell to develop an incremental computing framework. We illustrate the concepts behind this framework by implementing several example computations on sequences. Our framework allows the user to implement incremental computations using arbitrary monad families that encapsulate mutable state. This makes it possible to use highly efficient algorithms for core computations.},
@@ -3701,6 +3748,16 @@ We evaluate the effectiveness of our approach by considering a range of benchmar
 	Pages = {318--329},
 	Title = {Incremental detection of inconsistencies in distributed data},
 	Year = {2012}}
+
+@article{sabry1993reasoning,
+	Author = {Sabry, Amr and Felleisen, Matthias},
+	Journal = {Lisp and symbolic computation},
+	Number = {3-4},
+	Pages = {289--360},
+	Publisher = {Springer},
+	Title = {Reasoning about programs in continuation-passing style},
+	Volume = {6},
+	Year = {1993}}
 
 @inproceedings{Gabriel2012structure,
 	Acmid = {2384611},
