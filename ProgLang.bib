@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2016-10-11 22:45:06 +0200 
+%% Created for Paolo Giosué Giarrusso at 2017-03-13 18:29:21 +0100 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -231,6 +231,27 @@
 @string{wileyaddr = {New York, NY}}
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
+
+
+@inproceedings{Cicek2016type,
+	Abstract = {Incremental computation aims to speed up re-runs of a program after its inputs have been modified slightly. It works by recording a trace of the program's first run and propagating changes through the trace in incremental runs, trying to re-use as much of the original trace as possible. The recent work CostIt is a type and effect system to establish the time complexity of incremental runs of a program, as a function of input changes. However, CostIt is limited in two ways. First, it prohibits input changes that influence control flow. This makes it impossible to type programs that, for instance, branch on inputs that may change. Second, the soundness of CostIt is proved relative to an abstract cost semantics, but it is unclear how the semantics can be realized.   In this paper, we address both these limitations. We present DuCostIt, a re-design of CostIt, that combines reasoning about costs of change propagation and costs of from-scratch evaluation. The latter lifts the restriction on control flow changes. To obtain the type system, we refine Flow Caml, a type system for information flow analysis, with cost effects. Additionally, we inherit from CostIt index refinements to track data structure sizes and a co-monadic type. Using a combination of binary and unary step-indexed logical relations, we prove DuCostIt's cost analysis sound relative to not only an abstract cost semantics, but also a concrete semantics, which is obtained by translation to an ML-like language.},
+	Address = {New York, NY, USA},
+	Author = {{\c C}i{\c c}ek, Ezgi and Paraskevopoulou, Zoe and Garg, Deepak},
+	Booktitle = {Proceedings of the 21st {{ACM SIGPLAN International Conference}} on {{Functional Programming}}},
+	Date-Added = {2017-03-13 17:29:21 +0000},
+	Date-Modified = {2017-03-13 17:29:21 +0000},
+	Doi = {10.1145/2951913.2951950},
+	File = {{\c C}i{\c c}ek et al - 2016 - A Type Theory for Incremental Computational Complexity with Control Flow Changes.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/BUQH5SBT/{\c C}i{\c c}ek et al - 2016 - A Type Theory for Incremental Computational Complexity with Control Flow Changes.pdf:application/pdf},
+	Isbn = {978-1-4503-4219-3},
+	Keywords = {complexity analysis,incremental computation,type and effect systems},
+	Pages = {132--145},
+	Publisher = {{ACM}},
+	Series = {ICFP 2016},
+	Timestamp = {2017-02-07T18:31:46Z},
+	Title = {A {{Type Theory}} for {{Incremental Computational Complexity}} with {{Control Flow Changes}}},
+	Urldate = {2017-02-07},
+	Year = {2016},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1145/2951913.2951950}}
 
 @inproceedings{pitts2010step,
 	Author = {Pitts, Andrew M},
