@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2017-03-13 18:29:21 +0100 
+%% Created for Paolo Giosué Giarrusso at 2017-03-16 17:30:54 +0100 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -232,6 +232,20 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@phdthesis{Huesca2015incrementality,
+	Abstract = {Certified programming is a framework in which any program is correct by construction. Proof assistants and dependently typed programming languages are the representatives of this paradigm where the proof and implementation of a program are done at the same time. However, it has some limitations: a program in Type Theory is built only with pure and total functions. Our objective is to write efficient and certified programs. The contributions of this work are the formalization, in the Simply Typed Lambda Calculus, of two mechanisms to achieve efficiency: to validate impure computations and to optimize computations by incrementality. An impure computation, that is a program with effects, and its validation in a functional and total language is done through a posteriori simulation. The simulation is performed afterwards on a monadic procedure and is guided by a prophecy. An efficient oracle is responsible for producing prophecies which is actually, the monadic procedure itself translated into an effectful programming language. The second contribution is an optimization to perform incremental computations. Incrementality as a way to propagate an input change into a corresponding output change is guided by formal change descriptions over terms and dynamic differentiation of functions. Displaceable types represent data-changes while an extension of the simply typed lambda calculus with differentials and partial derivatives offers a language to reason about incrementality.},
+	Author = {Huesca, Lourdes del Carmen Gonzalez},
+	Date-Added = {2017-03-16 16:30:53 +0000},
+	Date-Modified = {2017-03-16 16:30:53 +0000},
+	File = {Huesca - 2015 - Incrementality and effect simulation in the simply typed lambda calculus.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/FR8MMS3M/Huesca - 2015 - Incrementality and effect simulation in the simply typed lambda calculus.pdf:application/pdf;Snapshot:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/XKP8BXNQ/tel-01248531.html:text/html},
+	Language = {en},
+	Month = nov,
+	School = {Universite Paris Diderot-Paris VII},
+	Timestamp = {2016-02-29T22:13:26Z},
+	Title = {Incrementality and Effect Simulation in the Simply Typed Lambda Calculus},
+	Urldate = {2016-02-29},
+	Year = {2015}}
 
 @inproceedings{Schwaab2013modular,
 	Abstract = {Methods for reusing code are widespread and well researched, but methods for reusing proofs are still emerging. We consider the use of dependent types for this purpose, introducing a modular approach for composing mechanized proofs. We show that common techniques for abstracting algorithms over data structures naturally translate to abstractions over proofs. We introduce a language composed of a series of smaller language components, each defined as functors, and tie them together by taking the fixed point of their sum [Malcom, 1990]. We then give proofs of type preservation for each language component and show how to compose these proofs into a proof for the entire language, again by taking the fixed point of a sum of functors.},
