@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2017-03-16 17:30:54 +0100 
+%% Created for Paolo Giosué Giarrusso at 2017-03-26 18:02:15 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -449,6 +449,24 @@
 	Volume = {22},
 	Year = {2010},
 	Bdsk-Url-1 = {http://dx.doi.org/10.1007/s10990-010-9050-z}}
+
+@inproceedings{Erdweg2014captureavoiding,
+	Abstract = {Program transformations in terms of abstract syntax trees compromise referential integrity by introducing variable capture. Variable capture occurs when in the generated program a variable declaration accidentally shadows the intended target of a variable reference. Existing transformation systems either do not guarantee the avoidance of variable capture or impair the implementation of transformations.We present an algorithm called name-fix that automatically eliminates variable capture from a generated program by systematically renaming variables. name-fix is guided by a graph representation of the binding structure of a program, and requires name-resolution algorithms for the source language and the target language of a transformation. name-fix is generic and works for arbitrary transformations in any transformation system that supports origin tracking for names. We verify the correctness of name-fix and identify an interesting class of transformations for which name-fix provides hygiene. We demonstrate the applicability of name-fix for implementing capture-avoiding substitution, inlining, lambda lifting, and compilers for two domain-specific languages.},
+	Author = {Erdweg, Sebastian and van der Storm, Tijs and Dai, Yi},
+	Booktitle = {{{ECOOP}} 2014 \textendash{} {{Object}}-{{Oriented Programming}}},
+	Date-Added = {2017-03-26 16:02:13 +0000},
+	Date-Modified = {2017-03-26 16:02:13 +0000},
+	Doi = {10.1007/978-3-662-44202-9_20},
+	File = {Snapshot:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/HSTVRBKP/978-3-662-44202-9_20.html:text/html},
+	Language = {en},
+	Month = jul,
+	Pages = {489--514},
+	Publisher = {{Springer, Berlin, Heidelberg}},
+	Timestamp = {2017-03-26T16:00:51Z},
+	Title = {Capture-{{Avoiding}} and {{Hygienic Program Transformations}}},
+	Urldate = {2017-03-26},
+	Year = {2014},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/978-3-662-44202-9_20}}
 
 @incollection{Firsov2016purely,
 	Abstract = {Many applications have to maintain evolving data sources as well as views on these sources. If sources change, the corresponding views have to be adapted. Complete recomputation of views is typically too expensive. An alternative is to convert source changes into view changes and apply these to the views. This is the key idea of incremental computing. In this paper, we use Haskell to develop an incremental computing framework. We illustrate the concepts behind this framework by implementing several example computations on sequences. Our framework allows the user to implement incremental computations using arbitrary monad families that encapsulate mutable state. This makes it possible to use highly efficient algorithms for core computations.},
