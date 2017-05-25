@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2017-05-25 21:17:27 +0200 
+%% Created for Paolo Giosué Giarrusso at 2017-05-25 21:32:46 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -232,6 +232,27 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@inproceedings{Nikolic2014linview,
+	Abstract = {Many analytics tasks and machine learning problems can be naturally expressed by iterative linear algebra programs. In this paper, we study the incremental view maintenance problem for such complex analytical queries. We develop a framework, called LINVIEW, for capturing deltas of linear algebra programs and understanding their computational cost. Linear algebra operations tend to cause an avalanche effect where even very local changes to the input matrices spread out and infect all of the intermediate results and the final view, causing incremental view maintenance to lose its performance benefit over re-evaluation. We develop techniques based on matrix factorizations to contain such epidemics of change. As a consequence, our techniques make incremental view maintenance of linear algebra practical and usually substantially cheaper than re-evaluation. We show, both analytically and experimentally, the usefulness of these techniques when applied to standard analytics tasks. Our evaluation demonstrates the efficiency of LINVIEW in generating parallel incremental programs that outperform re-evaluation techniques by more than an order of magnitude.},
+	Address = {New York, NY, USA},
+	Author = {Nikolic, Milos and ElSeidy, Mohammed and Koch, Christoph},
+	Booktitle = {Proceedings of the 2014 {{ACM SIGMOD International Conference}} on {{Management}} of {{Data}}},
+	Date-Added = {2017-05-25 19:32:45 +0000},
+	Date-Modified = {2017-05-25 19:32:45 +0000},
+	Doi = {10.1145/2588555.2610519},
+	File = {Nikolic et al - 2014 - LINVIEW - Incremental View Maintenance for Complex Analytical Queries.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/6D9KEZSD/Nikolic et al - 2014 - LINVIEW - Incremental View Maintenance for Complex Analytical Queries.pdf:application/pdf},
+	Isbn = {978-1-4503-2376-5},
+	Keywords = {Compilation,Incremental view maintenance,linear algebra,machine learning,spark},
+	Pages = {253--264},
+	Publisher = {{ACM}},
+	Series = {SIGMOD '14},
+	Shorttitle = {{{LINVIEW}}},
+	Timestamp = {2017-05-25T19:30:34Z},
+	Title = {{{LINVIEW}}: {{Incremental View Maintenance}} for {{Complex Analytical Queries}}},
+	Urldate = {2017-05-25},
+	Year = {2014},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1145/2588555.2610519}}
 
 @inproceedings{Flanagan1993essence,
 	Abstract = {In order to simplify the compilation process, many compilers for higher-order languages use the continuation-passing style (CPS) transformation in a first phase to generate an intermediate representation of the source program. The salient aspect of this intermediate form is that all procedures take an argument that represents the rest of the computation (the ``continuation''). Since the nai\textasciidieresis{}ve CPS transformation considerably increases the size of programs, CPS compilers perform reductions to produce a more compact intermediate representation. Although often implemented as a part of the CPS transformation, this step is conceptually a second phase. Finally, code generators for typical CPS compilers treat continuations specially in order to optimize the interpretation of continuation parameters.
