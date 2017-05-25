@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2017-04-04 18:13:35 +0200 
+%% Created for Paolo Giosué Giarrusso at 2017-05-25 21:32:46 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -232,6 +232,120 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@inproceedings{Nikolic2014linview,
+	Abstract = {Many analytics tasks and machine learning problems can be naturally expressed by iterative linear algebra programs. In this paper, we study the incremental view maintenance problem for such complex analytical queries. We develop a framework, called LINVIEW, for capturing deltas of linear algebra programs and understanding their computational cost. Linear algebra operations tend to cause an avalanche effect where even very local changes to the input matrices spread out and infect all of the intermediate results and the final view, causing incremental view maintenance to lose its performance benefit over re-evaluation. We develop techniques based on matrix factorizations to contain such epidemics of change. As a consequence, our techniques make incremental view maintenance of linear algebra practical and usually substantially cheaper than re-evaluation. We show, both analytically and experimentally, the usefulness of these techniques when applied to standard analytics tasks. Our evaluation demonstrates the efficiency of LINVIEW in generating parallel incremental programs that outperform re-evaluation techniques by more than an order of magnitude.},
+	Address = {New York, NY, USA},
+	Author = {Nikolic, Milos and ElSeidy, Mohammed and Koch, Christoph},
+	Booktitle = {Proceedings of the 2014 {{ACM SIGMOD International Conference}} on {{Management}} of {{Data}}},
+	Date-Added = {2017-05-25 19:32:45 +0000},
+	Date-Modified = {2017-05-25 19:32:45 +0000},
+	Doi = {10.1145/2588555.2610519},
+	File = {Nikolic et al - 2014 - LINVIEW - Incremental View Maintenance for Complex Analytical Queries.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/6D9KEZSD/Nikolic et al - 2014 - LINVIEW - Incremental View Maintenance for Complex Analytical Queries.pdf:application/pdf},
+	Isbn = {978-1-4503-2376-5},
+	Keywords = {Compilation,Incremental view maintenance,linear algebra,machine learning,spark},
+	Pages = {253--264},
+	Publisher = {{ACM}},
+	Series = {SIGMOD '14},
+	Shorttitle = {{{LINVIEW}}},
+	Timestamp = {2017-05-25T19:30:34Z},
+	Title = {{{LINVIEW}}: {{Incremental View Maintenance}} for {{Complex Analytical Queries}}},
+	Urldate = {2017-05-25},
+	Year = {2014},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1145/2588555.2610519}}
+
+@inproceedings{Flanagan1993essence,
+	Abstract = {In order to simplify the compilation process, many compilers for higher-order languages use the continuation-passing style (CPS) transformation in a first phase to generate an intermediate representation of the source program. The salient aspect of this intermediate form is that all procedures take an argument that represents the rest of the computation (the ``continuation''). Since the nai\textasciidieresis{}ve CPS transformation considerably increases the size of programs, CPS compilers perform reductions to produce a more compact intermediate representation. Although often implemented as a part of the CPS transformation, this step is conceptually a second phase. Finally, code generators for typical CPS compilers treat continuations specially in order to optimize the interpretation of continuation parameters.
+A thorough analysis of the abstract machine for CPS terms show that the actions of the code generator invert the nai\textasciidieresis{}ve CPS translation step. Put differently, the combined effect of the three phases is equivalent to a source-to-source transformation that simulates the compaction phase. Thus, fully developed CPS compilers do not need to employ the CPS transformation but can achieve the same results with a simple source-level transformation.},
+	Address = {New York, NY, USA},
+	Author = {Flanagan, Cormac and Sabry, Amr and Duba, Bruce F. and Felleisen, Matthias},
+	Booktitle = {Proceedings of the {{ACM SIGPLAN}} 1993 {{Conference}} on {{Programming Language Design}} and {{Implementation}}},
+	Date-Added = {2017-05-25 19:17:26 +0000},
+	Date-Modified = {2017-05-25 19:17:26 +0000},
+	Doi = {10.1145/155090.155113},
+	File = {Flanagan et al - 1993 - The Essence of Compiling with Continuations.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/RQGWXXKZ/Flanagan et al - 1993 - The Essence of Compiling with Continuations.pdf:application/pdf},
+	Isbn = {0-89791-598-4},
+	Pages = {237--247},
+	Publisher = {{ACM}},
+	Series = {PLDI '93},
+	Timestamp = {2017-05-25T18:51:45Z},
+	Title = {The {{Essence}} of {{Compiling}} with {{Continuations}}},
+	Urldate = {2017-05-25},
+	Year = {1993},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1145/155090.155113}}
+
+@phdthesis{CaiPhD,
+	Author = {Yufei Cai},
+	Date-Added = {2017-05-10 14:27:52 +0000},
+	Date-Modified = {2017-05-10 14:30:31 +0000},
+	Note = {In preparation},
+	School = {University of T{\"u}bingen},
+	Year = {2017}}
+
+@misc{Atkey2015ILC,
+	Author = {Robert Atkey},
+	Date-Added = {2017-05-10 14:24:21 +0000},
+	Date-Modified = {2017-05-13 15:59:40 +0000},
+	Lastchecked = {2017-05-13},
+	Note = {Last accessed on 13 May 2017},
+	Read = {1},
+	Title = {The Incremental λ-Calculus and Relational Parametricity},
+	Url = {http://bentnib.org/posts/2015-04-23-incremental-lambda-calculus-and-parametricity.html},
+	Urldate = {2015-04-23},
+	Year = {2015},
+	Bdsk-Url-1 = {http://bentnib.org/posts/2015-04-23-incremental-lambda-calculus-and-parametricity.html}}
+
+@article{Statman1985logical,
+	Author = {Statman, R.},
+	Date-Added = {2017-04-28 19:18:16 +0000},
+	Date-Modified = {2017-04-28 19:18:16 +0000},
+	Doi = {10.1016/S0019-9958(85)80001-2},
+	File = {Statman - 1985 - Logical relations and the typed λ-calculus.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/KGGQ5WMP/Statman - 1985 - Logical relations and the typed λ-calculus.pdf:application/pdf;ScienceDirect Snapshot:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/WJBBIGUA/S0019995885800012.html:text/html},
+	Issn = {0019-9958},
+	Journal = {Information and Control},
+	Month = may,
+	Number = {2},
+	Pages = {85--97},
+	Timestamp = {2017-04-28T16:20:20Z},
+	Title = {Logical Relations and the Typed $\lambda$-Calculus},
+	Urldate = {2017-04-28},
+	Volume = {65},
+	Year = {1985},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1016/S0019-9958(85)80001-2}}
+
+@inproceedings{Bernardy2011realizability,
+	Abstract = {We describe a systematic method to build a logic from any programming language described as a Pure Type System (PTS). The formulas of this logic express properties about programs. We define a parametricity theory about programs and a realizability theory for the logic. The logic is expressive enough to internalize both theories. Thanks to the PTS setting, we abstract most idiosyncrasies specific to particular type theories. This confers generality to the results, and reveals parallels between parametricity and realizability.},
+	Address = {Berlin, Heidelberg},
+	Author = {Bernardy, Jean-Philippe and Lasson, Marc},
+	Booktitle = {Proceedings of the 14th {{International Conference}} on {{Foundations}} of {{Software Science}} and {{Computational Structures}}: {{Part}} of the {{Joint European Conferences}} on {{Theory}} and {{Practice}} of {{Software}}},
+	Date-Added = {2017-04-28 16:35:28 +0000},
+	Date-Modified = {2017-04-28 16:35:28 +0000},
+	Isbn = {978-3-642-19804-5},
+	Pages = {108--122},
+	Publisher = {{Springer-Verlag}},
+	Series = {FOSSACS'11/ETAPS'11},
+	Timestamp = {2016-02-29T23:17:09Z},
+	Title = {Realizability and {{Parametricity}} in {{Pure Type Systems}} (2)},
+	Urldate = {2014-08-11},
+	Year = {2011}}
+
+@inproceedings{Wadler1989theorems,
+	Address = {New York, NY, USA},
+	Author = {Wadler, Philip},
+	Booktitle = {Proceedings of the {{Fourth International Conference}} on {{Functional Programming Languages}} and {{Computer Architecture}}},
+	Date-Added = {2017-04-28 14:14:20 +0000},
+	Date-Modified = {2017-04-28 14:14:20 +0000},
+	Doi = {10.1145/99370.99404},
+	File = {ACM Full Text PDF:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/2HHRW8S7/Wadler - 1989 - Theorems for Free!.pdf:application/pdf},
+	Isbn = {978-0-89791-328-7},
+	Pages = {347--359},
+	Publisher = {{ACM}},
+	Series = {FPCA '89},
+	Timestamp = {2017-04-27T16:58:39Z},
+	Title = {Theorems for {{Free}}!},
+	Urldate = {2017-04-27},
+	Year = {1989},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1145/99370.99404}}
 
 @article{Pottier2006polymorphic,
 	Abstract = {Defunctionalization is a program transformation that eliminates functions as first-class values. We show that defunctionalization can be viewed as a type-preserving transformation of an extension of F with guarded algebraic data types into itself. We also suggest that defunctionalization is an instance of concretization, a more general technique that allows eliminating constructs other than functions. We illustrate this point by presenting two new type-preserving transformations that can be viewed as instances of concretization. One eliminates R{\'e}my-style polymorphic records; the other eliminates the dictionary records introduced by the standard compilation scheme for Haskell's type classes.},
