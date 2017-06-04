@@ -215,6 +215,46 @@
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
 
+@inproceedings{Henglein2010generic,
+	Abstract = {This paper demonstrates how relational algebraic programming based on efficient symbolic representations of multisets and operations on them can be applied to the query sublanguage of SQL in a type-safe fashion. In essence, it provides a library for na{\"\i}ve programming with multisets in a generalized SQL-style fashion, but avoids many cases of asymptotically inefficient nested iteration through cross-products.},
+	Address = {New York, NY, USA},
+	Author = {Henglein, Fritz and Larsen, Ken Friis},
+	Booktitle = {Proceedings of the 6th {{ACM SIGPLAN Workshop}} on {{Generic Programming}}},
+	Date-Added = {2017-06-04 18:12:43 +0000},
+	Date-Modified = {2017-06-04 18:12:43 +0000},
+	Doi = {10.1145/1863495.1863503},
+	File = {Henglein_Larsen - 2010 - Generic Multiset Programming for Language-integrated Querying.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/RVKG3FG7/Henglein_Larsen - 2010 - Generic Multiset Programming for Language-integrated Querying.pdf:application/pdf},
+	Isbn = {978-1-4503-0251-7},
+	Keywords = {Algebra,bag,discrimination,equivalence,filter,GADT,generic,Haskell,join,lazy,LINQ,map,multiset,ordering,programming,project,Query,querying,relational,select,sql,symbolic},
+	Pages = {49--60},
+	Publisher = {{ACM}},
+	Series = {WGP '10},
+	Timestamp = {2017-06-04T17:51:49Z},
+	Title = {Generic {{Multiset Programming}} for {{Language}}-Integrated {{Querying}}},
+	Urldate = {2017-06-04},
+	Year = {2010},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1145/1863495.1863503}}
+
+@inproceedings{Henglein2010optimizing,
+	Abstract = {We show how to efficiently evaluate generic map-filter-product queries, generalizations of select-project-join (SPJ) queries in relational algebra, based on a combination of two novel techniques: generic discrimination-based joins and lazy (formal) products. Discrimination-based joins are based on the notion of (equivalence) discriminator. A discriminator partitions a list of values according to a user-specified equivalence relation on keys the values are associated with. Equivalence relations can be specified in an expressive embedded language for denoting equivalence relations. We show that discriminators can be constructed generically (by structural recursion on equivalence expressions), purely functionally, and efficiently (worst-case linear time). The array-based basic multiset discrimination algorithm of Cai and Paige (1995) provides a base discriminator that is both asymptotically and practically efficient. In contrast to hashing, discrimination is fully abstract (only depends on which equivalences hold on its inputs), and in contrast to comparison-based sorting, it does not require an ordering relation on its inputs. In particular, it is applicable to references (pointers). Furthermore, it has better asymptotic computational complexity than both sorting and hashing. We represent cross-products and unions lazily (symbolically) as formal products of the argument sets (relations). This allows the selection operation to recognize on the fly whenever it is applied to a cross-product and invoke an efficient equijoin implementation. In particular, queries can still be formulated naively, using filter, map and product without an explicit join operation, yet garner the advantages of efficient join-algorithms during evaluation. The techniques subsume many of the optimization techniques based on relational algebra equalities, without need for a query preprocessing phase. They require no indexes and behave purely functionally. They can be considered a form of symbolic execution of set expressions that automate and encapsulate dynamic program transformation of such expressions and lead to asymptotic performance improvements over naive execution in many cases.},
+	Address = {New York, NY, USA},
+	Author = {Henglein, Fritz},
+	Booktitle = {Proceedings of the 2010 {{ACM SIGPLAN Workshop}} on {{Partial Evaluation}} and {{Program Manipulation}}},
+	Date-Added = {2017-06-04 18:12:43 +0000},
+	Date-Modified = {2017-06-04 18:12:43 +0000},
+	Doi = {10.1145/1706356.1706372},
+	File = {Henglein - 2010 - Optimizing Relational Algebra Operations Using Generic Equivalence Discriminators and Lazy Products.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/BA6RWNRE/Henglein - 2010 - Optimizing Relational Algebra Operations Using Generic Equivalence Discriminators and Lazy Products.pdf:application/pdf},
+	Isbn = {978-1-60558-727-1},
+	Keywords = {Algebra,cross-product,discrimination,disriminator,equivalence,evaluation,formal,generic,join,lazy,optimization,optimize,optimizing,product,Query,relational,symbolic},
+	Pages = {73--82},
+	Publisher = {{ACM}},
+	Series = {PEPM '10},
+	Timestamp = {2017-06-04T17:51:58Z},
+	Title = {Optimizing {{Relational Algebra Operations Using Generic Equivalence Discriminators}} and {{Lazy Products}}},
+	Urldate = {2017-06-04},
+	Year = {2010},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1145/1706356.1706372}}
+
 @article{Koch2014incremental,
 	Abstract = {In the context of incremental view maintenance (IVM), delta query derivation is an essential technique for speeding up the processing of large, dynamic datasets. The goal is to generate delta queries that, given a small change in the input, can update the materialized view more efficiently than via recomputation. In this work we propose the first solution for the efficient incrementalization of positive nested relational calculus (NRC+) on bags (with integer multiplicities). More precisely, we model the cost of NRC+ operators and classify queries as efficiently incrementalizable if their delta has a strictly lower cost than full re-evaluation. Then, we identify IncNRC+; a large fragment of NRC+ that is efficiently incrementalizable and we provide a semantics-preserving translation that takes any NRC+ query to a collection of IncNRC+ queries. Furthermore, we prove that incremental maintenance for NRC+ is within the complexity class NC0 and we showcase how recursive IVM, a technique that has provided significant speedups over traditional IVM in the case of flat queries [25], can also be applied to IncNRC+.},
 	Archiveprefix = {arXiv},
@@ -1010,21 +1050,6 @@ Furthermore, they support deletions by extending non-idempotent monoids to group
 	Year = {2009},
 	Bdsk-Url-1 = {http://www.diku.dk/hjemmesider/ansatte/henglein/bib/publications/henglein2009c.html}}
 
-@inproceedings{Henglein10,
-	Author = {Henglein, Fritz and Larsen, Ken Friis},
-	Booktitle = wgp,
-	Date-Added = {2011-11-28 12:18:11 +0100},
-	Date-Modified = {2011-12-09 01:22:35 +0100},
-	Keywords = {algebra, bag, discrimination, equivalence, filter, gadt, generic, haskell, join, lazy, linq, map, multiset, ordering, programming, project, query, querying, relational, select, sql, symbolic},
-	Nourl = {http://doi.acm.org/10.1145/1863495.1863503},
-	Numpages = {12},
-	Pages = {49--60},
-	Publisher = acm,
-	Series = {WGP '10},
-	Title = {Generic multiset programming for language-integrated querying},
-	Year = {2010},
-	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1863495.1863503}}
-
 @inproceedings{Henglein08,
 	Acmid = {1411220},
 	Author = {Henglein, Fritz},
@@ -1065,25 +1090,6 @@ Furthermore, they support deletions by extending non-idempotent monoids to group
 	Year = {1984},
 	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QhC4uLy4uLy4uL0Ryb3Bib3gvUGFwZXJzL1Byb2dyYW1taW5nIExhbmd1YWdlcy9RdWVyeSBsYW5ndWFnZXMvRGF0YWJhc2UgcGFwZXJzL01ha2luZyBTbWFsbHRhbGsgYSBkYXRhYmFzZSBzeXN0ZW0gLSBwMzE2LWNvcGVsYW5kLnBkZtIXCxgZV05TLmRhdGFPEQKgAAAAAAKgAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADOl7nTSCsAAAAWLTofTWFraW5nIFNtYWxsdGFsayBhIGQjMTYyRDQ0LnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYtRMr5M74AAAAAAAAAAAADAAYAAAkgAAAAAAAAAAAAAAAAAAAAD0RhdGFiYXNlIHBhcGVycwAAEAAIAADOl6vDAAAAEQAIAADK+SWuAAAAAQAcABYtOgAWLTIAFieIABYmewAWIfsADZefAAJkjgACAIlNYWNpbnRvc2ggSEQ6VXNlcnM6AHBnaWFycnVzc286AERyb3Bib3g6AFBhcGVyczoAUHJvZ3JhbW1pbmcgTGFuZ3VhZ2VzOgBRdWVyeSBsYW5ndWFnZXM6AERhdGFiYXNlIHBhcGVyczoATWFraW5nIFNtYWxsdGFsayBhIGQjMTYyRDQ0LnBkZgAADgBuADYATQBhAGsAaQBuAGcAIABTAG0AYQBsAGwAdABhAGwAawAgAGEAIABkAGEAdABhAGIAYQBzAGUAIABzAHkAcwB0AGUAbQAgAC0AIABwADMAMQA2AC0AYwBvAHAAZQBsAGEAbgBkAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgCMVXNlcnMvcGdpYXJydXNzby9Ecm9wYm94L1BhcGVycy9Qcm9ncmFtbWluZyBMYW5ndWFnZXMvUXVlcnkgbGFuZ3VhZ2VzL0RhdGFiYXNlIHBhcGVycy9NYWtpbmcgU21hbGx0YWxrIGEgZGF0YWJhc2Ugc3lzdGVtIC0gcDMxNi1jb3BlbGFuZC5wZGYAEwABLwAAFQACABH//wAAgAbSGxwdHlokY2xhc3NuYW1lWCRjbGFzc2VzXU5TTXV0YWJsZURhdGGjHR8gVk5TRGF0YVhOU09iamVjdNIbHCIjXE5TRGljdGlvbmFyeaIiIF8QD05TS2V5ZWRBcmNoaXZlctEmJ1Ryb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AIQAjgEVARoBIgPGA8gDzQPYA+ED7wPzA/oEAwQIBBUEGAQqBC0EMgAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAAQ0},
 	Bdsk-Url-1 = {http://doi.acm.org/10.1145/602259.602300}}
-
-@inproceedings{Henglein10a,
-	Acmid = {1706372},
-	Author = {Henglein, Fritz},
-	Booktitle = pepm,
-	Date-Modified = {2011-12-09 00:37:58 +0100},
-	Keywords = {algebra, cross-product, discrimination, discriminator, equivalence, evaluation, formal, generic, join, lazy, optimization, optimize, optimizing, product, query, relational, symbolic},
-	Location = {Madrid, Spain},
-	Noaddress = {New York, NY, USA},
-	Nodoi = {http://doi.acm.org/10.1145/1706356.1706372},
-	Noisbn = {978-1-60558-727-1},
-	Nourl = {http://doi.acm.org/10.1145/1706356.1706372},
-	Numpages = {10},
-	Pages = {73--82},
-	Publisher = acm,
-	Series = {PEPM '10},
-	Title = {Optimizing relational algebra operations using generic equivalence discriminators and lazy products},
-	Year = {2010},
-	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1706356.1706372}}
 
 @article{Lee98,
 	Acmid = {627917},
@@ -1160,7 +1166,7 @@ Furthermore, they support deletions by extending non-idempotent monoids to group
 		<key>group name</key>
 		<string>Database</string>
 		<key>keys</key>
-		<string>Fegaras00,Henglein10,Lee98,Henglein09,Henglein10a,Henglein08,Copeland84,Bertino89</string>
+		<string>Fegaras00,Lee98,Henglein09,Henglein08,Copeland84,Bertino89</string>
 	</dict>
 </array>
 </plist>
