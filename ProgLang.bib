@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2017-06-12 07:04:29 +0200 
+%% Created for Paolo Giosué Giarrusso at 2017-06-24 04:07:43 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -232,6 +232,45 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@incollection{Allais2017typeandscope,
+	Abstract = {We abstract the common type-and-scope safe structure fromcomputations on lambda-terms that deliver, e.g., renaming, substitution, evaluation, CPS-transformation, and printing witha name supply. By exposing this structure, we can prove generic simulation and fusion lemmas relating operations built this way. This work has been fully formalised in Agda.},
+	Address = {New York},
+	Author = {Allais, Guillaume and Chapman, James and McBride, Conor and McKinna, James},
+	Booktitle = {{{CPP}} 2017},
+	Date-Added = {2017-06-24 02:07:42 +0000},
+	Date-Modified = {2017-06-24 02:07:42 +0000},
+	Editor = {Bertot, Yves and Vafeiadis, Viktor},
+	File = {Allais et al - 2017 - Type-and-scope safe programs and their proofs.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/2N5WCWKR/Allais et al - 2017 - Type-and-scope safe programs and their proofs.pdf:application/pdf;Snapshot:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/H2GF769P/59447.html:text/html},
+	Isbn = {978-1-4503-4705-1},
+	Language = {en},
+	Month = jan,
+	Publisher = {{ACM, New York, NY}},
+	Timestamp = {2017-06-24T01:48:23Z},
+	Title = {Type-and-Scope Safe Programs and Their Proofs},
+	Urldate = {2017-06-24},
+	Year = {2017}}
+
+@article{Benton2012strongly,
+	Abstract = {There are two approaches to formalizing the syntax of typed object languages in a proof assistant or programming language. The extrinsic approach is to first define a type that encodes untyped object expressions and then make a separate definition of typing judgements over the untyped terms. The intrinsic approach is to make a single definition that captures well-typed object expressions, so ill-typed expressions cannot even be expressed. Intrinsic encodings are attractive and naturally enforce the requirement that metalanguage operations on object expressions, such as substitution, respect object types. The price is that the metalanguage types of intrinsic encodings and operations involve non-trivial dependency, adding significant complexity. This paper describes intrinsic-style formalizations of both simply-typed and polymorphic languages, and basic syntactic operations thereon, in the Coq proof assistant. The Coq types encoding object-level variables (de Bruijn indices) and terms are indexed by both type and typing environment. One key construction is the boot-strapping of definitions and lemmas about the action of substitutions in terms of similar ones for a simpler notion of renamings. In the simply-typed case, this yields definitions that are free of any use of type equality coercions. In the polymorphic case, some substitution operations do still require type coercions, which we at least partially tame by uniform use of heterogeneous equality.},
+	Author = {Benton, Nick and Hur, Chung-Kil and Kennedy, Andrew J. and McBride, Conor},
+	Date-Added = {2017-06-23 23:23:08 +0000},
+	Date-Modified = {2017-06-23 23:23:08 +0000},
+	Doi = {10.1007/s10817-011-9219-0},
+	File = {Benton et al - 2012 - Strongly Typed Term Representations in Coq.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/HHCVBAAM/Benton et al - 2012 - Strongly Typed Term Representations in Coq.pdf:application/pdf;Snapshot:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/KZJCKU56/s10817-011-9219-0.html:text/html},
+	Issn = {0168-7433, 1573-0670},
+	Journal = {Journal of Automated Reasoning},
+	Keywords = {Artificial Intelligence (incl. Robotics),de Bruijn indices,Mathematical Logic and Formal Languages,Mathematical Logic and Foundations,Symbolic and Algebraic Manipulation,The Coq proof assistant,Typed object languages},
+	Language = {en},
+	Month = aug,
+	Number = {2},
+	Pages = {141--159},
+	Timestamp = {2016-02-29T23:17:09Z},
+	Title = {Strongly {{Typed Term Representations}} in {{Coq}}},
+	Urldate = {2014-09-02},
+	Volume = {49},
+	Year = {2012},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/s10817-011-9219-0}}
 
 @inproceedings{Steele2009organizing,
 	Abstract = {Alan Perlis, inverting OscarWilde's famous quip about cynics, once suggested, decades ago, that a Lisp programmer is one who knows the value of everything and the cost of nothing. Now that the conference on Lisp and Functional Programming has become ICFP, some may think that OCaml and Haskell programmers have inherited this (now undeserved) epigram. I do believe that as multicore processors are becoming prominent, and soon ubiquitous, it behooves all programmers to rethink their programming style, strategies, and tactics, so that their code may have excellent performance. For the last six years I have been part of a team working on a programming language, Fortress, that has borrowed ideas not only from Fortran, not only from Java, not only from Algol and Alphard and CLU, not only from MADCAP and MODCAP and MIRFAC and the Klerer-May system-but also from Haskell, and I would like to repay the favor. In this talk I will discuss three ideas (none original with me) that I have found to be especially powerful in organizing Fortress programs so that they may be executed equally effectively either sequentially or in parallel: user-defined associative operators (and, more generally, user-defined monoids); conjugate transforms of data; and monoid-caching trees (as described, for example, by Hinze and Paterson). I will exhibit pleasant little code examples (some original with me) that make use of these ideas.},
