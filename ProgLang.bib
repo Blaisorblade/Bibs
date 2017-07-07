@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2017-07-07 16:24:30 +0200 
+%% Created for Paolo Giosué Giarrusso at 2017-07-07 20:45:04 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -232,6 +232,45 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@article{Hammer2016typeda,
+	Abstract = {Over the past decade, programming language techniques for incremental computation have demonstrated that incremental programs with precise, carefully chosen dynamic names for data and sub-computations can dramatically outperform non-incremental programs, as well as those using traditional memoization (without such names). However, prior work lacks a verification mechanism to solve the ambiguous name problem, the problem of statically enforcing precise names. We say that an allocated pointer name is precise for an evaluation derivation when it identifies at most one value or subcomputation, and ambiguous otherwise. In this work, we define a refinement type system that gives practical static approximations to enforce precise, deterministic allocation names in otherwise functional programs. We show that this type system permits expressing familiar functional programs, and generic, composable library components. We prove that our type system enforces that well-typed programs name their values and sub-computations precisely, without ambiguity. Drawing closer to an implementation, we derive a bidirectional version of the type system, and prove that it corresponds to our declarative type system. A key challenge in implementing the bidirectional system is handling constraints over names, name terms and name sets; toward this goal, we give decidable, syntactic rules to guide these checks.},
+	Archiveprefix = {arXiv},
+	Author = {Hammer, Matthew A. and Dunfield, Joshua and Economou, Dimitrios J. and Narasimhamurthy, Monal},
+	Date-Added = {2017-07-07 18:42:08 +0000},
+	Date-Modified = {2017-07-07 18:42:08 +0000},
+	Eprint = {1610.00097},
+	Eprinttype = {arxiv},
+	File = {Hammer et al - 2016 - Typed Adapton - Refinement types for incremental computations with precise names.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/PG36VUVG/Hammer et al - 2016 - Typed Adapton - Refinement types for incremental computations with precise names.pdf:application/pdf;arXiv.org Snapshot:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/JA8NMP26/1610.html:text/html},
+	Journal = {arXiv:1610.00097 [cs]},
+	Keywords = {Computer Science - Programming Languages},
+	Month = oct,
+	Primaryclass = {cs},
+	Shorttitle = {Typed {{Adapton}}},
+	Timestamp = {2017-07-07T17:06:59Z},
+	Title = {Typed {{Adapton}}: {{Refinement}} Types for Incremental Computations with Precise Names},
+	Year = {2016}}
+
+@inproceedings{Hammer2014adapton,
+	Abstract = {Many researchers have proposed programming languages that support incremental computation (IC), which allows programs to be efficiently re-executed after a small change to the input. However, existing implementations of such languages have two important drawbacks. First, recomputation is oblivious to specific demands on the program output; that is, if a program input changes, all dependencies will be recomputed, even if an observer no longer requires certain outputs. Second, programs are made incremental as a unit, with little or no support for reusing results outside of their original context, e.g., when reordered. To address these problems, we present $\lambda$iccdd, a core calculus that applies a demand-driven semantics to incremental computation, tracking changes in a hierarchical fashion in a novel demanded computation graph. $\lambda$iccdd also formalizes an explicit separation between inner, incremental computations and outer observers. This combination ensures $\lambda$iccdd programs only recompute computations as demanded by observers, and allows inner computations to be reused more liberally. We present Adapton, an OCaml library implementing $\lambda$iccdd. We evaluated Adapton on a range of benchmarks, and found that it provides reliable speedups, and in many cases dramatically outperforms state-of-the-art IC approaches.},
+	Address = {New York, NY, USA},
+	Author = {Hammer, Matthew A. and Phang, Khoo Yit and Hicks, Michael and Foster, Jeffrey S.},
+	Booktitle = {Proceedings of the 35th {{ACM SIGPLAN Conference}} on {{Programming Language Design}} and {{Implementation}}},
+	Date-Added = {2017-07-07 18:41:50 +0000},
+	Date-Modified = {2017-07-07 18:41:50 +0000},
+	Doi = {10.1145/2594291.2594324},
+	File = {Hammer et al. - 2014 - Adapton Composable, Demand-driven Incremental Com.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/KW5ITCRT/Hammer et al. - 2014 - Adapton Composable, Demand-driven Incremental Com.pdf:application/pdf},
+	Isbn = {978-1-4503-2784-8},
+	Keywords = {_tablet,call-by-push-value (CBPV),demanded computation graph (DCG) incremental computation,laziness,self-adjusting computation,thunks},
+	Pages = {156--166},
+	Publisher = {{ACM}},
+	Series = {PLDI '14},
+	Shorttitle = {Adapton},
+	Timestamp = {2016-02-29T23:17:09Z},
+	Title = {Adapton: {{Composable}}, {{Demand}}-Driven {{Incremental Computation}}},
+	Urldate = {2014-09-01},
+	Year = {2014},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1145/2594291.2594324}}
 
 @unpublished{Shah2017synthesis,
 	Abstract = {Many domains require fast, efficient incremental algorithms with no runtime overhead, such as in approximate inference algorithms for machine learning. Currently, such algorithms must be produced manually. We propose the use of program synthesis to automate this work, since it is easily extensible, the generated programs are fast, and there is no runtime overhead. We explain the algorithm on a simple example and provide a comparison of synthesis to other techniques that automate incrementalization.},
