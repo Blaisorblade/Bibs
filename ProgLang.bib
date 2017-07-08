@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2017-07-07 20:45:04 +0200 
+%% Created for Paolo Giosué Giarrusso at 2017-07-08 12:54:52 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -232,6 +232,26 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@inproceedings{Rossberg2010fing,
+	Abstract = {ML modules are a powerful language mechanism for decomposing programs into reusable components. Unfortunately, they also have a reputation for being "complex" and requiring fancy type theory that is mostly opaque to non-experts. While this reputation is certainly understandable, given the many non-standard methodologies that have been developed in the process of studying modules, we aim here to demonstrate that it is undeserved. To do so, we give a very simple elaboration semantics for a full-featured, higher-order ML-like module language. Our elaboration defines the meaning of module expressions by a straightforward, compositional translation into vanilla System F-$\omega$ (the higher-order polymorphic $\lambda$-calculus), under plain F-$\omega$ typing environments. We thereby show that ML modules are merely a particular mode of use of System F-$\omega$. Our module language supports the usual second-class modules with Standard ML-style generative functors and local module definitions. To demonstrate the versatility of our approach, we further extend the language with the ability to package modules as first-class values---a very simple extension, as it turns out. Our approach also scales to handle OCaml-style applicative functor semantics, but the details are significantly more subtle, so we leave their presentation to a future, expanded version of this paper. Lastly, we report on our experience using the "locally nameless" approach in order to mechanize the soundness of our elaboration semantics in Coq.},
+	Address = {New York, NY, USA},
+	Author = {Rossberg, Andreas and Russo, Claudio V. and Dreyer, Derek},
+	Booktitle = {Proceedings of the 5th {{ACM SIGPLAN Workshop}} on {{Types}} in {{Language Design}} and {{Implementation}}},
+	Date-Added = {2017-07-08 10:54:50 +0000},
+	Date-Modified = {2017-07-08 10:54:50 +0000},
+	Doi = {10.1145/1708016.1708028},
+	File = {Rossberg et al - 2010 - F-ing Modules.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/XEC62NMC/Rossberg et al - 2010 - F-ing Modules.pdf:application/pdf},
+	Isbn = {978-1-60558-891-9},
+	Keywords = {abstract data types,elaboration,existential types,first-class modules,ML modules,system f,type systems},
+	Pages = {89--102},
+	Publisher = {{ACM}},
+	Series = {TLDI '10},
+	Timestamp = {2016-02-29T23:17:09Z},
+	Title = {F-Ing {{Modules}}},
+	Urldate = {2014-06-12},
+	Year = {2010},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1145/1708016.1708028}}
 
 @article{Hammer2016typeda,
 	Abstract = {Over the past decade, programming language techniques for incremental computation have demonstrated that incremental programs with precise, carefully chosen dynamic names for data and sub-computations can dramatically outperform non-incremental programs, as well as those using traditional memoization (without such names). However, prior work lacks a verification mechanism to solve the ambiguous name problem, the problem of statically enforcing precise names. We say that an allocated pointer name is precise for an evaluation derivation when it identifies at most one value or subcomputation, and ambiguous otherwise. In this work, we define a refinement type system that gives practical static approximations to enforce precise, deterministic allocation names in otherwise functional programs. We show that this type system permits expressing familiar functional programs, and generic, composable library components. We prove that our type system enforces that well-typed programs name their values and sub-computations precisely, without ambiguity. Drawing closer to an implementation, we derive a bidirectional version of the type system, and prove that it corresponds to our declarative type system. A key challenge in implementing the bidirectional system is handling constraints over names, name terms and name sets; toward this goal, we give decidable, syntactic rules to guide these checks.},
