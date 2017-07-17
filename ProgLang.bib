@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2017-07-16 19:04:15 +0200 
+%% Created for Paolo Giosué Giarrusso at 2017-07-17 06:54:21 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -232,6 +232,89 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@inproceedings{Adams2014optimizing,
+	Abstract = {The most widely used generic-programming system in the Haskell community, Scrap Your Boilerplate (SYB), also happens to be one of the slowest. Generic traversals in SYB are often an order of magnitude slower than equivalent handwritten, non-generic traversals. Thus while SYB allows the concise expression of many traversals, its use incurs a significant runtime cost. Existing techniques for optimizing other generic-programming systems are not able to eliminate this overhead. This paper presents an optimization that completely eliminates this cost. Essentially, it is a partial evaluation that takes advantage of domain-specific knowledge about the structure of SYB. It optimizes SYB-style traversals to be as fast as handwritten, non-generic code, and benchmarks show that this optimization improves the speed of SYB-style code by an order of magnitude or more.},
+	Address = {New York, NY, USA},
+	Author = {Adams, Michael D. and Farmer, Andrew and Magalh{\~a}es, Jos{\'e} Pedro},
+	Booktitle = {Proceedings of the {{ACM SIGPLAN}} 2014 {{Workshop}} on {{Partial Evaluation}} and {{Program Manipulation}}},
+	Date-Added = {2017-07-17 04:54:19 +0000},
+	Date-Modified = {2017-07-17 04:54:19 +0000},
+	Doi = {10.1145/2543728.2543730},
+	File = {Adams et al - 2014 - Optimizing SYB is Easy!.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/D8MEIQ7C/Adams et al - 2014 - Optimizing SYB is Easy!.pdf:application/pdf},
+	Isbn = {978-1-4503-2619-3},
+	Keywords = {datatype-generic programming,Haskell,keywords: optimization,partial evaluation,performance,scrap your boilerplate (syb)},
+	Pages = {71--82},
+	Publisher = {{ACM}},
+	Series = {PEPM '14},
+	Timestamp = {2016-02-29T23:17:09Z},
+	Title = {Optimizing {{SYB}} Is {{Easy}}!},
+	Urldate = {2014-07-31},
+	Year = {2014},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1145/2543728.2543730}}
+
+@inproceedings{Farmer2012hermit,
+	Abstract = {The importance of reasoning about and refactoring programs is a central tenet of functional programming. Yet our compilers and development toolchains only provide rudimentary support for these tasks. This paper introduces a programmatic and compiler-centric interface that facilitates refactoring and equational reasoning. To develop our ideas, we have implemented HERMIT, a toolkit enabling informal but systematic transformation of Haskell programs from inside the Glasgow Haskell Compiler's optimization pipeline. With HERMIT, users can experiment with optimizations and equational reasoning, while the tedious heavy lifting of performing the actual transformations is done for them. HERMIT provides a transformation API that can be used to build higher-level rewrite tools. One use-case is prototyping new optimizations as clients of this API before being committed to the GHC toolchain. We describe a HERMIT application - a read-eval-print shell for performing transformations using HERMIT. We also demonstrate using this shell to prototype an optimization on a specific example, and report our initial experiences and remaining challenges.},
+	Address = {New York, NY, USA},
+	Author = {Farmer, Andrew and Gill, Andy and Komp, Ed and Sculthorpe, Neil},
+	Booktitle = {Proceedings of the 2012 {{Haskell Symposium}}},
+	Date-Added = {2017-07-17 04:54:19 +0000},
+	Date-Modified = {2017-07-17 04:54:19 +0000},
+	Doi = {10.1145/2364506.2364508},
+	File = {Farmer et al - 2012 - The HERMIT in the Machine - A Plugin for the Interactive Transformation of GHC Core Language Programs.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/58DCMIQB/Farmer et al - 2012 - The HERMIT in the Machine - A Plugin for the Interactive Transformation of GHC Core Language Programs.pdf:application/pdf},
+	Isbn = {978-1-4503-1574-6},
+	Keywords = {dsls,equational reasoning,ghc,optimization,strategic programming},
+	Pages = {1--12},
+	Publisher = {{ACM}},
+	Series = {Haskell '12},
+	Shorttitle = {The {{HERMIT}} in the {{Machine}}},
+	Timestamp = {2016-02-29T23:17:09Z},
+	Title = {The {{HERMIT}} in the {{Machine}}: {{A Plugin}} for the {{Interactive Transformation}} of {{GHC Core Language Programs}}},
+	Urldate = {2014-07-31},
+	Year = {2012},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1145/2364506.2364508}}
+
+@inproceedings{Farmer2014hermit,
+	Abstract = {Stream Fusion, a popular deforestation technique in the Haskell community, cannot fuse the concatMap combinator. This is a serious limitation, as concatMap represents computations on nested streams. The original implementation of Stream Fusion used the Glasgow Haskell Compiler's user-directed rewriting system. A transformation which allows the compiler to fuse many uses of concatMap has previously been proposed, but never implemented, because the host rewrite system was not expressive enough to implement the proposed transformation. In this paper, we develop a custom optimization plugin which implements the proposed concatMap transformation, and study the effectiveness of the transformation in practice. We also provide a new translation scheme for list comprehensions which enables them to be optimized. Within this framework, we extend the transformation to monadic streams. Code featuring uses of concatMap experiences significant speedup when compiled with this optimization. This allows Stream Fusion to outperform its rival, foldr/build, on many list computations, and enables performance-sensitive code to be expressed at a higher level of abstraction.},
+	Address = {New York, NY, USA},
+	Author = {Farmer, Andrew and {Hoener zu Siederdissen}, Christian and Gill, Andy},
+	Booktitle = {Proceedings of the {{ACM SIGPLAN}} 2014 {{Workshop}} on {{Partial Evaluation}} and {{Program Manipulation}}},
+	Date-Added = {2017-07-17 04:54:19 +0000},
+	Date-Modified = {2017-07-17 04:54:19 +0000},
+	Doi = {10.1145/2543728.2543736},
+	File = {ACM Full Text PDF:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/5V9CNA4T/Farmer et al. - 2014 - The HERMIT in the Stream Fusing Stream Fusion's c.pdf:application/pdf},
+	Isbn = {978-1-4503-2619-3},
+	Keywords = {_tablet,deforestation,functional programming,ghc,Haskell,optimization,program fusion,program transformation,stream fusion},
+	Pages = {97--108},
+	Publisher = {{ACM}},
+	Series = {PEPM '14},
+	Shorttitle = {The {{HERMIT}} in the {{Stream}}},
+	Timestamp = {2016-02-29T23:17:09Z},
+	Title = {The {{HERMIT}} in the {{Stream}}: {{Fusing Stream Fusion}}'s {{concatMap}}},
+	Urldate = {2014-04-23},
+	Year = {2014},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1145/2543728.2543736}}
+
+@incollection{Sculthorpe2013hermit,
+	Abstract = {This paper describes our experience using the HERMIT toolkit to apply well-known transformations to the internal core language of the Glasgow Haskell Compiler. HERMIT provides several mechanisms to support writing general-purpose transformations: a domain-specific language for strategic programming specialized to GHC's core language, a library of primitive rewrites, and a shell-style\textendash{}based scripting language for interactive and batch usage. There are many program transformation techniques that have been described in the literature but have not been mechanized and made available inside GHC \textemdash{} either because they are too specialized to include in a general-purpose compiler, or because the developers' interest is in theory rather than implementation. The mechanization process can often reveal pragmatic obstacles that are glossed over in pen-and-paper proofs; understanding and removing these obstacles is our concern. Using HERMIT, we implement eleven examples of three program transformations, report on our experience, and describe improvements made in the process.},
+	Author = {Sculthorpe, Neil and Farmer, Andrew and Gill, Andy},
+	Booktitle = {Implementation and {{Application}} of {{Functional Languages}}},
+	Copyright = {\textcopyright{}2013 Springer-Verlag Berlin Heidelberg},
+	Date-Added = {2017-07-17 04:54:19 +0000},
+	Date-Modified = {2017-07-17 04:54:19 +0000},
+	Editor = {Hinze, Ralf},
+	File = {Sculthorpe et al - 2013 - The HERMIT in the Tree.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/6Z3DTI5A/Sculthorpe et al - 2013 - The HERMIT in the Tree.pdf:application/pdf;Snapshot:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/QH4QPAZT/10.html:text/html},
+	Isbn = {978-3-642-41581-4 978-3-642-41582-1},
+	Keywords = {ghc,Information Systems Applications (incl. Internet),Logics and Meanings of Programs,Mathematical Logic and Formal Languages,Mechanization,Programming Languages; Compilers; Interpreters,Programming Techniques,Software Engineering,Transformation,Worker/wrapper},
+	Language = {en},
+	Month = jan,
+	Pages = {86--103},
+	Publisher = {{Springer Berlin Heidelberg}},
+	Series = {Lecture Notes in Computer Science},
+	Timestamp = {2016-02-29T23:17:09Z},
+	Title = {The {{HERMIT}} in the {{Tree}}},
+	Urldate = {2014-07-31},
+	Year = {2013}}
 
 @article{Headley2016random,
 	Abstract = {We introduce the Random Access Zipper (RAZ), a simple, purely-functional data structure for editable sequences. A RAZ combines the structure of a zipper with that of a tree: like a zipper, edits at the cursor require constant time; by leveraging tree structure, relocating the edit cursor in the sequence requires logarithmic time. While existing data structures provide these time bounds, none do so with the same simplicity and brevity of code as the RAZ. The simplicity of the RAZ provides the opportunity for more programmers to extend the structure to their own needs, and we provide some suggestions for how to do so.},
