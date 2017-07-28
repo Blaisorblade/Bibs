@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Paolo Giosué Giarrusso at 2017-07-25 02:15:28 +0200 
+%% Created for Paolo Giosué Giarrusso at 2017-07-28 14:01:50 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -214,6 +214,68 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@inproceedings{Grust2009ferry,
+	Abstract = {We demonstrate the language Ferry and its editing, compilation, and execution environment FerryDeck. Ferry's type system and operations match those of scripting or programming languages; its compiler has been designed to emit (bundles of) compliant and efficient SQL:1999 statements. Ferry acts as glue that permits a programming style in which developers access database tables using their programming language's own syntax and idioms -- the Ferry-expressible fragments of such programs may be executed by a relational database back-end, i.e., close to the data. The demonstrator FerryDeck implements compile-and-execute-as-you-type interactivity for Ferry and offers a variety of (graphical) hooks to explore and inspect this approach to database-supported program execution.},
+	Address = {New York, NY, USA},
+	Author = {Grust, Torsten and Mayr, Manuel and Rittinger, Jan and Schreiber, Tom},
+	Booktitle = {Proceedings of the 2009 {{ACM SIGMOD International Conference}} on {{Management}} of {{Data}}},
+	Date-Added = {2017-07-28 11:49:24 +0000},
+	Date-Modified = {2017-07-28 11:49:24 +0000},
+	Doi = {10.1145/1559845.1559982},
+	File = {Grust et al - 2009 - FERRY - Database-supported Program Execution.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/P4M26MK6/Grust et al - 2009 - FERRY - Database-supported Program Execution.pdf:application/pdf},
+	Isbn = {978-1-60558-551-2},
+	Keywords = {ferry,LINQ,pathfinder,sql:1999},
+	Pages = {1063--1066},
+	Publisher = {{ACM}},
+	Series = {SIGMOD '09},
+	Shorttitle = {{{FERRY}}},
+	Timestamp = {2017-07-28T11:48:09Z},
+	Title = {{{FERRY}}: {{Database}}-Supported {{Program Execution}}},
+	Urldate = {2017-07-28},
+	Year = {2009},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1145/1559845.1559982}}
+
+@inproceedings{Ulrich2015flatter,
+	Abstract = {We demonstrate the insides and outs of a query compiler based on the flattening transformation, a translation technique designed by the programming language community to derive efficient data-parallel implementations from iterative programs. Flattening admits the straightforward formulation of intricate query logic including deeply nested loops over (possibly ordered) data or the construction of rich data structures. To demonstrate the level of expressiveness that can be achieved, we will bring a compiler frontend that accepts queries embedded into the Haskell programming language. Compilation via flattening takes places in a series of simple steps all of which will be made tangible by the demonstration. The final output is a program of lifted primitive operations which existing query engines can efficiently implement. We provide backends based on PostgreSQL and VectorWise to make this point however, most set-oriented or data-parallel engines could benefit from a flattening-based query compiler.},
+	Address = {New York, NY, USA},
+	Author = {Ulrich, Alexander and Grust, Torsten},
+	Booktitle = {Proceedings of the 2015 {{ACM SIGMOD International Conference}} on {{Management}} of {{Data}}},
+	Date-Added = {2017-07-28 11:42:57 +0000},
+	Date-Modified = {2017-07-28 11:42:57 +0000},
+	Doi = {10.1145/2723372.2735359},
+	File = {Ulrich_Grust - 2015 - The Flatter, the Better - Query Compilation Based on the Flattening Transformation.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/RFHXBI7F/Ulrich_Grust - 2015 - The Flatter, the Better - Query Compilation Based on the Flattening Transformation.pdf:application/pdf},
+	Isbn = {978-1-4503-2758-9},
+	Keywords = {flattening,list comprehensions,nested data parallelism},
+	Pages = {1421--1426},
+	Publisher = {{ACM}},
+	Series = {SIGMOD '15},
+	Shorttitle = {The {{Flatter}}, the {{Better}}},
+	Timestamp = {2016-02-29T23:17:09Z},
+	Title = {The {{Flatter}}, the {{Better}}: {{Query Compilation Based}} on the {{Flattening Transformation}}},
+	Urldate = {2015-06-03},
+	Year = {2015},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1145/2723372.2735359}}
+
+@article{Grust2013functions,
+	Abstract = {We demonstrate a full-fledged implementation of first-class functions for the widely used PL/SQL database programming language. Functions are treated as regular data items that may be (1) constructed at query runtime, (2) stored in and retrieved from tables, (3) assigned to variables, and (4) passed to and from other (higher-order) functions. The resulting PL/SQL dialect concisely and elegantly expresses a wide range of new query idioms which would be cumbersome to formulate if functions remained second-class citizens. We include a diverse set of application scenarios that make these advantages tangible. First-class PL/SQL functions require featherweight syntactic extensions only and come with a non-invasive implementation-- the defunctionalization transformation--that can entirely be built on top of existing relational DBMS infrastructure. An interactive demonstrator helps users to experiment with the "function as data" paradigm and to earn a solid intuition of its inner workings.},
+	Author = {Grust, Torsten and Schweinsberg, Nils and Ulrich, Alexander},
+	Date-Added = {2017-07-28 11:42:54 +0000},
+	Date-Modified = {2017-07-28 11:42:54 +0000},
+	Doi = {10.14778/2536274.2536279},
+	File = {Grust et al - 2013 - Functions Are Data Too - Defunctionalization for PL-SQL.pdf:/Users/pgiarrusso/Library/Application Support/Zotero/Profiles/0lm7uqnz.default/zotero/storage/GP743KJM/Grust et al - 2013 - Functions Are Data Too - Defunctionalization for PL-SQL.pdf:application/pdf},
+	Issn = {2150-8097},
+	Journal = {Proc. VLDB Endow.},
+	Month = aug,
+	Number = {12},
+	Pages = {1214--1217},
+	Shorttitle = {Functions {{Are Data Too}}},
+	Timestamp = {2017-07-25T00:03:44Z},
+	Title = {Functions {{Are Data Too}}: {{Defunctionalization}} for {{PL}}/{{SQL}}},
+	Urldate = {2017-07-25},
+	Volume = {6},
+	Year = {2013},
+	Bdsk-Url-1 = {http://dx.doi.org/10.14778/2536274.2536279}}
 
 @inproceedings{Grust2013first,
 	Author = {Torsten Grust and Alexander Ulrich},
