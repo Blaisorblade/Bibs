@@ -1,8 +1,7 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
-
-%% Created for Paolo Giosué Giarrusso at 2017-09-26 03:27:21 +0200 
+%% Created for Paolo Giarrusso at 2017-11-14 23:33:50 +0100 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -232,6 +231,72 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@inproceedings{Hobor2010theory,
+	Abstract = {Building semantic models that account for various kinds of indirect reference has traditionally been a difficult problem. Indirect reference can appear in many guises, such as heap pointers, higher-order functions, object references, and shared-memory mutexes. We give a general method to construct models containing indirect reference by presenting a "theory of indirection". Our method can be applied in a wide variety of settings and uses only simple, elementary mathematics. In addition to various forms of indirect reference, the resulting models support powerful features such as impredicative quantification and equirecursion; moreover they are compatible with the kind of powerful substructural accounting required to model (higher-order) separation logic. In contrast to previous work, our model is easy to apply to new settings and has a simple axiomatization, which is complete in the sense that all models of it are isomorphic. Our proofs are machine-checked in Coq.},
+	Address = {New York, NY, USA},
+	Author = {Hobor, Aquinas and Dockins, Robert and Appel, Andrew W.},
+	Booktitle = {Proceedings of the 37th {{Annual ACM SIGPLAN}}-{{SIGACT Symposium}} on {{Principles}} of {{Programming Languages}}},
+	Date-Added = {2017-11-14 22:33:48 +0000},
+	Date-Modified = {2017-11-14 22:33:48 +0000},
+	Doi = {10.1145/1706299.1706322},
+	File = {Hobor et al - 2010 - A Theory of Indirection via Approximation.pdf:/Users/pgiarrusso/Zotero/storage/GHXGDRQE/Hobor et al - 2010 - A Theory of Indirection via Approximation.pdf:application/pdf},
+	Isbn = {978-1-60558-479-9},
+	Keywords = {_tablet,indirection theory,step-indexed models},
+	Pages = {171--184},
+	Publisher = {{ACM}},
+	Series = {POPL '10},
+	Timestamp = {2017-09-05T04:17:11Z},
+	Title = {A {{Theory}} of {{Indirection}} via {{Approximation}}},
+	Year = {2010},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1145/1706299.1706322}}
+
+@book{Dockins2012constructing,
+	Abstract = {Abstract. Although they appear unrelated, the type system of the polymorphic $\lambda$-calculus with references and the assertions of concurrent separation logic with first-class locks share a critical feature: an unsound contravariant circularity in their na{\"\i}ve semantic model. We developed indirection theory to automatically construct, and cleanly axiomatize, step-indexed approximations to these na{\"\i}ve models, as well as a large number of others [HDA10b]. Unfortunately, the previous axiomatization had a flaw. One is usually only interested in using hereditary predicates: those which are closed under the action of approximation. As previously presented, indirection theory allows nonhereditary predicates to exist in certain parts of the construction. Although not fatal, this flaw requires workarounds that are not entirely obvious to the uninitiated. We correct this flaw by presenting a new axiomatization of indirection theory that only permits heredity predicates and show that the new interface is sound by constructing a model. The new axiomatization is somewhat more subtle than the previous one, but it retains the same flavor, cleanliness, and metatheoretic properties. In contrast, the new construction is markedly more complex, especially in a mechanized context. Indeed, our Coq mechanization is one of our key contributions, and accordingly we present it in considerable detail. 1},
+	Author = {Dockins, Robert and Hobor, Aquinas},
+	Date-Added = {2017-11-14 22:33:48 +0000},
+	Date-Modified = {2017-11-14 22:33:48 +0000},
+	File = {Dockins_Hobor - 2012 - Constructing Hereditary Worlds Within Worlds.pdf:/Users/pgiarrusso/Zotero/storage/NCXMQ4KC/Dockins_Hobor - 2012 - Constructing Hereditary Worlds Within Worlds.pdf:application/pdf;Citeseer - Snapshot:/Users/pgiarrusso/Zotero/storage/UQIVFZMK/summary.html:text/html},
+	Keywords = {_tablet},
+	Note = {00000},
+	Timestamp = {2017-11-14T21:47:54Z},
+	Title = {Constructing {{Hereditary Worlds Within Worlds}}},
+	Year = {2012}}
+
+@article{Rapoport2017simple,
+	Abstract = {Dependent Object Types (DOT) is intended to be a core calculus for modelling Scala. Its distinguishing feature is abstract type members, fields in objects that hold types rather than values. Proving soundness of DOT has been surprisingly challenging, and existing proofs are complicated, and reason about multiple concepts at the same time (e.g. types, values, evaluation). To serve as a core calculus for Scala, DOT should be easy to experiment with and extend, and therefore its soundness proof needs to be easy to modify. This paper presents a simple and modular proof strategy for reasoning in DOT. The strategy separates reasoning about types from other concerns. It is centred around a theorem that connects the full DOT type system to a restricted variant in which the challenges and paradoxes caused by abstract type members are eliminated. Almost all reasoning in the proof is done in the intuitive world of this restricted type system. Once we have the necessary results about types, we observe that the other aspects of DOT are mostly standard and can be incorporated into a soundness proof using familiar techniques known from other calculi. Our paper comes with a machine-verified version of the proof in Coq.},
+	Archiveprefix = {arXiv},
+	Author = {Rapoport, Marianna and Kabir, Ifaz and He, Paul and Lhot{\'a}k, Ond{\v r}ej},
+	Date-Added = {2017-11-14 22:33:37 +0000},
+	Date-Modified = {2017-11-14 22:33:37 +0000},
+	Eprint = {1706.03814},
+	Eprinttype = {arxiv},
+	File = {Rapoport et al - 2017 - A Simple Soundness Proof for Dependent Object Types.pdf:/Users/pgiarrusso/Zotero/storage/WNAKE2N8/Rapoport et al - 2017 - A Simple Soundness Proof for Dependent Object Types.pdf:application/pdf;arXiv.org Snapshot:/Users/pgiarrusso/Zotero/storage/B2NN7UZH/1706.html:text/html},
+	Journal = {arXiv:1706.03814 [cs]},
+	Keywords = {Computer Science - Programming Languages,_tablet},
+	Month = jun,
+	Primaryclass = {cs},
+	Timestamp = {2017-09-11T13:44:07Z},
+	Title = {A {{Simple Soundness Proof}} for {{Dependent Object Types}}},
+	Year = {2017}}
+
+@article{Rapoport2016mutable,
+	Abstract = {The Dependent Object Types (DOT) calculus aims to model the essence of Scala, with a focus on abstract type members, path-dependent types, and subtyping. Other Scala features could be defined by translation to DOT. Mutation is a fundamental feature of Scala currently missing in DOT. Mutation in DOT is needed not only to model effectful computation and mutation in Scala programs, but even to precisely specify how Scala initializes immutable variables and fields (vals). We present an extension to DOT that adds typed mutable reference cells. We have proven the extension sound with a mechanized proof in Coq. We present the key features of our extended calculus and its soundness proof, and discuss the challenges that we encountered in our search for a sound design and the alternative solutions that we considered.},
+	Archiveprefix = {arXiv},
+	Author = {Rapoport, Marianna and Lhot{\'a}k, Ond{\v r}ej},
+	Date-Added = {2017-11-14 22:33:37 +0000},
+	Date-Modified = {2017-11-14 22:33:37 +0000},
+	Eprint = {1611.07610},
+	Eprinttype = {arxiv},
+	File = {Rapoport_Lhot{\'a}k - 2016 - Mutable WadlerFest DOT.pdf:/Users/pgiarrusso/Zotero/storage/ZMG67T43/Rapoport_Lhot{\'a}k - 2016 - Mutable WadlerFest DOT.pdf:application/pdf;arXiv.org Snapshot:/Users/pgiarrusso/Zotero/storage/44R5R43B/1611.html:text/html},
+	Journal = {arXiv:1611.07610 [cs]},
+	Keywords = {Computer Science - Programming Languages,_tablet},
+	Month = nov,
+	Primaryclass = {cs},
+	Timestamp = {2017-01-06T18:48:31Z},
+	Title = {Mutable {{WadlerFest DOT}}},
+	Urldate = {2017-01-06},
+	Year = {2016}}
 
 @inproceedings{Wang2017strong,
 	Address = {Dagstuhl, Germany},
