@@ -1,2 +1,2 @@
 #!/bin/sh
-curl 'http://localhost:23119/better-bibtex/collection?/1/J2Z4778T.bibtex' > zotero.bib
+curl 'http://localhost:23119/better-bibtex/library?/1/library.biblatex' > zotero.bib
