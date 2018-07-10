@@ -1,2 +1,2 @@
 #!/bin/sh
-git subtree push -P Bibs bibs master
+git subtree push -P Bibs rbibs master
