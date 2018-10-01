@@ -20,8 +20,8 @@ Your paper coauthors can work with you without learning any of this.
 4. Run the following bash commands, replacing `$remote` as above.
 
     ```bash
-    $ git remote add bibs $remote
-    $ git remote add rbibs $local
+    $ git remote add bibs $local
+    $ git remote add rbibs $remote
     $ git fetch bibs
     $ git subtree add --squash -P Bibs bibs/master
     ```
