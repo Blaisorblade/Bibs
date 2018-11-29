@@ -18060,5 +18060,60 @@ Modules are treated as “first-class” citizens, and therefore the system supp
   file = {/Users/pgiarrusso/Zotero/storage/G3BRBK86/Stucki-Giarrusso-Odersky - 2018 - Truly Abstract Interfaces for Algebraic Data Types - The Extractor Typing Problem.pdf}
 }
 
+@article{Dodds2016Verifying,
+  title = {Verifying Custom Synchronization Constructs Using Higher-Order Separation Logic},
+  volume = {38},
+  issn = {0164-0925},
+  url = {http://doi.acm.org/10.1145/2818638},
+  doi = {10.1145/2818638},
+  abstract = {Synchronization constructs lie at the heart of any reliable concurrent program. Many such constructs are standard (e.g., locks, queues, stacks, and hash-tables). However, many concurrent applications require custom synchronization constructs with special-purpose behavior. These constructs present a significant challenge for verification. Like standard constructs, they rely on subtle racy behavior, but unlike standard constructs, they may not have well-understood abstract interfaces. As they are custom built, such constructs are also far more likely to be unreliable. This article examines the formal specification and verification of custom synchronization constructs. Our target is a library of channels used in automated parallelization to enforce sequential behavior between program statements. Our high-level specification captures the conditions necessary for correct execution; these conditions reflect program dependencies necessary to ensure sequential behavior. We connect the high-level specification with the low-level library implementation to prove that a client’s requirements are satisfied. Significantly, we can reason about program and library correctness without breaking abstraction boundaries. To achieve this, we use a program logic called iCAP (impredicative Concurrent Abstract Predicates) based on separation logic. iCAP supports both high-level abstraction and low-level reasoning about races. We use this to show that our high-level channel specification abstracts three different, increasingly complex low-level implementations of the library. iCAP’s support for higher-order reasoning lets us prove that sequential dependencies are respected, while iCAP’s next-generation semantic model lets us avoid ugly problems with cyclic dependencies.},
+  number = {2},
+  journaltitle = {ACM Trans. Program. Lang. Syst.},
+  urldate = {2018-11-26},
+  date = {2016-01},
+  pages = {4:1--4:72},
+  keywords = {concurrency,concurrent abstract predicates,Separation logic},
+  author = {Dodds, Mike and Jagannathan, Suresh and Parkinson, Matthew J. and Svendsen, Kasper and Birkedal, Lars},
+  file = {/Users/pgiarrusso/Zotero/storage/I6U6U5TZ/Dodds-Jagannathan-Parkinson-Svendsen-Birkedal - 2016 - Verifying Custom Synchronization Constructs Using Higher-Order Separation Logic.pdf}
+}
+% == BibLateX quality report for Dodds2016Verifying:
+% ? Possibly abbreviated journal title ACM Trans. Program. Lang. Syst.
+
+@inproceedings{Gasiunas2007Dependent,
+  location = {{New York, NY, USA}},
+  title = {Dependent Classes},
+  isbn = {978-1-59593-786-5},
+  url = {http://doi.acm.org/10.1145/1297027.1297038},
+  doi = {10.1145/1297027.1297038},
+  abstract = {Virtual classes allow nested classes to be refined in subclasses. In this way nested classes can be seen as dependent abstractions of the objects of the enclosing classes. Expressing dependency via nesting, however, has two limitations: Abstractions that depend on more than one object cannot be modeled and a class must know all classes that depend on its objects. This paper presents dependent classes, a generalization of virtual classes that expresses similar semantics by parameterization rather than by nesting. This increases expressivity of class variations as well as the flexibility of their modularization. Besides, dependent classes complement multimethods in scenarios where multi-dispatched abstractions rather than multi-dispatched methods are needed. They can also be used to express more precise signatures of multimethods and even extend their dispatch semantics. We present a formal semantics of dependent classes and a machine-checked type soundness proof in Isabelle/HOL [29], the first of this kind for a language with virtual classes and path-dependent types.},
+  booktitle = {Proceedings of the 22Nd Annual ACM SIGPLAN Conference on Object-oriented Programming Systems and Applications},
+  series = {OOPSLA '07},
+  publisher = {{ACM}},
+  urldate = {2018-11-29},
+  date = {2007},
+  pages = {133--152},
+  keywords = {dependent classes,dynamic dispatch,multimethods,multiple dispatch,variability,virtual classes},
+  author = {Gasiunas, Vaidas and Mezini, Mira and Ostermann, Klaus},
+  file = {/Users/pgiarrusso/Zotero/storage/AI6DIFCU/Gasiunas-Mezini-Ostermann - 2007 - Dependent Classes.pdf}
+}
+
+@inproceedings{Hutchins2010Pure,
+  location = {{New York, NY, USA}},
+  title = {Pure Subtype Systems},
+  isbn = {978-1-60558-479-9},
+  url = {http://doi.acm.org/10.1145/1706299.1706334},
+  doi = {10.1145/1706299.1706334},
+  abstract = {This paper introduces a new approach to type theory called pure subtype systems . Pure subtype systems differ from traditional approaches to type theory (such as pure type systems) because the theory is based on subtyping, rather than typing. Proper types and typing are completely absent from the theory; the subtype relation is defined directly over objects. The traditional typing relation is shown to be a special case of subtyping, so the loss of types comes without any loss of generality. Pure subtype systems provide a uniform framework which seamlessly integrates subtyping with dependent and singleton types. The framework was designed as a theoretical foundation for several problems of practical interest, including mixin modules, virtual classes, and feature-oriented programming. The cost of using pure subtype systems is the complexity of the meta-theory. We formulate the subtype relation as an abstract reduction system, and show that the theory is sound if the underlying reductions commute. We are able to show that the reductions commute locally, but have thus far been unable to show that they commute globally. Although the proof is incomplete, it is ``close enough'' to rule out obvious counter-examples. We present it as an open problem in type theory.},
+  booktitle = {Proceedings of the 37th Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+  series = {POPL '10},
+  publisher = {{ACM}},
+  urldate = {2018-11-29},
+  date = {2010},
+  pages = {287--298},
+  keywords = {abstract reduction systems,dependent types,singleton types,subtyping,transitivity elimination},
+  author = {Hutchins, DeLesley S.},
+  file = {/Users/pgiarrusso/Zotero/storage/GGGYL7AE/Hutchins - 2010 - Pure Subtype Systems.pdf}
+}
+
 @preamble{ "\ifdefined\DeclarePrefChars\DeclarePrefChars{'’-}\else\fi " }
 
