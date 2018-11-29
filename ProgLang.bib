@@ -1,7 +1,7 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
-%% Created for Paolo G. Giarrusso at 2018-11-17 10:35:02 +0100 
+%% Created for Paolo G. Giarrusso at 2018-11-29 16:06:40 +0100 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -232,6 +232,117 @@
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
 
+@article{Harper1993Type,
+	Abstract = {Standard ML is a useful programming language with a polymorphic type system and a flexible module facility. One notable feature of the core expression language of ML is that it is implicitly typed: no explicit type information need be supplied by the programmer. In contrast, the module language of ML is explicitly typed; in particular, the types of parameters in parametric modules must be supplied by the programmer. We study the type structure of Standard ML by giving an explicitly-typed, polymorphic function calculus that captures many of the essential aspects of both the core and module language. In this setting, implicitly-typed core language expressions are regarded as a convenient short-hand for an explicitly-typed counterpart in our function calculus. In contrast to the Girard-Reynolds polymorphic calculus, our function calculus is predicative: the type system may be built up by induction on type levels. We show that, in a precise sense, the language becomes inconsistent if restrictions imposed by type levels are relaxed. More specifically, we prove that the important programming features of ML cannot be added to any impredicative language, such as the Girard-Reynolds calculus, without implicitly assuming a type of all types.},
+	Author = {Harper, Robert and Mitchell, John C.},
+	Date-Added = {2018-11-29 13:51:23 +0100},
+	Date-Modified = {2018-11-29 13:51:23 +0100},
+	Doi = {10.1145/169701.169696},
+	File = {/Users/pgiarrusso/Zotero/storage/YFBB9Q3D/Harper-Mitchell - 1993 - On the Type Structure of Standard ML.pdf},
+	Issn = {0164-0925},
+	Journal = {ACM Trans. Program. Lang. Syst.},
+	Month = apr,
+	Number = {2},
+	Pages = {211--252},
+	Title = {On the Type Structure of Standard ML},
+	Volume = {15},
+	Year = {1993}}
+
+@article{Rapoport2017Simple,
+	Abstract = {Dependent Object Types (DOT) is intended to be a core calculus for modelling Scala. Its distinguishing feature is abstract type members, fields in objects that hold types rather than values. Proving soundness of DOT has been surprisingly challenging, and existing proofs are complicated, and reason about multiple concepts at the same time (e.g. types, values, evaluation). To serve as a core calculus for Scala, DOT should be easy to experiment with and extend, and therefore its soundness proof needs to be easy to modify.   This paper presents a simple and modular proof strategy for reasoning in DOT. The strategy separates reasoning about types from other concerns. It is centred around a theorem that connects the full DOT type system to a restricted variant in which the challenges and paradoxes caused by abstract type members are eliminated. Almost all reasoning in the proof is done in the intuitive world of this restricted type system. Once we have the necessary results about types, we observe that the other aspects of DOT are mostly standard and can be incorporated into a soundness proof using familiar techniques known from other calculi.},
+	Author = {Rapoport, Marianna and Kabir, Ifaz and He, Paul and Lhot\'ak, Ond{\v r}ej},
+	Date-Added = {2018-11-29 13:45:45 +0100},
+	Date-Modified = {2018-11-29 13:45:59 +0100},
+	Doi = {10.1145/3133870},
+	File = {/Users/pgiarrusso/Zotero/storage/UHEKZHVY/Rapoport-Kabir-He-Lhot{\'a}k - 2017 - A Simple Soundness Proof for Dependent Object Types.pdf;/Users/pgiarrusso/Zotero/storage/WNAKE2N8/Rapoport-Kabir-He-Lhot{\'a}k - 2017 - A Simple Soundness Proof for Dependent Object Types.pdf;/Users/pgiarrusso/Zotero/storage/B2NN7UZH/1706.html},
+	Issn = {2475-1421},
+	Journal = {Proc. ACM Program. Lang.},
+	Keywords = {Computer Science - Programming Languages,type safety,_tablet,Scala,dependent object types,DOT calculus},
+	Month = oct,
+	Number = {OOPSLA},
+	Pages = {46:1--46:27},
+	Title = {A Simple Soundness Proof for Dependent Object Types},
+	Volume = {1},
+	Year = {2017}}
+
+@article{Yang2017Unifying,
+	Abstract = {In recent years dependent types have become a hot topic in programming language research. A key reason why dependent types are interesting is that they allow unifying types and terms, which enables both additional expressiveness and economy of concepts. Unfortunately there has been much less work on dependently typed calculi for object-oriented programming. This is partly because it is widely acknowledged that the combination between dependent types and subtyping is particularly challenging. This paper presents $\lambda$ I$\leq$, which is a dependently typed generalization of System F$\leq$. The resulting calculus follows the style of Pure Type Systems, and contains a single unified syntactic sort that accounts for expressions, types and kinds. To address the challenges posed by the combination of dependent types and subtyping, $\lambda$ I$\leq$ employs a novel technique that unifies typing and subtyping. In $\lambda$ I$\leq$ there is only a judgement that is akin to a typed version of subtyping. Both the typing relation, as well as type well-formedness are just special cases of the subtyping relation. The resulting calculus has a rich metatheory and enjoys of several standard and desirable properties, such as subject reduction, transitivity of subtyping, narrowing as well as standard substitution lemmas. All the metatheory of $\lambda$ I$\leq$ is mechanically proved in the Coq theorem prover. Furthermore, (and as far as we are aware) $\lambda$ I$\leq$ is the first dependently typed calculus that completely subsumes System F$\leq$, while preserving various desirable properties.},
+	Author = {Yang, Yanpeng and Oliveira, Bruno C. d. S.},
+	Date-Added = {2018-11-29 13:44:53 +0100},
+	Date-Modified = {2018-11-29 13:44:53 +0100},
+	Doi = {10.1145/3133871},
+	File = {/Users/pgiarrusso/Zotero/storage/R8GHV2CS/Yang-Oliveira - 2017 - Unifying Typing and Subtyping.pdf},
+	Issn = {2475-1421},
+	Journal = {Proc. ACM Program. Lang.},
+	Keywords = {dependent types,subtyping,object-oriented programming},
+	Month = oct,
+	Number = {OOPSLA},
+	Pages = {47:1--47:26},
+	Title = {Unifying Typing and Subtyping},
+	Volume = {1},
+	Year = {2017}}
+
+@inproceedings{Hutchins2010Pure,
+	Abstract = {This paper introduces a new approach to type theory called pure subtype systems . Pure subtype systems differ from traditional approaches to type theory (such as pure type systems) because the theory is based on subtyping, rather than typing. Proper types and typing are completely absent from the theory; the subtype relation is defined directly over objects. The traditional typing relation is shown to be a special case of subtyping, so the loss of types comes without any loss of generality. Pure subtype systems provide a uniform framework which seamlessly integrates subtyping with dependent and singleton types. The framework was designed as a theoretical foundation for several problems of practical interest, including mixin modules, virtual classes, and feature-oriented programming. The cost of using pure subtype systems is the complexity of the meta-theory. We formulate the subtype relation as an abstract reduction system, and show that the theory is sound if the underlying reductions commute. We are able to show that the reductions commute locally, but have thus far been unable to show that they commute globally. Although the proof is incomplete, it is ``close enough'' to rule out obvious counter-examples. We present it as an open problem in type theory.},
+	Address = {New York, NY, USA},
+	Author = {Hutchins, DeLesley S.},
+	Booktitle = {Proceedings of the 37th Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+	Date-Added = {2018-11-29 13:44:45 +0100},
+	Date-Modified = {2018-11-29 13:44:45 +0100},
+	Doi = {10.1145/1706299.1706334},
+	File = {/Users/pgiarrusso/Zotero/storage/GGGYL7AE/Hutchins - 2010 - Pure Subtype Systems.pdf},
+	Isbn = {978-1-60558-479-9},
+	Keywords = {abstract reduction systems,dependent types,singleton types,subtyping,transitivity elimination},
+	Pages = {287--298},
+	Publisher = {{ACM}},
+	Series = {POPL '10},
+	Title = {Pure Subtype Systems},
+	Year = {2010}}
+
+@inproceedings{Gasiunas2007Dependent,
+	Abstract = {Virtual classes allow nested classes to be refined in subclasses. In this way nested classes can be seen as dependent abstractions of the objects of the enclosing classes. Expressing dependency via nesting, however, has two limitations: Abstractions that depend on more than one object cannot be modeled and a class must know all classes that depend on its objects. This paper presents dependent classes, a generalization of virtual classes that expresses similar semantics by parameterization rather than by nesting. This increases expressivity of class variations as well as the flexibility of their modularization. Besides, dependent classes complement multimethods in scenarios where multi-dispatched abstractions rather than multi-dispatched methods are needed. They can also be used to express more precise signatures of multimethods and even extend their dispatch semantics. We present a formal semantics of dependent classes and a machine-checked type soundness proof in Isabelle/HOL [29], the first of this kind for a language with virtual classes and path-dependent types.},
+	Address = {New York, NY, USA},
+	Author = {Gasiunas, Vaidas and Mezini, Mira and Ostermann, Klaus},
+	Booktitle = {Proceedings of the 22nd Annual ACM SIGPLAN Conference on Object-oriented Programming Systems and Applications},
+	Date-Added = {2018-11-29 13:44:35 +0100},
+	Date-Modified = {2018-11-29 13:44:35 +0100},
+	Doi = {10.1145/1297027.1297038},
+	File = {/Users/pgiarrusso/Zotero/storage/AI6DIFCU/Gasiunas-Mezini-Ostermann - 2007 - Dependent Classes.pdf},
+	Isbn = {978-1-59593-786-5},
+	Keywords = {variability,multiple dispatch,virtual classes,dynamic dispatch,multimethods,dependent classes},
+	Pages = {133--152},
+	Publisher = {{ACM}},
+	Series = {OOPSLA '07},
+	Title = {Dependent Classes},
+	Year = {2007}}
+
+@inproceedings{Ernst2006virtual,
+	Abstract = {Virtual classes are class-valued attributes of objects. Like virtual methods, virtual classes are defined in an object's class and may be redefined within subclasses. They resemble inner classes, which are also defined within a class, but virtual classes are accessed through object instances, not as static components of a class. When used as types, virtual classes depend upon object identity -- each object instance introduces a new family of virtual class types. Virtual classes support large-scale program composition techniques, including higher-order hierarchies and family polymorphism. The original definition of virtual classes in BETA left open the question of static type safety, since some type errors were not caught until runtime. Later the languages Caesar and gbeta have used a more strict static analysis in order to ensure static type safety. However, the existence of a sound, statically typed model for virtual classes has been a long-standing open question. This paper presents a virtual class calculus, VC, that captures the essence of virtual classes in these full-fledged programming languages. The key contributions of the paper are a formalization of the dynamic and static semantics of VC and a proof of the soundness of VC.},
+	Address = {New York, NY, USA},
+	Author = {Ernst, Erik and Ostermann, Klaus and Cook, William R.},
+	Booktitle = {Conference Record of the 33rd ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+	Date-Added = {2018-11-29 13:44:19 +0100},
+	Date-Modified = {2018-11-29 13:44:19 +0100},
+	Doi = {10.1145/1111037.1111062},
+	File = {/Users/pgiarrusso/Zotero/storage/V896UNP2/Ernst et al - 2006 - A Virtual Class Calculus.pdf},
+	Isbn = {1-59593-027-2},
+	Keywords = {soundness,virtual classes},
+	Pages = {270--282},
+	Publisher = {{ACM}},
+	Series = {POPL '06},
+	Title = {A Virtual Class Calculus},
+	Year = {2006}}
+
+@article{Amin2012Dependent,
+	Abstract = {We propose a new type-theoretic foundation of Scala and languages like it: the Dependent Object Types (DOT) calculus. DOT models Scala's path-dependent types, abstract type members and its mixture of nominal and structural typing through the use of refinement types. The core formalism makes no attempt to model inheritance and mixin composition. DOT normalizes Scala's type system by unifying the constructs for type members and by providing classical intersection and union types which simplify greatest lower bound and least upper bound computations. In this paper, we present the DOT calculus, both formally and informally. We also discuss our work-in-progress to prove typesafety of the calculus. Amin, Nada; Moors, Adriaan; Odersky, Martin},
+	Author = {Amin, Nada and Moors, Adriaan and Odersky, Martin},
+	Date-Added = {2018-11-29 13:44:09 +0100},
+	Date-Modified = {2018-11-29 13:44:09 +0100},
+	File = {/Users/pgiarrusso/Zotero/storage/QN5TDH3I/Amin-Moors-Odersky - 2012 - Dependent Object Types.pdf},
+	Language = {en},
+	Title = {Dependent Object Types},
+	Year = {2012}}
+
 @article{Wang2018Demystifying,
 	Author = {Wang, Fei and Wu, Xilun and Essertel, Gregory and Decker, James and Rompf, Tiark},
 	Date = {2018-03-27},
@@ -396,12 +507,12 @@
 	Title = {Constructing {{Hereditary Worlds Within Worlds}}},
 	Year = {2012}}
 
-@article{Rapoport2017simple,
+@article{Rapoport2017simpleold,
 	Abstract = {Dependent Object Types (DOT) is intended to be a core calculus for modelling Scala. Its distinguishing feature is abstract type members, fields in objects that hold types rather than values. Proving soundness of DOT has been surprisingly challenging, and existing proofs are complicated, and reason about multiple concepts at the same time (e.g. types, values, evaluation). To serve as a core calculus for Scala, DOT should be easy to experiment with and extend, and therefore its soundness proof needs to be easy to modify. This paper presents a simple and modular proof strategy for reasoning in DOT. The strategy separates reasoning about types from other concerns. It is centred around a theorem that connects the full DOT type system to a restricted variant in which the challenges and paradoxes caused by abstract type members are eliminated. Almost all reasoning in the proof is done in the intuitive world of this restricted type system. Once we have the necessary results about types, we observe that the other aspects of DOT are mostly standard and can be incorporated into a soundness proof using familiar techniques known from other calculi. Our paper comes with a machine-verified version of the proof in Coq.},
 	Archiveprefix = {arXiv},
 	Author = {Rapoport, Marianna and Kabir, Ifaz and He, Paul and Lhot{\'a}k, Ond{\v r}ej},
 	Date-Added = {2017-11-14 22:33:37 +0000},
-	Date-Modified = {2017-11-14 22:33:37 +0000},
+	Date-Modified = {2018-11-29 13:45:53 +0100},
 	Eprint = {1706.03814},
 	Eprinttype = {arxiv},
 	File = {Rapoport et al - 2017 - A Simple Soundness Proof for Dependent Object Types.pdf:/Users/pgiarrusso/Zotero/storage/WNAKE2N8/Rapoport et al - 2017 - A Simple Soundness Proof for Dependent Object Types.pdf:application/pdf;arXiv.org Snapshot:/Users/pgiarrusso/Zotero/storage/B2NN7UZH/1706.html:text/html},
@@ -3542,7 +3653,7 @@ We evaluate the effectiveness of our approach by considering a range of benchmar
 	Read = {1},
 	Title = {Independently Extensible Solutions to the Expression Problem},
 	Year = 2005,
-	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QhS4uLy4uL0Ryb3Bib3gvUGFwZXJzL1Byb2dyYW1taW5nIExhbmd1YWdlcy9TY2FsYS9JbmRlcGVuZGVudGx5IEV4dGVuc2libGUgU29sdXRpb25zIHRvIHRoZSBFeHByZXNzaW9uIFByb2JsZW0gLSBleHByZXNzaW9uUHJvYmxlbS5wZGbSFwsYGVdOUy5kYXRhTxECpgAAAAACpgACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////H0luZGVwZW5kZW50bHkgRXh0ZSNGRkZGRkZGRi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAAAgAFAAAKIGN1AAAAAAAAAAAAAAAAAAVTY2FsYQAAAgCSLzpVc2VyczpwZ2lhcnJ1c3NvOkRyb3Bib3g6UGFwZXJzOlByb2dyYW1taW5nIExhbmd1YWdlczpTY2FsYTpJbmRlcGVuZGVudGx5IEV4dGVuc2libGUgU29sdXRpb25zIHRvIHRoZSBFeHByZXNzaW9uIFByb2JsZW0gLSBleHByZXNzaW9uUHJvYmxlbS5wZGYADgCqAFQASQBuAGQAZQBwAGUAbgBkAGUAbgB0AGwAeQAgAEUAeAB0AGUAbgBzAGkAYgBsAGUAIABTAG8AbAB1AHQAaQBvAG4AcwAgAHQAbwAgAHQAaABlACAARQB4AHAAcgBlAHMAcwBpAG8AbgAgAFAAcgBvAGIAbABlAG0AIAAtACAAZQB4AHAAcgBlAHMAcwBpAG8AbgBQAHIAbwBiAGwAZQBtAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgCQVXNlcnMvcGdpYXJydXNzby9Ecm9wYm94L1BhcGVycy9Qcm9ncmFtbWluZyBMYW5ndWFnZXMvU2NhbGEvSW5kZXBlbmRlbnRseSBFeHRlbnNpYmxlIFNvbHV0aW9ucyB0byB0aGUgRXhwcmVzc2lvbiBQcm9ibGVtIC0gZXhwcmVzc2lvblByb2JsZW0ucGRmABMAAS8AABUAAgAR//8AAIAG0hscHR5aJGNsYXNzbmFtZVgkY2xhc3Nlc11OU011dGFibGVEYXRhox0fIFZOU0RhdGFYTlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVkQXJjaGl2ZXLRJidUcm9vdIABAAgAEQAaACMALQAyADcAQABGAE0AVQBgAGcAagBsAG4AcQBzAHUAdwCEAI4BFgEbASMDzQPPA9QD3wPoA/YD+gQBBAoEDwQcBB8EMQQ0BDkAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAEOw==}}
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxCFLi4vLi4vRHJvcGJveC9QYXBlcnMvUHJvZ3JhbW1pbmcgTGFuZ3VhZ2VzL1NjYWxhL0luZGVwZW5kZW50bHkgRXh0ZW5zaWJsZSBTb2x1dGlvbnMgdG8gdGhlIEV4cHJlc3Npb24gUHJvYmxlbSAtIGV4cHJlc3Npb25Qcm9ibGVtLnBkZk8RAqYAAAAAAqYAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9JbmRlcGVuZGVudGx5IEV4dGUjRkZGRkZGRkYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAIABQAACiBjdQAAAAAAAAAAAAAAAAAFU2NhbGEAAAIAki86VXNlcnM6cGdpYXJydXNzbzpEcm9wYm94OlBhcGVyczpQcm9ncmFtbWluZyBMYW5ndWFnZXM6U2NhbGE6SW5kZXBlbmRlbnRseSBFeHRlbnNpYmxlIFNvbHV0aW9ucyB0byB0aGUgRXhwcmVzc2lvbiBQcm9ibGVtIC0gZXhwcmVzc2lvblByb2JsZW0ucGRmAA4AqgBUAEkAbgBkAGUAcABlAG4AZABlAG4AdABsAHkAIABFAHgAdABlAG4AcwBpAGIAbABlACAAUwBvAGwAdQB0AGkAbwBuAHMAIAB0AG8AIAB0AGgAZQAgAEUAeABwAHIAZQBzAHMAaQBvAG4AIABQAHIAbwBiAGwAZQBtACAALQAgAGUAeABwAHIAZQBzAHMAaQBvAG4AUAByAG8AYgBsAGUAbQAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAkFVzZXJzL3BnaWFycnVzc28vRHJvcGJveC9QYXBlcnMvUHJvZ3JhbW1pbmcgTGFuZ3VhZ2VzL1NjYWxhL0luZGVwZW5kZW50bHkgRXh0ZW5zaWJsZSBTb2x1dGlvbnMgdG8gdGhlIEV4cHJlc3Npb24gUHJvYmxlbSAtIGV4cHJlc3Npb25Qcm9ibGVtLnBkZgATAAEvAAAVAAIAEf//AAAACAANABoAJACsAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAA1Y=}}
 
 @inproceedings{Lindley12EmbeddingF,
 	Acmid = {2364402},
