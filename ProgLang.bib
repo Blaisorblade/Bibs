@@ -1,7 +1,7 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
-%% Created for Paolo G. Giarrusso at 2019-01-28 13:07:05 +0100 
+%% Created for Paolo G. Giarrusso at 2019-04-17 05:37:55 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -231,6 +231,23 @@
 
 @string{wrt = {Proc.\ ECOOP Workshop on Refactoring Tools (WRT)}}
 
+
+@article{Rapoport2019Path,
+	Abstract = {The Dependent Object Types (DOT) calculus aims to formalize the Scala programming language with a focus on path-dependent types \$-\$ types such as \$x.a\_1\textbackslash{}dots a\_n.T\$ that depend on the runtime value of a path \$x.a\_1\textbackslash{}dots a\_n\$ to an object. Unfortunately, existing formulations of DOT can model only types of the form \$x.A\$ which depend on variables rather than general paths. This restriction makes it impossible to model nested module dependencies. Nesting small components inside larger ones is a necessary ingredient of a modular, scalable language. DOT's variable restriction thus undermines its ability to fully formalize a variety of programming-language features including Scala's module system, family polymorphism, and covariant specialization. This paper presents the pDOT calculus, which generalizes DOT to support types that depend on paths of arbitrary length, as well as singleton types to track path equality. We show that naive approaches to add paths to DOT make it inherently unsound, and present necessary conditions for such a calculus to be sound. We discuss the key changes necessary to adapt the techniques of the DOT soundness proofs so that they can be applied to pDOT. Our paper comes with a Coq-mechanized type-safety proof of pDOT. With support for paths of arbitrary length, pDOT can realize DOT's full potential for formalizing Scala-like calculi.},
+	Archiveprefix = {arXiv},
+	Author = {Rapoport, Marianna and Lhot{\'a}k, Ond{\v r}ej},
+	Date = {2019-04-15},
+	Date-Added = {2019-04-17 05:37:53 +0200},
+	Date-Modified = {2019-04-17 05:37:53 +0200},
+	Eprint = {1904.07298},
+	Eprinttype = {arxiv},
+	File = {/Users/pgiarrusso/Zotero/storage/C73P7UJB/Rapoport-Lhot{\'a}k - 2019 - A Path To DOT - Formalizing Fully-Path-Dependent Types.pdf;/Users/pgiarrusso/Zotero/storage/JSBRDYQV/1904.html},
+	Keywords = {Computer Science - Programming Languages},
+	Primaryclass = {cs},
+	Shorttitle = {A Path To DOT},
+	Title = {A Path To DOT: Formalizing Fully-Path-Dependent Types},
+	Url = {http://arxiv.org/abs/1904.07298},
+	Urldate = {2019-04-17}}
 
 @article{Stovring2012First,
 	Abstract = {We present the topos S of trees as a model of guarded recursion. We study the internal dependently-typed higher-order logic of S and show that S models two modal operators, on predicates and types, which serve as guards in recursive definitions of terms, predicates, and types. In particular, we show how to solve recursive type equations involving dependent types. We propose that the internal logic of S provides the right setting for the synthetic construction of abstract versions of step-indexed models of programming languages and program logics. As an example, we show how to construct a model of a programming language with higher-order store and recursive types entirely inside the internal logic of S. Moreover, we give an axiomatic categorical treatment of models of synthetic guarded domain theory and prove that, for any complete Heyting algebra A with a well-founded basis, the topos of sheaves over A forms a model of synthetic guarded domain theory, generalizing the results for S.},
