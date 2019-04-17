@@ -16743,4 +16743,552 @@ Modules are treated as ``first-class'' citizens, and therefore the system suppor
   file = {/Users/pgiarrusso/Zotero/storage/RYFX2ZAU/O'Hearn-Yang-Reynolds - 2004 - Separation and Information Hiding.pdf}
 }
 
+@inproceedings{Sieczkowski2015ModuRes,
+  langid = {english},
+  title = {ModuRes: A Coq Library for Modular Reasoning About Concurrent Higher-Order Imperative Programming Languages},
+  isbn = {978-3-319-22102-1},
+  shorttitle = {ModuRes},
+  abstract = {It is well-known that it is challenging to build semantic models of type systems or logics for reasoning about concurrent higher-order imperative programming languages. One of the key challenges is that such semantic models often involve constructing solutions to certain kinds of recursive domain equations, which in practice has been a barrier to formalization efforts. Here we present the ModuRes Coq library, which provides an easy way to solve such equations. We show how the library can be used to construct models of type systems and logics for reasoning about concurrent higher-order imperative programming languages.},
+  booktitle = {Interactive Theorem Proving},
+  series = {Lecture Notes in Computer Science},
+  publisher = {{Springer International Publishing}},
+  date = {2015},
+  pages = {375-390},
+  author = {Sieczkowski, Filip and Bizjak, Aleš and Birkedal, Lars},
+  editor = {Urban, Christian and Zhang, Xingyuan},
+  file = {/Users/pgiarrusso/Zotero/storage/8GABPNH3/Sieczkowski-Bizjak-Birkedal - 2015 - ModuRes - A Coq Library for Modular Reasoning About Concurrent Higher-Order Imperative Programming Languages.pdf}
+}
+% == BibLateX quality report for Sieczkowski2015ModuRes:
+% 'isbn': not a valid ISBN
+% ? Unsure about the formatting of the booktitle
+
+@inproceedings{Premont2015Referential,
+  location = {{New York, NY, USA}},
+  title = {Referential Integrity with Scala Types},
+  isbn = {978-1-4503-3626-0},
+  url = {http://doi.acm.org/10.1145/2774975.2774979},
+  doi = {10.1145/2774975.2774979},
+  abstract = {Referential integrity constraints are critical elements of relational data models, and have found widespread use in industry. However, their benefits in terms of data integrity do not fully extend to program correctness. Constraint violations are identified at run-time and must then be handled appropriately by programs. We show how Scala can be used to build data models and programs where referential integrity is enforced at compile-time. Scala’s type system, with its variance annotations and path-dependent types, is especially suited to express these constraints and proofs in a natural manner. We also explore potential compiler improvements that could enhance support for type-checked referential integrity.},
+  booktitle = {Proceedings of the 6th ACM SIGPLAN Symposium on Scala},
+  series = {SCALA 2015},
+  publisher = {{ACM}},
+  urldate = {2018-12-05},
+  date = {2015},
+  pages = {30--34},
+  keywords = {Scala,Dependent types,Data structures,Referential integrity,Variance},
+  author = {Prémont, Patrick},
+  file = {/Users/pgiarrusso/Zotero/storage/3W4ZKYXG/Prémont - 2015 - Referential Integrity with Scala Types.pdf}
+}
+
+@inproceedings{Servetto2013BillionDollar,
+  langid = {english},
+  title = {The Billion-Dollar Fix},
+  isbn = {978-3-642-39038-8},
+  abstract = {Programmers often need to initialise circular structures of objects. Initialisation should be safe (so that programs can never suffer null pointer exceptions or otherwise observe uninitialised values) and modular (so that each part of the circular structure can be written and compiled separately). Unfortunately, existing languages do not support modular circular initialisation: programmers in practical languages resort to Tony Hoare’s “Billion Dollar Mistake”: initialising variables with nulls, and then hoping to fix them up afterward. While recent research languages have offered some solutions, none fully support safe modular circular initialisation.We present placeholders, a straightforward extension to object-oriented languages that describes circular structures simply, directly, and modularly. In typed languages, placeholders can be described by placeholder types that ensure placeholders are used safely. We define an operational semantics for placeholders, a type system for placeholder types, and prove soundness. Incorporating placeholders into object-oriented languages should make programs simultaneously simpler to write, and easier to write correctly.},
+  booktitle = {ECOOP 2013 – Object-Oriented Programming},
+  series = {Lecture Notes in Computer Science},
+  publisher = {{Springer Berlin Heidelberg}},
+  date = {2013},
+  pages = {205-229},
+  keywords = {Actual Object,Factory Method,Null Pointer,Object Type,Type System},
+  author = {Servetto, Marco and Mackay, Julian and Potanin, Alex and Noble, James},
+  editor = {Castagna, Giuseppe},
+  file = {/Users/pgiarrusso/Zotero/storage/8C52PZY3/Servetto-Mackay-Potanin-Noble - 2013 - The Billion-Dollar Fix.pdf}
+}
+% == BibLateX quality report for Servetto2013BillionDollar:
+% 'isbn': not a valid ISBN
+% ? Unsure about the formatting of the booktitle
+
+@inproceedings{Qi2009Masked,
+  location = {{New York, NY, USA}},
+  title = {Masked Types for Sound Object Initialization},
+  isbn = {978-1-60558-379-2},
+  url = {http://doi.acm.org/10.1145/1480881.1480890},
+  doi = {10.1145/1480881.1480890},
+  abstract = {This paper presents a type-based solution to the long-standing problem of object initialization. Constructors, the conventional mechanism for object initialization, have semantics that are surprising to programmers and that lead to bugs. They also contribute to the problem of null-pointer exceptions, which make software less reliable. Masked types are a new type-state mechanism that explicitly tracks the initialization state of objects and prevents reading from uninitialized fields. In the resulting language, constructors are ordinary methods that operate on uninitialized objects, and no special default value (null) is needed in the language. Initialization of cyclic data structures is achieved with the use of conditionally masked types. Masked types are modular and compatible with data abstraction. The type system is presented in a simplified object calculus and is proved to soundly prevent reading from uninitialized fields. Masked types have been implemented as an extension to Java, in which compilation simply erases extra type information. Experience using the extended language suggests that masked types work well on real code.},
+  booktitle = {Proceedings of the 36th Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+  series = {POPL '09},
+  publisher = {{ACM}},
+  urldate = {2018-12-10},
+  date = {2009},
+  pages = {53--65},
+  keywords = {invariants,data abstraction,conditional masks,cyclic data structures,null pointer exceptions},
+  author = {Qi, Xin and Myers, Andrew C.},
+  file = {/Users/pgiarrusso/Zotero/storage/A8IX7EV3/Qi-Myers - 2009 - Masked Types for Sound Object Initialization.pdf}
+}
+
+@inproceedings{Gil2009Are,
+  langid = {english},
+  title = {Are We Ready for a Safer Construction Environment?},
+  isbn = {978-3-642-03013-0},
+  abstract = {The semantics of many OO languages dictates that the constructor of a derived class is a refining extension of one of the base class constructors. As this base constructor runs, it may invoke dynamically bound methods which are overridden in the derived class. These invocations receive an “half baked object”, i.e., an object whose derived class portion is uninitialized. Such a situation may lead to confusing semantics and to hidden coupling between the base and the derived. Dynamic binding within constructors also makes it difficult to enhance the programming language with advanced mechanisms for expressing design intent, such as non-null annotation (denoting reference values which can never be null), read-only annotation for fields and variables (expressing the intention that these cannot be modified after they are completely created) and class invariants (part of the famous design by contract methodology). A read-only field for example becomes immutable only after the creation of the enclosing object is complete.},
+  booktitle = {ECOOP 2009 – Object-Oriented Programming},
+  series = {Lecture Notes in Computer Science},
+  publisher = {{Springer Berlin Heidelberg}},
+  date = {2009},
+  pages = {495-519},
+  keywords = {Base Class,Dynamic Binding,Initializer Object,Manual Inspection,Polymorphic Behavior},
+  author = {Gil, Joseph (Yossi) and Shragai, Tali},
+  editor = {Drossopoulou, Sophia},
+  file = {/Users/pgiarrusso/Zotero/storage/5SKNSTWY/Gil-Shragai - 2009 - Are We Ready for a Safer Construction Environment.pdf}
+}
+% == BibLateX quality report for Gil2009Are:
+% 'isbn': not a valid ISBN
+% ? Unsure about the formatting of the booktitle
+
+@inproceedings{Zibin2012Object,
+  langid = {english},
+  title = {Object Initialization in X10},
+  isbn = {978-3-642-31057-7},
+  abstract = {X10 is an object oriented programming language with a sophisticated type system (constraints, class invariants, non-erased generics, closures) and concurrency constructs (asynchronous activities, multiple places). Object initialization is a cross-cutting concern that interacts with all of these features in delicate ways that may cause type, runtime, and security errors. This paper discusses possible designs for object initialization, and the “hardhat” design chosen and implemented in X10 version 2.2. Our implementation includes a fixed-point inter-procedural (intra-class) data-flow analysis that infers, for each method called during initialization, the set of fields that are read, and those that are asynchronously and synchronously assigned. Our codebase of more than 200K lines of code only had 104 annotations. Finally, we formalize the essence of initialization checking with an effect system intended to complement a standard FJ style formalization of the type system for X10. This system is substantially simpler than the masked types of [10], and it is more practical (for X10) than the free-committed types of [12]. This is the first formalization of a type and (flow-sensitive) effect system for safe initialization in the presence of concurrency constructs.},
+  booktitle = {ECOOP 2012 – Object-Oriented Programming},
+  series = {Lecture Notes in Computer Science},
+  publisher = {{Springer Berlin Heidelberg}},
+  date = {2012},
+  pages = {207-231},
+  keywords = {Type System,Class Invariant,Initialization Rule,Object Initialization,Object Oriented Programming Language},
+  author = {Zibin, Yoav and Cunningham, David and Peshansky, Igor and Saraswat, Vijay},
+  editor = {Noble, James},
+  file = {/Users/pgiarrusso/Zotero/storage/26XMXIBM/Zibin-Cunningham-Peshansky-Saraswat - 2012 - Object Initialization in X10.pdf}
+}
+% == BibLateX quality report for Zibin2012Object:
+% 'isbn': not a valid ISBN
+% ? Unsure about the formatting of the booktitle
+
+@inproceedings{Kaiser2017Strong,
+  location = {{Dagstuhl, Germany}},
+  title = {Strong Logic for Weak Memory: Reasoning About Release-Acquire Consistency in Iris},
+  volume = {74},
+  isbn = {978-3-95977-035-4},
+  url = {http://drops.dagstuhl.de/opus/volltexte/2017/7275},
+  doi = {10.4230/LIPIcs.ECOOP.2017.17},
+  shorttitle = {Strong Logic for Weak Memory},
+  booktitle = {31st European Conference on Object-Oriented Programming (ECOOP 2017)},
+  series = {Leibniz International Proceedings in Informatics (LIPIcs)},
+  publisher = {{Schloss Dagstuhl–Leibniz-Zentrum fuer Informatik}},
+  urldate = {2018-12-27},
+  date = {2017},
+  pages = {17:1--17:29},
+  keywords = {concurrency,separation logic,release-acquire,Weak memory models},
+  author = {Kaiser, Jan-Oliver and Dang, Hoang-Hai and Dreyer, Derek and Lahav, Ori and Vafeiadis, Viktor},
+  editor = {Müller, Peter},
+  file = {/Users/pgiarrusso/Zotero/storage/HKP3ZFJ4/Kaiser-Dang-Dreyer-Lahav-Vafeiadis - 2017 - Strong Logic for Weak Memory - Reasoning About Release-Acquire Consistency in Iris.pdf;/Users/pgiarrusso/Zotero/storage/YCLR23IZ/7275.html}
+}
+% == BibLateX quality report for Kaiser2017Strong:
+% 'isbn': not a valid ISBN
+% ? Unsure about the formatting of the booktitle
+
+@article{Stovring2012First,
+  langid = {english},
+  title = {First steps in synthetic guarded domain theory: step-indexing in the topos of trees},
+  volume = {Volume 8, Issue 4},
+  url = {https://lmcs.episciences.org/1041/pdf},
+  shorttitle = {First steps in synthetic guarded domain theory},
+  abstract = {We present the topos S of trees as a model of guarded recursion. We study the internal dependently-typed higher-order logic of S and show that S models two modal operators, on predicates and types, which serve as guards in recursive definitions of terms, predicates, and types. In particular, we show how to solve recursive type equations involving dependent types. We propose that the internal logic of S provides the right setting for the synthetic construction of abstract versions of step-indexed models of programming languages and program logics. As an example, we show how to construct a model of a programming language with higher-order store and recursive types entirely inside the internal logic of S. Moreover, we give an axiomatic categorical treatment of models of synthetic guarded domain theory and prove that, for any complete Heyting algebra A with a well-founded basis, the topos of sheaves over A forms a model of synthetic guarded domain theory, generalizing the results for S.},
+  journaltitle = {Logical Methods in Computer Science},
+  urldate = {2019-01-17},
+  date = {2012-10-03},
+  author = {Støvring, Kristian and Schwinghammer, Jan and Møgelberg, Rasmus Ejlers and Birkedal, Lars},
+  file = {/Users/pgiarrusso/Zotero/storage/KYNSYFZ8/Støvring-Schwinghammer-Møgelberg-Birkedal - 2012 - First steps in synthetic guarded domain theory - step-indexing in the topos of trees.pdf;/Users/pgiarrusso/Zotero/storage/69KJA482/1041.html}
+}
+
+@inproceedings{Zhang2018Pattern,
+  location = {{New York, NY, USA}},
+  title = {Pattern Matching in an Open World},
+  isbn = {978-1-4503-6045-6},
+  url = {http://doi.acm.org/10.1145/3278122.3278124},
+  doi = {10.1145/3278122.3278124},
+  abstract = {Pattern matching is a pervasive and useful feature in functional programming. There have been many attempts to bring similar notions to Object-Oriented Programming (OOP) in the past. However, a key challenge in OOP is how pattern matching can coexist with the open nature of OOP data structures, while at the same time guaranteeing other desirable properties for pattern matching.  This paper discusses several desirable properties for pattern matching in an OOP context and shows how existing approaches are lacking some of these properties. We argue that the traditional semantics of pattern matching, which is based on the order of patterns and adopted by many approaches, is in conflict with the openness of data structures. Therefore we suggest that a more restricted, top-level pattern matching model, where the order of patterns is irrelevant, is worthwhile considering in an OOP context. To compensate for the absence of ordered patterns we propose a complementary mechanism for case analysis with defaults, which can be used when nested and/or multiple case analysis is needed. To illustrate our points we develop Castor: a meta-programming library inScala that adopts both ideas. Castor generates code that uses type-safe extensible visitors, and largely removes boilerplate code typically associated with visitors. We illustrate the applicability of our approach with a case study modularizing the interpreters in the famous book ”Types and Programming Languages”.},
+  booktitle = {Proceedings of the 17th ACM SIGPLAN International Conference on Generative Programming: Concepts and Experiences},
+  series = {GPCE 2018},
+  publisher = {{ACM}},
+  urldate = {2019-02-07},
+  date = {2018},
+  pages = {134--146},
+  keywords = {Pattern matching,Meta-programming,OOP},
+  author = {Zhang, Weixin and Oliveira, Bruno C. d. S.},
+  file = {/Users/pgiarrusso/Zotero/storage/N7NCHZJ6/Zhang-Oliveira - 2018 - Pattern Matching in an Open World.pdf},
+  venue = {Boston, MA, USA}
+}
+
+@article{Krebbers2018MoSeL,
+  title = {MoSeL: A General, Extensible Modal Framework for Interactive Proofs in Separation Logic},
+  volume = {2},
+  issn = {2475-1421},
+  url = {http://doi.acm.org/10.1145/3236772},
+  doi = {10.1145/3236772},
+  shorttitle = {MoSeL},
+  abstract = {A number of tools have been developed for carrying out separation-logic proofs mechanically using an interactive proof assistant. One of the most advanced such tools is the Iris Proof Mode (IPM) for Coq, which offers a rich set of tactics for making separation-logic proofs look and feel like ordinary Coq proofs. However, IPM is tied to a particular separation logic (namely, Iris), thus limiting its applicability.   In this paper, we propose MoSeL, a general and extensible Coq framework that brings the benefits of IPM to a much larger class of separation logics. Unlike IPM, MoSeL is applicable to both affine and linear separation logics (and combinations thereof), and provides generic tactics that can be easily extended to account for the bespoke connectives of the logics with which it is instantiated. To demonstrate the effectiveness of MoSeL, we have instantiated it to provide effective tactical support for interactive and semi-automated proofs in six very different separation logics.},
+  issue = {ICFP},
+  journaltitle = {Proc. ACM Program. Lang.},
+  urldate = {2019-02-12},
+  date = {2018-07},
+  pages = {77:1--77:30},
+  keywords = {interactive theorem proving,Separation logic,Coq proof assistant,logic of bunched implications,modal logic},
+  author = {Krebbers, Robbert and Jourdan, Jacques-Henri and Jung, Ralf and Tassarotti, Joseph and Kaiser, Jan-Oliver and Timany, Amin and Charguéraud, Arthur and Dreyer, Derek},
+  file = {/Users/pgiarrusso/Zotero/storage/AFV9JQH5/Krebbers-Jourdan-Jung-Tassarotti-Kaiser-Timany-Charguéraud-Dreyer - 2018 - MoSeL - A General, Extensible Modal Framework for Interactive Proofs in Separation Logic.pdf}
+}
+% == BibLateX quality report for Krebbers2018MoSeL:
+% ? Possibly abbreviated journal title Proc. ACM Program. Lang.
+
+@article{Alvarez-Picallo2019Change,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1902.05465},
+  primaryClass = {cs},
+  title = {Change Actions: Models of Generalised Differentiation},
+  url = {http://arxiv.org/abs/1902.05465},
+  shorttitle = {Change Actions},
+  abstract = {Cai et al. have recently proposed change structures as a semantic framework for incremental computation. We generalise change structures to arbitrary cartesian categories and propose the notion of change action model as a categorical model for (higher-order) generalised differentiation. Change action models naturally arise from many geometric and computational settings, such as (generalised) cartesian differential categories, group models of discrete calculus, and Kleene algebra of regular expressions. We show how to build canonical change action models on arbitrary cartesian categories, reminiscent of the F\textbackslash{}`aa di Bruno construction.},
+  urldate = {2019-02-19},
+  date = {2019-02-14},
+  keywords = {Computer Science - Logic in Computer Science},
+  author = {Alvarez-Picallo, Mario and Ong, C.-H. Luke},
+  file = {/Users/pgiarrusso/Zotero/storage/7A45RGP9/Alvarez-Picallo-Ong - 2019 - Change Actions - Models of Generalised Differentiation.pdf;/Users/pgiarrusso/Zotero/storage/PI7YTYAQ/1902.html}
+}
+% == BibLateX quality report for Alvarez-Picallo2019Change:
+% Unexpected field 'archivePrefix'
+% Unexpected field 'primaryClass'
+% Missing required field 'journaltitle'
+
+@article{OHearn2007Resources,
+  title = {Resources, concurrency, and local reasoning},
+  volume = {375},
+  issn = {0304-3975},
+  url = {http://www.sciencedirect.com/science/article/pii/S030439750600925X},
+  doi = {10.1016/j.tcs.2006.12.035},
+  abstract = {In this paper we show how a resource-oriented logic, separation logic, can be used to reason about the usage of resources in concurrent programs.},
+  number = {1},
+  journaltitle = {Theoretical Computer Science},
+  shortjournal = {Theoretical Computer Science},
+  series = {Festschrift for John C. Reynolds’s 70th birthday},
+  urldate = {2019-03-07},
+  date = {2007-05-01},
+  pages = {271-307},
+  keywords = {Separation logic,Concurrency,Logics of programs},
+  author = {O’Hearn, Peter W.},
+  file = {/Users/pgiarrusso/Zotero/storage/F7338ZVN/O’Hearn - 2007 - Resources, concurrency, and local reasoning.pdf;/Users/pgiarrusso/Zotero/storage/HSFAB7CI/S030439750600925X.html}
+}
+
+@article{Brookes2007semantics,
+  title = {A semantics for concurrent separation logic},
+  volume = {375},
+  issn = {0304-3975},
+  url = {http://www.sciencedirect.com/science/article/pii/S0304397506009248},
+  doi = {10.1016/j.tcs.2006.12.034},
+  abstract = {We present a trace semantics for a language of parallel programs which share access to mutable data. We introduce a resource-sensitive logic for partial correctness, based on a recent proposal of O’Hearn, adapting separation logic to the concurrent setting. The logic allows proofs of parallel programs in which “ownership” of critical data, such as the right to access, update or deallocate a pointer, is transferred dynamically between concurrent processes. We prove soundness of the logic, using a novel “local” interpretation of traces which allows accurate reasoning about ownership. We show that every provable program is race-free.},
+  number = {1},
+  journaltitle = {Theoretical Computer Science},
+  shortjournal = {Theoretical Computer Science},
+  series = {Festschrift for John C. Reynolds’s 70th birthday},
+  urldate = {2019-03-07},
+  date = {2007-05-01},
+  pages = {227-270},
+  keywords = {Logic,Concurrency,Pointers,Race condition,Semantics},
+  author = {Brookes, Stephen},
+  file = {/Users/pgiarrusso/Zotero/storage/JKQVHLPZ/Brookes - 2007 - A semantics for concurrent separation logic.pdf;/Users/pgiarrusso/Zotero/storage/LCGT336Z/S0304397506009248.html}
+}
+
+@inproceedings{Brookes2004Semantics,
+  langid = {english},
+  title = {A Semantics for Concurrent Separation Logic},
+  isbn = {978-3-540-28644-8},
+  abstract = {We present a denotational semantics based on action traces, for parallel programs which share mutable data and synchronize using resources and conditional critical regions. We introduce a resource-sensitive logic for partial correctness, adapting separation logic to the concurrent setting, as proposed by O’Hearn. The logic allows program proofs in which “ownership” of a piece of state is deemed to transfer dynamically between processes and resources. We prove soundness of this logic, using a novel “local” interpretation of traces, and we show that every provable program is race-free.},
+  booktitle = {CONCUR 2004 - Concurrency Theory},
+  series = {Lecture Notes in Computer Science},
+  publisher = {{Springer Berlin Heidelberg}},
+  date = {2004},
+  pages = {16-34},
+  keywords = {Denotational Semantic,Inference Rule,Parallel Composition,Parallel Program,Resource Invariant},
+  author = {Brookes, Stephen},
+  editor = {Gardner, Philippa and Yoshida, Nobuko}
+}
+% == BibLateX quality report for Brookes2004Semantics:
+% 'isbn': not a valid ISBN
+% ? Unsure about the formatting of the booktitle
+
+@online{OHearnSeparation,
+  langid = {english},
+  title = {Separation Logic},
+  url = {https://cacm.acm.org/magazines/2019/2/234356-separation-logic/fulltext?fbclid=IwAR092kLW98DpDEXKTQvQKGTXIjVqUWNckdi6Toi9uvr_fgDaSrDhHtS39Mo},
+  abstract = {Separation logic is a key development in formal reasoning about programs, opening up new lines of attack on longstanding problems.},
+  urldate = {2019-03-07},
+  author = {O'Hearn, Peter},
+  file = {/Users/pgiarrusso/Zotero/storage/FFPAIW2Q/fulltext.html}
+}
+% == BibLateX quality report for OHearnSeparation:
+% Exactly one of 'date' / 'year' must be present
+
+@inproceedings{Reynolds2002Separation,
+  title = {Separation logic: a logic for shared mutable data structures},
+  doi = {10.1109/LICS.2002.1029817},
+  shorttitle = {Separation logic},
+  abstract = {In joint work with Peter O'Hearn and others, based on early ideas of Burstall, we have developed an extension of Hoare logic that permits reasoning about low-level imperative programs that use shared mutable data structure. The simple imperative programming language is extended with commands (not expressions) for accessing and modifying shared structures, and for explicit allocation and deallocation of storage. Assertions are extended by introducing a "separating conjunction" that asserts that its subformulas hold for disjoint parts of the heap, and a closely related "separating implication". Coupled with the inductive definition of predicates on abstract data structures, this extension permits the concise and flexible description of structures with controlled sharing. In this paper, we survey the current development of this program logic, including extensions that permit unrestricted address arithmetic, dynamically allocated arrays, and recursive procedures. We also discuss promising future directions.},
+  eventtitle = {Proceedings 17th Annual IEEE Symposium on Logic in Computer Science},
+  booktitle = {Proceedings 17th Annual IEEE Symposium on Logic in Computer Science},
+  date = {2002-07},
+  pages = {55-74},
+  keywords = {Computer science,formal logic,Computer languages,Logic programming,reasoning,computational complexity,separation logic,Data structures,address arithmetic,Arithmetic,Artificial intelligence,Bibliographies,data structures,heap,Hoare logic,imperative programming language,Logic arrays,low-level imperative programs,program logic,Programmable logic arrays,recursive procedures,Reflection,shared mutable data structures},
+  author = {Reynolds, J. C.},
+  file = {/Users/pgiarrusso/Zotero/storage/9EWPRLAD/Reynolds - 2002 - Separation logic - a logic for shared mutable data structures.pdf;/Users/pgiarrusso/Zotero/storage/4GJEFI77/1029817.html}
+}
+
+@article{Park2014Mechanizing,
+  langid = {english},
+  title = {Mechanizing Metatheory Without Typing Contexts},
+  volume = {52},
+  issn = {1573-0670},
+  url = {https://doi.org/10.1007/s10817-013-9287-4},
+  doi = {10.1007/s10817-013-9287-4},
+  abstract = {When mechanizing the metatheory of a programming language, one usually needs many lemmas proving structural properties of typing judgments, such as permutation and weakening. Such structural lemmas are sometimes unnecessary if we eliminate typing contexts by expanding typing judgments into their original hypothetical proofs. This technique of eliminating typing contexts, which has been around since Church (J Symb Log 5(2):56–68, 1940), is based on the view that entailment relations, such as typing judgments, are just syntactic tools for displaying only the hypotheses and conclusion of a hypothetical proof while hiding its internal structure. In this paper, we apply this technique to parts 1A/2A of the textscPoplMark challenge (Aydemir et al. 2005) and experimentally evaluate its efficiency by formalizing System F {$<$} : in the Coq proof assistant in a number of different ways. An analysis of our Coq developments shows that eliminating typing contexts produces a more significant reduction in both the number of lemmas and the count of tactics than the cofinite quantification, one of the most effective ways of simplifying the mechanization involving binders. Our experiment with System F {$<$} : suggests three guidelines to follow when applying the technique of eliminating typing contexts.},
+  number = {2},
+  journaltitle = {Journal of Automated Reasoning},
+  shortjournal = {J Autom Reasoning},
+  urldate = {2019-03-11},
+  date = {2014-02-01},
+  pages = {215-239},
+  keywords = {PoplMark,System F < :,Typing context},
+  author = {Park, Jonghyun and Seo, Jeongbong and Park, Sungwoo and Lee, Gyesik},
+  file = {/Users/pgiarrusso/Zotero/storage/9BTKTRJ5/Park-Seo-Park-Lee - 2014 - Mechanizing Metatheory Without Typing Contexts.pdf}
+}
+
+@inproceedings{Boyland2003Checking,
+  langid = {english},
+  title = {Checking Interference with Fractional Permissions},
+  isbn = {978-3-540-44898-3},
+  abstract = {We describe a type system for checking interference using the concept of linear capabilities (which we call “permissions”). Our innovations include the concept of “fractional” permissions: reads can be permitted with fractional permissions whereas writes require complete permissions. This distinction expresses the fact that reads on the same state do not conflict with each other. One may give shared read access at one point while still retaining write permission afterwards. We give an operational semantics of a simple imperative language with structured parallelism and prove that the permission system enables parallelism to proceed with deterministic results.},
+  booktitle = {Static Analysis},
+  series = {Lecture Notes in Computer Science},
+  publisher = {{Springer Berlin Heidelberg}},
+  date = {2003},
+  pages = {55-72},
+  keywords = {Separation Logic,Parallel Composition,Alias Analysis,Operational Semantic,Permission System},
+  author = {Boyland, John},
+  editor = {Cousot, Radhia}
+}
+% == BibLateX quality report for Boyland2003Checking:
+% 'isbn': not a valid ISBN
+% ? Unsure about the formatting of the booktitle
+
+@article{OHearn1995Syntactic,
+  title = {Syntactic Control of Interference Revisited},
+  volume = {1},
+  issn = {1571-0661},
+  url = {http://www.sciencedirect.com/science/article/pii/S157106610400026X},
+  doi = {10.1016/S1571-0661(04)00026-X},
+  abstract = {In “Syntactic Control of Interference” (POPL, 1978), J. C. Reynolds proposes three design principles intended to constrain the scope of imperative state effects in Algol-like languages. The resulting linguistic framework seems to be a very satisfactory way of combining functional and imperative concepts, having the desirable attributes of both purely functional languages (such as PCF) and simple imperative languages (such as the language of while programs). However, Reynolds points out that an “obvious” syntax for interference control has the unfortunate property that β-reductions do not always preserve typings. Reynolds has subsequently presented a solution to this problem (ICALP, 1989), but it is fairly complicated and requires intersection types in the type system. Here, we present a much simpler solution which does not require intersection types. We first describe a new type system inspired in part by linear logic and verify that reductions preserve typings. We then define a class of “bireflective” models, which are shown to provide a sound interpretation of the type system; a companion paper, “Bireflectivity”, in this volume provides a categorical analysis of these models. Finally, we describe a concrete model for an illustrative programming language based on the new type system; this improves on earlier such efforts in that states are not assumed to be structured using locations.},
+  journaltitle = {Electronic Notes in Theoretical Computer Science},
+  shortjournal = {Electronic Notes in Theoretical Computer Science},
+  series = {MFPS XI, Mathematical Foundations of Programming Semantics, Eleventh Annual Conference},
+  urldate = {2019-03-14},
+  date = {1995-01-01},
+  pages = {447-486},
+  author = {O'Hearn, P. W. and Power, A. J. and Takeyama, M. and Tennent, R. D.},
+  file = {/Users/pgiarrusso/Zotero/storage/IGK8R4UE/O'Hearn-Power-Takeyama-Tennent - 1995 - Syntactic Control of Interference Revisited.pdf;/Users/pgiarrusso/Zotero/storage/HEFARPFT/S157106610400026X.html}
+}
+
+@inproceedings{Allais2018Typing,
+  location = {{Dagstuhl, Germany}},
+  title = {Typing with Leftovers - A mechanization of Intuitionistic Multiplicative-Additive Linear Logic},
+  volume = {104},
+  isbn = {978-3-95977-071-2},
+  url = {http://drops.dagstuhl.de/opus/volltexte/2018/10049},
+  doi = {10.4230/LIPIcs.TYPES.2017.1},
+  booktitle = {23rd International Conference on Types for Proofs and Programs (TYPES 2017)},
+  series = {Leibniz International Proceedings in Informatics (LIPIcs)},
+  publisher = {{Schloss Dagstuhl–Leibniz-Zentrum fuer Informatik}},
+  urldate = {2019-03-17},
+  date = {2018},
+  pages = {1:1--1:22},
+  keywords = {Agda,Type System,Bidirectional,Linear Logic},
+  author = {Allais, Guillaume},
+  editor = {Abel, Andreas and Forsberg, Fredrik Nordvall and Kaposi, Ambrus},
+  file = {/Users/pgiarrusso/Zotero/storage/HU7JJMIH/Allais - 2018 - Typing with Leftovers - A mechanization of Intuitionistic Multiplicative-Additive Linear Logic.pdf;/Users/pgiarrusso/Zotero/storage/ADS7YY26/frontdoor.html}
+}
+% == BibLateX quality report for Allais2018Typing:
+% 'isbn': not a valid ISBN
+% ? Unsure about the formatting of the booktitle
+
+@article{vanAntwerpen2018Scopes,
+  title = {Scopes As Types},
+  volume = {2},
+  issn = {2475-1421},
+  url = {http://doi.acm.org/10.1145/3276484},
+  doi = {10.1145/3276484},
+  abstract = {Scope graphs are a promising generic framework to model the binding structures of programming languages, bridging formalization and implementation, supporting the definition of type checkers and the automation of type safety proofs. However, previous work on scope graphs has been limited to simple, nominal type systems. In this paper, we show that viewing scopes as types enables us to model the internal structure of types in a range of non-simple type systems (including structural records and generic classes) using the generic representation of scopes. Further, we show that relations between such types can be expressed in terms of generalized scope graph queries. We extend scope graphs with scoped relations and queries. We introduce Statix, a new domain-specific meta-language for the specification of static semantics, based on scope graphs and constraints. We evaluate the scopes as types approach and the Statix design in case studies of the simply-typed lambda calculus with records, System F, and Featherweight Generic Java.},
+  issue = {OOPSLA},
+  journaltitle = {Proc. ACM Program. Lang.},
+  urldate = {2019-04-02},
+  date = {2018-10},
+  pages = {114:1--114:30},
+  keywords = {domain-specific language,type system,name resolution,scope graphs,static semantics,type checker},
+  author = {van Antwerpen, Hendrik and Bach Poulsen, Casper and Rouvoet, Arjen and Visser, Eelco},
+  options = {useprefix=true},
+  file = {/Users/pgiarrusso/Zotero/storage/4HU5AIJA/van Antwerpen-Bach Poulsen-Rouvoet-Visser - 2018 - Scopes As Types.pdf}
+}
+% == BibLateX quality report for vanAntwerpen2018Scopes:
+% ? Possibly abbreviated journal title Proc. ACM Program. Lang.
+
+@inproceedings{Freyd1990Recursive,
+  title = {Recursive types reduced to inductive types},
+  doi = {10.1109/LICS.1990.113772},
+  abstract = {A setting called complete partial ordering (CPO) categories and the notion of dialgebra are described. Free dialgebras on CPO-categories are shown to be the same as minimal invariant objects. In the case that the bifunctor is independent of its contravariant variable (hence construable as a covariant functor), it is shown that minimal invariant objects serve simultaneously as initial algebras and final coalgebras. The reduction to inductive types is shown in a two-step process. First let T be a bifunctor contravariant in its first variable, convariant in the second. For each A it is possible to consider the convariant functor that sends X to TAX. If FA denotes a minimal invariant object of this covariant functor, one for each A, then F becomes a contrainvariant functor. It is shown that the minimal invariant objects of F are minimal invariant objects of the original bifunctor T. Secondly, let T be a contrainvariant functor. It is shown that the square of the functor (necessarily covariant) has the same minimal invariant objects.{$<$}{$>$}},
+  eventtitle = {[1990] Proceedings. Fifth Annual IEEE Symposium on Logic in Computer Science},
+  booktitle = {[1990] Proceedings. Fifth Annual IEEE Symposium on Logic in Computer Science},
+  date = {1990-06},
+  pages = {498-507},
+  keywords = {formal logic,Algebra,inductive types,data structures,bifunctor,complete partial ordering,contravariant variable,covariant functor,CPO-categories,dialgebras,final coalgebras,initial algebras,minimal invariant object,minimal invariant objects,Upper bound},
+  author = {Freyd, P.},
+  file = {/Users/pgiarrusso/Zotero/storage/UZLICYGF/Freyd - 1990 - Recursive types reduced to inductive types.pdf;/Users/pgiarrusso/Zotero/storage/X2LAE4EV/113772.html}
+}
+% == BibLateX quality report for Freyd1990Recursive:
+% ? Unsure about the formatting of the booktitle
+
+@inproceedings{Alvarez-Picallo2019Changea,
+  langid = {english},
+  title = {Change Actions: Models of Generalised Differentiation},
+  isbn = {978-3-030-17127-8},
+  shorttitle = {Change Actions},
+  abstract = {Change structures, introduced by Cai et al., have recently been proposed as a semantic framework for incremental computation. We generalise change actions, an alternative to change structures, to arbitrary cartesian categories and propose the notion of change action model as a categorical model for (higher-order) generalised differentiation. Change action models naturally arise from many geometric and computational settings, such as (generalised) cartesian differential categories, group models of discrete calculus, and Kleene algebra of regular expressions. We show how to build canonical change action models on arbitrary cartesian categories, reminiscent of the Fàa di Bruno construction.},
+  booktitle = {Foundations of Software Science and Computation Structures},
+  series = {Lecture Notes in Computer Science},
+  publisher = {{Springer International Publishing}},
+  date = {2019},
+  pages = {45-61},
+  author = {Alvarez-Picallo, Mario and Ong, C.-H. Luke},
+  editor = {Bojańczyk, Mikołaj and Simpson, Alex},
+  file = {/Users/pgiarrusso/Zotero/storage/AN9NTGQB/Alvarez-Picallo-Ong - 2019 - Change Actions - Models of Generalised Differentiation.pdf}
+}
+% == BibLateX quality report for Alvarez-Picallo2019Changea:
+% 'isbn': not a valid ISBN
+% ? Unsure about the formatting of the booktitle
+
+@inproceedings{Giarrusso2019Incremental,
+  langid = {english},
+  title = {Incremental \$\textbackslash{}lambda\$-Calculus in Cache-Transfer Style},
+  isbn = {978-3-030-17184-1},
+  abstract = {Incremental computation requires propagating changes and reusing intermediate results of base computations. Derivatives, as produced by static differentiation [7], propagate changes but do not reuse intermediate results, leading to wasteful recomputation. As a solution, we introduce conversion to Cache-Transfer-Style, an additional program transformations producing purely incremental functional programs that create and maintain nested tuples of intermediate results. To prove CTS conversion correct, we extend the correctness proof of static differentiation from STLC to untyped 𝜆λ\textbackslash{}lambda -calculus via step-indexed logical relations, and prove sound the additional transformation via simulation theorems.To show ILC-based languages can improve performance relative to from-scratch recomputation, and that CTS conversion can extend its applicability, we perform an initial performance case study. We provide derivatives of primitives for operations on collections and incrementalize selected example programs using those primitives, confirming expected asymptotic speedups.},
+  booktitle = {Programming Languages and Systems},
+  series = {Lecture Notes in Computer Science},
+  publisher = {{Springer International Publishing}},
+  date = {2019},
+  pages = {553-580},
+  author = {Giarrusso, Paolo G. and Régis-Gianas, Yann and Schuster, Philipp},
+  editor = {Caires, Luís},
+  file = {/Users/pgiarrusso/Zotero/storage/Q32TJKT9/Giarrusso-Régis-Gianas-Schuster - 2019 - Incremental $$-lambda $$-Calculus in Cache-Transfer Style.pdf}
+}
+% == BibLateX quality report for Giarrusso2019Incremental:
+% 'isbn': not a valid ISBN
+% ? Unsure about the formatting of the booktitle
+
+@article{Gotsman2011Precision,
+  title = {Precision and the Conjunction Rule in Concurrent Separation Logic},
+  volume = {276},
+  issn = {1571-0661},
+  url = {http://www.sciencedirect.com/science/article/pii/S1571066111001125},
+  doi = {10.1016/j.entcs.2011.09.021},
+  abstract = {Concurrent separation logic is a Hoare logic for modular reasoning about concurrent heap-manipulating programs synchronising via locks. It achieves modular reasoning by partitioning the program state into thread-local and lock-protected parts, and assigning resource invariants to the latter. Surprisingly, the logic is unsound unless resource invariants are precise, i.e., unambiguously carve out an area of the heap. The counterexample showing the unsoundness involves the conjunction rule. However, to date it has been an open question whether concurrent separation logic without the conjunction rule is sound when the restriction on resource invariants is dropped: all the published proofs have the precision restriction baked in. In this paper we present a single proof that shows the soundness of the logic with imprecise resource invariants, but without the conjunction rule, as well as its classical version, where resource invariants are required to be precise and the conjunction rule is included. Our proof yields a precise and direct formulation of OʼHearnʼs Separation Property and provides a semantic analysis of the logic that is much more elementary than previous proofs.},
+  journaltitle = {Electronic Notes in Theoretical Computer Science},
+  shortjournal = {Electronic Notes in Theoretical Computer Science},
+  series = {Twenty-seventh Conference on the Mathematical Foundations of Programming Semantics (MFPS XXVII)},
+  urldate = {2019-04-09},
+  date = {2011-09-29},
+  pages = {171-190},
+  keywords = {concurrency,Separation logic,conjunction rule,precision},
+  author = {Gotsman, Alexey and Berdine, Josh and Cook, Byron},
+  file = {/Users/pgiarrusso/Zotero/storage/WRAZ5D3M/Gotsman-Berdine-Cook - 2011 - Precision and the Conjunction Rule in Concurrent Separation Logic.pdf;/Users/pgiarrusso/Zotero/storage/Q4W98RJ6/S1571066111001125.html}
+}
+
+@inproceedings{Dockins2009Fresh,
+  langid = {english},
+  title = {A Fresh Look at Separation Algebras and Share Accounting},
+  isbn = {978-3-642-10672-9},
+  abstract = {Separation Algebras serve as models of Separation Logics; Share Accounting allows reasoning about concurrent-read/exclusive- write resources in Separation Logic. In designing a Concurrent Separation Logic and in mechanizing proofs of its soundness, we found previous axiomatizations of separation algebras and previous systems of share accounting to be useful but imperfect. We adjust the axioms of separation algebras; we demonstrate an operator calculus for constructing new separation algebras; we present a more powerful system of share accounting with a new, simple model; and we provide a reusable Coq development.},
+  booktitle = {Programming Languages and Systems},
+  series = {Lecture Notes in Computer Science},
+  publisher = {{Springer Berlin Heidelberg}},
+  date = {2009},
+  pages = {161-177},
+  keywords = {Separation Logic,Bounded Distributive Lattice,Lift Operator,Share Model,Token Counting},
+  author = {Dockins, Robert and Hobor, Aquinas and Appel, Andrew W.},
+  editor = {Hu, Zhenjiang},
+  file = {/Users/pgiarrusso/Zotero/storage/ZLZL8D9X/Dockins-Hobor-Appel - 2009 - A Fresh Look at Separation Algebras and Share Accounting.pdf}
+}
+% == BibLateX quality report for Dockins2009Fresh:
+% 'isbn': not a valid ISBN
+% ? Unsure about the formatting of the booktitle
+
+@article{Abel2017Decidability,
+  title = {Decidability of Conversion for Type Theory in Type Theory},
+  volume = {2},
+  issn = {2475-1421},
+  url = {http://doi.acm.org/10.1145/3158111},
+  doi = {10.1145/3158111},
+  abstract = {Type theory should be able to handle its own meta-theory, both to justify its foundational claims and to obtain a verified implementation. At the core of a type checker for intensional type theory lies an algorithm to check equality of types, or in other words, to check whether two types are convertible. We have formalized in Agda a practical conversion checking algorithm for a dependent type theory with one universe à la Russell, natural numbers, and η-equality for Π types. We prove the algorithm correct via a Kripke logical relation parameterized by a suitable notion of equivalence of terms. We then instantiate the parameterized fundamental lemma twice: once to obtain canonicity and injectivity of type formers, and once again to prove the completeness of the algorithm. Our proof relies on inductive-recursive definitions, but not on the uniqueness of identity proofs. Thus, it is valid in variants of intensional Martin-Löf Type Theory as long as they support induction-recursion, for instance, Extensional, Observational, or Homotopy Type Theory.},
+  issue = {POPL},
+  journaltitle = {Proc. ACM Program. Lang.},
+  urldate = {2019-04-12},
+  date = {2017-12},
+  pages = {23:1--23:29},
+  keywords = {Agda,Dependent types,Formalization,Logical relations},
+  author = {Abel, Andreas and Öhman, Joakim and Vezzosi, Andrea},
+  file = {/Users/pgiarrusso/Zotero/storage/T5WLWPWA/Abel-Öhman-Vezzosi - 2017 - Decidability of Conversion for Type Theory in Type Theory.pdf}
+}
+% == BibLateX quality report for Abel2017Decidability:
+% ? Possibly abbreviated journal title Proc. ACM Program. Lang.
+
+@article{Hamza2019System,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1904.03482},
+  primaryClass = {cs},
+  title = {System FR as Foundations for Stainless},
+  url = {http://arxiv.org/abs/1904.03482},
+  abstract = {We present the design, implementation, and foundation of a verifier for higher-order functional programs with generics and recursive data types. Our system supports proving safety and termination using preconditions, postconditions and assertions. It supports writing proof hints using assertions and recursive calls. To formalize the soundness of the system we introduce System FR, a calculus supporting System F polymorphism, dependent refinement types, and recursive types (including recursion through contravariant positions of function types). Through the use of sized types, System FR supports reasoning about termination of lazy data structures such as streams. We formalize a reducibility argument using the Coq proof assistant and prove the soundness of a type-checker with respect to call-by-value semantics, ensuring type safety and normalization for typeable programs. Our program verifier is implemented as an alternative verification-condition generator for the Stainless tool, which relies on existing SMT-based solver backend for automation. We demonstrate the efficiency of our approach by verifying a collection of higher-order functional programs comprising around 14000 lines of polymorphic higher-order Scala code, including graph search algorithms, basic number theory, monad laws, functional data structures, and assignments from popular Functional Programming MOOCs.},
+  urldate = {2019-04-14},
+  date = {2019-04-06},
+  keywords = {Computer Science - Logic in Computer Science},
+  author = {Hamza, Jad and Voirol, Nicolas and Kunčak, Viktor},
+  file = {/Users/pgiarrusso/Zotero/storage/22GLV5GA/Hamza-Voirol-Kunčak - 2019 - System FR as Foundations for Stainless.pdf;/Users/pgiarrusso/Zotero/storage/NXHSE94W/1904.html}
+}
+% == BibLateX quality report for Hamza2019System:
+% Unexpected field 'archivePrefix'
+% Unexpected field 'primaryClass'
+% Missing required field 'journaltitle'
+
+@article{Stucki2017HigherOrder,
+  langid = {english},
+  title = {Higher-Order Subtyping with Type Intervals},
+  url = {https://infoscience.epfl.ch/record/232408},
+  doi = {10.5075/epfl-thesis-8014},
+  abstract = {Modern, statically typed programming languages provide various abstraction facilities at both the term- and type-level. Common abstraction mechanisms for types include parametric polymorphism -- a hallmark of functional languages -- and subtyping -- which is pervasive in object-oriented languages. Additionally, both kinds of languages may allow parametrized (or generic) datatype definitions in modules or classes. When several of these features are present in the same language, new and more expressive combinations arise, such as (1) bounded quantification, (2) bounded operator abstractions and (3) translucent type definitions. An example of such a language is Scala, which features all three of the aforementioned type-level constructs. This increases the expressivity of the language, but also the complexity of its type system. From a theoretical point of view, the various abstraction mechanisms have been studied through different extensions of Girard's higher-order polymorphic lambda-calculus F-omega. Higher-order subtyping and bounded polymorphism (1 and 2) have been formalized in F-omega-sub and its many variants; type definitions of various degrees of opacity (3) have been formalized through extensions of F-omega with singleton types. In this dissertation, I propose type intervals as a unifying concept for expressing (1--3) and other related constructs. In particular, I develop an extension of F-omega with interval kinds as a formal theory of higher-order subtyping with type intervals, and show how the familiar concepts of higher-order bounded quantification, bounded operator abstraction and singleton kinds can all be encoded in a semantics-preserving way using interval kinds. Going beyond the status quo, the theory is expressive enough to also cover less familiar constructs, such as lower-bounded operator abstractions and first-class, higher-order inequality constraints. I establish basic metatheoretic properties of the theory: I prove that subject reduction holds for well-kinded types w.r.t. full beta-reduction, that types and kinds are weakly normalizing, and that the theory is type safe w.r.t. its call-by-value operational reduction semantics. Key to this metatheoretic development is the use of hereditary substitution and the definition of an equivalent, canonical presentation of subtyping, which involves only normal types and kinds. The resulting metatheory is entirely syntactic, i.e. does not involve any model constructions, and has been fully mechanized in Agda. The extension of F-omega with interval kinds constitutes a stepping stone to the development of a higher-order version of the calculus of Dependent Object Types (DOT) -- the theoretical foundation of Scala's type system. In the last part of this dissertation, I briefly sketch a possible extension of the theory toward this goal and discuss some of the challenges involved in adapting the existing metatheory to that extension. Stucki, Sandro},
+  urldate = {2019-04-15},
+  date = {2017},
+  author = {Stucki, Sandro},
+  file = {/Users/pgiarrusso/Zotero/storage/KWHJBG3J/Stucki - 2017 - Higher-Order Subtyping with Type Intervals.pdf}
+}
+% == BibLateX quality report for Stucki2017HigherOrder:
+% Missing required field 'journaltitle'
+
+@article{Rapoport2019Path,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1904.07298},
+  primaryClass = {cs},
+  title = {A Path To DOT: Formalizing Fully-Path-Dependent Types},
+  url = {http://arxiv.org/abs/1904.07298},
+  shorttitle = {A Path To DOT},
+  abstract = {The Dependent Object Types (DOT) calculus aims to formalize the Scala programming language with a focus on path-dependent types \$-\$ types such as \$x.a\_1\textbackslash{}dots a\_n.T\$ that depend on the runtime value of a path \$x.a\_1\textbackslash{}dots a\_n\$ to an object. Unfortunately, existing formulations of DOT can model only types of the form \$x.A\$ which depend on variables rather than general paths. This restriction makes it impossible to model nested module dependencies. Nesting small components inside larger ones is a necessary ingredient of a modular, scalable language. DOT's variable restriction thus undermines its ability to fully formalize a variety of programming-language features including Scala's module system, family polymorphism, and covariant specialization. This paper presents the pDOT calculus, which generalizes DOT to support types that depend on paths of arbitrary length, as well as singleton types to track path equality. We show that naive approaches to add paths to DOT make it inherently unsound, and present necessary conditions for such a calculus to be sound. We discuss the key changes necessary to adapt the techniques of the DOT soundness proofs so that they can be applied to pDOT. Our paper comes with a Coq-mechanized type-safety proof of pDOT. With support for paths of arbitrary length, pDOT can realize DOT's full potential for formalizing Scala-like calculi.},
+  urldate = {2019-04-17},
+  date = {2019-04-15},
+  keywords = {Computer Science - Programming Languages},
+  author = {Rapoport, Marianna and Lhoták, Ondřej},
+  file = {/Users/pgiarrusso/Zotero/storage/C73P7UJB/Rapoport-Lhoták - 2019 - A Path To DOT - Formalizing Fully-Path-Dependent Types.pdf;/Users/pgiarrusso/Zotero/storage/JSBRDYQV/1904.html}
+}
+% == BibLateX quality report for Rapoport2019Path:
+% Unexpected field 'archivePrefix'
+% Unexpected field 'primaryClass'
+% Missing required field 'journaltitle'
+
+@preamble{ "\ifdefined\DeclarePrefChars\DeclarePrefChars{'’-}\else\fi " }
 
