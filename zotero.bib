@@ -15641,22 +15641,6 @@ of languages and programs which share a common set of features.},
   venue = {Eindhoven, The Netherlands}
 }
 
-@article{Rapoport2019Path,
-  archivePrefix = {arXiv},
-  eprinttype = {arxiv},
-  eprint = {1904.07298},
-  primaryClass = {cs},
-  title = {A {{Path To DOT}}: {{Formalizing Fully}}-{{Path}}-{{Dependent Types}}},
-  url = {http://arxiv.org/abs/1904.07298},
-  shorttitle = {A {{Path To DOT}}},
-  abstract = {The Dependent Object Types (DOT) calculus aims to formalize the Scala programming language with a focus on path-dependent types \$-\$ types such as \$x.a\_1\textbackslash{}dots a\_n.T\$ that depend on the runtime value of a path \$x.a\_1\textbackslash{}dots a\_n\$ to an object. Unfortunately, existing formulations of DOT can model only types of the form \$x.A\$ which depend on variables rather than general paths. This restriction makes it impossible to model nested module dependencies. Nesting small components inside larger ones is a necessary ingredient of a modular, scalable language. DOT's variable restriction thus undermines its ability to fully formalize a variety of programming-language features including Scala's module system, family polymorphism, and covariant specialization. This paper presents the pDOT calculus, which generalizes DOT to support types that depend on paths of arbitrary length, as well as singleton types to track path equality. We show that naive approaches to add paths to DOT make it inherently unsound, and present necessary conditions for such a calculus to be sound. We discuss the key changes necessary to adapt the techniques of the DOT soundness proofs so that they can be applied to pDOT. Our paper comes with a Coq-mechanized type-safety proof of pDOT. With support for paths of arbitrary length, pDOT can realize DOT's full potential for formalizing Scala-like calculi.},
-  urldate = {2019-04-17},
-  date = {2019-04-15},
-  keywords = {Computer Science - Programming Languages},
-  author = {Rapoport, Marianna and Lhoták, Ondřej},
-  file = {/Users/pgiarrusso/Zotero/storage/C73P7UJB/Rapoport-Lhoták - 2019 - A Path To DOT - Formalizing Fully-Path-Dependent Types - v1.pdf;/Users/pgiarrusso/Zotero/storage/WHRMFXMM/Rapoport_Lhoták - 2019 - A Path To DOT - Formalizing Fully Path-Dependent Types.pdf;/Users/pgiarrusso/Zotero/storage/JSBRDYQV/1904.html;/Users/pgiarrusso/Zotero/storage/TDUWCJTR/1904.html}
-}
-
 @article{Stucki2017HigherOrder,
   langid = {english},
   title = {Higher-{{Order Subtyping}} with {{Type Intervals}}},
@@ -15833,15 +15817,17 @@ of languages and programs which share a common set of features.},
   file = {/Users/pgiarrusso/Zotero/storage/GHXGDRQE/Hobor-Dockins-Appel - 2010 - A Theory of Indirection via Approximation.pdf}
 }
 
-@article{Amin2016Dependent,
+@thesis{Amin2016Dependent,
+  location = {{Lausanne, Switzerland}},
   title = {Dependent {{Object Types}}},
   url = {https://infoscience.epfl.ch/record/223518},
-  doi = {10.5075/epfl-thesis-7156, urn:nbn:ch:bel-epfl-thesis7156-6},
+  institution = {{EPFL}},
   urldate = {2017-05-23},
   date = {2016},
   keywords = {_tablet_modified},
   author = {Amin, Nada},
-  file = {/Users/pgiarrusso/Zotero/storage/AIZWEN7P/Amin - 2016 - Dependent Object Types.pdf;/Users/pgiarrusso/Zotero/storage/5VPDJHUS/223518.html}
+  file = {/Users/pgiarrusso/Zotero/storage/AIZWEN7P/Amin - 2016 - Dependent Object Types.pdf;/Users/pgiarrusso/Zotero/storage/5VPDJHUS/223518.html},
+  doi = {10.5075/epfl-thesis-7156, urn:nbn:ch:bel-epfl-thesis7156-6}
 }
 
 @inproceedings{Ahmed2009Statedependent,
@@ -18203,6 +18189,126 @@ We also establish various syntactic properties of propositional equality includi
   pages = {51-60},
   author = {Odersky, Martin and Martres, Guillaume and Petrashko, Dmitry},
   file = {/Users/pgiarrusso/Zotero/storage/KCAT3X5M/Odersky et al - 2016 - Implementing higher-kinded types in Dotty.pdf;/Users/pgiarrusso/Zotero/storage/B9I3EC3D/citation.html}
+}
+
+@article{Rapoport2019Patha,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1904.07298},
+  primaryClass = {cs},
+  title = {A {{Path To DOT}}: {{Formalizing Fully Path}}-{{Dependent Types}}},
+  url = {http://arxiv.org/abs/1904.07298},
+  shorttitle = {A {{Path To DOT}}},
+  abstract = {The Dependent Object Types (DOT) calculus aims to formalize the Scala programming language with a focus on path-dependent types \$-\$ types such as \$x.a\_1\textbackslash{}dots a\_n.T\$ that depend on the runtime value of a path \$x.a\_1\textbackslash{}dots a\_n\$ to an object. Unfortunately, existing formulations of DOT can model only types of the form \$x.A\$ which depend on variables rather than general paths. This restriction makes it impossible to model nested module dependencies. Nesting small components inside larger ones is a necessary ingredient of a modular, scalable language. DOT's variable restriction thus undermines its ability to fully formalize a variety of programming-language features including Scala's module system, family polymorphism, and covariant specialization. This paper presents the pDOT calculus, which generalizes DOT to support types that depend on paths of arbitrary length, as well as singleton types to track path equality. We show that naive approaches to add paths to DOT make it inherently unsound, and present necessary conditions for such a calculus to be sound. We discuss the key changes necessary to adapt the techniques of the DOT soundness proofs so that they can be applied to pDOT. Our paper comes with a Coq-mechanized type-safety proof of pDOT. With support for paths of arbitrary length, pDOT can realize DOT's full potential for formalizing Scala-like calculi.},
+  urldate = {2019-08-20},
+  date = {2019-04-15},
+  keywords = {Computer Science - Programming Languages},
+  author = {Rapoport, Marianna and Lhoták, Ondřej},
+  file = {/Users/pgiarrusso/Zotero/storage/C73P7UJB/Rapoport-Lhoták - 2019 - A Path To DOT - Formalizing Fully-Path-Dependent Types - v1.pdf;/Users/pgiarrusso/Zotero/storage/R4AETKXE/Rapoport_Lhoták - 2019 - A Path To DOT - Formalizing Fully Path-Dependent Types - v4.pdf;/Users/pgiarrusso/Zotero/storage/WHRMFXMM/Rapoport_Lhoták - 2019 - A Path To DOT - Formalizing Fully Path-Dependent Types - v3.pdf;/Users/pgiarrusso/Zotero/storage/9EP4CC3U/1904.html;/Users/pgiarrusso/Zotero/storage/JSBRDYQV/1904.html;/Users/pgiarrusso/Zotero/storage/TDUWCJTR/1904.html}
+}
+
+@article{Lago2019Differentiala,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1904.12137},
+  primaryClass = {cs},
+  title = {Differential {{Logical Relations}}, {{Part I}}: {{The Simply}}-{{Typed Case}} ({{Long Version}})},
+  url = {http://arxiv.org/abs/1904.12137},
+  shorttitle = {Differential {{Logical Relations}}, {{Part I}}},
+  abstract = {We introduce a new form of logical relation which, in the spirit of metric relations, allows us to assign each pair of programs a quantity measuring their distance, rather than a boolean value standing for their being equivalent. The novelty of differential logical relations consists in measuring the distance between terms not (necessarily) by a numerical value, but by a mathematical object which somehow reflects the interactive complexity, i.e. the type, of the compared terms. We exemplify this concept in the simply-typed lambda-calculus, and show a form of soundness theorem. We also see how ordinary logical relations and metric relations can be seen as instances of differential logical relations. Finally, we show that differential logical relations can be organised in a cartesian closed category, contrarily to metric relations, which are well-known not to have such a structure, but only that of a monoidal closed category.},
+  urldate = {2019-08-25},
+  date = {2019-04-27},
+  keywords = {Computer Science - Logic in Computer Science,Computer Science - Programming Languages},
+  author = {Lago, Ugo Dal and Gavazzo, Francesco and Yoshimizu, Akira},
+  file = {/Users/pgiarrusso/Zotero/storage/LIS34ACD/Lago et al - 2019 - Differential Logical Relations, Part I - The Simply-Typed Case (Long Version).pdf;/Users/pgiarrusso/Zotero/storage/5FH447U6/1904.html}
+}
+
+@article{Abel2019Normalization,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1902.06097},
+  primaryClass = {cs, math},
+  title = {Normalization by {{Evaluation}} for {{Call}}-by-{{Push}}-{{Value}} and {{Polarized Lambda}}-{{Calculus}}},
+  url = {http://arxiv.org/abs/1902.06097},
+  abstract = {We observe that normalization by evaluation for simply-typed lambda-calculus with weak coproducts can be carried out in a weak bi-cartesian closed category of presheaves equipped with a monad that allows us to perform case distinction on neutral terms of sum type. The placement of the monad influences the normal forms we obtain: for instance, placing the monad on coproducts gives us eta-long beta-pi normal forms where pi refers to permutation of case distinctions out of elimination positions. We further observe that placing the monad on every coproduct is rather wasteful, and an optimal placement of the monad can be determined by considering polarized simple types inspired by focalization. Polarization classifies types into positive and negative, and it is sufficient to place the monad at the embedding of positive types into negative ones. We consider two calculi based on polarized types: pure call-by-push-value (CBPV) and polarized lambda-calculus, the natural deduction calculus corresponding to focalized sequent calculus. For these two calculi, we present algorithms for normalization by evaluation. We further discuss different implementations of the monad and their relation to existing normalization proofs for lambda-calculus with sums. Our developments have been partially formalized in the Agda proof assistant.},
+  urldate = {2019-08-25},
+  date = {2019-02-16},
+  keywords = {03F05,Computer Science - Logic in Computer Science,Computer Science - Programming Languages,F.3.2,F.4.1,Mathematics - Logic},
+  author = {Abel, Andreas and Sattler, Christian},
+  file = {/Users/pgiarrusso/Zotero/storage/89QNZKG5/Abel_Sattler - 2019 - Normalization by Evaluation for Call-by-Push-Value and Polarized Lambda-Calculus.pdf;/Users/pgiarrusso/Zotero/storage/7C97N8S4/1902.html}
+}
+
+@article{Birkedal2016Guarded,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1606.05223},
+  primaryClass = {cs},
+  title = {Guarded {{Cubical Type Theory}}: {{Path Equality}} for {{Guarded Recursion}}},
+  url = {http://arxiv.org/abs/1606.05223},
+  shorttitle = {Guarded {{Cubical Type Theory}}},
+  abstract = {This paper improves the treatment of equality in guarded dependent type theory (GDTT), by combining it with cubical type theory (CTT). GDTT is an extensional type theory with guarded recursive types, which are useful for building models of program logics, and for programming and reasoning with coinductive types. We wish to implement GDTT with decidable type-checking, while still supporting non-trivial equality proofs that reason about the extensions of guarded recursive constructions. CTT is a variation of Martin-L\textbackslash{}"of type theory in which the identity type is replaced by abstract paths between terms. CTT provides a computational interpretation of functional extensionality, is conjectured to have decidable type checking, and has an implemented type-checker. Our new type theory, called guarded cubical type theory, provides a computational interpretation of extensionality for guarded recursive types. This further expands the foundations of CTT as a basis for formalisation in mathematics and computer science. We present examples to demonstrate the expressivity of our type theory, all of which have been checked using a prototype type-checker implementation, and present semantics in a presheaf category.},
+  urldate = {2019-08-25},
+  date = {2016-06-16},
+  keywords = {Computer Science - Logic in Computer Science,Computer Science - Programming Languages,F.3.2,F.3.3},
+  author = {Birkedal, Lars and Bizjak, Aleš and Clouston, Ranald and Grathwohl, Hans Bugge and Spitters, Bas and Vezzosi, Andrea},
+  file = {/Users/pgiarrusso/Zotero/storage/7H9CHHDH/Birkedal et al - 2016 - Guarded Cubical Type Theory - Path Equality for Guarded Recursion.pdf;/Users/pgiarrusso/Zotero/storage/4HLWBRNZ/1606.html}
+}
+
+@article{Mogelberg2018Bisimulation,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1810.13261},
+  primaryClass = {cs},
+  title = {Bisimulation as Path Type for Guarded Recursive Types},
+  url = {http://arxiv.org/abs/1810.13261},
+  abstract = {In type theory, coinductive types are used to represent processes, and are thus crucial for the formal verification of non-terminating reactive programs in proof assistants based on type theory, such as Coq and Agda. Currently, programming and reasoning about coinductive types is difficult for two reasons: The need for recursive definitions to be productive, and the lack of coincidence of the built-in identity types and the important notion of bisimilarity. Guarded recursion in the sense of Nakano has recently been suggested as a possible approach to dealing with the problem of productivity, allowing this to be encoded in types. Indeed, coinductive types can be encoded using a combination of guarded recursion and universal quantification over clocks. This paper studies the notion of bisimilarity for guarded recursive types in Ticked Cubical Type Theory, an extension of Cubical Type Theory with guarded recursion. We prove that, for any functor, an abstract, category theoretic notion of bisimilarity for the final guarded coalgebra is equivalent (in the sense of homotopy type theory) to path equality (the primitive notion of equality in cubical type theory). As a worked example we study a guarded notion of labelled transition systems, and show that, as a special case of the general theorem, path equality coincides with an adaptation of the usual notion of bisimulation for processes. In particular, this implies that guarded recursion can be used to give simple equational reasoning proofs of bisimilarity. This work should be seen as a step towards obtaining bisimilarity as path equality for coinductive types using the encodings mentioned above.},
+  urldate = {2019-08-25},
+  date = {2018-10-31},
+  keywords = {Computer Science - Logic in Computer Science},
+  author = {Møgelberg, Rasmus Ejlers and Veltri, Niccolò},
+  file = {/Users/pgiarrusso/Zotero/storage/Y3G2YXSM/Møgelberg_Veltri - 2018 - Bisimulation as path type for guarded recursive types.pdf;/Users/pgiarrusso/Zotero/storage/9Z8A7IDQ/1810.html}
+}
+
+@inproceedings{Pirog2019Typed,
+  location = {{Dagstuhl, Germany}},
+  title = {Typed {{Equivalence}} of {{Effect Handlers}} and {{Delimited Control}}},
+  volume = {131},
+  isbn = {978-3-95977-107-8},
+  url = {http://drops.dagstuhl.de/opus/volltexte/2019/10537},
+  doi = {10.4230/LIPIcs.FSCD.2019.30},
+  booktitle = {4th {{International Conference}} on {{Formal Structures}} for {{Computation}} and {{Deduction}} ({{FSCD}} 2019)},
+  series = {Leibniz {{International Proceedings}} in {{Informatics}} ({{LIPIcs}})},
+  publisher = {{Schloss Dagstuhl–Leibniz-Zentrum fuer Informatik}},
+  urldate = {2019-08-25},
+  date = {2019},
+  pages = {30:1--30:16},
+  keywords = {algebraic effects,delimited control,macro expressibility,type-and-effect systems},
+  author = {Piróg, Maciej and Polesiuk, Piotr and Sieczkowski, Filip},
+  editor = {Geuvers, Herman},
+  file = {/Users/pgiarrusso/Zotero/storage/WGYMIHR7/Piróg et al - 2019 - Typed Equivalence of Effect Handlers and Delimited Control.pdf;/Users/pgiarrusso/Zotero/storage/MAVR594Q/10537.html}
+}
+
+@article{Spiwack2015Notes,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1507.04577},
+  primaryClass = {cs},
+  title = {Notes on Axiomatising {{Hurkens}}'s {{Paradox}}},
+  url = {http://arxiv.org/abs/1507.04577},
+  abstract = {An axiomatisation of Hurkens's paradox in dependent type theory is given without assuming any impredicative feature of said type theory.},
+  urldate = {2019-08-25},
+  date = {2015-07-16},
+  keywords = {Computer Science - Logic in Computer Science},
+  author = {Spiwack, Arnaud},
+  file = {/Users/pgiarrusso/Zotero/storage/CJCGH27M/Spiwack - 2015 - Notes on axiomatising Hurkens's Paradox.pdf;/Users/pgiarrusso/Zotero/storage/8Z34NZ2X/1507.html}
+}
+
+@article{Geuvers2001Inconsistency,
+  title = {Inconsistency of {{Classical Logic}} in {{Type Theory}}},
+  abstract = {Introduction In this note, we show the inconsistency of a strong version of classical logic in the type theory of Coq. More precisely, we show that from the assumption 8A:PropfAg + f:Ag, we can derive ?. The type 8A::PropfAg + f:Ag (in Coq notation: (A:Prop)\{A\}+\{\textasciitilde{}A\}) is more powerful than the `ordinary classical axiom 8A::PropA \_ :A (in Coq notation: (A:Prop)A / \textasciitilde{}A), because it allows to dene a function to a Set type by cases. This is precisely one of the crucial steps in the proof of the inconsistency: the construction of two functions b2P : bool!Prop and P2b :},
+  date = {2001-12-27},
+  author = {Geuvers, Herman},
+  file = {/Users/pgiarrusso/Zotero/storage/C3C9EEGM/Geuvers - 2001 - Inconsistency of Classical Logic in Type Theory.pdf}
 }
 
 @preamble{ "\ifdefined\DeclarePrefChars\DeclarePrefChars{'’-}\else\fi " }
