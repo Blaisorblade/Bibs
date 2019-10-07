@@ -45,16 +45,6 @@
 	Volume = {1},
 	Year = {2017}}
 
-@article{Amin2012Dependent,
-	Abstract = {We propose a new type-theoretic foundation of Scala and languages like it: the Dependent Object Types (DOT) calculus. DOT models Scala's path-dependent types, abstract type members and its mixture of nominal and structural typing through the use of refinement types. The core formalism makes no attempt to model inheritance and mixin composition. DOT normalizes Scala's type system by unifying the constructs for type members and by providing classical intersection and union types which simplify greatest lower bound and least upper bound computations. In this paper, we present the DOT calculus, both formally and informally. We also discuss our work-in-progress to prove typesafety of the calculus. Amin, Nada; Moors, Adriaan; Odersky, Martin},
-	Author = {Amin, Nada and Moors, Adriaan and Odersky, Martin},
-	Date-Added = {2018-11-29 13:44:09 +0100},
-	Date-Modified = {2018-11-29 13:44:09 +0100},
-	File = {/Users/pgiarrusso/Zotero/storage/QN5TDH3I/Amin-Moors-Odersky - 2012 - Dependent Object Types.pdf},
-	Language = {en},
-	Title = {Dependent Object Types},
-	Year = {2012}}
-
 @inproceedings{Rompf2016type,
 	Abstract = {Scala's type system unifies aspects of ML modules, object- oriented, and functional programming. The Dependent Object Types (DOT) family of calculi has been proposed as a new theoretic foundation for Scala and similar expressive languages. Unfortunately, type soundness has only been established for restricted subsets of DOT. In fact, it has been shown that important Scala features such as type refinement or a subtyping relation with lattice structure break at least one key metatheoretic property such as environment narrowing or invertible subtyping transitivity, which are usually required for a type soundness proof. The main contribution of this paper is to demonstrate how, perhaps surprisingly, even though these properties are lost in their full generality, a rich DOT calculus that includes recursive type refinement and a subtyping lattice with intersection types can still be proved sound. The key insight is that subtyping transitivity only needs to be invertible in code paths executed at runtime, with contexts consisting entirely of valid runtime objects, whereas inconsistent subtyping contexts can be permitted for code that is never executed.},
 	Address = {New York, NY, USA},
