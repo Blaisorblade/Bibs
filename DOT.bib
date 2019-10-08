@@ -217,3 +217,34 @@
   year = {2019},
   keywords = {Computer Science - Programming Languages},
 }
+
+@incollection{Brandt1997coinductive,
+  series = {Lecture Notes in Computer Science},
+  title = {Coinductive Axiomatization of Recursive Type Equality and Subtyping},
+  copyright = {\textcopyright{}1997 Springer-Verlag},
+  isbn = {978-3-540-62688-6 978-3-540-68438-1},
+  abstract = {We present new sound and complete axiomatizations of type equality and subtype inequality for a first-order type language with regular recursive types. The rules are motivated by coinductive characterizations of type containment and type equality via simulation and bisimulation, respectively. The main novelty of the axiomatization is the fixpoint rule (or coinduction principle), which has the form where P is either a type equality {$\tau$}={$\tau{'}$} or type containment {$\tau\leq\tau{'}$}. We define what it means for a proof (formal derivation) to be formally contractive and show that the fixpoint rule is sound if the proof of the premise A, P {$\vdash$} P is contractive. (A proof of A, P {$\vdash$} P using the assumption axiom is, of course, not contractive.) The fixpoint rule thus allows us to capture a coinductive relation in the fundamentally inductive framework of inference systems. The new axiomatizations are ``leaner'' than previous axiomatizations, particularly so for type containment since no separate axiomatization of type equality is required, as in Amadio and Cardelli's axiomatization. They give rise to a natural operational interpretation of proofs as coercions. In particular, the fixpoint rule corresponds to definition by recursion. Finally, the axiomatization is closely related to (known) efficient algorithms for deciding type equality and type containment. These can be modified to not only decide type equality and type containment, but also construct proofs in our axiomatizations efficiently. In connection with the operational interpretation of proofs as coercions this gives efficient (O(n 2) time) algorithms for constructing efficient coercions from a type to any of its supertypes or isomorphic types.},
+  language = {en},
+  number = {1210},
+  booktitle = {Typed Lambda Calculi and Applications},
+  publisher = {{Springer Berlin Heidelberg}},
+  author = {Brandt, Michael and Henglein, Fritz},
+  editor = {de Groote, Philippe and Hindley, J. Roger},
+  year = {1997},
+  keywords = {Logics and Meanings of Programs,Mathematical Logic and Formal Languages,Mathematical Logic and Foundations,Programming Techniques},
+  pages = {63-81}
+}
+
+@article{Brandt1998coinductive,
+  title = {Coinductive Axiomatization of Recursive Type Equality and Subtyping},
+  volume = {33},
+  issn = {0169-2968},
+  abstract = {We present new sound and complete axiomatizations of type equality and subtype inequality for a first-order type language with regular recursive types. The rules are motivated by coinductive characterizations of type containment and type equality via simulation and bisimulation, respectively. The main novelty of the axiomatization is the fixpoint rule (or coinduction principle). It states that from A,P \$\$\textbackslash{}vdash\$\$ P one may deduce A \$\$\textbackslash{}vdash\$\$ P, where P is either a type equality {$\tau$} = {$\tau$}' or type containment {$\tau$} {$\leq$} {$\tau$}' and the proof of the premise must be contractive in a sense we define in this paper. In particular, a proof of A, P \$\$\textbackslash{}vdash\$\$ P using the assumption axiom is not contractive. The fixpoint rule embodies a finitary coinduction principle and thus allows us to capture a coinductive relation in the fundamentally inductive framework of inference systems. The new axiomatizations are more concise than previous axiomatizations, particularly so for type containment since no separate axiomatization of type equality is required, as in Amadio and Cardelli's axiomatization. They give rise to a natural operational interpretation of proofs as coercions. In particular, the fixpoint rule corresponds to definition by recursion. Finally, the axiomatization is closely related to (known) efficient algorithms for deciding type equality and type containment. These can be modified to not only decide type equality and type containment, but also construct proofs in our axiomatizations efficiently. In connection with the operational interpretation of proofs as coercions this gives efficient (O(n 2) time) algorithms for constructing efficient coercions from a type to any of its supertypes or isomorphic types. More generally, we show how adding the fixpoint rule makes it possible to characterize inductively a set that is coinductively defined as the kernel (greatest fixed point) of an inference system.},
+  number = {4},
+  journal = {Fundam. Inf.},
+  author = {Brandt, Michael and Henglein, Fritz},
+  month = dec,
+  year = {1998},
+  keywords = {axiomatization,coercion,coinduction,fixpoint,inference rule,inference system,operational interpretation,recursive type,subtyping,type equality},
+  pages = {309--338}
+}
