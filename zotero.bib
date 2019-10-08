@@ -869,7 +869,7 @@ We introduce these ideas in the setting of the simply typed lambda calculus. We 
 @inproceedings{Dreyer2003type,
   address = {{New York, NY, USA}},
   series = {{{POPL}} '03},
-  title = {A {{Type System}} for {{Higher}}-Order {{Modules}}},
+  title = {A Type System for Higher-Order Modules},
   isbn = {1-58113-628-5},
   abstract = {We present a type theory for higher-order modules that accounts for many central issues in module system design, including translucency, applicativity, generativity, and modules as first-class values. Our type system harmonizes design elements from previous work, resulting in a simple, economical account of modular programming. The main unifying principle is the treatment of abstraction mechanisms as computational effects. Our language is the first to provide a complete and practical formalization of all of these critical issues in module system design.},
   booktitle = {Proceedings of the 30th {{ACM SIGPLAN}}-{{SIGACT Symposium}} on {{Principles}} of {{Programming Languages}}},
@@ -877,7 +877,7 @@ We introduce these ideas in the setting of the simply typed lambda calculus. We 
   doi = {10.1145/604131.604151},
   author = {Dreyer, Derek and Crary, Karl and Harper, Robert},
   year = {2003},
-  keywords = {type theory,abstract data types,computational effects,functors,generativity,modularity,singleton types},
+  keywords = {abstract data types,computational effects,functors,generativity,modularity,singleton types,type theory},
   pages = {236--249}
 }
 
@@ -926,7 +926,7 @@ We introduce these ideas in the setting of the simply typed lambda calculus. We 
 @inproceedings{Crary1999what,
   address = {{New York, NY, USA}},
   series = {{{PLDI}} '99},
-  title = {What Is a {{Recursive Module}}?},
+  title = {What Is a Recursive Module?},
   isbn = {1-58113-094-5},
   abstract = {A hierarchical module system is an effective tool for structuring large programs. Strictly hierarchical module systems impose an acyclic ordering on import dependencies among program units. This can impede modular programming by forcing mutually-dependent components to be consolidated into a single module. Recently there have been several proposals for module systems that admit cyclic dependencies, but it is not clear how these proposals relate to one another, nor how one might integrate them into an expressive module system such as that of ML.To address this question we provide a type-theoretic analysis of the notion of a recursive module in the context of a "phase-distinction" formalism for higher-order module systems. We extend this calculus with a recursive module mechanism and a new form of signature, called a recursively dependent signature, to support the definition of recursive modules. These extensions are justified by an interpretation in terms of more primitive language constructs. This interpretation may also serve as a guide for implementation.},
   booktitle = {Proceedings of the {{ACM SIGPLAN}} 1999 {{Conference}} on {{Programming Language Design}} and {{Implementation}}},
@@ -1106,7 +1106,7 @@ We introduce these ideas in the setting of the simply typed lambda calculus. We 
 
 @article{Crary2007syntactic,
   series = {Computation, {{Meaning}}, and {{Logic}}: {{Articles}} Dedicated to {{Gordon Plotkin}}},
-  title = {Syntactic {{Logical Relations}} for {{Polymorphic}} and {{Recursive Types}}},
+  title = {Syntactic Logical Relations for Polymorphic and Recursive Types},
   volume = {172},
   issn = {1571-0661},
   abstract = {The method of logical relations assigns a relational interpretation to types that expresses operational invariants satisfied by all terms of a type. The method is widely used in the study of typed languages, for example to establish contextual equivalences of terms. The chief difficulty in using logical relations is to establish the existence of a suitable relational interpretation. We extend work of Pitts and Birkedal and Harper on constructing relational interpretations of types to polymorphism and recursive types, and apply it to establish parametricity and representation independence properties in a purely operational setting. We argue that, once the existence of a relational interpretation has been established, it is straightforward to use it to establish properties of interest.},
@@ -1137,7 +1137,7 @@ We introduce these ideas in the setting of the simply typed lambda calculus. We 
 @inproceedings{Crary2009syntactic,
   address = {{New York, NY, USA}},
   series = {{{LFMTP}} '09},
-  title = {A {{Syntactic Account}} of {{Singleton Types}} via {{Hereditary Substitution}}},
+  title = {A Syntactic Account of Singleton Types via Hereditary Substitution},
   isbn = {978-1-60558-529-1},
   abstract = {We give a syntactic proof of decidability and consistency of equivalence for the singleton type calculus, which lies at the foundation of modern module systems such as that of ML. Unlike existing proofs, which work by constructing a model, our syntactic proof makes few demands on the underlying proof theory and mathematical foundation. Consequently, it can be --- and has been --- entirely formulated in the Twelf meta-logic, and provides an important piece of a Twelf-formalized type-safety proof for Standard ML. The proof works by translation of the singleton type calculus into a canonical presentation, adapted from work on logical frameworks, in which equivalent terms are written identically. Canonical forms are not preserved under standard substitution, so we employ an alternative definition of substitution called hereditary substitution, which contracts redices that arise during substitution.},
   booktitle = {Proceedings of the {{Fourth International Workshop}} on {{Logical Frameworks}} and {{Meta}}-{{Languages}}: {{Theory}} and {{Practice}}},
@@ -1145,7 +1145,7 @@ We introduce these ideas in the setting of the simply typed lambda calculus. We 
   doi = {10.1145/1577824.1577829},
   author = {Crary, Karl},
   year = {2009},
-  keywords = {_tablet,singleton types,logical frameworks,mechanized metatheory},
+  keywords = {_tablet,logical frameworks,mechanized metatheory,singleton types},
   pages = {21--29}
 }
 
@@ -6731,7 +6731,7 @@ For the second justification, we start by giving equational laws for CBPV+stacks
 @inproceedings{Lee2007mechanized,
   address = {{New York, NY, USA}},
   series = {{{POPL}} '07},
-  title = {Towards a {{Mechanized Metatheory}} of {{Standard ML}}},
+  title = {Towards a Mechanized Metatheory of {{Standard ML}}},
   isbn = {1-59593-575-4},
   abstract = {We present an internal language with equivalent expressive power to Standard ML, and discuss its formalization in LF and the machine-checked verification of its type safety in Twelf. The internal language is intended to serve as the target of elaboration in an elaborative semantics for Standard ML in the style of Harper and Stone. Therefore, it includes all the programming mechanisms necessary to implement Standard ML, including translucent modules, abstraction, polymorphism, higher kinds, references, exceptions, recursive types, and recursive functions. Our successful formalization of the proof involved a careful interplay between the precise formulations of the various mechanisms, and required the invention of new representation and proof techniques of general interest.},
   booktitle = {Proceedings of the 34th {{Annual ACM SIGPLAN}}-{{SIGACT Symposium}} on {{Principles}} of {{Programming Languages}}},
@@ -6739,7 +6739,7 @@ For the second justification, we start by giving equational laws for CBPV+stacks
   doi = {10.1145/1190216.1190245},
   author = {Lee, Daniel K. and Crary, Karl and Harper, Robert},
   year = {2007},
-  keywords = {logical frameworks,mechanized metatheory,language definitions,standard ML,twelf,type safety},
+  keywords = {language definitions,logical frameworks,mechanized metatheory,standard ML,twelf,type safety},
   pages = {173--184}
 }
 
@@ -8302,7 +8302,7 @@ Finally we put our work into practise in the implementation of a programming lan
 @inproceedings{Crary1998intensional,
   address = {{New York, NY, USA}},
   series = {{{ICFP}} '98},
-  title = {Intensional {{Polymorphism}} in {{Type}}-Erasure {{Semantics}}},
+  title = {Intensional Polymorphism in Type-Erasure Semantics},
   isbn = {1-58113-024-4},
   abstract = {Intensional polymorphism, the ability to dispatch to different routines based on types at run time, enables a variety of advanced implementation techniques for polymorphic languages, including tag-free garbage collection, unboxed function arguments, polymorphic marshalling, and flattened data structures. To date, languages that support intensional polymorphism have required a type-passing (as opposed to type-erasure) interpretation where types are constructed and passed to polymorphic functions at run time. Unfortunately, type-passing suffers from a number of drawbacks: it requires duplication of constructs at the term and type levels, it prevents abstraction, and it severely complicates polymorphic closure conversion.We present a type-theoretic framework that supports intensional polymorphism, but avoids many of the disadvantages of type passing. In our approach, run-time type information is represented by ordinary terms. This avoids the duplication problem, allows us to recover abstraction, and avoids complications with closure conversion. In addition, our type system provides another improvement in expressiveness; it allows unknown types to be refined in place thereby avoiding certain beta-expansions required by other frameworks.},
   booktitle = {Proceedings of the {{Third ACM SIGPLAN International Conference}} on {{Functional Programming}}},
@@ -10396,7 +10396,7 @@ A thorough analysis of the abstract machine for CPS terms show that the actions 
 @inproceedings{Crary2017Modules,
   address = {{New York, NY, USA}},
   series = {{{POPL}} 2017},
-  title = {Modules, {{Abstraction}}, and {{Parametric Polymorphism}}},
+  title = {Modules, Abstraction, and Parametric Polymorphism},
   isbn = {978-1-4503-4660-3},
   abstract = {Reynolds's Abstraction theorem forms the mathematical foundation for data abstraction. His setting was the polymorphic lambda calculus. Today, many modern languages, such as the ML family, employ rich module systems designed to give more expressive support for data abstraction than the polymorphic lambda calculus, but analogues of the Abstraction theorem for such module systems have lagged far behind.   We give an account of the Abstraction theorem for a modern module calculus supporting generative and applicative functors, higher-order functors, sealing, and translucent signatures. The main issues to be overcome are: (1) the fact that modules combine both types and terms, so they must be treated as both simultaneously, (2) the effect discipline that models the distinction between transparent and opaque modules, and (3) a very rich language of type constructors supporting singleton kinds. We define logical equivalence for modules and show that it coincides with contextual equivalence. This substantiates the folk theorem that modules are good for data abstraction. All our proofs are formalized in Coq.},
   booktitle = {Proceedings of the 44th {{ACM SIGPLAN Symposium}} on {{Principles}} of {{Programming Languages}}},
@@ -10404,7 +10404,7 @@ A thorough analysis of the abstract machine for CPS terms show that the actions 
   doi = {10.1145/3009837.3009892},
   author = {Crary, Karl},
   year = {2017},
-  keywords = {logical relations,modules,parametricity,Abstraction},
+  keywords = {Abstraction,logical relations,modules,parametricity},
   pages = {100--113}
 }
 
@@ -12928,10 +12928,10 @@ Specifically, we describe a programming idiom that exploits type-level functions
   keywords = {Computer Science - Logic in Computer Science}
 }
 
-@inproceedings{Crary1999Simple,
+@inproceedings{Crary1999simple,
   address = {{New York, NY, USA}},
   series = {{{ICFP}} '99},
-  title = {A {{Simple Proof Technique}} for {{Certain Parametricity Results}}},
+  title = {A Simple Proof Technique for Certain Parametricity Results},
   isbn = {978-1-58113-111-6},
   abstract = {Many properties of parametric, polymorphic functions can be determined simply by inspection of their types. Such results are usually proven using Reynolds's parametricity theorem. However, Reynolds's theorem can be difficult to show in some settings, particularly ones involving computational effects. I present an alternative technique for proving some parametricity results. This technique is considerably simpler and easily generalizes to effectful settings. It works by instantiating polymorphic functions with singleton types that fully specify the behavior of the functions. Using this technique, I show that callers' stacks are protected from corruption during function calls in Typed Assembly Language programs.},
   booktitle = {Proceedings of the {{Fourth ACM SIGPLAN International Conference}} on {{Functional Programming}}},
@@ -15538,7 +15538,7 @@ In this paper we concentrate on the key issue for decidability of typechecking: 
 @inproceedings{Bogle1994Reducing,
   address = {{New York, NY, USA}},
   series = {{{OOPSLA}} '94},
-  title = {Reducing {{Cross Domain Call Overhead Using Batched Futures}}},
+  title = {Reducing Cross Domain Call Overhead Using Batched Futures},
   isbn = {978-0-89791-688-2},
   abstract = {In many systems such as operating systems and databases it is important to run client code in a separate protection domain so that it cannot interfere with correct operation of the system. Clients communicate with the server by making cross domain calls, but these are expensive, often costing substantially more than running the call itself. This paper describes a new mechanism called batched futures that transparently batches possibly interrelated client calls. Batching makes domain crossings happen less often, thus substantially reducing the cost. We describe how the mechanism is implemented for the Thor object-oriented database system, and presents performance results showing the benefit of the mechanism on various benchmarks.},
   booktitle = {Proceedings of the {{Ninth Annual Conference}} on {{Object}}-Oriented {{Programming Systems}}, {{Language}}, and {{Applications}}},
@@ -15595,7 +15595,7 @@ In this paper we concentrate on the key issue for decidability of typechecking: 
   eprinttype = {arxiv},
   eprint = {1102.1313},
   primaryClass = {cs, math},
-  title = {Introduction to {{Categories}} and {{Categorical Logic}}},
+  title = {Introduction to Categories and Categorical Logic},
   volume = {813},
   abstract = {The aim of these notes is to provide a succinct, accessible introduction to some of the basic ideas of category theory and categorical logic. The notes are based on a lecture course given at Oxford over the past few years. They contain numerous exercises, and hopefully will prove useful for self-study by those seeking a first introduction to the subject, with fairly minimal prerequisites. The coverage is by no means comprehensive, but should provide a good basis for further study; a guide to further reading is included. The main prerequisite is a basic familiarity with the elements of discrete mathematics: sets, relations and functions. An Appendix contains a summary of what we will need, and it may be useful to review this first. In addition, some prior exposure to abstract algebra - vector spaces and linear maps, or groups and group homomorphisms - would be helpful.},
   journal = {arXiv:1102.1313 [cs, math]},
@@ -15609,7 +15609,7 @@ In this paper we concentrate on the key issue for decidability of typechecking: 
 @inproceedings{Pearce2017Rewriting,
   address = {{New York, NY, USA}},
   series = {{{GPCE}} 2017},
-  title = {Rewriting for {{Sound}} and {{Complete Union}}, {{Intersection}} and {{Negation Types}}},
+  title = {Rewriting for Sound and Complete Union, Intersection and Negation Types},
   isbn = {978-1-4503-5524-7},
   abstract = {Implementing the type system of a programming language is a critical task that is often done in an ad-hoc fashion. Whilst this makes it hard to ensure the system is sound, it also makes it difficult to extend as the language evolves. We are interested in describing type systems using declarative rewrite rules from which an implementation can be automatically generated. Whilst not all type systems are easily expressed in this manner, those involving unions, intersections and negations are well-suited for this.   In this paper, we consider a relatively complex type system involving unions, intersections and negations developed previously. This system was not developed with rewriting in mind, though clear parallels are immediately apparent from the original presentation. For example, the system presented required types be first converted into a variation on Disjunctive Normal Form. We identify that the original system can, for the most part, be reworked to enable a natural expression using declarative rewrite rules. We present an implementation of our rewrite rules in the Whiley Rewrite Language (WyRL), and report performance results compared with a hand-coded solution.},
   booktitle = {Proceedings of the 16th {{ACM SIGPLAN International Conference}} on {{Generative Programming}}: {{Concepts}} and {{Experiences}}},
@@ -15617,14 +15617,14 @@ In this paper we concentrate on the key issue for decidability of typechecking: 
   doi = {10.1145/3136040.3136042},
   author = {Pearce, David J.},
   year = {2017},
-  keywords = {Type Theory,Type Systems,Rewrite Systems},
+  keywords = {Rewrite Systems,Type Systems,Type Theory},
   pages = {117--130}
 }
 
-@inproceedings{Jones2016Mechanical,
+@inproceedings{Jones2016mechanical,
   address = {{New York, NY, USA}},
   series = {{{FTfJP}}'16},
-  title = {A {{Mechanical Soundness Proof}} for {{Subtyping Over Recursive Types}}},
+  title = {A Mechanical Soundness Proof for Subtyping over Recursive Types},
   isbn = {978-1-4503-4439-5},
   abstract = {Structural type systems provide an interesting alternative to the more common nominal typing scheme. Several existing languages employ structural types in some form, including Modula-3, Scala and various extensions proposed for Java. However, formalising a recursive structural type system is challenging. In particular, the need to use structural coinduction remains a hindrance for many. We formalise in Agda a simple recursive and structural type system with products and unions. Agda proves useful here because it has explicit support for coinduction and will raise an error if this is misused. The implementation distinguishes between inductively and coinductively defined types: the former corresponds to a finite representation, such as found in source code or the internals of a compiler, while the latter corresponds to a mathematical ideal with which we can coinductively define relations and proofs that are easily applied back to the inductive interpretation. As an application of this, we provide a mechanised proof of subtyping soundness against a semantic embedding of the types into Agda.},
   booktitle = {Proceedings of the 18th {{Workshop}} on {{Formal Techniques}} for {{Java}}-like {{Programs}}},
@@ -15718,14 +15718,14 @@ We also establish various syntactic properties of propositional equality includi
   eprinttype = {arxiv},
   eprint = {1904.12137},
   primaryClass = {cs},
-  title = {Differential {{Logical Relations}}, {{Part I}}: {{The Simply}}-{{Typed Case}} ({{Long Version}})},
-  shorttitle = {Differential {{Logical Relations}}, {{Part I}}},
+  title = {Differential Logical Relations, Part {{I}}: The Simply-Typed Case (Long Version)},
+  shorttitle = {Differential Logical Relations, Part i},
   abstract = {We introduce a new form of logical relation which, in the spirit of metric relations, allows us to assign each pair of programs a quantity measuring their distance, rather than a boolean value standing for their being equivalent. The novelty of differential logical relations consists in measuring the distance between terms not (necessarily) by a numerical value, but by a mathematical object which somehow reflects the interactive complexity, i.e. the type, of the compared terms. We exemplify this concept in the simply-typed lambda-calculus, and show a form of soundness theorem. We also see how ordinary logical relations and metric relations can be seen as instances of differential logical relations. Finally, we show that differential logical relations can be organised in a cartesian closed category, contrarily to metric relations, which are well-known not to have such a structure, but only that of a monoidal closed category.},
   journal = {arXiv:1904.12137 [cs]},
   author = {Lago, Ugo Dal and Gavazzo, Francesco and Yoshimizu, Akira},
   month = apr,
   year = {2019},
-  keywords = {Computer Science - Programming Languages,Computer Science - Logic in Computer Science}
+  keywords = {Computer Science - Logic in Computer Science,Computer Science - Programming Languages}
 }
 
 @article{Abel2019Normalization,
@@ -15733,13 +15733,13 @@ We also establish various syntactic properties of propositional equality includi
   eprinttype = {arxiv},
   eprint = {1902.06097},
   primaryClass = {cs, math},
-  title = {Normalization by {{Evaluation}} for {{Call}}-by-{{Push}}-{{Value}} and {{Polarized Lambda}}-{{Calculus}}},
+  title = {Normalization by Evaluation for Call-by-Push-Value and Polarized Lambda-Calculus},
   abstract = {We observe that normalization by evaluation for simply-typed lambda-calculus with weak coproducts can be carried out in a weak bi-cartesian closed category of presheaves equipped with a monad that allows us to perform case distinction on neutral terms of sum type. The placement of the monad influences the normal forms we obtain: for instance, placing the monad on coproducts gives us eta-long beta-pi normal forms where pi refers to permutation of case distinctions out of elimination positions. We further observe that placing the monad on every coproduct is rather wasteful, and an optimal placement of the monad can be determined by considering polarized simple types inspired by focalization. Polarization classifies types into positive and negative, and it is sufficient to place the monad at the embedding of positive types into negative ones. We consider two calculi based on polarized types: pure call-by-push-value (CBPV) and polarized lambda-calculus, the natural deduction calculus corresponding to focalized sequent calculus. For these two calculi, we present algorithms for normalization by evaluation. We further discuss different implementations of the monad and their relation to existing normalization proofs for lambda-calculus with sums. Our developments have been partially formalized in the Agda proof assistant.},
   journal = {arXiv:1902.06097 [cs, math]},
   author = {Abel, Andreas and Sattler, Christian},
   month = feb,
   year = {2019},
-  keywords = {Computer Science - Programming Languages,Computer Science - Logic in Computer Science,Mathematics - Logic,F.4.1,F.3.2,03F05}
+  keywords = {03F05,Computer Science - Logic in Computer Science,Computer Science - Programming Languages,F.3.2,F.4.1,Mathematics - Logic}
 }
 
 @article{Birkedal2016Guarded,
@@ -15747,14 +15747,14 @@ We also establish various syntactic properties of propositional equality includi
   eprinttype = {arxiv},
   eprint = {1606.05223},
   primaryClass = {cs},
-  title = {Guarded {{Cubical Type Theory}}: {{Path Equality}} for {{Guarded Recursion}}},
-  shorttitle = {Guarded {{Cubical Type Theory}}},
+  title = {Guarded Cubical Type Theory: Path Equality for Guarded Recursion},
+  shorttitle = {Guarded Cubical Type Theory},
   abstract = {This paper improves the treatment of equality in guarded dependent type theory (GDTT), by combining it with cubical type theory (CTT). GDTT is an extensional type theory with guarded recursive types, which are useful for building models of program logics, and for programming and reasoning with coinductive types. We wish to implement GDTT with decidable type-checking, while still supporting non-trivial equality proofs that reason about the extensions of guarded recursive constructions. CTT is a variation of Martin-L\textbackslash{}"of type theory in which the identity type is replaced by abstract paths between terms. CTT provides a computational interpretation of functional extensionality, is conjectured to have decidable type checking, and has an implemented type-checker. Our new type theory, called guarded cubical type theory, provides a computational interpretation of extensionality for guarded recursive types. This further expands the foundations of CTT as a basis for formalisation in mathematics and computer science. We present examples to demonstrate the expressivity of our type theory, all of which have been checked using a prototype type-checker implementation, and present semantics in a presheaf category.},
   journal = {arXiv:1606.05223 [cs]},
   author = {Birkedal, Lars and Bizjak, Ale{\v s} and Clouston, Ranald and Grathwohl, Hans Bugge and Spitters, Bas and Vezzosi, Andrea},
   month = jun,
   year = {2016},
-  keywords = {Computer Science - Programming Languages,Computer Science - Logic in Computer Science,F.3.3,F.3.2}
+  keywords = {Computer Science - Logic in Computer Science,Computer Science - Programming Languages,F.3.2,F.3.3}
 }
 
 @article{Mogelberg2018Bisimulation,
@@ -15774,7 +15774,7 @@ We also establish various syntactic properties of propositional equality includi
 @inproceedings{Pirog2019Typed,
   address = {{Dagstuhl, Germany}},
   series = {Leibniz {{International Proceedings}} in {{Informatics}} ({{LIPIcs}})},
-  title = {Typed {{Equivalence}} of {{Effect Handlers}} and {{Delimited Control}}},
+  title = {Typed Equivalence of Effect Handlers and Delimited Control},
   volume = {131},
   isbn = {978-3-95977-107-8},
   booktitle = {4th {{International Conference}} on {{Formal Structures}} for {{Computation}} and {{Deduction}} ({{FSCD}} 2019)},
@@ -15783,7 +15783,7 @@ We also establish various syntactic properties of propositional equality includi
   author = {Pir{\'o}g, Maciej and Polesiuk, Piotr and Sieczkowski, Filip},
   editor = {Geuvers, Herman},
   year = {2019},
-  keywords = {algebraic effects,type-and-effect systems,delimited control,macro expressibility},
+  keywords = {algebraic effects,delimited control,macro expressibility,type-and-effect systems},
   pages = {30:1--30:16}
 }
 
@@ -15802,7 +15802,7 @@ We also establish various syntactic properties of propositional equality includi
 }
 
 @article{Geuvers2001Inconsistency,
-  title = {Inconsistency of {{Classical Logic}} in {{Type Theory}}},
+  title = {Inconsistency of Classical Logic in Type Theory},
   abstract = {Introduction In this note, we show the inconsistency of a strong version of classical logic in the type theory of Coq. More precisely, we show that from the assumption 8A:PropfAg + f:Ag, we can derive ?. The type 8A::PropfAg + f:Ag (in Coq notation: (A:Prop)\{A\}+\{\textasciitilde{}A\}) is more powerful than the `ordinary classical axiom 8A::PropA \_ :A (in Coq notation: (A:Prop)A / \textasciitilde{}A), because it allows to dene a function to a Set type by cases. This is precisely one of the crucial steps in the proof of the inconsistency: the construction of two functions b2P : bool!Prop and P2b :},
   author = {Geuvers, Herman},
   month = dec,
@@ -15826,7 +15826,7 @@ We also establish various syntactic properties of propositional equality includi
 
 @inproceedings{Brady2003Inductive,
   series = {Lecture {{Notes}} in {{Computer Science}}},
-  title = {Inductive {{Families Need Not Store Their Indices}}},
+  title = {Inductive Families Need Not Store Their Indices},
   isbn = {978-3-540-24849-1},
   abstract = {We consider the problem of efficient representation of dependently typed data. In particular, we consider a language TT based on Dybjer's notion of inductive families [10] and reanalyse their general form with a view to optimising the storage associated with their use. We introduce an execution language, ExTT, which allows the commenting out of computationally irrelevant subterms and show how to use properties of elimination rules to elide constructor arguments and tags in ExTT. We further show how some types can be collapsed entirely at run-time. Several examples are given, including a representation of the simply typed {$\lambda$}-calculus for which our analysis yields an 80\% reduction in run-time storage requirements.},
   language = {en},
@@ -15835,7 +15835,7 @@ We also establish various syntactic properties of propositional equality includi
   author = {Brady, Edwin and McBride, Conor and McKinna, James},
   editor = {Berardi, Stefano and Coppo, Mario and Damiani, Ferruccio},
   year = {2003},
-  keywords = {Elimination Rule,Type Theory,Dependent Type,Functional Language,Alternative Implementation},
+  keywords = {Alternative Implementation,Dependent Type,Elimination Rule,Functional Language,Type Theory},
   pages = {115-129}
 }
 
