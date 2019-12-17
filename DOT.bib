@@ -248,3 +248,19 @@
   keywords = {axiomatization,coercion,coinduction,fixpoint,inference rule,inference system,operational interpretation,recursive type,subtyping,type equality},
   pages = {309--338}
 }
+
+@inproceedings{Kabir2018kDOT,
+  address = {{New York, NY, USA}},
+  series = {Scala 2018},
+  title = {{{kDOT}}: {{Scaling DOT}} with Mutation and Constructors},
+  isbn = {978-1-4503-5836-1},
+  shorttitle = {{$K$}dot},
+  abstract = {Scala unifies concepts from object and module systems by allowing for objects with type members which are referenced via path-dependent types. The Dependent Object Types (DOT) calculus of Amin et al. models only this core part of Scala, but does not have many fundamental features of Scala such as strict and mutable fields. Since the most commonly used field types in Scala are strict,the correspondence between DOT and Scala is too weak for us to meaningfully prove static analyses safe for Scala by proving them safe for DOT.  A DOT calculus that can support strict and mutable fields together with constructors that do field initialization would be more suitable for analysis of Scala. Toward this goal, we present {$\kappa$}DOT, an extension of DOT that supports constructors and field mutation and can emulate the different types of fields in Scala. We have proven {$\kappa$}DOT sound through a mechanized proof in Coq. We present the key features of {$\kappa$}DOT and its operational semantics and discuss work-in-progress toward making {$\kappa$}DOT fully strict.},
+  booktitle = {Proceedings of the 9th {{ACM SIGPLAN International Symposium}} on {{Scala}}},
+  publisher = {{ACM}},
+  doi = {10.1145/3241653.3241659},
+  author = {Kabir, Ifaz and Lhot{\'a}k, Ond{\v r}ej},
+  year = {2018},
+  keywords = {type safety,dependent object types,mutation},
+  pages = {40--50}
+}
