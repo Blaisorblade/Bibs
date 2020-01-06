@@ -279,3 +279,61 @@
   keywords = {Separation logic,compositional verification,fine-grained concurrency,higher- order logic,interactive theorem proving},
   pages = {256--269}
 }
+
+@inproceedings{Crary2017Modules,
+  address = {{New York, NY, USA}},
+  series = {{{POPL}} 2017},
+  title = {Modules, Abstraction, and Parametric Polymorphism},
+  isbn = {978-1-4503-4660-3},
+  abstract = {Reynolds's Abstraction theorem forms the mathematical foundation for data abstraction. His setting was the polymorphic lambda calculus. Today, many modern languages, such as the ML family, employ rich module systems designed to give more expressive support for data abstraction than the polymorphic lambda calculus, but analogues of the Abstraction theorem for such module systems have lagged far behind.   We give an account of the Abstraction theorem for a modern module calculus supporting generative and applicative functors, higher-order functors, sealing, and translucent signatures. The main issues to be overcome are: (1) the fact that modules combine both types and terms, so they must be treated as both simultaneously, (2) the effect discipline that models the distinction between transparent and opaque modules, and (3) a very rich language of type constructors supporting singleton kinds. We define logical equivalence for modules and show that it coincides with contextual equivalence. This substantiates the folk theorem that modules are good for data abstraction. All our proofs are formalized in Coq.},
+  booktitle = {Proceedings of the 44th {{ACM SIGPLAN Symposium}} on {{Principles}} of {{Programming Languages}}},
+  publisher = {{ACM}},
+  doi = {10.1145/3009837.3009892},
+  author = {Crary, Karl},
+  year = {2017},
+  keywords = {logical relations,modules,parametricity,Abstraction},
+  pages = {100--113}
+}
+
+@inproceedings{Harper1994typetheoretic,
+  address = {{New York, NY, USA}},
+  series = {{{POPL}} '94},
+  title = {A Type-Theoretic Approach to Higher-Order Modules with Sharing},
+  isbn = {978-0-89791-636-3},
+  abstract = {The design of a module system for constructing and maintaining large programs is a difficult task that raises a number of theoretical and practical issues. A fundamental issue is the management of the flow of information between program units at compile time via the notion of an interface. Experience has shown that fully opaque interfaces are awkward to use in practice since too much information is hidden, and that fully transparent interfaces lead to excessive interdependencies, creating problems for maintenance and separate compilation. The ``sharing'' specifications of Standard ML address this issue by allowing the programmer to specify equational relationships between types in separated modules, but are not expressive enough to allow the programmer complete control over the propagation of type information between modules.
+These problems are addressed from a type-theoretic viewpoint by considering a calculus based on Girard's system F\&ohgr;. The calculus differs form those considered in previous studies by relying exclusively on a new form of weak sum type to propagate information at compile-time, in contrast to approaches based on strong sums which rely on substitution. The new form of sum type allows for the specification of equational, as well as type and kind, information in interfaces. This provides complete control over the propagation of compile-time information between program units and is sufficient to encode in a straightforward way most users of type sharing specifications in Standard ML.
+Modules are treated as ``first-class'' citizens, and therefore the system supports higher-order modules and some object-oriented programming idioms; the language may be easily restricted to ``second-class'' modules found in ML-like languages.},
+  booktitle = {Proceedings of the 21st {{ACM SIGPLAN}}-{{SIGACT Symposium}} on {{Principles}} of {{Programming Languages}}},
+  publisher = {{ACM}},
+  doi = {10.1145/174675.176927},
+  author = {Harper, Robert and Lillibridge, Mark},
+  year = {1994},
+  pages = {123--137}
+}
+
+@article{Rossberg2013mixin,
+  title = {Mixin' up the {{ML}} Module System},
+  volume = {35},
+  issn = {0164-0925},
+  abstract = {ML modules provide hierarchical namespace management, as well as fine-grained control over the propagation of type information, but they do not allow modules to be broken up into mutually recursive, separately compilable components. Mixin modules facilitate recursive linking of separately compiled components, but they are not hierarchically composable and typically do not support type abstraction. We synthesize the complementary advantages of these two mechanisms in a novel module system design we call MixML. A MixML module is like an ML structure in which some of the components are specified but not defined. In other words, it unifies the ML structure and signature languages into one. MixML seamlessly integrates hierarchical composition, translucent ML-style data abstraction, and mixin-style recursive linking. Moreover, the design of MixML is clean and minimalist; it emphasizes how all the salient, semantically interesting features of the ML module system (and several proposed extensions to it) can be understood simply as stylized uses of a small set of orthogonal underlying constructs, with mixin composition playing a central role. We provide a declarative type system for MixML, including two important extensions: higher-order modules, and modules as first-class values. We also present a sound and complete, three-pass type-checking algorithm for this system. The operational semantics of MixML is defined by an elaboration translation into an internal core language called LTG---namely, a polymorphic lambda calculus with single-assignment references and recursive type generativity---which employs a linear type and kind system to track definedness of term and type imports.},
+  number = {1},
+  journal = {ACM Trans. Program. Lang. Syst.},
+  doi = {10.1145/2450136.2450137},
+  author = {Rossberg, Andreas and Dreyer, Derek},
+  month = apr,
+  year = {2013},
+  keywords = {abstract data types,hierarchical composability,mixin modules,ML modules,recursive modules,type systems},
+  pages = {2:1--2:84}
+}
+
+@article{Rossberg20181ML,
+  title = {{{1ML}} \textemdash{} {{Core}} and Modules United},
+  volume = {28},
+  issn = {0956-7968, 1469-7653},
+  abstract = {ML is two languages in one: there is the core, with types and expressions, and there are modules, with signatures, structures, and functors. Modules form a separate, higher-order functional language on top of the core. There are both practical and technical reasons for this stratification; yet, it creates substantial duplication in syntax and semantics, and it imposes seemingly unnecessary limits on expressiveness because it makes modules second-class citizens of the language. For example, selecting one among several possible modules implementing a given interface cannot be made a dynamic decision. Language extensions allowing modules to be packaged up as first-class values have been proposed and implemented in different variations. However, they remedy expressiveness only to some extent and tend to be even more syntactically heavyweight than using second-class modules alone. We propose a redesign of ML in which modules are truly first-class values, and core and module layers are unified into one language. In this ``1ML'', functions, functors, and even type constructors are one and the same construct; likewise, no distinction is needed between structures, records, or tuples. Or viewed the other way round, everything is just (``a mode of use of'') modules. Yet, 1ML does not require dependent types: its type structure is expressible in terms of plain System F{$\omega$}, with a minor variation of our F-ing modules approach. We introduce both an explicitly typed version of 1ML and an extension with Damas\textendash{}Milner-style implicit quantification. Type inference for this language is not complete, but, we argue, not substantially worse than for Standard ML.},
+  language = {en},
+  journal = {Journal of Functional Programming},
+  doi = {10.1017/S0956796818000205},
+  author = {Rossberg, Andreas},
+  year = {2018/ed}
+}
