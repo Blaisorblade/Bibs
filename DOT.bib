@@ -368,4 +368,36 @@ Modules are treated as ``first-class'' citizens, and therefore the system suppor
   note = {Github discussion, \url{https://gist.github.com/sstucki/3fa46d2c4ce6f54dc61c3d33fc898098}},
 }
 
-  
+@inproceedings{Schafer2015Autosubst,
+  langid = {english},
+  title = {Autosubst: {{Reasoning}} with de {{Bruijn Terms}} and {{Parallel Substitutions}}},
+  url = {https://link.springer.com/chapter/10.1007/978-3-319-22102-1_24},
+  doi = {10.1007/978-3-319-22102-1_24},
+  shorttitle = {Autosubst},
+  abstract = {Reasoning about syntax with binders plays an essential role in the formalization of the metatheory of programming languages. While the intricacies of binders can be ignored in paper proofs, formalizations involving binders tend to be heavyweight. We present a discipline for syntax with binders based on de Bruijn terms and parallel substitutions, with a decision procedure covering all assumption-free equational substitution lemmas. The approach is implemented in the Coq library Autosubst, which additionally derives substitution operations and proofs of substitution lemmas for custom term types. We demonstrate the effectiveness of the approach with several case studies, including part A of the POPLmark challenge.},
+  eventtitle = {International {{Conference}} on {{Interactive Theorem Proving}}},
+  booktitle = {Interactive {{Theorem Proving}}},
+  publisher = {{Springer, Cham}},
+  urldate = {2017-06-24},
+  date = {2015-08-24},
+  year = {2015},
+  pages = {359-374},
+  author = {Schäfer, Steven and Tebbi, Tobias and Smolka, Gert},
+}
+
+@inproceedings{Stark2019Autosubst,
+  address = {{New York, NY, USA}},
+  series = {{{CPP}} 2019},
+  title = {Autosubst 2: {{Reasoning}} with {{Multi}}-Sorted {{De Bruijn Terms}} and {{Vector Substitutions}}},
+  isbn = {978-1-4503-6222-1},
+  shorttitle = {Autosubst 2},
+  abstract = {Formalising metatheory in the Coq proof assistant is tedious as reasoning with binders without native support requires a lot of uninteresting technicalities. To relieve users from so-produced boilerplate, the Autosubst framework automates working with de Bruijn terms: For each annotated inductive type, Autosubst generates a corresponding instantiation operation for parallel substitutions and a decision procedure for assumption-free substitution lemmas. However, Autosubst is implemented in Ltac, Coq's tactic language, and thus suffers from Ltac's limitations. In particular, Autosubst is restricted to Coq and unscoped, non-mutual inductive types with a single sort of variables. In this paper, we present a new version of Autosubst that overcomes these restrictions. Autosubst 2 is an external code generator, which translates second-order HOAS specifications into potentially mutual inductive term sorts. We extend the equational theory of Autosubst to the case of mutual inductive sorts by combining the application of multiple parallel substitutions into exactly one instantiation operation for each sort, i.e. we parallelise substitutions to vector substitutions. The resulting equational theory is both simpler and more expressive than that of the original Autosubst framework and allows us to present an even more elegant proof of part A of the POPLMark challenge.},
+  booktitle = {Proceedings of the 8th {{ACM SIGPLAN International Conference}} on {{Certified Programs}} and {{Proofs}}},
+  publisher = {{ACM}},
+  doi = {10.1145/3293880.3294101},
+  author = {Stark, Kathrin and Sch{\"a}fer, Steven and Kaiser, Jonas},
+  year = {2019},
+  keywords = {de Bruijn repersentation,multi-sorted terms,parallel substiutions,sigma-calculus},
+  pages = {166--180}
+}
+
