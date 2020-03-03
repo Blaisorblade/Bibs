@@ -86,6 +86,24 @@
   series = {Lecture {{Notes}} in {{Computer Science}}}
 }
 
+@article{Abbott2005Containers,
+  title = {Containers: {{Constructing}} Strictly Positive Types},
+  shorttitle = {Containers},
+  author = {Abbott, Michael and Altenkirch, Thorsten and Ghani, Neil},
+  year = {2005},
+  month = sep,
+  volume = {342},
+  pages = {3--27},
+  issn = {0304-3975},
+  doi = {10.1016/j.tcs.2005.06.002},
+  abstract = {We introduce the notion of a Martin-L{\"o}f category\textemdash{}a locally cartesian closed category with disjoint coproducts and initial algebras of container functors (the categorical analogue of W-types)\textemdash{}and then establish that nested strictly positive inductive and coinductive types, which we call strictly positive types, exist in any Martin-L{\"o}f category. Central to our development are the notions of containers and container functors. These provide a new conceptual analysis of data structures and polymorphic functions by exploiting dependent type theory as a convenient way to define constructions in Martin-L{\"o}f categories. We also show that morphisms between containers can be full and faithfully interpreted as polymorphic functions (i.e.natural transformations) and that, in the presence of W-types, all strictly positive types (including nested inductive and coinductive types) give rise to containers.},
+  journal = {Theoretical Computer Science},
+  keywords = {Category theory,Coinduction,Container functors,Final coalgebras,Induction,Initial algebras,Type theory,W-Types},
+  language = {en},
+  number = {1},
+  series = {Applied {{Semantics}}: {{Selected Topics}}}
+}
+
 @article{Abbott2005data,
   title = {{$\partial$} for {{Data}}: {{Differentiating Data Structures}}},
   shorttitle = {{$\partial$} for {{Data}}},
@@ -223,6 +241,19 @@
   journal = {arXiv:1902.06097 [cs, math]},
   keywords = {03F05,Computer Science - Logic in Computer Science,Computer Science - Programming Languages,F.3.2,F.4.1,Mathematics - Logic},
   primaryClass = {cs, math}
+}
+
+@article{Abel2019POPLMark,
+  title = {{{POPLMark}} Reloaded: {{Mechanizing}} Proofs by Logical Relations},
+  shorttitle = {{{POPLMark}} Reloaded},
+  author = {Abel, Andreas and Allais, Guillaume and Hameer, Aliya and Pientka, Brigitte and Momigliano, Alberto and Sch{\"a}fer, Steven and Stark, Kathrin},
+  year = {2019/ed},
+  volume = {29},
+  issn = {0956-7968, 1469-7653},
+  doi = {10.1017/S0956796819000170},
+  abstract = {We propose a new collection of benchmark problems in mechanizing the metatheory of programming languages, in order to compare and push the state of the art of proof assistants. In particular, we focus on proofs using logical relations (LRs) and propose establishing strong normalization of a simply typed calculus with a proof by Kripke-style LRs as a benchmark. We give a modern view of this well-understood problem by formulating our LR on well-typed terms. Using this case study, we share some of the lessons learned tackling this problem in different dependently typed proof environments. In particular, we consider the mechanization in Beluga, a proof environment that supports higher-order abstract syntax encodings and contrast it to the development and strategies used in general-purpose proof assistants such as Coq and Agda. The goal of this paper is to engage the community in discussions on what support in proof environments is needed to truly bring mechanized metatheory to the masses and engage said community in the crafting of future benchmarks.},
+  journal = {Journal of Functional Programming},
+  language = {en}
 }
 
 @article{Abramsky2000Handbook,
@@ -2037,6 +2068,36 @@ are. A brief history of quasiquotation is included.},
   number = {5}
 }
 
+@article{Biernacki2017Handle,
+  title = {Handle with Care: Relational Interpretation of Algebraic Effects and Handlers},
+  shorttitle = {Handle with Care},
+  author = {Biernacki, Dariusz and Pir{\'o}g, Maciej and Polesiuk, Piotr and Sieczkowski, Filip},
+  year = {2017},
+  month = dec,
+  volume = {2},
+  pages = {8:1--8:30},
+  doi = {10.1145/3158096},
+  abstract = {Algebraic effects and handlers have received a lot of attention recently, both from the theoretical point of view and in practical language design. This stems from the fact that algebraic effects give the programmer unprecedented freedom to define, combine, and interpret computational effects. This plenty-of-rope, however, demands not only a deep understanding of the underlying semantics, but also access to practical means of reasoning about effectful code, including correctness and program equivalence. In this paper we tackle this problem by constructing a step-indexed relational interpretation of a call-by-value calculus with algebraic effect handlers and a row-based polymorphic type-and-effect system. Our calculus, while striving for simplicity, enjoys desirable theoretical properties, and is close to the cores of programming languages with algebraic effects used in the wild, while the logical relation we build for it can be used to reason about non-trivial properties, such as contextual equivalence and contextual approximation of programs. Our development has been fully formalised in the Coq proof assistant.},
+  journal = {Proceedings of the ACM on Programming Languages},
+  keywords = {algebraic effect,logical relation,row polymorphism},
+  number = {POPL}
+}
+
+@article{Biernacki2019Binders,
+  title = {Binders by Day, Labels by Night: Effect Instances via Lexically Scoped Handlers},
+  shorttitle = {Binders by Day, Labels by Night},
+  author = {Biernacki, Dariusz and Pir{\'o}g, Maciej and Polesiuk, Piotr and Sieczkowski, Filip},
+  year = {2019},
+  month = dec,
+  volume = {4},
+  pages = {48:1--48:29},
+  doi = {10.1145/3371116},
+  abstract = {Handlers of algebraic effects aspire to be a practical and robust programming construct that allows one to define, use, and combine different computational effects. Interestingly, a critical problem that still bars the way to their popular adoption is how to combine different uses of the same effect in a program, particularly in a language with a static type-and-effect system. For example, it is rudimentary to define the ``mutable memory cell'' effect as a pair of operations, put and get, together with a handler, but it is far from obvious how to use this effect a number of times to operate a number of memory cells in a single context. In this paper, we propose a solution based on lexically scoped effects in which each use (an ``instance'') of an effect can be singled out by name, bound by an enclosing handler and tracked in the type of the expression. Such a setting proves to be delicate with respect to the choice of semantics, as it depends on the explosive mixture of effects, polymorphism, and reduction under binders. Hence, we devise a novel approach to Kripke-style logical relations that can deal with open terms, which allows us to prove the desired properties of our calculus. We formalise our core results in Coq, and introduce an experimental surface-level programming language to show that our approach is applicable in practice.},
+  journal = {Proceedings of the ACM on Programming Languages},
+  keywords = {algebraic effects,effect handlers,logical relations},
+  number = {POPL}
+}
+
 @article{Bille2005survey,
   title = {A Survey on Tree Edit Distance and Related Problems},
   author = {Bille, Philip},
@@ -2457,6 +2518,20 @@ Such a notion has remarkable consequences: (1) Choosing the second-order typed l
   isbn = {978-1-60558-508-6},
   keywords = {arity,calling conventions,intermediate language,strictness,unboxing,uncurrying},
   series = {Haskell '09}
+}
+
+@article{Booij2017Parametricity,
+  title = {Parametricity, Automorphisms of the Universe, and Excluded Middle},
+  author = {Booij, Auke Bart and Escard{\'o}, Mart{\'i}n H{\"o}tzel and Lumsdaine, Peter LeFanu and Shulman, Michael},
+  year = {2017},
+  month = jun,
+  abstract = {It is known that one can construct non-parametric functions by assuming classical axioms. Our work is a converse to that: we prove classical axioms in dependent type theory assuming specific instances of non-parametricity. We also address the interaction between classical axioms and the existence of automorphisms of a type universe. We work over intensional Martin-L\textbackslash{}"of dependent type theory, and in some results assume further principles including function extensionality, propositional extensionality, propositional truncation, and the univalence axiom.},
+  archivePrefix = {arXiv},
+  eprint = {1701.05617},
+  eprinttype = {arxiv},
+  journal = {arXiv:1701.05617 [cs, math]},
+  keywords = {Computer Science - Logic in Computer Science,F.4.1,Mathematics - Logic},
+  primaryClass = {cs, math}
 }
 
 @inproceedings{Boyland2003Checking,
@@ -3673,6 +3748,58 @@ Our analysis improves on previous work [5, 15, 4] in that: (1) it treats both hi
   series = {Logic, {{Methodology}} and {{Philosophy}} of {{Science IX}}}
 }
 
+@article{Coquand1997Intuitionistic,
+  title = {Intuitionistic Model Constructions and Normalization Proofs},
+  author = {Coquand, Thierry and Dybjer, Peter},
+  year = {1997},
+  month = feb,
+  volume = {7},
+  pages = {75--94},
+  issn = {1469-8072, 0960-1295},
+  doi = {10.1017/S0960129596002150},
+  abstract = {The traditional notions of strong and weak normalization
+refer to properties of a binary
+reduction relation. In this paper we explore an alternative approach
+to
+normalization, in
+which we bypass the reduction relation and instead focus on the
+normalization function, that
+is, the function that maps a term to its normal form. We work in an intuitionistic
+metalanguage, and characterize a normalization function as an algorithm
+that picks a
+canonical representative from the equivalence class of convertible terms.
+This
+means that we also get a decision algorithm for convertibility.
+Such a normalization function can be constructed by building an appropriate
+model
+and a function quote, which inverts the interpretation function.
+The
+normalization function is then
+obtained by composing the quote function with the interpretation
+function.
+We also discuss
+how to get a simple proof of the property that constructors are one-to-one,
+which
+is usually
+obtained as a corollary of Church\textendash{}Rosser and normalization in the
+traditional sense.
+We illustrate this approach by showing how a glueing model (closely related
+to the
+glueing
+construction used in category theory) gives rise to a normalization algorithm
+for a
+combinatory formulation of G{\"o}del System T. We then show how the method
+extends in a
+straightforward way when we add cartesian products and disjoint unions
+(full
+intuitionistic
+propositional logic under a Curry\textendash{}Howard interpretation) and transfinite
+inductive types such as the Brouwer ordinals.},
+  journal = {Mathematical Structures in Computer Science},
+  language = {en},
+  number = {1}
+}
+
 @article{Coquand2002Formalised,
   title = {A {{Formalised Proof}} of the {{Soundness}} and {{Completeness}} of a {{Simply Typed Lambda}}-{{Calculus}} with {{Explicit Substitutions}}},
   author = {Coquand, Catarina},
@@ -3702,6 +3829,21 @@ Our analysis improves on previous work [5, 15, 4] in that: (1) it treats both hi
   keywords = {Dependent type theory,proof assistants,Univalence},
   number = {4},
   series = {In Memory of {{N}}.{{G}}. ({{Dick}}) de {{Bruijn}} (1918\textendash{}2012)}
+}
+
+@article{Coquand2019Canonicity,
+  title = {Canonicity and Normalization for Dependent Type Theory},
+  author = {Coquand, Thierry},
+  year = {2019},
+  month = jul,
+  volume = {777},
+  pages = {184--191},
+  issn = {0304-3975},
+  doi = {10.1016/j.tcs.2019.01.015},
+  journal = {Theoretical Computer Science},
+  keywords = {Dependent type theory,Higher-order abstract syntax,Normalisation proof},
+  language = {en},
+  series = {In Memory of {{Maurice Nivat}}, a Founding Father of {{Theoretical Computer Science}} - {{Part I}}}
 }
 
 @misc{coursera2013Brief,
@@ -5510,6 +5652,23 @@ A thorough analysis of the abstract machine for CPS terms show that the actions 
   number = {ICFP}
 }
 
+@inproceedings{Forster2019Callbypushvalue,
+  title = {Call-by-Push-Value in {{Coq}}: Operational, Equational, and Denotational Theory},
+  shorttitle = {Call-by-Push-Value in {{Coq}}},
+  booktitle = {Proceedings of the 8th {{ACM SIGPLAN International Conference}} on {{Certified Programs}} and {{Proofs}}},
+  author = {Forster, Yannick and Sch{\"a}fer, Steven and Spies, Simon and Stark, Kathrin},
+  year = {2019},
+  month = jan,
+  pages = {118--131},
+  publisher = {{Association for Computing Machinery}},
+  address = {{Cascais, Portugal}},
+  doi = {10.1145/3293880.3294097},
+  abstract = {Call-by-push-value (CBPV) is an idealised calculus for functional and imperative programming, introduced as a subsuming paradigm for both call-by-value (CBV) and call-by-name (CBN). We formalise weak and strong operational semantics for (effect-free) CBPV, define its equational theory, and verify adequacy for the standard set/algebra denotational semantics. Furthermore, we prove normalisation of the standard reduction, confluence of strong reduction, strong normalisation using Kripke logical relations, and soundness of the equational theory using logical equivalence. We adapt and verify the known translations from CBV and CBN into CBPV for strong reduction. This yields, for instance, proofs of strong normalisation and confluence for the full {$\lambda$}-calculus with sums and products. Thanks to the automation provided by Coq and the Autosubst 2 framework, there is little formalisation overhead compared to detailed paper proofs.},
+  isbn = {978-1-4503-6222-1},
+  keywords = {Call-by-push-value,Coq,denotational semantics,equational theory,formalisation,operational semantics,strong normalisation,type theory},
+  series = {{{CPP}} 2019}
+}
+
 @inproceedings{Foster2005combinators,
   title = {Combinators for {{Bi}}-Directional {{Tree Transformations}}: {{A Linguistic Approach}} to the {{View Update Problem}}},
   shorttitle = {Combinators for {{Bi}}-Directional {{Tree Transformations}}},
@@ -6111,6 +6270,22 @@ We introduce these ideas in the setting of the simply typed lambda calculus. We 
   series = {{{ICFP}} '11}
 }
 
+@article{Gonthier2013Engineering,
+  title = {Engineering Mathematics: The Odd Order Theorem Proof},
+  shorttitle = {Engineering Mathematics},
+  author = {Gonthier, Georges},
+  year = {2013},
+  month = jan,
+  volume = {48},
+  pages = {1--2},
+  issn = {0362-1340},
+  doi = {10.1145/2480359.2429071},
+  abstract = {Even with the assistance of computer tools, the formalized de-scription and verification of research-level mathematics remains a daunting task, not least because of the talent with which mathema-ticians combine diverse theories to achieve their ends. By combin-ing tools and techniques from type theory, language design, and software engineering we have managed to capture enough of these practices to formalize the proof of the Odd Order theorem, a landmark result in Group Theory.},
+  journal = {ACM SIGPLAN Notices},
+  keywords = {coq,group theory,mathematical components,proof engineering,ssreflect.,theorem proving},
+  number = {1}
+}
+
 @article{Gonthier2013how,
   title = {How to Make Ad Hoc Proof Automation Less Ad Hoc},
   author = {Gonthier, Georges and Ziliani, Beta and Nanevski, Aleksandar and Dreyer, Derek},
@@ -6523,20 +6698,6 @@ We introduce these ideas in the setting of the simply typed lambda calculus. We 
   keywords = {call-by-push-value (CBPV),demanded computation graph (DCG) incremental computation,laziness,self-adjusting computation,thunks}
 }
 
-@article{Hammer2015incremental,
-  title = {Incremental {{Computation}} with {{Names}}},
-  author = {Hammer, Matthew A. and Dunfield, Joshua and Headley, Kyle and Labich, Nicholas and Foster, Jeffrey S. and Hicks, Michael and Van Horn, David},
-  year = {2015},
-  month = mar,
-  abstract = {Over the past thirty years, there has been significant progress in developing general-purpose, language-based approaches to incremental computation, which aims to efficiently update the result of a computation when an input is changed. A key design challenge in such approaches is how to provide efficient incremental support for a broad range of programs. In this paper, we argue that first-class names are a critical linguistic feature for efficient incremental computation. Names identify computations to be reused across differing runs of a program, and making them first class gives programmers a high level of control over reuse. We demonstrate the benefits of names by presenting Nominal Adapton, an ML-like language for incremental computation with names. We describe how to use Nominal Adapton to efficiently incrementalize several standard programming patterns---including maps, folds, and unfolds---and show how to build efficient, incremental probabilistic trees and tries. Since Nominal Adapton's implementation is subtle, we formalize it as a core calculus and prove it is from-scratch consistent, meaning it always produces the same answer as simply re-running the computation. Finally, we demonstrate that Nominal Adapton can provide large speedups over both from-scratch computation and Adapton, a previous state-of-the-art incremental system.},
-  archivePrefix = {arXiv},
-  eprint = {1503.07792},
-  eprinttype = {arxiv},
-  journal = {arXiv:1503.07792 [cs]},
-  keywords = {_tablet,Computer Science - Programming Languages},
-  primaryClass = {cs}
-}
-
 @inproceedings{Hammer2015Incremental,
   title = {Incremental Computation with Names},
   booktitle = {Proceedings of the 2015 {{ACM SIGPLAN International Conference}} on {{Object}}-{{Oriented Programming}}, {{Systems}}, {{Languages}}, and {{Applications}}},
@@ -6550,6 +6711,20 @@ We introduce these ideas in the setting of the simply typed lambda calculus. We 
   isbn = {978-1-4503-3689-5},
   keywords = {call-by-push-value (CBPV),demanded computation graph (DCG),incremental compu- tation,laziness,memoization,nominal matching,self-adjusting computation,structural matching,thunks},
   series = {{{OOPSLA}} 2015}
+}
+
+@article{Hammer2015incremental,
+  title = {Incremental {{Computation}} with {{Names}}},
+  author = {Hammer, Matthew A. and Dunfield, Joshua and Headley, Kyle and Labich, Nicholas and Foster, Jeffrey S. and Hicks, Michael and Van Horn, David},
+  year = {2015},
+  month = mar,
+  abstract = {Over the past thirty years, there has been significant progress in developing general-purpose, language-based approaches to incremental computation, which aims to efficiently update the result of a computation when an input is changed. A key design challenge in such approaches is how to provide efficient incremental support for a broad range of programs. In this paper, we argue that first-class names are a critical linguistic feature for efficient incremental computation. Names identify computations to be reused across differing runs of a program, and making them first class gives programmers a high level of control over reuse. We demonstrate the benefits of names by presenting Nominal Adapton, an ML-like language for incremental computation with names. We describe how to use Nominal Adapton to efficiently incrementalize several standard programming patterns---including maps, folds, and unfolds---and show how to build efficient, incremental probabilistic trees and tries. Since Nominal Adapton's implementation is subtle, we formalize it as a core calculus and prove it is from-scratch consistent, meaning it always produces the same answer as simply re-running the computation. Finally, we demonstrate that Nominal Adapton can provide large speedups over both from-scratch computation and Adapton, a previous state-of-the-art incremental system.},
+  archivePrefix = {arXiv},
+  eprint = {1503.07792},
+  eprinttype = {arxiv},
+  journal = {arXiv:1503.07792 [cs]},
+  keywords = {_tablet,Computer Science - Programming Languages},
+  primaryClass = {cs}
 }
 
 @article{Hammer2016Refinement,
@@ -7168,6 +7343,21 @@ Haskell's type system essentially corresponds to the simply typed lambda calculu
   series = {{{GPCE}} '08}
 }
 
+@inproceedings{Hofer2010Modular,
+  title = {Modular Domain-Specific Language Components in {{Scala}}},
+  booktitle = {Proceedings of the {{Ninth International Conference}} on {{Generative Programming}} and {{Component Engineering}}},
+  author = {Hofer, Christian and Ostermann, Klaus},
+  year = {2010},
+  pages = {83--92},
+  publisher = {{ACM}},
+  address = {{Eindhoven, The Netherlands}},
+  doi = {10.1145/1868294.1868307},
+  abstract = {Programs in domain-\-specific embedded languages (DSELs) can be represented in the host language in different ways, for instance implicitly as libraries, or explicitly in the form of abstract syntax trees. Each of these representations has its own strengths and weaknesses. The implicit approach has good composability properties, whereas the explicit approach allows more freedom in making syntactic program transformations. Traditional designs for DSELs fix the form of representation, which means that it is not possible to choose the best representation for a particular interpretation or transformation. We propose a new design for implementing DSELs in Scala which makes it easy to use different program representations at the same time. It enables the DSL implementor to define modular language components and to compose transformations and interpretations for them.},
+  isbn = {978-1-4503-0154-1},
+  keywords = {domain-specific languages,embedded languages,scala,term representation,visitor pattern},
+  series = {{{GPCE}} '10}
+}
+
 @inproceedings{Hofer2010modular,
   title = {Modular {{Domain}}-Specific {{Language Components}} in {{Scala}}},
   booktitle = {Proceedings of the {{Ninth International Conference}} on {{Generative Programming}} and {{Component Engineering}}},
@@ -7183,19 +7373,23 @@ Haskell's type system essentially corresponds to the simply typed lambda calculu
   series = {{{GPCE}} '10}
 }
 
-@inproceedings{Hofer2010Modular,
-  title = {Modular Domain-Specific Language Components in {{Scala}}},
-  booktitle = {Proceedings of the {{Ninth International Conference}} on {{Generative Programming}} and {{Component Engineering}}},
-  author = {Hofer, Christian and Ostermann, Klaus},
-  year = {2010},
-  pages = {83--92},
-  publisher = {{ACM}},
-  address = {{Eindhoven, The Netherlands}},
-  doi = {10.1145/1868294.1868307},
-  abstract = {Programs in domain-\-specific embedded languages (DSELs) can be represented in the host language in different ways, for instance implicitly as libraries, or explicitly in the form of abstract syntax trees. Each of these representations has its own strengths and weaknesses. The implicit approach has good composability properties, whereas the explicit approach allows more freedom in making syntactic program transformations. Traditional designs for DSELs fix the form of representation, which means that it is not possible to choose the best representation for a particular interpretation or transformation. We propose a new design for implementing DSELs in Scala which makes it easy to use different program representations at the same time. It enables the DSL implementor to define modular language components and to compose transformations and interpretations for them.},
-  isbn = {978-1-4503-0154-1},
-  keywords = {domain-specific languages,embedded languages,scala,term representation,visitor pattern},
-  series = {{{GPCE}} '10}
+@phdthesis{Hofmann1995Extensional,
+  title = {Extensional Concepts in Intensional Type Theory},
+  author = {Hofmann, Martin},
+  year = {1995},
+  abstract = {Theories of dependent types have been proposed as a foundation of constructive mathematics and as a framework in which to construct certified programs. In these applications an important role is played by identity types which internalise equality and therefore are essential for accommodating proofs and programs in the same formal system.
+
+This thesis attempts to reconcile the two different ways that type theories deal with identity types. In extensional type theory the propositional equality induced by the identity types is identified with definitional equality, i.e. conversion. This renders type-checking and well-formedness of propositions undecidable and leads to non-termination in the presence of universes. In intensional type theory propositional equality is coarser than definitional equality, the latter being confined to definitional expansion and normalisation. Then type-checking and well-formedness are decidable, and this variant is therefore adopted by most implementations.
+
+However, the identity type in intensional type theory is not powerful enough for formalisation of mathematics and program development. Notably, it does not identify pointwise equal functions (functional extensionality) and provides no means of redefining equality on a type as a given relation, i.e. quotient types. We call such capabilities extensional concepts. Other extensional concepts of interest are uniqueness of proofs and more specifically of equality proofs, subset types, and propositional extensionality---the identification of equivalent propositions. In this work we investigate to what extent these extensional concepts may be added to intensional type theory without sacrificing decidability and existence of canonical forms. The method we use is the translation of identity types into equivalence relations defined by induction on the type structure. In this way type theory with extensional concepts can be understood as a high-level language for working with equivalence relations instead of equality. Such translations of type theory into itself turn out to be best described using categorical models of type theory.
+
+We thus begin with a thorough treatment of categorical models with particular emphasis on the interpretation of type-theoretic syntax in such models. We then show how pairs of types and predicates can be organised into a model of type theory in which subset types are available and in which any two proofs of a proposition are equal. This model has applications in the areas of program extraction from proofs and modules for functional programs. For us its main purpose is to clarify the idea of syntactic translations via categorical model constructions.
+
+The main result of the thesis consists of the construction of two models in which functional extensionality and quotient types are available. In the first one types are modelled by types together with proposition-valued partial equivalence relations. This model is rather simple and in addition provides subset types and propositional extensionality. However, it does not furnish proper dependent types such as vectors or matrices. We try to overcome this disadvantage by using another model based on families of type-valued equivalence relations which is however much more complicated and validates certain conversion rules only up to propositional equality.
+
+We illustrate the use of these models by several small examples taken from both formalised mathematics and program development.
+
+We also establish various syntactic properties of propositional equality including a proof of the undecidability of typing in extensional type theory and a correspondence between derivations in extensional type theory and terms in intensional type theory with extensional concepts added. Furthermore we settle affirmatively the hitherto open question of the independence of unicity of equality proofs in intensional type theory which implies that the addition of pattern matching to intensional type theory does not yield a conservative extension.}
 }
 
 @misc{Hofmann1995extensional,
@@ -7216,25 +7410,6 @@ We illustrate the use of these models by several small examples taken from both 
 
 We also establish various syntactic properties of propositional equality including a proof of the undecidability of typing in extensional type theory and a correspondence between derivations in extensional type theory and terms in intensional type theory with extensional concepts added. Furthermore we settle affirmatively the hitherto open question of the independence of unicity of equality proofs in intensional type theory which implies that the addition of pattern matching to intensional type theory does not yield a conservative extension.},
   howpublished = {http://www.lfcs.inf.ed.ac.uk/reports/95/ECS-LFCS-95-327/index.html}
-}
-
-@phdthesis{Hofmann1995Extensional,
-  title = {Extensional Concepts in Intensional Type Theory},
-  author = {Hofmann, Martin},
-  year = {1995},
-  abstract = {Theories of dependent types have been proposed as a foundation of constructive mathematics and as a framework in which to construct certified programs. In these applications an important role is played by identity types which internalise equality and therefore are essential for accommodating proofs and programs in the same formal system.
-
-This thesis attempts to reconcile the two different ways that type theories deal with identity types. In extensional type theory the propositional equality induced by the identity types is identified with definitional equality, i.e. conversion. This renders type-checking and well-formedness of propositions undecidable and leads to non-termination in the presence of universes. In intensional type theory propositional equality is coarser than definitional equality, the latter being confined to definitional expansion and normalisation. Then type-checking and well-formedness are decidable, and this variant is therefore adopted by most implementations.
-
-However, the identity type in intensional type theory is not powerful enough for formalisation of mathematics and program development. Notably, it does not identify pointwise equal functions (functional extensionality) and provides no means of redefining equality on a type as a given relation, i.e. quotient types. We call such capabilities extensional concepts. Other extensional concepts of interest are uniqueness of proofs and more specifically of equality proofs, subset types, and propositional extensionality---the identification of equivalent propositions. In this work we investigate to what extent these extensional concepts may be added to intensional type theory without sacrificing decidability and existence of canonical forms. The method we use is the translation of identity types into equivalence relations defined by induction on the type structure. In this way type theory with extensional concepts can be understood as a high-level language for working with equivalence relations instead of equality. Such translations of type theory into itself turn out to be best described using categorical models of type theory.
-
-We thus begin with a thorough treatment of categorical models with particular emphasis on the interpretation of type-theoretic syntax in such models. We then show how pairs of types and predicates can be organised into a model of type theory in which subset types are available and in which any two proofs of a proposition are equal. This model has applications in the areas of program extraction from proofs and modules for functional programs. For us its main purpose is to clarify the idea of syntactic translations via categorical model constructions.
-
-The main result of the thesis consists of the construction of two models in which functional extensionality and quotient types are available. In the first one types are modelled by types together with proposition-valued partial equivalence relations. This model is rather simple and in addition provides subset types and propositional extensionality. However, it does not furnish proper dependent types such as vectors or matrices. We try to overcome this disadvantage by using another model based on families of type-valued equivalence relations which is however much more complicated and validates certain conversion rules only up to propositional equality.
-
-We illustrate the use of these models by several small examples taken from both formalised mathematics and program development.
-
-We also establish various syntactic properties of propositional equality including a proof of the undecidability of typing in extensional type theory and a correspondence between derivations in extensional type theory and terms in intensional type theory with extensional concepts added. Furthermore we settle affirmatively the hitherto open question of the independence of unicity of equality proofs in intensional type theory which implies that the addition of pattern matching to intensional type theory does not yield a conservative extension.}
 }
 
 @incollection{Hofmann1997syntax,
@@ -8159,6 +8334,21 @@ Proofs of all theorems in the paper have been verified using the Coq theorem pro
   language = {en}
 }
 
+@article{Jung2019future,
+  title = {The Future Is Ours: Prophecy Variables in Separation Logic},
+  shorttitle = {The Future Is Ours},
+  author = {Jung, Ralf and Lepigre, Rodolphe and Parthasarathy, Gaurav and Rapoport, Marianna and Timany, Amin and Dreyer, Derek and Jacobs, Bart},
+  year = {2019},
+  month = dec,
+  volume = {4},
+  pages = {45:1--45:32},
+  doi = {10.1145/3371113},
+  abstract = {Early in the development of Hoare logic, Owicki and Gries introduced auxiliary variables as a way of encoding information about the history of a program's execution that is useful for verifying its correctness. Over a decade later, Abadi and Lamport observed that it is sometimes also necessary to know in advance what a program will do in the future. To address this need, they proposed prophecy variables, originally as a proof technique for refinement mappings between state machines. However, despite the fact that prophecy variables are a clearly useful reasoning mechanism, there is (surprisingly) almost no work that attempts to integrate them into Hoare logic. In this paper, we present the first account of prophecy variables in a Hoare-style program logic that is flexible enough to verify logical atomicity (a relative of linearizability) for classic examples from the concurrency literature like RDCSS and the Herlihy-Wing queue. Our account is formalized in the Iris framework for separation logic in Coq. It makes essential use of ownership to encode the exclusive right to resolve a prophecy, which in turn enables us to enforce soundness of prophecies with a very simple set of proof rules.},
+  journal = {Proceedings of the ACM on Programming Languages},
+  keywords = {Iris,linearizability,logical atomicity,Prophecy variables,separation logic},
+  number = {POPL}
+}
+
 @article{K2016LivenessBased,
   title = {Liveness-{{Based Garbage Collection}} for {{Lazy Languages}}},
   author = {K, Prasanna Kumar and Sanyal, Amitabha and Karkare, Amey},
@@ -8234,6 +8424,22 @@ Proofs of all theorems in the paper have been verified using the Coq theorem pro
   isbn = {978-3-95977-035-4},
   keywords = {concurrency,release-acquire,separation logic,Weak memory models},
   series = {Leibniz {{International Proceedings}} in {{Informatics}} ({{LIPIcs}})}
+}
+
+@inproceedings{Kaiser2018Binder,
+  title = {Binder Aware Recursion over Well-Scoped de {{Bruijn}} Syntax},
+  booktitle = {Proceedings of the 7th {{ACM SIGPLAN International Conference}} on {{Certified Programs}} and {{Proofs}}},
+  author = {Kaiser, Jonas and Sch{\"a}fer, Steven and Stark, Kathrin},
+  year = {2018},
+  month = jan,
+  pages = {293--306},
+  publisher = {{Association for Computing Machinery}},
+  address = {{Los Angeles, CA, USA}},
+  doi = {10.1145/3167098},
+  abstract = {The de Bruijn representation of syntax with binding is commonly used, but flawed when it comes to recursion. As the structural recursion principle associated to an inductive type of expressions is unaware of the binding discipline, each recursive definition requires a separate proof of compatibility with variable instantiation. We solve this problem by extending Allais' notion of syntax traversals to obtain a framework for instantiation-compatible recursion. The framework is general enough to handle multivariate, potentially mutually recursive syntactic systems. With our framework we define variable renaming and instantiation, syntax directed typing and certain unary logical relations for System F. These definitons lead to concise proofs of type preservation, as well as weak and strong normalisation. Our framework is designed to serve as the theoretical foundation of future versions of the Autosubst Coq library. All developments and case studies are formalised in the Coq proof assistant.},
+  isbn = {978-1-4503-5586-5},
+  keywords = {parallel substitutions,recursion principle,System F,well-scoped de Bruijn representation},
+  series = {{{CPP}} 2018}
 }
 
 @inproceedings{Kalibera2013Rigorous,
@@ -9036,6 +9242,22 @@ From the viewpoint of infinitary rewriting, the B{\"o}hm model of the lambda cal
   keywords = {Artificial Intelligence (incl. Robotics),Computer Hardware,Logics and Meanings of Programs,Mathematical Logic and Formal Languages,Software Engineering,Special Purpose and Application-Based Systems},
   language = {en},
   number = {7358},
+  series = {Lecture {{Notes}} in {{Computer Science}}}
+}
+
+@inproceedings{Lambek1986Cartesian,
+  title = {Cartesian Closed Categories and Typed {$\lambda$}-Calculi},
+  booktitle = {Combinators and {{Functional Programming Languages}}},
+  author = {Lambek, J.},
+  editor = {Cousineau, Guy and Curien, Pierre-Louis and Robinet, Bernard},
+  year = {1986},
+  pages = {136--175},
+  publisher = {{Springer}},
+  address = {{Berlin, Heidelberg}},
+  doi = {10.1007/3-540-17184-3_44},
+  isbn = {978-3-540-47253-7},
+  keywords = {Congruence Relation,Deduction Theorem,Deductive System,Internal Power,Polynomial Expression},
+  language = {en},
   series = {Lecture {{Notes}} in {{Computer Science}}}
 }
 
@@ -13685,6 +13907,37 @@ performs renaming},
   primaryClass = {cs}
 }
 
+@article{Selsam2020Tabled,
+  title = {Tabled {{Typeclass Resolution}}},
+  author = {Selsam, Daniel and Ullrich, Sebastian and {de Moura}, Leonardo},
+  year = {2020},
+  month = jan,
+  abstract = {Typeclasses provide an elegant and effective way of managing ad-hoc polymorphism in both programming languages and interactive proof assistants. However, the increasingly sophisticated uses of typeclasses within proof assistants, especially within Lean's burgeoning mathematics library, mathlib, have elevated once-theoretical limitations of existing typeclass resolution procedures into major impediments to ongoing progress. The two most devastating limitations of existing procedures are exponential running times in the presence of diamonds and divergence in the presence of cycles. We present a new procedure, tabled typeclass resolution, that solves both problems by tabling, which is a generalization of memoizing originally introduced to address similar limitations of early logic programming systems. We have implemented our procedure for the upcoming version (v4) of Lean, and have confirmed empirically that our implementation is exponentially faster than existing systems in the presence of diamonds. Although tabling is notoriously difficult to implement, our procedure is notably lightweight and could easily be implemented in other systems. We hope our new procedure facilitates even more sophisticated uses of typeclasses in both software development and interactive theorem proving.},
+  archivePrefix = {arXiv},
+  eprint = {2001.04301},
+  eprinttype = {arxiv},
+  journal = {arXiv:2001.04301 [cs]},
+  keywords = {Computer Science - Logic in Computer Science,Computer Science - Programming Languages},
+  primaryClass = {cs}
+}
+
+@inproceedings{Senizergues2001Applications,
+  title = {Some {{Applications}} of the {{Decidability}} of {{DPDA}}'s {{Equivalence}}},
+  booktitle = {Machines, {{Computations}}, and {{Universality}}},
+  author = {S{\'e}nizergues, G{\'e}raud},
+  editor = {Margenstern, Maurice and Rogozhin, Yurii},
+  year = {2001},
+  pages = {114--132},
+  publisher = {{Springer}},
+  address = {{Berlin, Heidelberg}},
+  doi = {10.1007/3-540-45132-3_7},
+  abstract = {The equivalence problem for deterministic pushdown automata has been shown decidable in [S{\'e}n97c,{\'e}n97a,S{\'e}n97b,{\'e}n01,Sti99]. We give some applications of this decidability result to other problems arising in the following areas of theoretical computer science: programming languages theory infinite graph theory Thue-systems},
+  isbn = {978-3-540-45132-7},
+  keywords = {Congruence Class,Equivalence Problem,Formal Power Series,Isomorphism Problem,System Science},
+  language = {en},
+  series = {Lecture {{Notes}} in {{Computer Science}}}
+}
+
 @inproceedings{Sergey2014Modular,
   title = {Modular, {{Higher}}-Order {{Cardinality Analysis}} in {{Theory}} and {{Practice}}},
   booktitle = {Proceedings of the 41st {{ACM SIGPLAN}}-{{SIGACT Symposium}} on {{Principles}} of {{Programming Languages}}},
@@ -14101,6 +14354,21 @@ parameterized modules.},
   series = {{{OOPSLA}} '12}
 }
 
+@inproceedings{Solomon1978Type,
+  title = {Type Definitions with Parameters},
+  booktitle = {Proceedings of the 5th {{ACM SIGACT}}-{{SIGPLAN}} Symposium on {{Principles}} of Programming Languages},
+  author = {Solomon, Marvin},
+  year = {1978},
+  month = jan,
+  pages = {31--38},
+  publisher = {{Association for Computing Machinery}},
+  address = {{Tucson, Arizona}},
+  doi = {10.1145/512760.512765},
+  abstract = {It has long been known that recursively defined types in a highly typed language such as Algol 68 or Pascal may be tested for structural equivalence by the same algorithm that compares finite automata [5,11]. Several authors (for example, [3,8,9,16]) have proposed that classes of types be simultaneously defined by the use of parameterized type definitions, such asType list(x) = record val:x; next:{$\uparrow$}list(x) end .This paper shows that unless the use of such parameterized definitions is restricted, new (unparameterized) types may be defined which more closely resemble deterministic context-free languages. In fact, the equivalence problem for such types becomes as hard as the (currently unsolved) deterministic pushdown automaton equivalence problem. Several restrictions on type definitions are considered which allow known equivalence algorithms to be applied.},
+  isbn = {978-1-4503-7348-7},
+  series = {{{POPL}} '78}
+}
+
 @article{Soule2015river,
   title = {River: An Intermediate Language for Stream Processing},
   shorttitle = {River},
@@ -14115,6 +14383,20 @@ parameterized modules.},
   journal = {Software: Practice and Experience},
   keywords = {optimizations,stream processing},
   language = {en}
+}
+
+@article{Sozeau2019Coq,
+  title = {Coq {{Coq}} Correct! Verification of Type Checking and Erasure for {{Coq}}, in {{Coq}}},
+  author = {Sozeau, Matthieu and Boulier, Simon and Forster, Yannick and Tabareau, Nicolas and Winterhalter, Th{\'e}o},
+  year = {2019},
+  month = dec,
+  volume = {4},
+  pages = {8:1--8:28},
+  doi = {10.1145/3371076},
+  abstract = {Coq is built around a well-delimited kernel that perfoms typechecking for definitions in a variant of the Calculus of Inductive Constructions (CIC). Although the metatheory of CIC is very stable and reliable, the correctness of its implementation in Coq is less clear. Indeed, implementing an efficient type checker for CIC is a rather complex task, and many parts of the code rely on implicit invariants which can easily be broken by further evolution of the code. Therefore, on average, one critical bug has been found every year in Coq. This paper presents the first implementation of a type checker for the kernel of Coq (without the module system and template polymorphism), which is proven correct in Coq with respect to its formal specification and axiomatisation of part of its metatheory. Note that because of G{\"o}del's incompleteness theorem, there is no hope to prove completely the correctness of the specification of Coq inside Coq (in particular strong normalisation or canonicity), but it is possible to prove the correctness of the implementation assuming the correctness of the specification, thus moving from a trusted code base (TCB) to a trusted theory base (TTB) paradigm. Our work is based on the MetaCoq project which provides metaprogramming facilities to work with terms and declarations at the level of this kernel. Our type checker is based on the specification of the typing relation of the Polymorphic, Cumulative Calculus of Inductive Constructions (PCUIC) at the basis of Coq and the verification of a relatively efficient and sound type-checker for it. In addition to the kernel implementation, an essential feature of Coq is the so-called extraction: the production of executable code in functional languages from Coq definitions. We present a verified version of this subtle type-and-proof erasure step, therefore enabling the verified extraction of a safe type-checker for Coq.},
+  journal = {Proceedings of the ACM on Programming Languages},
+  keywords = {certification,proof assistants,type checker},
+  number = {POPL}
 }
 
 @inproceedings{Sperber1996realistic,
@@ -14917,6 +15199,37 @@ Modern constructive type theory is based on pure dependently typed lambda calcul
   number = {2}
 }
 
+@article{Turon2013Logical,
+  title = {Logical Relations for Fine-Grained Concurrency},
+  author = {Turon, Aaron J. and Thamsborg, Jacob and Ahmed, Amal and Birkedal, Lars and Dreyer, Derek},
+  year = {2013},
+  month = jan,
+  volume = {48},
+  pages = {343--356},
+  issn = {0362-1340},
+  doi = {10.1145/2480359.2429111},
+  abstract = {Fine-grained concurrent data structures (or FCDs) reduce the granularity of critical sections in both time and space, thus making it possible for clients to access different parts of a mutable data structure in parallel. However, the tradeoff is that the implementations of FCDs are very subtle and tricky to reason about directly. Consequently, they are carefully designed to be contextual refinements of their coarse-grained counterparts, meaning that their clients can reason about them as if all access to them were sequentialized. In this paper, we propose a new semantic model, based on Kripke logical relations, that supports direct proofs of contextual refinement in the setting of a type-safe high-level language. The key idea behind our model is to provide a simple way of expressing the "local life stories" of individual pieces of an FCD's hidden state by means of protocols that the threads concurrently accessing that state must follow. By endowing these protocols with a simple yet powerful transition structure, as well as the ability to assert invariants on both heap states and specification code, we are able to support clean and intuitive refinement proofs for the most sophisticated types of FCDs, such as conditional compare-and-set (CCAS).},
+  journal = {ACM SIGPLAN Notices},
+  keywords = {data abstraction,fine-grained concurrency,linearizability,local state,logical relations,refinement,separation logic},
+  number = {1}
+}
+
+@inproceedings{Turon2013Unifying,
+  title = {Unifying Refinement and Hoare-Style Reasoning in a Logic for Higher-Order Concurrency},
+  booktitle = {Proceedings of the 18th {{ACM SIGPLAN}} International Conference on {{Functional}} Programming},
+  author = {Turon, Aaron and Dreyer, Derek and Birkedal, Lars},
+  year = {2013},
+  month = sep,
+  pages = {377--390},
+  publisher = {{Association for Computing Machinery}},
+  address = {{Boston, Massachusetts, USA}},
+  doi = {10.1145/2500365.2500600},
+  abstract = {Modular programming and modular verification go hand in hand, but most existing logics for concurrency ignore two crucial forms of modularity: *higher-order functions*, which are essential for building reusable components, and *granularity abstraction*, a key technique for hiding the intricacies of fine-grained concurrent data structures from the clients of those data structures. In this paper, we present CaReSL, the first logic to support the use of granularity abstraction for modular verification of higher-order concurrent programs. After motivating the features of CaReSL through a variety of illustrative examples, we demonstrate its effectiveness by using it to tackle a significant case study: the first formal proof of (partial) correctness for Hendler et al.'s "flat combining" algorithm.},
+  isbn = {978-1-4503-2326-0},
+  keywords = {contextual refinement,fine-grained concurrency,higher-order functions,kripke logical relations,separation logic},
+  series = {{{ICFP}} '13}
+}
+
 @misc{Typeandscope,
   title = {Type-and-Scope Safe Programs and Their Proofs},
   howpublished = {http://dl.acm.org/citation.cfm?id=3018613\&CFID=611533572\&CFTOKEN=37240912}
@@ -15290,6 +15603,23 @@ Modern constructive type theory is based on pure dependently typed lambda calcul
   isbn = {978-1-4503-1054-3},
   keywords = {deferred type errors,system fc,type equalities},
   series = {{{ICFP}} '12}
+}
+
+@inproceedings{Vytiniotis2012Stop,
+  title = {Stop {{When You Are Almost}}-{{Full}}},
+  booktitle = {Interactive {{Theorem Proving}}},
+  author = {Vytiniotis, Dimitrios and Coquand, Thierry and Wahlstedt, David},
+  editor = {Beringer, Lennart and Felty, Amy},
+  year = {2012},
+  pages = {250--265},
+  publisher = {{Springer}},
+  address = {{Berlin, Heidelberg}},
+  doi = {10.1007/978-3-642-32347-8_17},
+  abstract = {Disjunctive well-foundedness, size-change termination, and well-quasi-orders are examples of techniques that have been successfully applied to program termination. Although these works originate in different communities, they rely on closely related principles and both employ similar arguments from Ramsey theory. At the same time there is a notable absence of these techniques in programming systems based on constructive type theory. In this paper we'd like to highlight the aforementioned connection and make the core ideas widely accessible to theoreticians and programmers, by offering a development in type theory which culminates in some novel tools for induction. Inevitably, we have to present some Ramsey-like arguments: Though similar proofs are typically classical, we offer an entirely constructive development based on the work of Bezem and Veldman, and Richman and Stolzenberg.},
+  isbn = {978-3-642-32347-8},
+  keywords = {Induction Principle,Proof Obligation,Recursive Call,Transitive Closure,Type Theory},
+  language = {en},
+  series = {Lecture {{Notes}} in {{Computer Science}}}
 }
 
 @inproceedings{Vytiniotis2013halo,
