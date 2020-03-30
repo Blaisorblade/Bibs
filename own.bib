@@ -11,6 +11,8 @@
 @preamble{" \newcommand{\noopsort}[1]{} "}
 
 
+@string{ieee = {IEEE}}
+@string{springer = {Springer}}
 @string{acm = {ACM}}
 
 @string{acmaddr = {}}
@@ -74,6 +76,7 @@
   author = {Giarrusso, Paolo G. and {R{\'e}gis-Gianas}, Yann and Schuster, Philipp},
   editor = {Caires, Lu{\'i}s},
   year = {2019},
+  volume = {11423},
   pages = {553--580},
   publisher = {{Springer International Publishing}},
   abstract = {Incremental computation requires propagating changes and reusing intermediate results of base computations. Derivatives, as produced by static differentiation [7], propagate changes but do not reuse intermediate results, leading to wasteful recomputation. As a solution, we introduce conversion to Cache-Transfer-Style, an additional program transformations producing purely incremental functional programs that create and maintain nested tuples of intermediate results. To prove CTS conversion correct, we extend the correctness proof of static differentiation from STLC to untyped {$\mathsl{\lambda}\lambda\backslash$}lambda -calculus via step-indexed logical relations, and prove sound the additional transformation via simulation theorems.To show ILC-based languages can improve performance relative to from-scratch recomputation, and that CTS conversion can extend its applicability, we perform an initial performance case study. We provide derivatives of primitives for operations on collections and incrementalize selected example programs using those primitives, confirming expected asymptotic speedups.},
